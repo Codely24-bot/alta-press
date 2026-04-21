@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const media = {
   logo: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,fit=crop/B5g6vpLBQyiLl9pq/img_2142-wRwrPYrp3s0MgKXt.PNG',
@@ -12,11 +12,18 @@ const media = {
 };
 
 const navItems = [
-  { label: 'Home', href: '#home' },
-  { label: 'Produtos', href: '#produtos' },
-  { label: 'Quem Somos', href: '#quem-somos' },
-  { label: 'Contato', href: '#contato' },
+  { label: 'Home', href: '/', sectionId: 'home' },
+  { label: 'Produtos', href: '/produtos', sectionId: 'produtos' },
+  { label: 'Quem Somos', href: '/quem-somos', sectionId: 'quem-somos' },
+  { label: 'Contato', href: '/contato', sectionId: 'contato' },
 ];
+
+const pathToSection = navItems.reduce((accumulator, item) => {
+  accumulator[item.href] = item.sectionId;
+  return accumulator;
+}, {});
+
+const sectionIds = new Set(navItems.map((item) => item.sectionId));
 
 const highlights = [
   'Qualidade garantida',
@@ -94,8 +101,68 @@ const socialLinks = [
 const whatsappBase =
   'https://wa.me/5531991878767?text=Ol%C3%A1%20Seja%20bem%20vindo%20a%20ALTA%20PRESS%2C%20como%20posso%20ajudar%3F';
 
+function normalizePathname(pathname) {
+  if (!pathname || pathname === '/') {
+    return '/';
+  }
+
+  return pathname.replace(/\/+$/, '');
+}
+
+function getSectionIdFromLocation(location) {
+  const hashSectionId = location.hash.replace('#', '');
+
+  if (sectionIds.has(hashSectionId)) {
+    return hashSectionId;
+  }
+
+  return pathToSection[normalizePathname(location.pathname)] ?? 'home';
+}
+
+function scrollToSection(sectionId, behavior = 'smooth') {
+  const targetSection = document.getElementById(sectionId);
+
+  if (!targetSection) {
+    return;
+  }
+
+  targetSection.scrollIntoView({
+    behavior,
+    block: 'start',
+  });
+}
+
 function App() {
   const [name, setName] = useState('');
+
+  useEffect(() => {
+    const syncRoutePosition = (behavior = 'auto') => {
+      window.requestAnimationFrame(() => {
+        scrollToSection(getSectionIdFromLocation(window.location), behavior);
+      });
+    };
+
+    const handlePopState = () => {
+      syncRoutePosition('smooth');
+    };
+
+    syncRoutePosition('auto');
+    window.addEventListener('popstate', handlePopState);
+
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+    };
+  }, []);
+
+  const handleInternalNavigation = (href, sectionId) => (event) => {
+    event.preventDefault();
+
+    if (window.location.pathname !== href || window.location.hash) {
+      window.history.pushState({}, '', href);
+    }
+
+    scrollToSection(sectionId);
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -115,13 +182,18 @@ function App() {
     <div className="site-shell">
       <header className="site-header">
         <div className="container nav-bar">
-          <a className="brand" href="#home" aria-label="Ir para a home da Alta Press">
+          <a
+            className="brand"
+            href="/"
+            aria-label="Ir para a home da Alta Press"
+            onClick={handleInternalNavigation('/', 'home')}
+          >
             <img src={media.logo} alt="Logo Alta Press" />
           </a>
 
           <nav className="main-nav" aria-label="Navegação principal">
             {navItems.map((item) => (
-              <a key={item.label} href={item.href}>
+              <a key={item.label} href={item.href} onClick={handleInternalNavigation(item.href, item.sectionId)}>
                 {item.label}
               </a>
             ))}
@@ -145,10 +217,14 @@ function App() {
               </p>
 
               <div className="hero-actions">
-                <a className="button button-primary" href="#produtos">
+                <a className="button button-primary" href="/produtos" onClick={handleInternalNavigation('/produtos', 'produtos')}>
                   Ver produtos
                 </a>
-                <a className="button button-secondary" href="#quem-somos">
+                <a
+                  className="button button-secondary"
+                  href="/quem-somos"
+                  onClick={handleInternalNavigation('/quem-somos', 'quem-somos')}
+                >
                   Saiba mais
                 </a>
               </div>
@@ -288,7 +364,7 @@ function App() {
               </p>
             </div>
 
-            <a className="button button-primary" href="#contato">
+            <a className="button button-primary" href="/contato" onClick={handleInternalNavigation('/contato', 'contato')}>
               Ir para contato
             </a>
           </div>
@@ -359,7 +435,7 @@ function App() {
             <h3>Links</h3>
             <div className="footer-links">
               {navItems.map((item) => (
-                <a key={item.label} href={item.href}>
+                <a key={item.label} href={item.href} onClick={handleInternalNavigation(item.href, item.sectionId)}>
                   {item.label}
                 </a>
               ))}

@@ -25,6 +25,10 @@ html {
   scroll-behavior: smooth;
 }
 
+section[id] {
+  scroll-margin-top: 104px;
+}
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
