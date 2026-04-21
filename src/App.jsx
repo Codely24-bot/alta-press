@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const media = {
   logo: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,fit=crop/B5g6vpLBQyiLl9pq/img_2142-wRwrPYrp3s0MgKXt.PNG',
@@ -154,6 +154,8 @@ function scrollToSection(sectionId, behavior = 'smooth') {
 
 function App() {
   const [name, setName] = useState('');
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const headerRef = useRef(null);
 
   useEffect(() => {
     const syncRoutePosition = (behavior = 'auto') => {
@@ -174,8 +176,62 @@ function App() {
     };
   }, []);
 
+  useEffect(() => {
+    const updateHeaderHeight = () => {
+      const headerHeight = headerRef.current?.offsetHeight ?? 0;
+      document.documentElement.style.setProperty('--header-height', `${headerHeight}px`);
+    };
+
+    updateHeaderHeight();
+
+    const resizeObserver =
+      typeof ResizeObserver !== 'undefined' && headerRef.current
+        ? new ResizeObserver(updateHeaderHeight)
+        : null;
+
+    if (resizeObserver && headerRef.current) {
+      resizeObserver.observe(headerRef.current);
+    }
+
+    window.addEventListener('resize', updateHeaderHeight);
+
+    return () => {
+      window.removeEventListener('resize', updateHeaderHeight);
+      resizeObserver?.disconnect();
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 860) {
+        setMobileMenuOpen(false);
+      }
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    const shouldLockScroll = mobileMenuOpen && window.innerWidth <= 860;
+    const previousOverflow = document.body.style.overflow;
+
+    if (shouldLockScroll) {
+      document.body.style.overflow = 'hidden';
+    }
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [mobileMenuOpen]);
+
   const handleInternalNavigation = (href, sectionId) => (event) => {
     event.preventDefault();
+    setMobileMenuOpen(false);
 
     if (window.location.pathname !== href || window.location.hash) {
       window.history.pushState({}, '', href);
@@ -200,7 +256,7 @@ function App() {
 
   return (
     <div className="site-shell">
-      <header className="site-header">
+      <header ref={headerRef} className="site-header">
         <div className="container nav-bar">
           <a
             className="brand"
@@ -211,17 +267,38 @@ function App() {
             <img src={media.logo} alt="Logo Alta Press" />
           </a>
 
-          <nav className="main-nav" aria-label="Navegação principal">
-            {navItems.map((item) => (
-              <a key={item.label} href={item.href} onClick={handleInternalNavigation(item.href, item.sectionId)}>
-                {item.label}
-              </a>
-            ))}
-          </nav>
+          <button
+            className={`menu-toggle ${mobileMenuOpen ? 'is-open' : ''}`}
+            type="button"
+            aria-expanded={mobileMenuOpen}
+            aria-controls="primary-navigation"
+            aria-label={mobileMenuOpen ? 'Fechar menu principal' : 'Abrir menu principal'}
+            onClick={() => setMobileMenuOpen((current) => !current)}
+          >
+            <span />
+            <span />
+            <span />
+          </button>
 
-          <a className="button button-primary button-compact" href={whatsappBase} target="_blank" rel="noreferrer">
-            Fale conosco
-          </a>
+          <div className={`nav-panel ${mobileMenuOpen ? 'is-open' : ''}`}>
+            <nav id="primary-navigation" className="main-nav" aria-label="Navegação principal">
+              {navItems.map((item) => (
+                <a key={item.label} href={item.href} onClick={handleInternalNavigation(item.href, item.sectionId)}>
+                  {item.label}
+                </a>
+              ))}
+            </nav>
+
+            <a
+              className="button button-primary button-compact header-cta"
+              href={whatsappBase}
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Fale conosco
+            </a>
+          </div>
         </div>
       </header>
 
@@ -230,7 +307,7 @@ function App() {
           <div className="container hero-grid">
             <div className="hero-copy">
               <span className="eyebrow">Alta Press</span>
-              <h1>Peças hidráulicas de alta pressão com qualidade garantida.</h1>
+              <h1>Conectando sistemas com qualidade, segurança e precisão.</h1>
               <p className="lead">
                 Loja especializada em válvulas e conexões hidráulicas para alta pressão, garantindo qualidade,
                 durabilidade e confiança para o seu equipamento.
@@ -265,10 +342,6 @@ function App() {
               <div className="hero-card hero-card-floating">
                 <p>Especialistas em válvulas e conexões hidráulicas</p>
                 <strong>Produtos duráveis e atendimento excelente.</strong>
-              </div>
-              <div className="hero-card hero-card-accent">
-                <span>Contato rápido</span>
-                <a href="tel:+5531972671038">(31) 9 7267-1038</a>
               </div>
             </div>
           </div>
