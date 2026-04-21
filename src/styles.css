@@ -55,7 +55,7 @@ input {
 .site-shell {
   position: relative;
   overflow: hidden;
-  padding-top: calc(var(--header-height) + 20px);
+  padding-top: calc(var(--header-height) + 8px);
   background:
     radial-gradient(circle at top right, rgba(168, 199, 214, 0.18), transparent 28%),
     radial-gradient(circle at left 10% top 25%, rgba(168, 199, 214, 0.12), transparent 22%),
@@ -95,16 +95,15 @@ input {
 
 .site-header {
   position: fixed;
-  top: 12px;
-  left: 50%;
-  width: min(1140px, calc(100% - 28px));
-  transform: translateX(-50%);
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   z-index: 30;
   background: rgba(13, 20, 26, 0.72);
   backdrop-filter: blur(18px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 28px;
-  box-shadow: 0 20px 44px rgba(13, 20, 26, 0.18);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 32px rgba(13, 20, 26, 0.16);
 }
 
 .nav-bar {
@@ -113,8 +112,8 @@ input {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  min-height: 72px;
-  padding: 14px 0;
+  min-height: 60px;
+  padding: 8px 0;
 }
 
 .brand {
@@ -125,7 +124,7 @@ input {
 
 .brand img,
 .footer-logo {
-  width: clamp(118px, 16vw, 170px);
+  width: clamp(108px, 14vw, 154px);
 }
 
 .nav-panel {
@@ -147,11 +146,11 @@ input {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 44px;
-  padding: 0 16px;
+  min-height: 40px;
+  padding: 0 14px;
   border-radius: 999px;
   color: rgba(255, 255, 255, 0.9);
-  font-size: 0.96rem;
+  font-size: 0.92rem;
   white-space: nowrap;
   transition:
     opacity 0.2s ease,
@@ -210,8 +209,8 @@ input {
 }
 
 .button-compact {
-  min-height: 44px;
-  padding: 0 20px;
+  min-height: 40px;
+  padding: 0 18px;
   white-space: nowrap;
 }
 
@@ -808,7 +807,7 @@ input {
 
 @media (max-width: 1040px) {
   .site-shell {
-    padding-top: calc(var(--header-height) + 18px);
+    padding-top: calc(var(--header-height) + 8px);
   }
 
   .hero-grid,
@@ -847,18 +846,17 @@ input {
 
 @media (max-width: 860px) {
   .site-shell {
-    padding-top: calc(var(--header-height) + 16px);
+    padding-top: calc(var(--header-height) + 8px);
   }
 
   .site-header {
-    top: 8px;
-    width: calc(100% - 16px);
-    border-radius: 22px;
+    top: 0;
+    width: 100%;
   }
 
   .nav-bar {
-    min-height: 68px;
-    padding: 10px 0;
+    min-height: 56px;
+    padding: 8px 0;
   }
 
   .menu-toggle {
@@ -935,6 +933,29 @@ input {
 
   .hero {
     padding: 48px 0 112px;
+  }
+
+  .hero-copy,
+  .section-heading,
+  .company-copy,
+  .banner-card,
+  .contact-panel,
+  .form-panel,
+  .catalog-card,
+  .service-card__body,
+  .site-footer,
+  .footer-grid > div {
+    text-align: center;
+    justify-items: center;
+  }
+
+  .eyebrow,
+  .hero-actions,
+  .highlight-row,
+  .chip-grid,
+  .social-row,
+  .footer-links {
+    justify-content: center;
   }
 
   .hero h1,
@@ -1025,6 +1046,7 @@ input {
 
   .contact-item {
     min-width: 0;
+    text-align: center;
   }
 
   .social-row a {
@@ -1049,17 +1071,16 @@ input {
 
 @media (max-width: 540px) {
   .site-shell {
-    padding-top: calc(var(--header-height) + 12px);
+    padding-top: calc(var(--header-height) + 6px);
   }
 
   .site-header {
-    width: calc(100% - 12px);
-    border-radius: 20px;
+    width: 100%;
   }
 
   .brand img,
   .footer-logo {
-    width: 128px;
+    width: 118px;
   }
 
   .hero h1,
