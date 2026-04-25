@@ -93,7 +93,7 @@ const contacts = [
 ];
 
 const socialLinks = [
-  { label: 'Instagram', href: 'https://www.instagram.com/' },
+  { label: 'Instagram', href: 'https://www.instagram.com/altapress.conexoes/' },
   { label: 'Facebook', href: 'https://www.facebook.com/' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/' },
 ];
