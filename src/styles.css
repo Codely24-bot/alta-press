@@ -275,22 +275,148 @@ input {
 
 .hero {
   position: relative;
-  padding: 88px 0 230px;
-  color: var(--white);
-  background: linear-gradient(180deg, rgba(22, 33, 44, 0.96) 0%, rgba(22, 33, 44, 0.96) 84%, rgba(22, 33, 44, 0) 100%);
+  padding: 28px 0 96px;
 }
 
-.hero-grid,
+.hero-carousel-shell {
+  position: relative;
+}
+
+.hero-carousel {
+  position: relative;
+  min-height: clamp(300px, 42vw, 520px);
+  overflow: hidden;
+  background: #d8e5ec;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: scale(1.03);
+  transition:
+    opacity 0.65s ease,
+    transform 0.65s ease;
+}
+
+.hero-slide.is-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.hero-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-carousel-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(13, 20, 26, 0.16), rgba(13, 20, 26, 0.05) 38%, rgba(13, 20, 26, 0.18));
+  pointer-events: none;
+}
+
+.hero-carousel-controls {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 26px;
+  pointer-events: none;
+}
+
+.hero-carousel-control {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.68);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--white);
+  box-shadow: none;
+  cursor: pointer;
+  pointer-events: auto;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.hero-carousel-control svg {
+  width: 22px;
+  height: 22px;
+}
+
+.hero-carousel-control:hover,
+.hero-carousel-control:focus-visible {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.96);
+}
+
+.hero-carousel-control:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.45);
+  outline-offset: 3px;
+}
+
+.hero-carousel-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 22px;
+  z-index: 2;
+  display: flex;
+  gap: 10px;
+  transform: translateX(-50%);
+}
+
+.hero-carousel-dot {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border: 1px solid rgba(13, 20, 26, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  cursor: pointer;
+  transition:
+    width 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.hero-carousel-dot.is-active {
+  width: 36px;
+  background: var(--navy-deep);
+  border-color: var(--navy-deep);
+}
+
+.hero-intro-wrap {
+  position: relative;
+  margin-top: -84px;
+}
+
+.hero-intro-card {
+  position: relative;
+  z-index: 2;
+  padding: 40px;
+  border-radius: var(--radius-xl);
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(26, 38, 51, 0.08);
+  box-shadow: 0 26px 64px rgba(13, 20, 26, 0.16);
+}
+
 .company-grid,
 .contact-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
   gap: 42px;
   align-items: center;
-}
-
-.hero-grid {
-  align-items: start;
 }
 
 .eyebrow {
@@ -348,6 +474,18 @@ input {
   max-width: 560px;
 }
 
+.hero-intro-card .hero-copy {
+  max-width: 760px;
+}
+
+.hero-intro-card h1 {
+  color: var(--navy-deep);
+}
+
+.hero-intro-card .lead {
+  color: var(--muted);
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -372,52 +510,22 @@ input {
   font-size: 0.92rem;
 }
 
-.hero-visual {
-  position: relative;
-  min-height: 560px;
+.hero-intro-card .highlight-pill {
+  background: var(--surface);
+  border-color: rgba(26, 38, 51, 0.08);
+  color: var(--navy);
 }
 
-.hero-card {
-  position: absolute;
-  overflow: hidden;
-  border-radius: var(--radius-xl);
-  box-shadow: var(--shadow);
-}
-
-.hero-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.hero-card-main {
-  inset: 40px 24px 24px 0;
-  background: rgba(255, 255, 255, 0.08);
-}
-
-.hero-card-floating {
-  display: grid;
-  gap: 8px;
-  padding: 22px;
-  backdrop-filter: blur(18px);
-}
-
-.hero-card-floating {
-  right: 0;
-  top: 0;
-  width: min(290px, 66%);
-  background: rgba(255, 255, 255, 0.92);
+.hero-intro-card .button-secondary {
+  border-color: rgba(26, 38, 51, 0.16);
   color: var(--navy-deep);
+  background: rgba(26, 38, 51, 0.03);
 }
 
-.hero-card-floating p,
-.hero-card-floating strong {
-  margin: 0;
-}
-
-.hero-card-floating p {
-  font-size: 0.9rem;
-  color: var(--muted);
+.hero-intro-card .button-secondary:hover,
+.hero-intro-card .button-secondary:focus-visible {
+  border-color: rgba(26, 38, 51, 0.28);
+  background: rgba(26, 38, 51, 0.06);
 }
 
 .section {
@@ -810,7 +918,6 @@ input {
     padding-top: calc(var(--header-height) + 8px);
   }
 
-  .hero-grid,
   .company-grid,
   .contact-grid,
   .catalog-grid,
@@ -819,7 +926,7 @@ input {
   }
 
   .hero {
-    padding: 72px 0 160px;
+    padding: 24px 0 84px;
   }
 
   .hero-copy,
@@ -827,11 +934,12 @@ input {
     max-width: none;
   }
 
-  .hero-visual {
-    min-height: 500px;
-    max-width: 680px;
-    width: 100%;
-    margin-left: auto;
+  .hero-intro-wrap {
+    margin-top: -68px;
+  }
+
+  .hero-intro-card {
+    padding: 34px;
   }
 
   .services-grid {
@@ -932,7 +1040,32 @@ input {
   }
 
   .hero {
-    padding: 48px 0 112px;
+    padding: 18px 0 72px;
+  }
+
+  .hero-carousel {
+    min-height: 300px;
+  }
+
+  .hero-carousel-controls {
+    padding: 0 14px;
+  }
+
+  .hero-carousel-control {
+    width: 46px;
+    height: 46px;
+  }
+
+  .hero-carousel-dots {
+    bottom: 16px;
+  }
+
+  .hero-intro-wrap {
+    margin-top: -42px;
+  }
+
+  .hero-intro-card {
+    padding: 28px 22px;
   }
 
   .hero-copy,
@@ -994,27 +1127,6 @@ input {
   .highlight-pill {
     justify-content: center;
     text-align: center;
-  }
-
-  .hero-visual {
-    min-height: auto;
-    display: grid;
-    gap: 16px;
-  }
-
-  .hero-card {
-    position: relative;
-  }
-
-  .hero-card-main {
-    inset: auto;
-    aspect-ratio: 4 / 4.4;
-  }
-
-  .hero-card-floating {
-    top: auto;
-    right: auto;
-    width: auto;
   }
 
   .services-grid,
@@ -1089,6 +1201,25 @@ input {
   .banner-card h2,
   .contact-panel h2 {
     font-size: clamp(2rem, 12vw, 3rem);
+  }
+
+  .hero-carousel {
+    min-height: 260px;
+  }
+
+  .hero-carousel-controls {
+    padding: 0 10px;
+  }
+
+  .hero-carousel-control {
+    width: 42px;
+    height: 42px;
+    font-size: 1.1rem;
+  }
+
+  .hero-intro-card {
+    padding: 24px 20px;
+    border-radius: 24px;
   }
 
   .button {

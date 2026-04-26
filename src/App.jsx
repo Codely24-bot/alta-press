@@ -2,7 +2,9 @@ import { useEffect, useRef, useState } from 'react';
 
 const media = {
   logo: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,fit=crop/B5g6vpLBQyiLl9pq/img_2142-wRwrPYrp3s0MgKXt.PNG',
-  hero: 'https://assets.zyrosite.com/B5g6vpLBQyiLl9pq/whatsapp-image-2026-01-06-at-20.51.32-1-c1wVKmHaNhZOfzHX.jpeg',
+  heroSlideOne:
+    'https://images.unsplash.com/photo-1620203853151-496c7228306c?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwzfHx2YWx2ZXN8ZW58MHx8fHwxNzc0NzI3NzEwfDA&ixlib=rb-4.1.0&w=1366&q=70&auto=format',
+  heroSlideTwo: 'https://assets.zyrosite.com/B5g6vpLBQyiLl9pq/sem-nome-2500-x-1000-px-3-6PCHTfsHBWEZasav.png',
   support: 'https://assets.zyrosite.com/B5g6vpLBQyiLl9pq/whatsapp-image-2026-01-06-at-20.51.32-oj8sLCya4lLhNSvu.jpeg',
   valves: 'https://assets.zyrosite.com/B5g6vpLBQyiLl9pq/whatsapp-image-2026-01-06-at-18.19.41-1-6m6q7nEyogzsu0W1.jpeg',
   connections: 'https://assets.zyrosite.com/B5g6vpLBQyiLl9pq/whatsapp-image-2026-01-06-at-18.19.42-2-Wa8AAjmT5haiIglS.jpeg',
@@ -22,6 +24,17 @@ const pathToSection = navItems.reduce((accumulator, item) => {
   accumulator[item.href] = item.sectionId;
   return accumulator;
 }, {});
+
+const heroSlides = [
+  {
+    image: media.heroSlideOne,
+    alt: 'Maquinario industrial e válvulas de alta pressão.',
+  },
+  {
+    image: media.heroSlideTwo,
+    alt: 'Banner institucional da Alta Press com conexões e soluções hidráulicas.',
+  },
+];
 
 const sectionIds = new Set(navItems.map((item) => item.sectionId));
 
@@ -121,6 +134,26 @@ function WhatsAppIcon() {
   );
 }
 
+function CarouselArrowIcon({ direction = 'right' }) {
+  return (
+    <svg
+      aria-hidden="true"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{ transform: direction === 'left' ? 'rotate(180deg)' : undefined }}
+    >
+      <path
+        d="M8 4L16 12L8 20"
+        stroke="currentColor"
+        strokeWidth="2.4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
 function normalizePathname(pathname) {
   if (!pathname || pathname === '/') {
     return '/';
@@ -154,6 +187,7 @@ function scrollToSection(sectionId, behavior = 'smooth') {
 
 function App() {
   const [name, setName] = useState('');
+  const [activeHeroSlide, setActiveHeroSlide] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const headerRef = useRef(null);
 
@@ -198,6 +232,22 @@ function App() {
     return () => {
       window.removeEventListener('resize', updateHeaderHeight);
       resizeObserver?.disconnect();
+    };
+  }, []);
+
+  useEffect(() => {
+    const motionPreference = window.matchMedia?.('(prefers-reduced-motion: reduce)');
+
+    if (motionPreference?.matches) {
+      return undefined;
+    }
+
+    const slideInterval = window.setInterval(() => {
+      setActiveHeroSlide((currentSlide) => (currentSlide + 1) % heroSlides.length);
+    }, 4000);
+
+    return () => {
+      window.clearInterval(slideInterval);
     };
   }, []);
 
@@ -254,6 +304,18 @@ function App() {
     );
   };
 
+  const goToHeroSlide = (slideIndex) => {
+    setActiveHeroSlide(slideIndex);
+  };
+
+  const showPreviousHeroSlide = () => {
+    setActiveHeroSlide((currentSlide) => (currentSlide - 1 + heroSlides.length) % heroSlides.length);
+  };
+
+  const showNextHeroSlide = () => {
+    setActiveHeroSlide((currentSlide) => (currentSlide + 1) % heroSlides.length);
+  };
+
   return (
     <div className="site-shell">
       <header ref={headerRef} className="site-header">
@@ -296,52 +358,83 @@ function App() {
               rel="noreferrer"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Fale conosco
+              Fale Conosco
             </a>
           </div>
         </div>
       </header>
 
       <main>
-        <section className="hero" id="home">
-          <div className="container hero-grid">
-            <div className="hero-copy">
-              <span className="eyebrow">Alta Press</span>
-              <h1>Conectando sistemas com qualidade, segurança e precisão.</h1>
-              <p className="lead">
-                Loja especializada em válvulas e conexões hidráulicas para alta pressão, garantindo qualidade,
-                durabilidade e confiança para o seu equipamento.
-              </p>
-
-              <div className="hero-actions">
-                <a className="button button-primary" href="/produtos" onClick={handleInternalNavigation('/produtos', 'produtos')}>
-                  Ver produtos
-                </a>
-                <a
-                  className="button button-secondary"
-                  href="/quem-somos"
-                  onClick={handleInternalNavigation('/quem-somos', 'quem-somos')}
+        <section className="hero" id="home" aria-label="Destaques da Alta Press">
+          <div className="hero-carousel-shell">
+            <div className="hero-carousel" aria-roledescription="carousel" aria-label="Carrossel principal">
+              {heroSlides.map((slide, index) => (
+                <div
+                  key={slide.image}
+                  className={`hero-slide ${activeHeroSlide === index ? 'is-active' : ''}`}
+                  aria-hidden={activeHeroSlide !== index}
                 >
-                  Saiba mais
-                </a>
+                  <img src={slide.image} alt={slide.alt} />
+                </div>
+              ))}
+
+              <div className="hero-carousel-overlay" aria-hidden="true" />
+
+              <div className="hero-carousel-controls">
+                <button className="hero-carousel-control" type="button" aria-label="Slide anterior" onClick={showPreviousHeroSlide}>
+                  <CarouselArrowIcon direction="left" />
+                </button>
+                <button className="hero-carousel-control" type="button" aria-label="Próximo slide" onClick={showNextHeroSlide}>
+                  <CarouselArrowIcon direction="right" />
+                </button>
               </div>
 
-              <div className="highlight-row">
-                {highlights.map((item) => (
-                  <span key={item} className="highlight-pill">
-                    {item}
-                  </span>
+              <div className="hero-carousel-dots" role="tablist" aria-label="Selecionar slide">
+                {heroSlides.map((slide, index) => (
+                  <button
+                    key={slide.image}
+                    className={`hero-carousel-dot ${activeHeroSlide === index ? 'is-active' : ''}`}
+                    type="button"
+                    role="tab"
+                    aria-label={`Ir para o slide ${index + 1}`}
+                    aria-selected={activeHeroSlide === index}
+                    onClick={() => goToHeroSlide(index)}
+                  />
                 ))}
               </div>
             </div>
 
-            <div className="hero-visual">
-              <div className="hero-card hero-card-main">
-                <img src={media.hero} alt="Peças e soluções da Alta Press" />
-              </div>
-              <div className="hero-card hero-card-floating">
-                <p>Especialistas em válvulas e conexões hidráulicas</p>
-                <strong>Produtos duráveis e atendimento excelente.</strong>
+            <div className="container hero-intro-wrap">
+              <div className="hero-intro-card">
+                <div className="hero-copy">
+                  <span className="eyebrow eyebrow-dark">Alta Press</span>
+                  <h1>Conectando sistemas com qualidade, segurança e precisão.</h1>
+                  <p className="lead">
+                    Loja especializada em válvulas e conexões hidráulicas para alta pressão, garantindo qualidade,
+                    durabilidade e confiança para o seu equipamento.
+                  </p>
+
+                  <div className="hero-actions">
+                    <a className="button button-primary" href="/produtos" onClick={handleInternalNavigation('/produtos', 'produtos')}>
+                      Ver Produtos
+                    </a>
+                    <a
+                      className="button button-secondary"
+                      href="/quem-somos"
+                      onClick={handleInternalNavigation('/quem-somos', 'quem-somos')}
+                    >
+                      Saiba Mais
+                    </a>
+                  </div>
+
+                  <div className="highlight-row">
+                    {highlights.map((item) => (
+                      <span key={item} className="highlight-pill">
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -428,7 +521,7 @@ function App() {
               </div>
 
               <a className="button button-secondary" href={whatsappBase} target="_blank" rel="noreferrer">
-                Fale conosco
+                Fale Conosco
               </a>
             </div>
 
@@ -458,7 +551,7 @@ function App() {
             </div>
 
             <a className="button button-primary" href="/contato" onClick={handleInternalNavigation('/contato', 'contato')}>
-              Ir para contato
+              Ir Para Contato
             </a>
           </div>
         </section>
@@ -467,7 +560,7 @@ function App() {
           <div className="container contact-grid">
             <article className="contact-panel">
               <span className="eyebrow eyebrow-dark">Contato</span>
-              <h2>Fale conosco</h2>
+              <h2>Fale Conosco</h2>
               <p>Estamos prontos para ajudar com suas peças hidráulicas e encontrar a solução certa para sua operação.</p>
 
               <div className="contact-list">
