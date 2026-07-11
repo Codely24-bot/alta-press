@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import SupportChatWidget from './components/SupportChatWidget';
 import altaPressValvulaSeguranca from './assets/alta-press-valvula-seguranca.jpeg';
+import altaPressShowcaseVideo from './assets/alta-press-showcase-video.mp4';
 
 const media = {
   logo: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,fit=crop/B5g6vpLBQyiLl9pq/img_2142-wRwrPYrp3s0MgKXt.PNG',
@@ -12,7 +13,6 @@ const media = {
   connections: 'https://assets.zyrosite.com/B5g6vpLBQyiLl9pq/whatsapp-image-2026-01-06-at-18.19.42-2-Wa8AAjmT5haiIglS.jpeg',
   showcaseOne: altaPressValvulaSeguranca,
   showcaseTwo: 'https://assets.zyrosite.com/B5g6vpLBQyiLl9pq/whatsapp-image-2026-01-06-at-20.51.32-oj8sLCya4lLhNSvu.jpeg',
-  showcaseThree: 'https://assets.zyrosite.com/B5g6vpLBQyiLl9pq/whatsapp-image-2026-01-06-at-20.51.32-2-o0G2INO1fjlvokZE.jpeg',
 };
 
 const navItems = [
@@ -535,7 +535,15 @@ function App() {
                 <img src={media.showcaseTwo} alt="Produtos e atendimento Alta Press" />
               </div>
               <div className="showcase-card">
-                <img src={media.showcaseThree} alt="Conexões e válvulas da Alta Press" />
+                <video
+                  src={altaPressShowcaseVideo}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  preload="auto"
+                  aria-label="Video de produtos da Alta Press"
+                />
               </div>
             </div>
           </div>

@@ -754,7 +754,8 @@ input {
   min-height: 360px;
 }
 
-.showcase-card img {
+.showcase-card img,
+.showcase-card video {
   width: 100%;
   height: 100%;
   object-fit: cover;
