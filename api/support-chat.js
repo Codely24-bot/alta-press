@@ -7,6 +7,32 @@ export const config = {
   maxDuration: 30,
 };
 
+async function readJsonBody(request) {
+  if (request.body && typeof request.body === 'object' && !Buffer.isBuffer(request.body) && !('on' in request.body)) {
+    return request.body;
+  }
+
+  if (typeof request.body === 'string') {
+    return request.body ? JSON.parse(request.body) : {};
+  }
+
+  if (Buffer.isBuffer(request.body)) {
+    return request.body.length ? JSON.parse(request.body.toString('utf8')) : {};
+  }
+
+  const chunks = [];
+
+  for await (const chunk of request) {
+    chunks.push(typeof chunk === 'string' ? Buffer.from(chunk) : chunk);
+  }
+
+  if (!chunks.length) {
+    return {};
+  }
+
+  return JSON.parse(Buffer.concat(chunks).toString('utf8'));
+}
+
 function extractOutputText(payload) {
   if (typeof payload?.output_text === 'string' && payload.output_text.trim()) {
     return payload.output_text.trim();
@@ -41,13 +67,17 @@ export default async function handler(request, response) {
   }
 
   try {
-    const body = typeof request.body === 'string' ? JSON.parse(request.body || '{}') : request.body || {};
+    const body = await readJsonBody(request);
     const messages = sanitizeConversation(body.messages);
     const systemPrompt = buildSystemPrompt();
 
     const lastUserMessage = [...messages].reverse().find((message) => message.role === 'user');
 
     if (!lastUserMessage) {
+      console.warn('support-chat request without user message', {
+        hasBody: Boolean(body),
+        messageCount: Array.isArray(body?.messages) ? body.messages.length : 0,
+      });
       return response.status(400).json({ error: 'Nenhuma mensagem de usuario foi enviada.' });
     }
 
@@ -93,6 +123,7 @@ export default async function handler(request, response) {
     const payload = await openAiResponse.json();
 
     if (!openAiResponse.ok) {
+      console.error('openai support-chat error', payload);
       return response.status(openAiResponse.status).json({
         error: payload?.error?.message || 'Falha ao consultar a OpenAI.',
       });
@@ -110,6 +141,7 @@ export default async function handler(request, response) {
       model: DEFAULT_MODEL,
     });
   } catch (error) {
+    console.error('support-chat internal error', error);
     return response.status(500).json({
       error: error instanceof Error ? error.message : 'Erro interno ao processar o chat.',
     });
