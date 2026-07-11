@@ -59,6 +59,18 @@ function extractOutputText(payload) {
   return chunks.join('\n').trim();
 }
 
+function toResponseMessage(message) {
+  return {
+    role: message.role,
+    content: [
+      {
+        type: message.role === 'assistant' ? 'output_text' : 'input_text',
+        text: message.content,
+      },
+    ],
+  };
+}
+
 export default async function handler(request, response) {
   response.setHeader('Cache-Control', 'no-store');
 
@@ -107,15 +119,7 @@ export default async function handler(request, response) {
               },
             ],
           },
-          ...messages.map((message) => ({
-            role: message.role,
-            content: [
-              {
-                type: 'input_text',
-                text: message.content,
-              },
-            ],
-          })),
+          ...messages.map(toResponseMessage),
         ],
       }),
     });
