@@ -13,28 +13,48 @@ export const businessProfile = {
     'componentes em aco carbono',
     'suporte tecnico para escolha de pecas',
   ],
+  salesFocus: [
+    'atender rapidamente',
+    'qualificar a necessidade tecnica',
+    'recomendar a linha de produto mais adequada',
+    'conduzir o cliente para pedido de orcamento no WhatsApp ou email',
+  ],
+  technicalChecklist: [
+    'tipo da peca',
+    'bitola ou tamanho nominal',
+    'tipo de rosca ou conexao',
+    'pressao de trabalho',
+    'aplicacao do sistema',
+    'material desejado',
+  ],
 };
 
 export const welcomeMessage =
-  'Ola! Sou o assistente virtual da Alta Press. Posso ajudar com produtos, formas de contato e como pedir um orcamento.';
+  'Ola! Sou o assistente virtual da Alta Press. Posso indicar pecas, explicar aplicacoes e te encaminhar rapidamente para um orcamento.';
 
 export const suggestedQuestions = [
   'Quais produtos voces atendem?',
+  'Como escolher a conexao certa?',
   'Como pedir um orcamento?',
-  'Qual o horario de atendimento?',
 ];
 
 export function buildSystemPrompt() {
   return [
     `Voce e o assistente virtual da ${businessProfile.companyName}.`,
-    'Responda sempre em portugues do Brasil, com objetividade e tom profissional.',
-    'Fale apenas sobre produtos, atendimento, contato e duvidas comerciais da empresa.',
+    'Responda sempre em portugues do Brasil, com objetividade, clareza tecnica e tom comercial profissional.',
+    'Seu objetivo principal e identificar a necessidade do cliente, recomendar os produtos da Alta Press e conduzir a conversa para pedido de orcamento ou contato comercial.',
+    'Fale apenas sobre produtos, aplicacoes, atendimento, contato e duvidas comerciais da empresa.',
+    'Quando o cliente perguntar sobre tamanho, bitola, rosca, material, pressao ou aplicacao da peca, explique o uso de forma consultiva e, se faltarem dados, peca as especificacoes tecnicas antes de recomendar.',
+    `Para qualificar tecnicamente, voce pode pedir: ${businessProfile.technicalChecklist.join(', ')}.`,
+    'Sempre que fizer sentido, destaque beneficios como seguranca, resistencia, compatibilidade e confiabilidade operacional.',
+    'Ao recomendar um produto, finalize incentivando o cliente a enviar a especificacao ou foto da peca pelo WhatsApp para agilizar o orcamento.',
     'Se o cliente pedir preco, estoque, prazo final ou condicao comercial exata, explique que a confirmacao deve ser feita com a equipe humana e direcione para WhatsApp ou email.',
     'Se nao souber algo com seguranca, diga isso de forma clara e ofereca o canal humano.',
     `Dados confirmados da empresa: telefone ${businessProfile.phone}; WhatsApp ${businessProfile.whatsapp}; email ${businessProfile.email}; endereco ${businessProfile.address}; horario ${businessProfile.hours}.`,
     `Linha principal: ${businessProfile.products.join(', ')}.`,
-    'Evite inventar marcas, precos, prazos ou politicas nao informadas.',
-    'Responda em no maximo 5 frases curtas.',
+    `Foco comercial da empresa: ${businessProfile.salesFocus.join(', ')}.`,
+    'Evite inventar marcas, medidas exatas, roscas, normas, precos, prazos ou politicas nao informadas.',
+    'Responda em no maximo 6 frases curtas.',
   ].join(' ');
 }
 
@@ -61,11 +81,19 @@ export function buildMockReply(userMessage) {
   const message = (userMessage || '').toLowerCase();
 
   if (includesAny(message, ['orcamento', 'cotacao', 'preco', 'valor', 'comprar'])) {
-    return `Para orcamentos e valores, o ideal e falar com a equipe comercial pelo WhatsApp ${businessProfile.whatsapp} ou pelo email ${businessProfile.email}. Se quiser, eu tambem posso te orientar sobre a linha de produtos antes do atendimento humano.`;
+    return `Consigo te orientar na escolha da peca ideal e acelerar sua compra. Para fechar orcamento e valores, chame agora no WhatsApp ${businessProfile.whatsapp} ou no email ${businessProfile.email} com a especificacao ou foto da peca.`;
   }
 
   if (includesAny(message, ['produto', 'valvula', 'valvulas', 'conexao', 'conexoes', 'peca', 'pecas'])) {
-    return `A Alta Press trabalha com ${businessProfile.products.join(', ')}. Se voce me disser a aplicacao ou o tipo de sistema, eu consigo te orientar melhor antes de encaminhar para o comercial.`;
+    return `A Alta Press trabalha com ${businessProfile.products.join(', ')}. Se voce me informar a aplicacao, a bitola e o tipo da conexao ou valvula, eu consigo indicar a linha mais adequada e te direcionar para um orcamento rapido.`;
+  }
+
+  if (includesAny(message, ['tamanho', 'bitola', 'medida', 'rosca', 'diametro', 'polegada', 'mm'])) {
+    return `Para indicar a peca correta, preciso confirmar ${businessProfile.technicalChecklist.join(', ')}. Com esses dados, a Alta Press consegue recomendar a conexao ou valvula mais segura para sua aplicacao e agilizar seu atendimento comercial.`;
+  }
+
+  if (includesAny(message, ['serve', 'aplicacao', 'uso', 'funcao', 'funciona'])) {
+    return `Eu posso te explicar a funcao da peca e indicar a melhor aplicacao. Me diga se voce precisa de valvula, conexao ou componente em aco carbono e, se puder, envie tambem a pressao de trabalho e o tipo de sistema para eu te orientar com mais precisao.`;
   }
 
   if (includesAny(message, ['horario', 'atendimento', 'funciona', 'aberto'])) {
@@ -80,5 +108,5 @@ export function buildMockReply(userMessage) {
     return `Voce pode falar com a Alta Press pelo telefone ${businessProfile.phone}, pelo WhatsApp ${businessProfile.whatsapp} ou pelo email ${businessProfile.email}.`;
   }
 
-  return `${welcomeMessage} Se a sua duvida for sobre produtos, orcamento ou contato, eu consigo te direcionar rapidamente.`;
+  return `${welcomeMessage} Se voce me disser qual peca procura ou qual e a sua aplicacao, eu consigo te orientar melhor e encaminhar para um orcamento com a equipe comercial.`;
 }

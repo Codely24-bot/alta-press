@@ -4,7 +4,7 @@ import {
   welcomeMessage,
 } from '../../shared/supportKnowledge';
 
-const CHAT_ENDPOINT = '/.netlify/functions/support-chat';
+const CHAT_ENDPOINT = '/api/support-chat';
 
 export function createInitialMessages() {
   return [
