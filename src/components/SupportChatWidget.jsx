@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { businessProfile, suggestedQuestions } from '../../shared/supportKnowledge';
+import { businessProfile } from '../../shared/supportKnowledge';
 import { createInitialMessages, requestSupportReply } from '../lib/supportChatApi';
 import altaPressChatLogo from '../assets/alta-press-chat-logo.png';
 
@@ -136,14 +136,6 @@ export default function SupportChatWidget() {
                 Alta Press IA esta digitando...
               </div>
             ) : null}
-          </div>
-
-          <div className="support-chat__suggestions" aria-label="Sugestoes de perguntas">
-            {suggestedQuestions.map((question) => (
-              <button key={question} type="button" onClick={() => sendMessage(question)}>
-                {question}
-              </button>
-            ))}
           </div>
 
           <form className="support-chat__composer" onSubmit={handleSubmit}>

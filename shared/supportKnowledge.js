@@ -32,12 +32,6 @@ export const businessProfile = {
 export const welcomeMessage =
   'Ola! Sou o assistente virtual da Alta Press. Posso indicar pecas, explicar aplicacoes e te encaminhar rapidamente para um orcamento.';
 
-export const suggestedQuestions = [
-  'Quais produtos voces atendem?',
-  'Como escolher a conexao certa?',
-  'Como pedir um orcamento?',
-];
-
 export function buildSystemPrompt() {
   return [
     `Voce e o assistente virtual da ${businessProfile.companyName}.`,
