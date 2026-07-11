@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import SupportChatWidget from './components/SupportChatWidget';
 
 const media = {
   logo: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,fit=crop/B5g6vpLBQyiLl9pq/img_2142-wRwrPYrp3s0MgKXt.PNG',
@@ -657,6 +658,8 @@ function App() {
         </span>
         <span className="whatsapp-float__label">WhatsApp</span>
       </a>
+
+      <SupportChatWidget />
     </div>
   );
 }
