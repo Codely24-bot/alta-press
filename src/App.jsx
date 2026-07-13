@@ -109,8 +109,8 @@ const contacts = [
   },
   {
     label: 'Endereço',
-    value: 'Rua Carme, 165 Nova Lima',
-    href: 'https://www.google.com/maps/search/?api=1&query=Rua+Carme,+165+Nova+Lima',
+    value: 'Rua Josias Machado, 236, Inconfidentes — CEP 32260-520',
+    href: 'https://www.google.com/maps/search/?api=1&query=Rua+Josias+Machado,+236,+Inconfidentes,+CEP+32260-520',
   },
   {
     label: 'Horário',
@@ -144,6 +144,31 @@ function WhatsAppIcon() {
         d="M17.49 14.83c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.64.08-.3-.15-1.24-.46-2.36-1.47-.87-.77-1.46-1.73-1.63-2.02-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.38-.03-.53-.08-.15-.67-1.62-.92-2.22-.24-.58-.48-.5-.67-.5h-.57c-.2 0-.53.08-.8.38-.28.3-1.05 1.02-1.05 2.48s1.08 2.87 1.23 3.07c.15.2 2.1 3.21 5.09 4.5.71.31 1.27.5 1.7.64.71.22 1.36.19 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.18-1.42-.08-.13-.28-.2-.57-.35Z"
         fill="currentColor"
       />
+    </svg>
+  );
+}
+
+function GoogleMapsIcon() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+      <path d="M12 2.25a7.1 7.1 0 0 0-7.1 7.1c0 5.32 7.1 12.4 7.1 12.4s7.1-7.08 7.1-12.4A7.1 7.1 0 0 0 12 2.25Z" fill="#34A853" />
+      <path d="M12 2.25v19.5s7.1-7.08 7.1-12.4A7.1 7.1 0 0 0 12 2.25Z" fill="#EA4335" />
+      <path d="M4.9 9.35c0 5.32 7.1 12.4 7.1 12.4v-9.4a3 3 0 0 1-3-3h-4.1Z" fill="#4285F4" />
+      <circle cx="12" cy="9.35" r="3" fill="#FBBC04" />
+      <circle cx="12" cy="9.35" r="1.35" fill="white" />
+    </svg>
+  );
+}
+
+function WazeIcon() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+      <path d="M18.75 11.2c0-4.1-3.1-7.05-7.33-7.05-4.12 0-7.17 2.84-7.17 6.67 0 3.64 2.5 6.25 6.28 6.65.56 1.18 1.65 1.95 2.98 1.95 1.72 0 3.05-1.28 3.05-2.95 1.36-1.12 2.19-2.94 2.19-5.27Z" fill="#36C5F0" />
+      <path d="M8.35 17.2c-.8.92-1.89 1.38-3.18 1.38M16.4 17.15c.67.78 1.64 1.18 2.8 1.18" stroke="#172B4D" strokeWidth="1.55" strokeLinecap="round" />
+      <circle cx="9.25" cy="10.9" r="1" fill="#172B4D" />
+      <circle cx="14.25" cy="10.9" r="1" fill="#172B4D" />
+      <path d="M9.35 14.05c1.15.92 2.76.92 3.9 0" stroke="#172B4D" strokeWidth="1.35" strokeLinecap="round" />
+      <path d="M7 4.85 5.65 3.7M15.9 4.85l1.34-1.15" stroke="#172B4D" strokeWidth="1.45" strokeLinecap="round" />
     </svg>
   );
 }
@@ -759,6 +784,42 @@ function App() {
               </form>
             </article>
           </div>
+
+          <div className="container location-map-wrap">
+            <div className="location-map__heading">
+              <span className="eyebrow eyebrow-dark">Localização</span>
+              <h3>Visite a Alta Press</h3>
+              <p>Rua Josias Machado, 236, Inconfidentes — CEP 32260-520</p>
+            </div>
+            <div className="location-map">
+              <iframe
+                title="Mapa de localização da Alta Press"
+                src="https://www.google.com/maps?q=Rua%20Josias%20Machado%2C%20236%2C%20Inconfidentes%2C%20CEP%2032260-520&output=embed"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+            <div className="location-map__actions">
+              <a
+                className="button button-primary"
+                href="https://www.google.com/maps/search/?api=1&query=Rua+Josias+Machado,+236,+Inconfidentes,+CEP+32260-520"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span className="location-map__service-icon"><GoogleMapsIcon /></span>
+                Abrir no Google Maps
+              </a>
+              <a
+                className="button button-secondary location-map__waze-button"
+                href="https://www.waze.com/ul?q=Rua%20Josias%20Machado%2C%20236%2C%20Inconfidentes%2C%20CEP%2032260-520&navigate=yes"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span className="location-map__service-icon"><WazeIcon /></span>
+                Abrir no Waze
+              </a>
+            </div>
+          </div>
         </section>
           </>
         )}
@@ -787,8 +848,14 @@ function App() {
             <div className="footer-links">
               <a href="mailto:comercial@altapress.com.br">comercial@altapress.com.br</a>
               <a href="tel:+5531972671038">(31) 9 7267-1038</a>
-              <a href="https://www.google.com/maps/search/?api=1&query=Rua+Carme,+165+Nova+Lima" target="_blank" rel="noreferrer">
-                Rua Carme, 165 Nova Lima
+              <span className="footer-address">Rua Josias Machado, 236, Inconfidentes — CEP 32260-520</span>
+              <a
+                className="footer-map-button"
+                href="https://www.google.com/maps/search/?api=1&query=Rua+Josias+Machado,+236,+Inconfidentes,+CEP+32260-520"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Abrir no mapa ↗
               </a>
             </div>
           </div>

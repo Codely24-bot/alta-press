@@ -5,7 +5,7 @@ export const businessProfile = {
   whatsappUrl:
     'https://wa.me/5531991878767?text=Ola%2C%20quero%20falar%20com%20a%20Alta%20Press%20sobre%20pecas%20hidraulicas.',
   email: 'comercial@altapress.com.br',
-  address: 'Rua Carme, 165 - Nova Lima',
+  address: 'Rua Josias Machado, 236 - Inconfidentes, CEP 32260-520',
   hours: 'Segunda a sexta, em horario comercial.',
   products: [
     'valvulas para alta pressao',
