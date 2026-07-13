@@ -173,6 +173,24 @@ function WazeIcon() {
   );
 }
 
+function InstagramIcon() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+      <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" strokeWidth="1.9" />
+      <circle cx="12" cy="12" r="4.1" stroke="currentColor" strokeWidth="1.9" />
+      <circle cx="17.55" cy="6.55" r="1.15" fill="currentColor" />
+    </svg>
+  );
+}
+
+function LinkedInIcon() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M6.05 8.15A2.05 2.05 0 1 0 6.05 4.05a2.05 2.05 0 0 0 0 4.1ZM4.25 9.8h3.6V20h-3.6V9.8Zm5.85 0h3.45v1.4h.05c.48-.9 1.66-1.85 3.42-1.85 3.66 0 4.34 2.4 4.34 5.52V20h-3.6v-4.55c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.18-1.73 2.4V20h-3.6V9.8Z" />
+    </svg>
+  );
+}
+
 function CarouselArrowIcon({ direction = 'right' }) {
   return (
     <svg
@@ -508,15 +526,14 @@ function App() {
               )}
             </nav>
 
-            <a
-              className="button button-primary button-compact header-cta"
-              href={whatsappBase}
-              target="_blank"
-              rel="noreferrer"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Fale Conosco
-            </a>
+            <div className="header-socials" aria-label="Redes sociais">
+              <a href={socialLinks[0].href} target="_blank" rel="noreferrer" aria-label="Instagram da Alta Press">
+                <InstagramIcon />
+              </a>
+              <a href={socialLinks[2].href} target="_blank" rel="noreferrer" aria-label="LinkedIn da Alta Press">
+                <LinkedInIcon />
+              </a>
+            </div>
           </div>
         </div>
       </header>
