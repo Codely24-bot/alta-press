@@ -5,11 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "brand:pdfs": "node scripts/brand-technical-pdfs.mjs",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^6.0.1",
+    "cheerio": "^1.2.0",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^6.1.200",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
     "vite": "^8.0.9"

@@ -1,7 +1,13 @@
-import { useEffect, useRef, useState } from 'react';
+﻿import { useEffect, useRef, useState } from 'react';
 import SupportChatWidget from './components/SupportChatWidget';
+import { technicalContent } from './data/technicalContent';
 import altaPressValvulaSeguranca from './assets/alta-press-valvula-seguranca.jpeg';
 import altaPressShowcaseVideo from './assets/alta-press-showcase-video.mp4';
+import productAcessorios from './assets/product-categories/acessorios.jpg';
+import productConexoes from './assets/product-categories/conexoes.png';
+import productFlanges from './assets/product-categories/flanges.png';
+import productInstrumentos from './assets/product-categories/instrumentos.jpg';
+import productValvulas from './assets/product-categories/valvulas.jpg';
 
 const media = {
   logo: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,fit=crop/B5g6vpLBQyiLl9pq/img_2142-wRwrPYrp3s0MgKXt.PNG',
@@ -18,6 +24,7 @@ const media = {
 const navItems = [
   { label: 'Home', href: '/', sectionId: 'home' },
   { label: 'Produtos', href: '/produtos', sectionId: 'produtos' },
+  { label: 'Informações Técnicas', href: '/informacoes-tecnicas', sectionId: 'informacoes-tecnicas' },
   { label: 'Quem Somos', href: '/quem-somos', sectionId: 'quem-somos' },
   { label: 'Contato', href: '/contato', sectionId: 'contato' },
 ];
@@ -72,19 +79,33 @@ const productCategories = [
   {
     title: 'Válvulas',
     slug: 'valvulas',
+    image: productValvulas,
     items: ['Angular', 'Borboleta', 'Descarga de caldeira', 'Diafragma', 'Esfera', 'Gaveta', 'Globo', 'Guilhotina', 'Macho', 'Mangote', 'Para hidrante', 'Passagem reta', 'Redutora de pressão', 'Retenção', 'Segurança e alívio', 'Solenóide', 'Start-up'],
   },
   {
     title: 'Flanges',
     slug: 'flanges',
-    items: ['Cego', 'Com pescoço (Welding Neck)', 'Sobreposto com reforço (Slip On)', 'Com encaixe (Socket Welding)', 'Roscado', 'Solto (Lap Joint)', 'Sobreposto plano', 'Orifício', 'De redução'],
+    image: productFlanges,
+    items: [
+      'Flange Cego',
+      'Flange Pescoço',
+      'Flange Slip On',
+      'Flange Encaixe',
+      'Flange Roscado',
+      'Flange Solto',
+      'Flange Liso',
+      'Orifício Pescoço',
+      'Orifício Slip On',
+      'Orifício Roscado',
+      'De Redução',
+    ],
   },
-  { title: 'Conexões', slug: 'conexoes', items: ['Alta pressão', 'Ferro maleável', 'Colares', 'Conexões tubulares'] },
+  { title: 'Conexões', slug: 'conexoes', image: productConexoes, items: ['Alta pressão', 'Ferro maleável', 'Colares', 'Conexões tubulares'] },
   { title: 'Filtros', slug: 'filtros', items: ['Tipo cesto', 'Tipo Y'] },
   { title: 'Purgadores', slug: 'purgadores', items: ['Balde invertido', 'Bóia', 'Termodinâmico', 'Termostático'] },
   { title: 'Vedações', slug: 'vedacoes', items: ["Anel O'Ring", 'Fita PTFE', 'Gaxeta', 'Junta de vedação'] },
-  { title: 'Instrumentos', slug: 'instrumentos', items: ['Manômetros', 'Termômetros', 'Pressostatos', 'Vacuômetros'] },
-  { title: 'Acessórios', slug: 'acessorios', items: ['Amortecedor de vibração', 'Eliminador de ar', 'Grampo U', 'Indicador de nível', 'Juntas de expansão', 'Separador de umidade', 'Ventosas', 'Visor de fluxo'] },
+  { title: 'Instrumentos', slug: 'instrumentos', image: productInstrumentos, items: ['Manômetros', 'Termômetros', 'Pressostatos', 'Vacuômetros'] },
+  { title: 'Acessórios', slug: 'acessorios', image: productAcessorios, items: ['Amortecedor de vibração', 'Eliminador de ar', 'Grampo U', 'Indicador de nível', 'Juntas de expansão', 'Separador de umidade', 'Ventosas', 'Visor de fluxo'] },
 ];
 
 const sectors = [
@@ -119,14 +140,14 @@ const contacts = [
   },
 ];
 
-const socialLinks = [
-  { label: 'Instagram', href: 'https://www.instagram.com/altapress.conexoes/' },
-  { label: 'Facebook', href: 'https://www.facebook.com/' },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/' },
-];
-
 const whatsappBase =
   'https://wa.me/5531991878767?text=Ol%C3%A1%20Seja%20bem%20vindo%20a%20ALTA%20PRESS%2C%20como%20posso%20ajudar%3F';
+
+const socialLinks = [
+  { label: 'Instagram', href: 'https://www.instagram.com/altapress.conexoes/' },
+  { label: 'WhatsApp', href: whatsappBase },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/' },
+];
 
 function WhatsAppIcon() {
   return (
@@ -272,14 +293,18 @@ function ProductCategoryPage({ category, onNavigate }) {
           <article className="product-page__list-card">
             <h2>Subcategorias disponíveis</h2>
             <div className="product-page__items">
-              {category.items.map((item) => (
-                <div key={item} className="product-page__item">
-                  <span>{item}</span>
-                  <a href={whatsappBase} target="_blank" rel="noreferrer" aria-label={`Consultar ${item}`}>
-                    Consultar →
+              {category.items.map((item) => {
+                const label = typeof item === 'string' ? item : item.label;
+
+                return (
+                <div key={label} className="product-page__item">
+                  <span>{label}</span>
+                  <a href={whatsappBase} target="_blank" rel="noreferrer" aria-label={`Consultar ${label}`}>
+                    Consultar &rarr;
                   </a>
                 </div>
-              ))}
+                );
+              })}
             </div>
           </article>
 
@@ -298,7 +323,7 @@ function ProductCategoryPage({ category, onNavigate }) {
           <div>
             {productCategories.filter((item) => item.slug !== category.slug).map((item) => (
               <a key={item.slug} href={`/produtos/${item.slug}`} onClick={onNavigate(`/produtos/${item.slug}`)}>
-                {item.title} →
+                {item.title} &rarr;
               </a>
             ))}
           </div>
@@ -308,6 +333,58 @@ function ProductCategoryPage({ category, onNavigate }) {
   );
 }
 
+function TechnicalInfoPage() {
+  const [activeTabTitle, setActiveTabTitle] = useState(technicalContent[0]?.title ?? '');
+  const activeTab = technicalContent.find((tab) => tab.title === activeTabTitle) ?? technicalContent[0];
+
+  return (
+    <section className="technical-page section-surface" id="informacoes-tecnicas">
+      <div className="container">
+        <div className="technical-page__intro">
+          <span className="eyebrow eyebrow-dark">Informações Técnicas</span>
+          <h1>Biblioteca técnica Alta Press.</h1>
+          <p>
+            Consulte especificações, tabelas, imagens e orientações técnicas diretamente no site, sem visualizador de PDF
+            e com apresentação própria da Alta Press.
+          </p>
+        </div>
+
+        <div className="technical-tabs">
+          <div className="technical-tabs__list" role="tablist" aria-label="Materiais técnicos">
+            {technicalContent.map((tab) => (
+              <button
+                key={tab.title}
+                className={`technical-tabs__button ${activeTab?.title === tab.title ? 'is-active' : ''}`}
+                type="button"
+                role="tab"
+                aria-selected={activeTab?.title === tab.title}
+                onClick={() => setActiveTabTitle(tab.title)}
+              >
+                <span>{tab.group}</span>
+                {tab.title}
+              </button>
+            ))}
+          </div>
+
+          {activeTab && (
+            <article className="technical-tabs__panel" role="tabpanel">
+              <div className="technical-tabs__header">
+                <span className="eyebrow eyebrow-dark">{activeTab.group}</span>
+                <h2>{activeTab.title}</h2>
+                <p>{activeTab.description}</p>
+              </div>
+
+              <div
+                className="technical-tabs__content"
+                dangerouslySetInnerHTML={{ __html: activeTab.html }}
+              />
+            </article>
+          )}
+        </div>
+      </div>
+    </section>
+  );
+}
 function App() {
   const [name, setName] = useState('');
   const [activeHeroSlide, setActiveHeroSlide] = useState(0);
@@ -464,6 +541,7 @@ function App() {
   };
 
   const activeProductCategory = getProductCategoryFromPath(currentPathname);
+  const isTechnicalInfoPage = currentPathname === '/informacoes-tecnicas';
 
   return (
     <div className="site-shell">
@@ -541,6 +619,8 @@ function App() {
       <main>
         {activeProductCategory ? (
           <ProductCategoryPage category={activeProductCategory} onNavigate={handleInternalNavigation} />
+        ) : isTechnicalInfoPage ? (
+          <TechnicalInfoPage />
         ) : (
           <>
         <section className="hero" id="home" aria-label="Destaques da Alta Press">
@@ -644,7 +724,7 @@ function App() {
                     <span>{card.detail}</span>
                     {category && (
                       <a className="service-card__link" href={`/produtos/${category.slug}`} onClick={handleProductNavigation(`/produtos/${category.slug}`)}>
-                        Ver categoria →
+                        Ver categoria &rarr;
                       </a>
                     )}
                   </div>
@@ -866,14 +946,6 @@ function App() {
               <a href="mailto:comercial@altapress.com.br">comercial@altapress.com.br</a>
               <a href="tel:+5531972671038">(31) 9 7267-1038</a>
               <span className="footer-address">Rua Josias Machado, 236, Inconfidentes — CEP 32260-520</span>
-              <a
-                className="footer-map-button"
-                href="https://www.google.com/maps/search/?api=1&query=Rua+Josias+Machado,+236,+Inconfidentes,+CEP+32260-520"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Abrir no mapa ↗
-              </a>
             </div>
           </div>
         </div>
