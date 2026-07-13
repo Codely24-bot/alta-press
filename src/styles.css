@@ -196,8 +196,7 @@ input {
   transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s ease;
 }
 
-.nav-product-menu:hover .nav-product-menu__dropdown,
-.nav-product-menu:focus-within .nav-product-menu__dropdown {
+.nav-product-menu.is-mobile-open .nav-product-menu__dropdown {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -1541,19 +1540,22 @@ input {
   .nav-panel {
     position: absolute;
     top: calc(100% + 12px);
-    left: 0;
-    right: 0;
+    left: 50%;
+    right: auto;
+    width: 100%;
     display: grid;
     gap: 14px;
     padding: 18px;
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 24px;
-    background: rgba(13, 20, 26, 0.96);
+    z-index: 10;
+    background: #0d141a;
     box-shadow: 0 24px 54px rgba(13, 20, 26, 0.3);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transform: translateY(-10px);
+    overflow-x: hidden;
+    transform: translate(-50%, -10px);
     transition:
       opacity 0.2s ease,
       visibility 0.2s ease,
@@ -1566,13 +1568,14 @@ input {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    transform: translateY(0);
+    transform: translate(-50%, 0);
   }
 
   .main-nav {
+    display: grid;
     width: 100%;
-    flex-direction: column;
-    align-items: stretch;
+    min-width: 0;
+    grid-template-columns: minmax(0, 1fr);
     gap: 10px;
   }
 
@@ -1586,7 +1589,10 @@ input {
   }
 
   .nav-product-menu {
+    position: relative;
+    z-index: 1;
     width: 100%;
+    min-width: 0;
   }
 
   .nav-product-menu > a {
@@ -1598,10 +1604,10 @@ input {
     display: none;
     top: auto;
     left: auto;
-    width: 100%;
-    max-width: 100%;
+    width: min(86%, 310px);
+    max-width: 86%;
     min-width: 0;
-    margin-top: 6px;
+    margin: 6px auto 0;
     padding: 6px;
     border-radius: 14px;
     background: rgba(255, 255, 255, 0.03);
@@ -1615,16 +1621,23 @@ input {
   }
 
   .nav-product-menu.is-mobile-open .nav-product-menu__dropdown {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+    transform: none;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    background: #101a22;
   }
 
   .nav-product-menu__dropdown a {
+    display: flex;
     width: 100%;
     box-sizing: border-box;
     min-height: 38px;
+    color: rgba(255, 255, 255, 0.92);
   }
 
   .header-cta {

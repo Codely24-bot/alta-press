@@ -381,13 +381,8 @@ function App() {
   };
 
   const handleProductsMenuNavigation = (event) => {
-    if (window.innerWidth <= 860) {
-      event.preventDefault();
-      setMobileProductMenuOpen((currentValue) => !currentValue);
-      return;
-    }
-
-    handleInternalNavigation('/produtos', 'produtos')(event);
+    event.preventDefault();
+    setMobileProductMenuOpen((currentValue) => !currentValue);
   };
 
   const handleProductNavigation = (href) => (event) => {
