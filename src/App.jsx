@@ -568,7 +568,7 @@ function App() {
             <div className="container hero-intro-wrap">
               <div className="hero-intro-card">
                 <div className="hero-copy">
-                  <span className="eyebrow eyebrow-dark">Alta Press</span>
+                  <span className="eyebrow eyebrow-dark">AltaPress</span>
                   <h1>Conectando sistemas com qualidade, segurança e precisão.</h1>
                   <p className="lead">
                     Loja especializada em válvulas e conexões hidráulicas para alta pressão, garantindo qualidade,

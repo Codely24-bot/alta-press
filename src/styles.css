@@ -444,7 +444,7 @@ input {
 
 .hero-intro-wrap {
   position: relative;
-  margin-top: -84px;
+  margin-top: 28px;
 }
 
 .hero-intro-card {
@@ -1590,7 +1590,7 @@ input {
   }
 
   .hero-intro-wrap {
-    margin-top: -68px;
+    margin-top: 24px;
   }
 
   .hero-intro-card {
@@ -1778,7 +1778,7 @@ input {
   }
 
   .hero-intro-wrap {
-    margin-top: -42px;
+    margin-top: 20px;
   }
 
   .hero-intro-card {
