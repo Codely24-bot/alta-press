@@ -68,11 +68,23 @@ const serviceCards = [
   },
 ];
 
-const portfolioItems = [
-  'Válvulas de esfera, gaveta, globo, retenção e borboleta',
-  'Conexões em ferro maleável: cotovelos, niples, uniões, tees e reduções',
-  'Componentes em aço carbono para alta pressão',
-  'Acessórios hidráulicos diversos',
+const productCategories = [
+  {
+    title: 'Válvulas',
+    slug: 'valvulas',
+    items: ['Angular', 'Borboleta', 'Descarga de caldeira', 'Diafragma', 'Esfera', 'Gaveta', 'Globo', 'Guilhotina', 'Macho', 'Mangote', 'Para hidrante', 'Passagem reta', 'Redutora de pressão', 'Retenção', 'Segurança e alívio', 'Solenóide', 'Start-up'],
+  },
+  {
+    title: 'Flanges',
+    slug: 'flanges',
+    items: ['Cego', 'Com pescoço (Welding Neck)', 'Sobreposto com reforço (Slip On)', 'Com encaixe (Socket Welding)', 'Roscado', 'Solto (Lap Joint)', 'Sobreposto plano', 'Orifício', 'De redução'],
+  },
+  { title: 'Conexões', slug: 'conexoes', items: ['Alta pressão', 'Ferro maleável', 'Colares', 'Conexões tubulares'] },
+  { title: 'Filtros', slug: 'filtros', items: ['Tipo cesto', 'Tipo Y'] },
+  { title: 'Purgadores', slug: 'purgadores', items: ['Balde invertido', 'Bóia', 'Termodinâmico', 'Termostático'] },
+  { title: 'Vedações', slug: 'vedacoes', items: ["Anel O'Ring", 'Fita PTFE', 'Gaxeta', 'Junta de vedação'] },
+  { title: 'Instrumentos', slug: 'instrumentos', items: ['Manômetros', 'Termômetros', 'Pressostatos', 'Vacuômetros'] },
+  { title: 'Acessórios', slug: 'acessorios', items: ['Amortecedor de vibração', 'Eliminador de ar', 'Grampo U', 'Indicador de nível', 'Juntas de expansão', 'Separador de umidade', 'Ventosas', 'Visor de fluxo'] },
 ];
 
 const sectors = [
@@ -165,6 +177,10 @@ function normalizePathname(pathname) {
 }
 
 function getSectionIdFromLocation(location) {
+  if (getProductCategoryFromPath(location.pathname)) {
+    return null;
+  }
+
   const hashSectionId = location.hash.replace('#', '');
 
   if (sectionIds.has(hashSectionId)) {
@@ -172,6 +188,11 @@ function getSectionIdFromLocation(location) {
   }
 
   return pathToSection[normalizePathname(location.pathname)] ?? 'home';
+}
+
+function getProductCategoryFromPath(pathname) {
+  const normalizedPath = normalizePathname(pathname);
+  return productCategories.find((category) => normalizedPath === `/produtos/${category.slug}`);
 }
 
 function scrollToSection(sectionId, behavior = 'smooth') {
@@ -187,20 +208,82 @@ function scrollToSection(sectionId, behavior = 'smooth') {
   });
 }
 
+function ProductCategoryPage({ category, onNavigate }) {
+  return (
+    <section className="product-page section-surface">
+      <div className="container">
+        <a className="product-page__back" href="/produtos" onClick={onNavigate('/produtos', 'produtos')}>
+          ← Voltar para produtos
+        </a>
+
+        <div className="product-page__intro">
+          <span className="eyebrow eyebrow-dark">Linha de produtos</span>
+          <h1>{category.title}</h1>
+          <p>
+            Confira as opções da nossa linha de {category.title.toLowerCase()}. Nossa equipe ajuda a definir a solução,
+            o material e as dimensões ideais para a sua operação.
+          </p>
+        </div>
+
+        <div className="product-page__content">
+          <article className="product-page__list-card">
+            <h2>Subcategorias disponíveis</h2>
+            <div className="product-page__items">
+              {category.items.map((item) => (
+                <div key={item} className="product-page__item">
+                  <span>{item}</span>
+                  <a href={whatsappBase} target="_blank" rel="noreferrer" aria-label={`Consultar ${item}`}>
+                    Consultar →
+                  </a>
+                </div>
+              ))}
+            </div>
+          </article>
+
+          <aside className="product-page__cta">
+            <span className="eyebrow">Precisa de ajuda?</span>
+            <h2>Encontre a peça certa para sua instalação.</h2>
+            <p>Fale com a Alta Press para confirmar disponibilidade, especificações e condições de fornecimento.</p>
+            <a className="button button-secondary" href={whatsappBase} target="_blank" rel="noreferrer">
+              Fale Conosco
+            </a>
+          </aside>
+        </div>
+
+        <div className="product-page__other-categories">
+          <h2>Outras categorias</h2>
+          <div>
+            {productCategories.filter((item) => item.slug !== category.slug).map((item) => (
+              <a key={item.slug} href={`/produtos/${item.slug}`} onClick={onNavigate(`/produtos/${item.slug}`)}>
+                {item.title} →
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function App() {
   const [name, setName] = useState('');
   const [activeHeroSlide, setActiveHeroSlide] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [currentPathname, setCurrentPathname] = useState(() => normalizePathname(window.location.pathname));
   const headerRef = useRef(null);
 
   useEffect(() => {
     const syncRoutePosition = (behavior = 'auto') => {
       window.requestAnimationFrame(() => {
-        scrollToSection(getSectionIdFromLocation(window.location), behavior);
+        const sectionId = getSectionIdFromLocation(window.location);
+        if (sectionId) {
+          scrollToSection(sectionId, behavior);
+        }
       });
     };
 
     const handlePopState = () => {
+      setCurrentPathname(normalizePathname(window.location.pathname));
       syncRoutePosition('smooth');
     };
 
@@ -289,7 +372,18 @@ function App() {
       window.history.pushState({}, '', href);
     }
 
-    scrollToSection(sectionId);
+    setCurrentPathname(normalizePathname(href));
+    window.requestAnimationFrame(() => {
+      scrollToSection(sectionId);
+    });
+  };
+
+  const handleProductNavigation = (href) => (event) => {
+    event.preventDefault();
+    setMobileMenuOpen(false);
+    window.history.pushState({}, '', href);
+    setCurrentPathname(normalizePathname(href));
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleSubmit = (event) => {
@@ -317,6 +411,8 @@ function App() {
   const showNextHeroSlide = () => {
     setActiveHeroSlide((currentSlide) => (currentSlide + 1) % heroSlides.length);
   };
+
+  const activeProductCategory = getProductCategoryFromPath(currentPathname);
 
   return (
     <div className="site-shell">
@@ -346,11 +442,26 @@ function App() {
 
           <div className={`nav-panel ${mobileMenuOpen ? 'is-open' : ''}`}>
             <nav id="primary-navigation" className="main-nav" aria-label="Navegação principal">
-              {navItems.map((item) => (
-                <a key={item.label} href={item.href} onClick={handleInternalNavigation(item.href, item.sectionId)}>
-                  {item.label}
-                </a>
-              ))}
+              {navItems.map((item) =>
+                item.sectionId === 'produtos' ? (
+                  <div key={item.label} className="nav-product-menu">
+                    <a href={item.href} onClick={handleInternalNavigation(item.href, item.sectionId)}>
+                      {item.label}
+                    </a>
+                    <div className="nav-product-menu__dropdown" aria-label="Categorias de produtos">
+                      {productCategories.map((category) => (
+                        <a key={category.title} href={`/produtos/${category.slug}`} onClick={handleProductNavigation(`/produtos/${category.slug}`)}>
+                          {category.title}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                ) : (
+                  <a key={item.label} href={item.href} onClick={handleInternalNavigation(item.href, item.sectionId)}>
+                    {item.label}
+                  </a>
+                ),
+              )}
             </nav>
 
             <a
@@ -367,6 +478,10 @@ function App() {
       </header>
 
       <main>
+        {activeProductCategory ? (
+          <ProductCategoryPage category={activeProductCategory} onNavigate={handleInternalNavigation} />
+        ) : (
+          <>
         <section className="hero" id="home" aria-label="Destaques da Alta Press">
           <div className="hero-carousel-shell">
             <div className="hero-carousel" aria-roledescription="carousel" aria-label="Carrossel principal">
@@ -454,7 +569,10 @@ function App() {
             </div>
 
             <div className="services-grid">
-              {serviceCards.map((card) => (
+              {serviceCards.map((card) => {
+                const category = productCategories.find((item) => item.title === card.title);
+
+                return (
                 <article key={card.title} className="service-card">
                   <div className="service-card__image">
                     <img src={card.image} alt={card.title} />
@@ -463,9 +581,15 @@ function App() {
                     <h3>{card.title}</h3>
                     <p>{card.description}</p>
                     <span>{card.detail}</span>
+                    {category && (
+                      <a className="service-card__link" href={`/produtos/${category.slug}`} onClick={handleProductNavigation(`/produtos/${category.slug}`)}>
+                        Ver categoria →
+                      </a>
+                    )}
                   </div>
                 </article>
-              ))}
+                );
+              })}
             </div>
 
             <div className="catalog-grid">
@@ -477,11 +601,10 @@ function App() {
                   hidráulicos, oferecendo produtos de alta qualidade para aplicações que exigem desempenho, segurança e
                   durabilidade.
                 </p>
-                <ul className="catalog-list">
-                  {portfolioItems.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
+                <p className="catalog-card__note">
+                  Trabalhamos com itens selecionados para aplicações industriais. Consulte nossa equipe para confirmar a
+                  disponibilidade e a especificação mais adequada ao seu sistema.
+                </p>
               </article>
 
               <article className="catalog-card catalog-card-contrast">
@@ -618,6 +741,8 @@ function App() {
             </article>
           </div>
         </section>
+          </>
+        )}
       </main>
 
       <footer className="site-footer">

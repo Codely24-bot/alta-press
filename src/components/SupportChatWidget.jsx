@@ -165,7 +165,7 @@ export default function SupportChatWidget() {
           <img src={altaPressChatLogo} alt="" />
         </span>
         <span className="support-chat__launcher-copy">
-          <strong>Tire duvidas</strong>
+          <strong>ALTA PRESS IA</strong>
           <small>Converse com a Alta Press</small>
         </span>
       </button>
