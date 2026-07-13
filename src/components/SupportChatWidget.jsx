@@ -26,11 +26,28 @@ function SendIcon() {
   );
 }
 
+function formatMessageContent(content) {
+  return content
+    .replace(/\*\*/g, '')
+    .replace(/\(?\d{2}\)?\s*9?\s*\d{4,5}[-\s]?\d{4}/g, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+}
+
 function MessageBubble({ message }) {
+  const content = formatMessageContent(message.content);
+  const shouldShowWhatsAppButton =
+    message.role === 'assistant' && /whatsapp|orçamento|orcamento|contato/i.test(content);
+
   return (
     <div className={`support-chat__message support-chat__message--${message.role}`}>
       <div className="support-chat__message-label">{message.role === 'assistant' ? 'Alta Press IA' : 'Voce'}</div>
-      <p>{message.content}</p>
+      <p>{content}</p>
+      {shouldShowWhatsAppButton ? (
+        <a className="support-chat__whatsapp-button" href={businessProfile.whatsappUrl} target="_blank" rel="noreferrer">
+          Falar no WhatsApp
+        </a>
+      ) : null}
     </div>
   );
 }
@@ -85,7 +102,7 @@ export default function SupportChatWidget() {
         ...currentMessages,
         createMessage(
           'assistant',
-          `Nao consegui responder agora. Chame a equipe no WhatsApp ${businessProfile.whatsapp} ou no email ${businessProfile.email}.`,
+          `Nao consegui responder agora. Use o botao Falar no WhatsApp abaixo ou envie um email para ${businessProfile.email}.`,
         ),
       ]);
     } finally {

@@ -269,6 +269,7 @@ function App() {
   const [name, setName] = useState('');
   const [activeHeroSlide, setActiveHeroSlide] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileProductMenuOpen, setMobileProductMenuOpen] = useState(false);
   const [currentPathname, setCurrentPathname] = useState(() => normalizePathname(window.location.pathname));
   const headerRef = useRef(null);
 
@@ -367,6 +368,7 @@ function App() {
   const handleInternalNavigation = (href, sectionId) => (event) => {
     event.preventDefault();
     setMobileMenuOpen(false);
+    setMobileProductMenuOpen(false);
 
     if (window.location.pathname !== href || window.location.hash) {
       window.history.pushState({}, '', href);
@@ -378,9 +380,20 @@ function App() {
     });
   };
 
+  const handleProductsMenuNavigation = (event) => {
+    if (window.innerWidth <= 860) {
+      event.preventDefault();
+      setMobileProductMenuOpen((currentValue) => !currentValue);
+      return;
+    }
+
+    handleInternalNavigation('/produtos', 'produtos')(event);
+  };
+
   const handleProductNavigation = (href) => (event) => {
     event.preventDefault();
     setMobileMenuOpen(false);
+    setMobileProductMenuOpen(false);
     window.history.pushState({}, '', href);
     setCurrentPathname(normalizePathname(href));
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -433,7 +446,14 @@ function App() {
             aria-expanded={mobileMenuOpen}
             aria-controls="primary-navigation"
             aria-label={mobileMenuOpen ? 'Fechar menu principal' : 'Abrir menu principal'}
-            onClick={() => setMobileMenuOpen((current) => !current)}
+            onClick={() =>
+              setMobileMenuOpen((current) => {
+                if (current) {
+                  setMobileProductMenuOpen(false);
+                }
+                return !current;
+              })
+            }
           >
             <span />
             <span />
@@ -444,8 +464,12 @@ function App() {
             <nav id="primary-navigation" className="main-nav" aria-label="Navegação principal">
               {navItems.map((item) =>
                 item.sectionId === 'produtos' ? (
-                  <div key={item.label} className="nav-product-menu">
-                    <a href={item.href} onClick={handleInternalNavigation(item.href, item.sectionId)}>
+                  <div key={item.label} className={`nav-product-menu ${mobileProductMenuOpen ? 'is-mobile-open' : ''}`}>
+                    <a
+                      href={item.href}
+                      aria-expanded={mobileProductMenuOpen}
+                      onClick={handleProductsMenuNavigation}
+                    >
                       {item.label}
                     </a>
                     <div className="nav-product-menu__dropdown" aria-label="Categorias de produtos">

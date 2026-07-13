@@ -41,13 +41,14 @@ export function buildSystemPrompt() {
     'Quando o cliente perguntar sobre tamanho, bitola, rosca, material, pressao ou aplicacao da peca, explique o uso de forma consultiva e, se faltarem dados, peca as especificacoes tecnicas antes de recomendar.',
     `Para qualificar tecnicamente, voce pode pedir: ${businessProfile.technicalChecklist.join(', ')}.`,
     'Sempre que fizer sentido, destaque beneficios como seguranca, resistencia, compatibilidade e confiabilidade operacional.',
-    'Ao recomendar um produto, finalize incentivando o cliente a enviar a especificacao ou foto da peca pelo WhatsApp para agilizar o orcamento.',
+    'Ao recomendar um produto, finalize incentivando o cliente a enviar a especificacao ou foto da peca pelo botao "Falar no WhatsApp" para agilizar o orcamento.',
     'Se o cliente pedir preco, estoque, prazo final ou condicao comercial exata, explique que a confirmacao deve ser feita com a equipe humana e direcione para WhatsApp ou email.',
     'Se nao souber algo com seguranca, diga isso de forma clara e ofereca o canal humano.',
-    `Dados confirmados da empresa: telefone ${businessProfile.phone}; WhatsApp ${businessProfile.whatsapp}; email ${businessProfile.email}; endereco ${businessProfile.address}; horario ${businessProfile.hours}.`,
+    `Dados confirmados da empresa: telefone ${businessProfile.phone}; email ${businessProfile.email}; endereco ${businessProfile.address}; horario ${businessProfile.hours}. O canal de WhatsApp deve ser indicado pelo botao "Falar no WhatsApp" exibido na conversa.`,
     `Linha principal: ${businessProfile.products.join(', ')}.`,
     `Foco comercial da empresa: ${businessProfile.salesFocus.join(', ')}.`,
     'Evite inventar marcas, medidas exatas, roscas, normas, precos, prazos ou politicas nao informadas.',
+    'Nunca escreva o numero de WhatsApp na resposta. Quando precisar indicar esse canal, diga apenas para usar o botao "Falar no WhatsApp".',
     'Responda em no maximo 6 frases curtas.',
   ].join(' ');
 }
@@ -75,7 +76,7 @@ export function buildMockReply(userMessage) {
   const message = (userMessage || '').toLowerCase();
 
   if (includesAny(message, ['orcamento', 'cotacao', 'preco', 'valor', 'comprar'])) {
-    return `Consigo te orientar na escolha da peca ideal e acelerar sua compra. Para fechar orcamento e valores, chame agora no WhatsApp ${businessProfile.whatsapp} ou no email ${businessProfile.email} com a especificacao ou foto da peca.`;
+    return `Consigo te orientar na escolha da peca ideal e acelerar sua compra. Para fechar orcamento e valores, use o botao Falar no WhatsApp abaixo ou envie a especificacao ou foto da peca para ${businessProfile.email}.`;
   }
 
   if (includesAny(message, ['produto', 'valvula', 'valvulas', 'conexao', 'conexoes', 'peca', 'pecas'])) {
@@ -91,7 +92,7 @@ export function buildMockReply(userMessage) {
   }
 
   if (includesAny(message, ['horario', 'atendimento', 'funciona', 'aberto'])) {
-    return `O atendimento da Alta Press acontece em ${businessProfile.hours} Para retorno rapido, voce pode chamar no WhatsApp ${businessProfile.whatsapp}.`;
+    return `O atendimento da Alta Press acontece em ${businessProfile.hours} Para retorno rapido, use o botao Falar no WhatsApp abaixo.`;
   }
 
   if (includesAny(message, ['endereco', 'onde fica', 'localizacao', 'localizacao', 'rua'])) {
@@ -99,7 +100,7 @@ export function buildMockReply(userMessage) {
   }
 
   if (includesAny(message, ['telefone', 'whatsapp', 'contato', 'email'])) {
-    return `Voce pode falar com a Alta Press pelo telefone ${businessProfile.phone}, pelo WhatsApp ${businessProfile.whatsapp} ou pelo email ${businessProfile.email}.`;
+    return `Voce pode falar com a Alta Press pelo telefone ${businessProfile.phone}, pelo botao Falar no WhatsApp abaixo ou pelo email ${businessProfile.email}.`;
   }
 
   return `${welcomeMessage} Se voce me disser qual peca procura ou qual e a sua aplicacao, eu consigo te orientar melhor e encaminhar para um orcamento com a equipe comercial.`;
