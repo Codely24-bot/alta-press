@@ -1,6 +1,8 @@
 ﻿import { useEffect, useRef, useState } from 'react';
 import SupportChatWidget from './components/SupportChatWidget';
 import { technicalContent } from './data/technicalContent';
+import altaPressMascotSupport from './assets/alta-press-mascot-support.png';
+import altaPressShowcaseGrid from './assets/alta-press-showcase-grid.png';
 import altaPressValvulaSeguranca from './assets/alta-press-valvula-seguranca.jpeg';
 import altaPressShowcaseVideo from './assets/alta-press-showcase-video.mp4';
 import productAcessorios from './assets/product-categories/acessorios.jpg';
@@ -18,7 +20,7 @@ const media = {
   valves: 'https://assets.zyrosite.com/B5g6vpLBQyiLl9pq/whatsapp-image-2026-01-06-at-18.19.41-1-6m6q7nEyogzsu0W1.jpeg',
   connections: 'https://assets.zyrosite.com/B5g6vpLBQyiLl9pq/whatsapp-image-2026-01-06-at-18.19.42-2-Wa8AAjmT5haiIglS.jpeg',
   showcaseOne: altaPressValvulaSeguranca,
-  showcaseTwo: 'https://assets.zyrosite.com/B5g6vpLBQyiLl9pq/whatsapp-image-2026-01-06-at-20.51.32-oj8sLCya4lLhNSvu.jpeg',
+  showcaseTwo: altaPressShowcaseGrid,
 };
 
 const navItems = [
@@ -955,20 +957,24 @@ function App() {
         </div>
       </footer>
 
-      <a
-        className="whatsapp-float"
-        href={whatsappBase}
-        target="_blank"
-        rel="noreferrer"
-        aria-label="Falar com a Alta Press no WhatsApp"
-      >
-        <span className="whatsapp-float__icon">
-          <WhatsAppIcon />
-        </span>
-        <span className="whatsapp-float__label">WhatsApp</span>
-      </a>
-
-      <SupportChatWidget />
+      <div className="support-dock">
+        <img className="support-dock__mascot" src={altaPressMascotSupport} alt="" aria-hidden="true" />
+        <div className="support-dock__controls">
+          <SupportChatWidget />
+          <a
+            className="whatsapp-float"
+            href={whatsappBase}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Falar com a Alta Press no WhatsApp"
+          >
+            <span className="whatsapp-float__icon">
+              <WhatsAppIcon />
+            </span>
+            <span className="whatsapp-float__label">WhatsApp</span>
+          </a>
+        </div>
+      </div>
     </div>
   );
 }

@@ -41,7 +41,7 @@ function MessageBubble({ message }) {
 
   return (
     <div className={`support-chat__message support-chat__message--${message.role}`}>
-      <div className="support-chat__message-label">{message.role === 'assistant' ? 'Alta Press IA' : 'Voce'}</div>
+      <div className="support-chat__message-label">{message.role === 'assistant' ? 'Adribot' : 'Voce'}</div>
       <p>{content}</p>
       {shouldShowWhatsAppButton ? (
         <a className="support-chat__whatsapp-button" href={businessProfile.whatsappUrl} target="_blank" rel="noreferrer">
@@ -61,6 +61,7 @@ function createMessage(role, content) {
 }
 
 export default function SupportChatWidget() {
+  const launcherMessage = 'Ol\u00E1, sou o Adribot, posso ajudar?';
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [inputValue, setInputValue] = useState('');
@@ -124,7 +125,7 @@ export default function SupportChatWidget() {
               <img className="support-chat__brand-logo" src={altaPressChatLogo} alt="Logo Alta Press" />
               <div>
                 <span className="support-chat__eyebrow">Assistente virtual</span>
-                <strong>Alta Press IA</strong>
+                <strong>Adribot</strong>
               </div>
             </div>
 
@@ -150,7 +151,7 @@ export default function SupportChatWidget() {
 
             {isLoading ? (
               <div className="support-chat__typing" aria-live="polite">
-                Alta Press IA esta digitando...
+                Adribot esta digitando...
               </div>
             ) : null}
           </div>
@@ -175,16 +176,10 @@ export default function SupportChatWidget() {
         className="support-chat__launcher"
         type="button"
         aria-expanded={isOpen}
-        aria-label="Abrir chat de atendimento"
+        aria-label="Abrir chat com o Adribot"
         onClick={() => setIsOpen((currentValue) => !currentValue)}
       >
-        <span className="support-chat__launcher-icon">
-          <img src={altaPressChatLogo} alt="" />
-        </span>
-        <span className="support-chat__launcher-copy">
-          <strong>ALTA PRESS IA</strong>
-          <small>Converse com a Alta Press</small>
-        </span>
+        <span className="support-chat__launcher-copy">{launcherMessage}</span>
       </button>
     </div>
   );
