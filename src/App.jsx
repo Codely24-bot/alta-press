@@ -10,6 +10,8 @@ import productConexoes from './assets/product-categories/conexoes.png';
 import productFlanges from './assets/product-categories/flanges.png';
 import productInstrumentos from './assets/product-categories/instrumentos.jpg';
 import productValvulas from './assets/product-categories/valvulas.jpg';
+import productValvulaAngular from './assets/product-valves/valvula-angular.png';
+import productValvulaBorboleta from './assets/product-valves/valvula-borboleta.png';
 
 const media = {
   logo: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,fit=crop/B5g6vpLBQyiLl9pq/img_2142-wRwrPYrp3s0MgKXt.PNG',
@@ -82,7 +84,25 @@ const productCategories = [
     title: 'Válvulas',
     slug: 'valvulas',
     image: productValvulas,
-    items: ['Angular', 'Borboleta', 'Descarga de caldeira', 'Diafragma', 'Esfera', 'Gaveta', 'Globo', 'Guilhotina', 'Macho', 'Mangote', 'Para hidrante', 'Passagem reta', 'Redutora de pressão', 'Retenção', 'Segurança e alívio', 'Solenóide', 'Start-up'],
+    items: [
+      { label: 'Angular', image: productValvulaAngular, alt: 'Válvula angular da Alta Press.' },
+      { label: 'Borboleta', image: productValvulaBorboleta, alt: 'Válvula borboleta da Alta Press.' },
+      'Descarga de caldeira',
+      'Diafragma',
+      'Esfera',
+      'Gaveta',
+      'Globo',
+      'Guilhotina',
+      'Macho',
+      'Mangote',
+      'Para hidrante',
+      'Passagem reta',
+      'Redutora de pressão',
+      'Retenção',
+      'Segurança e alívio',
+      'Solenóide',
+      'Start-up',
+    ],
   },
   {
     title: 'Flanges',
@@ -297,14 +317,23 @@ function ProductCategoryPage({ category, onNavigate }) {
             <div className="product-page__items">
               {category.items.map((item) => {
                 const label = typeof item === 'string' ? item : item.label;
+                const image = typeof item === 'string' ? null : item.image;
+                const alt = typeof item === 'string' ? '' : item.alt ?? label;
 
                 return (
-                <div key={label} className="product-page__item">
-                  <span>{label}</span>
-                  <a href={whatsappBase} target="_blank" rel="noreferrer" aria-label={`Consultar ${label}`}>
-                    Consultar &rarr;
-                  </a>
-                </div>
+                  <div key={label} className={`product-page__item ${image ? 'product-page__item--featured' : ''}`}>
+                    {image ? (
+                      <div className="product-page__item-media">
+                        <img src={image} alt={alt} />
+                      </div>
+                    ) : null}
+                    <div className="product-page__item-copy">
+                      <span>{label}</span>
+                      <a href={whatsappBase} target="_blank" rel="noreferrer" aria-label={`Consultar ${label}`}>
+                        Consultar &rarr;
+                      </a>
+                    </div>
+                  </div>
                 );
               })}
             </div>
