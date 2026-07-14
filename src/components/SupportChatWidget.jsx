@@ -41,7 +41,7 @@ function MessageBubble({ message }) {
 
   return (
     <div className={`support-chat__message support-chat__message--${message.role}`}>
-      <div className="support-chat__message-label">{message.role === 'assistant' ? 'Adribot' : 'Voce'}</div>
+      <div className="support-chat__message-label">{message.role === 'assistant' ? 'Adriano' : 'Voce'}</div>
       <p>{content}</p>
       {shouldShowWhatsAppButton ? (
         <a className="support-chat__whatsapp-button" href={businessProfile.whatsappUrl} target="_blank" rel="noreferrer">
@@ -61,7 +61,7 @@ function createMessage(role, content) {
 }
 
 export default function SupportChatWidget() {
-  const launcherMessage = 'Ol\u00E1, sou o Adribot, posso ajudar?';
+  const launcherMessage = 'Ol\u00E1, sou o Adriano, posso ajudar?';
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [inputValue, setInputValue] = useState('');
@@ -125,7 +125,7 @@ export default function SupportChatWidget() {
               <img className="support-chat__brand-logo" src={altaPressChatLogo} alt="Logo Alta Press" />
               <div>
                 <span className="support-chat__eyebrow">Assistente virtual</span>
-                <strong>Adribot</strong>
+                <strong>Adriano</strong>
               </div>
             </div>
 
@@ -151,7 +151,7 @@ export default function SupportChatWidget() {
 
             {isLoading ? (
               <div className="support-chat__typing" aria-live="polite">
-                Adribot esta digitando...
+                Adriano esta digitando...
               </div>
             ) : null}
           </div>
@@ -176,7 +176,7 @@ export default function SupportChatWidget() {
         className="support-chat__launcher"
         type="button"
         aria-expanded={isOpen}
-        aria-label="Abrir chat com o Adribot"
+        aria-label="Abrir chat com o Adriano"
         onClick={() => setIsOpen((currentValue) => !currentValue)}
       >
         <span className="support-chat__launcher-copy">{launcherMessage}</span>
