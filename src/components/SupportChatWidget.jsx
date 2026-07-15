@@ -5,8 +5,8 @@ import altaPressChatLogo from '../assets/alta-press-chat-logo.png';
 
 const compactPanelStyle = {
   width: 'min(332px, calc(100vw - 32px))',
-  height: 'min(500px, calc(100dvh - var(--header-height) - 112px))',
-  maxHeight: '500px',
+  height: 'min(440px, calc(100dvh - var(--header-height) - 132px))',
+  maxHeight: '440px',
 };
 
 function CloseIcon() {
