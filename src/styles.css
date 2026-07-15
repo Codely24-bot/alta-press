@@ -1452,19 +1452,19 @@ input {
 
 .support-dock {
   position: fixed;
-  right: 18px;
+  right: 12px;
   bottom: 16px;
   z-index: 40;
-  width: min(344px, calc(100vw - 24px));
-  height: 222px;
+  width: min(382px, calc(100vw - 20px));
+  height: 214px;
   pointer-events: none;
 }
 
 .support-dock__mascot {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  width: clamp(108px, 11vw, 150px);
+  right: -10px;
+  bottom: -2px;
+  width: clamp(92px, 9vw, 122px);
   filter: drop-shadow(0 20px 30px rgba(13, 20, 26, 0.2));
   pointer-events: none;
   user-select: none;
@@ -1472,11 +1472,11 @@ input {
 
 .support-dock__controls {
   position: absolute;
-  right: 0;
-  bottom: 34px;
+  right: 56px;
+  bottom: 28px;
   display: grid;
   justify-items: end;
-  gap: 12px;
+  gap: 10px;
   pointer-events: auto;
 }
 
@@ -1528,14 +1528,14 @@ input {
   display: grid;
   justify-items: end;
   gap: 8px;
-  margin-right: 4px;
-  margin-bottom: 154px;
+  margin-right: 0;
+  margin-bottom: 140px;
 }
 
 .support-chat__panel {
-  width: min(336px, calc(100vw - 40px));
-  height: min(548px, calc(100vh - var(--header-height) - 96px));
-  max-height: min(548px, calc(100vh - var(--header-height) - 96px));
+  width: min(332px, calc(100vw - 32px));
+  height: min(500px, calc(100vh - var(--header-height) - 92px));
+  max-height: min(500px, calc(100vh - var(--header-height) - 92px));
   display: flex;
   flex-direction: column;
   border-radius: 24px;
@@ -2162,21 +2162,21 @@ input {
   }
 
   .support-dock {
-    right: 10px;
+    right: 6px;
     bottom: 12px;
-    width: min(286px, calc(100vw - 12px));
-    height: 188px;
+    width: min(334px, calc(100vw - 10px));
+    height: 176px;
   }
 
   .support-dock__mascot {
-    right: -6px;
-    bottom: 0;
-    width: 104px;
+    right: -12px;
+    bottom: -2px;
+    width: 86px;
   }
 
   .support-dock__controls {
-    right: 46px;
-    bottom: 24px;
+    right: 42px;
+    bottom: 18px;
     gap: 8px;
   }
 
@@ -2189,13 +2189,13 @@ input {
 
   .support-chat {
     margin-right: 0;
-    margin-bottom: 126px;
+    margin-bottom: 110px;
   }
 
   .support-chat__panel {
-    width: min(292px, calc(100vw - 18px));
-    height: min(456px, calc(100vh - var(--header-height) - 84px));
-    max-height: min(456px, calc(100vh - var(--header-height) - 84px));
+    width: min(320px, calc(100vw - 16px));
+    height: min(448px, calc(100vh - var(--header-height) - 82px));
+    max-height: min(448px, calc(100vh - var(--header-height) - 82px));
   }
 }
 
@@ -2253,21 +2253,21 @@ input {
   }
 
   .support-dock {
-    width: min(208px, calc(100vw - 8px));
-    height: 148px;
-    right: 4px;
+    width: min(238px, calc(100vw - 6px));
+    height: 142px;
+    right: 0;
     bottom: 8px;
   }
 
   .support-dock__mascot {
-    right: -8px;
-    bottom: -2px;
-    width: 74px;
+    right: -14px;
+    bottom: -4px;
+    width: 62px;
   }
 
   .support-dock__controls {
-    right: 42px;
-    bottom: 16px;
+    right: 30px;
+    bottom: 12px;
     gap: 6px;
   }
 
@@ -2281,7 +2281,7 @@ input {
 
   .support-chat {
     margin-right: 0;
-    margin-bottom: 104px;
+    margin-bottom: 92px;
   }
 
   .support-chat__launcher::after {
@@ -2300,9 +2300,9 @@ input {
   }
 
   .support-chat__panel {
-    width: min(286px, calc(100vw - 16px));
-    height: min(372px, calc(100dvh - var(--header-height) - 92px));
-    max-height: calc(100dvh - var(--header-height) - 92px);
+    width: min(312px, calc(100vw - 12px));
+    height: min(372px, calc(100dvh - var(--header-height) - 88px));
+    max-height: calc(100dvh - var(--header-height) - 88px);
   }
 
   .contact-form input {

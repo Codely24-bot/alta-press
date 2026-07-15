@@ -4,9 +4,9 @@ import { createInitialMessages, requestSupportReply } from '../lib/supportChatAp
 import altaPressChatLogo from '../assets/alta-press-chat-logo.png';
 
 const compactPanelStyle = {
-  width: 'min(260px, calc(100vw - 32px))',
-  height: 'min(420px, calc(100dvh - var(--header-height) - 112px))',
-  maxHeight: '420px',
+  width: 'min(332px, calc(100vw - 32px))',
+  height: 'min(500px, calc(100dvh - var(--header-height) - 112px))',
+  maxHeight: '500px',
 };
 
 function CloseIcon() {
