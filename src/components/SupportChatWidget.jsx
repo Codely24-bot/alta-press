@@ -36,18 +36,11 @@ function formatMessageContent(content) {
 
 function MessageBubble({ message }) {
   const content = formatMessageContent(message.content);
-  const shouldShowWhatsAppButton =
-    message.role === 'assistant' && /whatsapp|orçamento|orcamento|contato/i.test(content);
 
   return (
     <div className={`support-chat__message support-chat__message--${message.role}`}>
       <div className="support-chat__message-label">{message.role === 'assistant' ? 'Adriano' : 'Voce'}</div>
       <p>{content}</p>
-      {shouldShowWhatsAppButton ? (
-        <a className="support-chat__whatsapp-button" href={businessProfile.whatsappUrl} target="_blank" rel="noreferrer">
-          Falar no WhatsApp
-        </a>
-      ) : null}
     </div>
   );
 }
@@ -103,7 +96,7 @@ export default function SupportChatWidget() {
         ...currentMessages,
         createMessage(
           'assistant',
-          `Nao consegui responder agora. Use o botao Falar no WhatsApp abaixo ou envie um email para ${businessProfile.email}.`,
+          `Nao consegui responder agora. Envie um email para ${businessProfile.email} ou tente novamente em instantes.`,
         ),
       ]);
     } finally {
