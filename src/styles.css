@@ -2162,37 +2162,40 @@ input {
   }
 
   .support-dock {
-    right: 16px;
-    bottom: 14px;
-    width: min(308px, calc(100vw - 16px));
-    height: 202px;
+    right: 10px;
+    bottom: 12px;
+    width: min(286px, calc(100vw - 12px));
+    height: 188px;
   }
 
   .support-dock__mascot {
-    right: 0;
-    width: 126px;
+    right: -6px;
+    bottom: 0;
+    width: 104px;
   }
 
   .support-dock__controls {
-    bottom: 28px;
-    gap: 10px;
+    right: 46px;
+    bottom: 24px;
+    gap: 8px;
   }
 
   .support-chat__launcher {
-    max-width: 148px;
-    min-height: 58px;
-    margin-right: 12px;
+    max-width: 156px;
+    min-height: 54px;
+    margin-right: 0;
+    padding: 10px 12px;
   }
 
   .support-chat {
-    margin-right: 2px;
-    margin-bottom: 142px;
+    margin-right: 0;
+    margin-bottom: 126px;
   }
 
   .support-chat__panel {
-    width: min(308px, calc(100vw - 22px));
-    height: min(484px, calc(100vh - var(--header-height) - 88px));
-    max-height: min(484px, calc(100vh - var(--header-height) - 88px));
+    width: min(292px, calc(100vw - 18px));
+    height: min(456px, calc(100vh - var(--header-height) - 84px));
+    max-height: min(456px, calc(100vh - var(--header-height) - 84px));
   }
 }
 
@@ -2208,26 +2211,6 @@ input {
   .brand img,
   .footer-logo {
     width: 118px;
-  }
-
-  .support-chat {
-    right: 10px;
-    bottom: 74px;
-  }
-
-  .support-chat__panel {
-    width: min(300px, calc(100vw - 20px));
-    height: min(390px, calc(100dvh - var(--header-height) - 96px));
-    max-height: calc(100dvh - var(--header-height) - 96px);
-  }
-
-  .support-chat__launcher {
-    min-height: 40px;
-    padding: 5px;
-  }
-
-  .support-chat__launcher-copy {
-    display: none;
   }
 
   .hero h1,
@@ -2270,44 +2253,56 @@ input {
   }
 
   .support-dock {
-    width: min(232px, calc(100vw - 12px));
-    height: 170px;
-    right: 8px;
-    bottom: 10px;
+    width: min(208px, calc(100vw - 8px));
+    height: 148px;
+    right: 4px;
+    bottom: 8px;
   }
 
   .support-dock__mascot {
-    right: 0;
-    width: 98px;
+    right: -8px;
+    bottom: -2px;
+    width: 74px;
   }
 
   .support-dock__controls {
-    bottom: 20px;
+    right: 42px;
+    bottom: 16px;
+    gap: 6px;
   }
 
   .support-chat__launcher {
-    max-width: 124px;
-    min-height: 48px;
-    padding: 9px 10px;
-    margin-right: 6px;
+    max-width: 132px;
+    min-height: 44px;
+    padding: 8px 10px;
+    margin-right: 0;
     border-radius: 999px;
   }
 
   .support-chat {
     margin-right: 0;
-    margin-bottom: 120px;
+    margin-bottom: 104px;
   }
 
   .support-chat__launcher::after {
-    right: 18px;
-    bottom: -7px;
-    width: 16px;
-    height: 16px;
+    right: 14px;
+    bottom: -6px;
+    width: 14px;
+    height: 14px;
   }
 
   .support-chat__launcher-copy {
-    font-size: 0.7rem;
-    line-height: 1.22;
+    display: block;
+    font-size: 0.62rem;
+    line-height: 1.16;
+    max-width: 9ch;
+    text-wrap: balance;
+  }
+
+  .support-chat__panel {
+    width: min(286px, calc(100vw - 16px));
+    height: min(372px, calc(100dvh - var(--header-height) - 92px));
+    max-height: calc(100dvh - var(--header-height) - 92px);
   }
 
   .contact-form input {
