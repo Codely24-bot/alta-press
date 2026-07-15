@@ -12,6 +12,19 @@ import productInstrumentos from './assets/product-categories/instrumentos.jpg';
 import productValvulas from './assets/product-categories/valvulas.jpg';
 import productValvulaAngular from './assets/product-valves/valvula-angular.png';
 import productValvulaBorboleta from './assets/product-valves/valvula-borboleta.png';
+import productValvulaDescargaCaldeira from './assets/product-valves/valvula-descarga-caldeira.png';
+import productValvulaDiafragma from './assets/product-valves/valvula-diafragma.png';
+import productValvulaEsfera from './assets/product-valves/valvula-esfera.jpg';
+import productValvulaGaveta from './assets/product-valves/valvula-gaveta.png';
+import productValvulaGlobo from './assets/product-valves/valvula-globo.png';
+import productValvulaMangote from './assets/product-valves/valvula-mangote.png';
+import productValvulaParaHidrante from './assets/product-valves/valvula-para-hidrante.jpeg';
+import productValvulaPassagemReta from './assets/product-valves/valvula-passagem-reta.jpg';
+import productValvulaRedutoraPressao from './assets/product-valves/valvula-redutora-pressao.jpg';
+import productValvulaRetencao from './assets/product-valves/valvula-retencao.jpg';
+import productValvulaSegurancaAlivio from './assets/product-valves/valvula-seguranca-alivio.jpg';
+import productValvulaSolenoide from './assets/product-valves/valvula-solenoide.jpg';
+import productValvulaStartUp from './assets/product-valves/valvula-start-up.avif';
 
 const media = {
   logo: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,fit=crop/B5g6vpLBQyiLl9pq/img_2142-wRwrPYrp3s0MgKXt.PNG',
@@ -87,21 +100,21 @@ const productCategories = [
     items: [
       { label: 'Angular', image: productValvulaAngular, alt: 'Válvula angular da Alta Press.' },
       { label: 'Borboleta', image: productValvulaBorboleta, alt: 'Válvula borboleta da Alta Press.' },
-      'Descarga de caldeira',
-      'Diafragma',
-      'Esfera',
-      'Gaveta',
-      'Globo',
+      { label: 'Descarga de caldeira', image: productValvulaDescargaCaldeira, alt: 'Válvula de descarga de caldeira da Alta Press.' },
+      { label: 'Diafragma', image: productValvulaDiafragma, alt: 'Válvula diafragma da Alta Press.' },
+      { label: 'Esfera', image: productValvulaEsfera, alt: 'Válvula esfera da Alta Press.' },
+      { label: 'Gaveta', image: productValvulaGaveta, alt: 'Válvula gaveta da Alta Press.' },
+      { label: 'Globo', image: productValvulaGlobo, alt: 'Válvula globo da Alta Press.' },
       'Guilhotina',
       'Macho',
-      'Mangote',
-      'Para hidrante',
-      'Passagem reta',
-      'Redutora de pressão',
-      'Retenção',
-      'Segurança e alívio',
-      'Solenóide',
-      'Start-up',
+      { label: 'Mangote', image: productValvulaMangote, alt: 'Válvula mangote da Alta Press.' },
+      { label: 'Para hidrante', image: productValvulaParaHidrante, alt: 'Válvula para hidrante da Alta Press.' },
+      { label: 'Passagem reta', image: productValvulaPassagemReta, alt: 'Válvula de passagem reta da Alta Press.' },
+      { label: 'Redutora de pressão', image: productValvulaRedutoraPressao, alt: 'Válvula redutora de pressão da Alta Press.' },
+      { label: 'Retenção', image: productValvulaRetencao, alt: 'Válvula de retenção da Alta Press.' },
+      { label: 'Segurança e alívio', image: productValvulaSegurancaAlivio, alt: 'Válvula de segurança e alívio da Alta Press.' },
+      { label: 'Solenóide', image: productValvulaSolenoide, alt: 'Válvula solenóide da Alta Press.' },
+      { label: 'Start-up', image: productValvulaStartUp, alt: 'Válvula start-up da Alta Press.' },
     ],
   },
   {

@@ -2171,7 +2171,7 @@ input {
   .support-dock__mascot {
     right: -12px;
     bottom: -2px;
-    width: 86px;
+    width: 98px;
   }
 
   .support-dock__controls {
@@ -2262,7 +2262,7 @@ input {
   .support-dock__mascot {
     right: -14px;
     bottom: -4px;
-    width: 62px;
+    width: 74px;
   }
 
   .support-dock__controls {
@@ -2285,10 +2285,10 @@ input {
   }
 
   .support-chat__launcher::after {
-    right: 8px;
-    bottom: -6px;
-    width: 14px;
-    height: 14px;
+    right: 14px;
+    bottom: -7px;
+    width: 16px;
+    height: 16px;
   }
 
   .support-chat__launcher-copy {
