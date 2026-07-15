@@ -1469,7 +1469,7 @@ input {
   position: absolute;
   right: -10px;
   bottom: -2px;
-  width: clamp(92px, 9vw, 122px);
+  width: clamp(122px, 12vw, 164px);
   filter: drop-shadow(0 20px 30px rgba(13, 20, 26, 0.2));
   pointer-events: none;
   user-select: none;
@@ -1478,7 +1478,7 @@ input {
 .support-dock__controls {
   position: absolute;
   right: 18px;
-  bottom: 162px;
+  bottom: 194px;
   display: grid;
   justify-items: end;
   gap: 10px;
@@ -2176,12 +2176,12 @@ input {
   .support-dock__mascot {
     right: -12px;
     bottom: -2px;
-    width: 112px;
+    width: 146px;
   }
 
   .support-dock__controls {
     right: 14px;
-    bottom: 118px;
+    bottom: 148px;
     gap: 8px;
   }
 
@@ -2267,12 +2267,12 @@ input {
   .support-dock__mascot {
     right: -14px;
     bottom: -4px;
-    width: 88px;
+    width: 120px;
   }
 
   .support-dock__controls {
     right: 8px;
-    bottom: 106px;
+    bottom: 132px;
     gap: 6px;
   }
 
