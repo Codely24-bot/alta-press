@@ -3,6 +3,12 @@ import { businessProfile } from '../../shared/supportKnowledge';
 import { createInitialMessages, requestSupportReply } from '../lib/supportChatApi';
 import altaPressChatLogo from '../assets/alta-press-chat-logo.png';
 
+const compactPanelStyle = {
+  width: 'min(260px, calc(100vw - 32px))',
+  height: 'min(420px, calc(100dvh - var(--header-height) - 112px))',
+  maxHeight: '420px',
+};
+
 function CloseIcon() {
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
@@ -112,7 +118,7 @@ export default function SupportChatWidget() {
   return (
     <div className={`support-chat ${isOpen ? 'is-open' : ''}`}>
       {isOpen ? (
-        <section className="support-chat__panel" aria-label="Assistente virtual da Alta Press">
+        <section className="support-chat__panel" style={compactPanelStyle} aria-label="Assistente virtual da Alta Press">
           <header className="support-chat__header">
             <div className="support-chat__brand">
               <img className="support-chat__brand-logo" src={altaPressChatLogo} alt="Logo Alta Press" />
