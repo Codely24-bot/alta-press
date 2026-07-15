@@ -1473,7 +1473,7 @@ input {
 .support-dock__controls {
   position: absolute;
   right: 18px;
-  bottom: 84px;
+  bottom: 162px;
   display: grid;
   justify-items: end;
   gap: 10px;
@@ -1732,7 +1732,7 @@ input {
   position: relative;
   display: inline-flex;
   align-items: center;
-  max-width: 174px;
+  max-width: 182px;
   min-height: 64px;
   padding: 12px 14px;
   margin-right: 0;
@@ -1747,8 +1747,8 @@ input {
 .support-chat__launcher::after {
   content: '';
   position: absolute;
-  right: 14px;
-  bottom: -9px;
+  right: 20px;
+  bottom: -8px;
   width: 18px;
   height: 18px;
   border-right: 1px solid rgba(26, 38, 51, 0.1);
@@ -2175,13 +2175,13 @@ input {
   }
 
   .support-dock__controls {
-    right: 16px;
-    bottom: 72px;
+    right: 14px;
+    bottom: 92px;
     gap: 8px;
   }
 
   .support-chat__launcher {
-    max-width: 156px;
+    max-width: 150px;
     min-height: 54px;
     margin-right: 0;
     padding: 10px 12px;
@@ -2266,13 +2266,13 @@ input {
   }
 
   .support-dock__controls {
-    right: 10px;
-    bottom: 62px;
+    right: 8px;
+    bottom: 80px;
     gap: 6px;
   }
 
   .support-chat__launcher {
-    max-width: 132px;
+    max-width: 128px;
     min-height: 44px;
     padding: 8px 10px;
     margin-right: 0;
@@ -2285,7 +2285,7 @@ input {
   }
 
   .support-chat__launcher::after {
-    right: 10px;
+    right: 8px;
     bottom: -6px;
     width: 14px;
     height: 14px;
