@@ -156,17 +156,107 @@ const productCategories = [
     slug: 'flanges',
     image: productFlanges,
     items: [
-      { label: 'Flange Cego', image: productFlangeCego, alt: 'Flange cego da AltaPress.' },
-      { label: 'Flange Pescoço', image: productFlangePescoco, alt: 'Flange pescoço da AltaPress.' },
-      { label: 'Flange Slip On', image: productFlangeSlipOn, alt: 'Flange slip on da AltaPress.' },
-      { label: 'Flange Encaixe', image: productFlangeEncaixe, alt: 'Flange de encaixe da AltaPress.' },
-      { label: 'Flange Roscado', image: productFlangeRoscado, alt: 'Flange roscado da AltaPress.' },
-      { label: 'Flange Solto', image: productFlangeSolto, alt: 'Flange solto da AltaPress.' },
-      { label: 'Flange Liso', image: productFlangeLiso, alt: 'Flange liso da AltaPress.' },
-      { label: 'Orifício Pescoço', image: productOrificioPescoco, alt: 'Orifício com pescoço da AltaPress.' },
-      { label: 'Orifício Slip On', image: productOrificioSlipOn, alt: 'Orifício tipo slip on da AltaPress.' },
-      { label: 'Orifício Roscado', image: productOrificioRoscado, alt: 'Orifício tipo roscado da AltaPress.' },
-      { label: 'De Redução', image: productFlangeReducao, alt: 'Flange de redução da AltaPress.' },
+      {
+        label: 'Flange Cego',
+        image: productFlangeCego,
+        alt: 'Flange cego da AltaPress.',
+        details: ['ANSI 150 a 2500 lbs', 'AWWA B/D/E/F', 'DIN PN 6 a PN 100', 'JIS 5K a 63K'],
+        standards: [
+          { label: 'ANSI', options: ['150 lbs', '300 lbs', '600 lbs', '900 lbs', '1500 lbs', '2500 lbs'] },
+          { label: 'AWWA', options: ['Classe B (86 PSI)', 'Classe D (175-150 PSI)', 'Classe E (275 PSI)', 'Classe F (300 PSI)'] },
+          { label: 'DIN', options: ['Classe PN 6', 'Classe PN 10', 'Classe PN 16', 'Classe PN 25', 'Classe PN 40', 'Classe PN 64', 'Classe PN 100'] },
+          { label: 'JIS', options: ['Classe 5K', 'Classe 10K', 'Classe 16K', 'Classe 20K', 'Classe 30K', 'Classe 40K', 'Classe 63K'] },
+        ],
+      },
+      {
+        label: 'Flange Pescoço',
+        image: productFlangePescoco,
+        alt: 'Flange pescoço da AltaPress.',
+        details: ['ANSI 150 a 2500 lbs', 'DIN PN 6 a PN 100', 'JIS 30K, 40K e 63K'],
+        standards: [
+          { label: 'ANSI', options: ['150 lbs', '300 lbs', '600 lbs', '900 lbs', '1500 lbs', '2500 lbs'] },
+          { label: 'DIN', options: ['Classe PN 6', 'Classe PN 10', 'Classe PN 16', 'Classe PN 25', 'Classe PN 40', 'Classe PN 64', 'Classe PN 100'] },
+          { label: 'JIS', options: ['Classe 30K', 'Classe 40K', 'Classe 63K'] },
+        ],
+      },
+      {
+        label: 'Flange Slip On',
+        image: productFlangeSlipOn,
+        alt: 'Flange slip on da AltaPress.',
+        details: ['ANSI 150 a 2500 lbs', 'AWWA D/E', 'JIS 5K a 30K'],
+        standards: [
+          { label: 'ANSI', options: ['150 lbs', '300 lbs', '600 lbs', '900 lbs', '1500 lbs', '2500 lbs'] },
+          { label: 'AWWA', options: ['Classe D (175-150 PSI)', 'Classe E (275 PSI)'] },
+          { label: 'JIS', options: ['Classe 5K', 'Classe 10K', 'Classe 16K', 'Classe 20K', 'Classe 30K'] },
+        ],
+      },
+      {
+        label: 'Flange Encaixe',
+        image: productFlangeEncaixe,
+        alt: 'Flange de encaixe da AltaPress.',
+        details: ['ANSI 150 a 1500 lbs'],
+        standards: [{ label: 'ANSI', options: ['150 lbs', '300 lbs', '600 lbs', '900 lbs', '1500 lbs'] }],
+      },
+      {
+        label: 'Flange Roscado',
+        image: productFlangeRoscado,
+        alt: 'Flange roscado da AltaPress.',
+        details: ['ANSI 150 a 2500 lbs', 'DIN PN 6 a PN 100'],
+        standards: [
+          { label: 'ANSI', options: ['150 lbs', '300 lbs', '600 lbs', '900 lbs', '1500 lbs', '2500 lbs'] },
+          { label: 'DIN', options: ['Classe PN 6', 'Classe PN 10/PN 16', 'Classe PN 25/PN 40', 'Classe PN 64', 'Classe PN 100'] },
+        ],
+      },
+      {
+        label: 'Flange Solto',
+        image: productFlangeSolto,
+        alt: 'Flange solto da AltaPress.',
+        details: ['ANSI 150 a 2500 lbs', 'DIN para tubo com borda', 'DIN para colar com solda'],
+        standards: [
+          { label: 'ANSI', options: ['150 lbs', '300 lbs', '600 lbs', '900 lbs', '1500 lbs', '2500 lbs'] },
+          { label: 'DIN', options: ['Para tubos com borda', 'Para colar com solda'] },
+        ],
+      },
+      {
+        label: 'Flange Liso',
+        image: productFlangeLiso,
+        alt: 'Flange liso da AltaPress.',
+        details: ['ANSI 150 a 2500 lbs', 'AWWA 86 a 300 PSI', 'DIN PN6/PN10', 'JIS 5K a 63K'],
+        standards: [
+          { label: 'ANSI', options: ['150 lbs', '300 lbs', '600 lbs', '900 lbs', '1500 lbs', '2500 lbs'] },
+          { label: 'AWWA', options: ['86 PSI', '175-150 PSI', '275 PSI', '300 PSI'] },
+          { label: 'DIN', options: ['Classe PN6', 'Classe PN10'] },
+          { label: 'JIS', options: ['Classe 5K', 'Classe 10K', 'Classe 16K', 'Classe 20K', 'Classe 30K', 'Classe 40K', 'Classe 63K'] },
+        ],
+      },
+      {
+        label: 'Orifício Pescoço',
+        image: productOrificioPescoco,
+        alt: 'Orifício com pescoço da AltaPress.',
+        details: ['ANSI face ressalto', 'ANSI face RTJ'],
+        standards: [{ label: 'ANSI', options: ['Face ressalto', 'Face RTJ'] }],
+      },
+      {
+        label: 'Orifício Slip On',
+        image: productOrificioSlipOn,
+        alt: 'Orifício tipo slip on da AltaPress.',
+        details: ['ANSI 300 lbs'],
+        standards: [{ label: 'ANSI', options: ['300 lbs'] }],
+      },
+      {
+        label: 'Orifício Roscado',
+        image: productOrificioRoscado,
+        alt: 'Orifício tipo roscado da AltaPress.',
+        details: ['ANSI 300 lbs'],
+        standards: [{ label: 'ANSI', options: ['300 lbs'] }],
+      },
+      {
+        label: 'De Redução',
+        image: productFlangeReducao,
+        alt: 'Flange de redução da AltaPress.',
+        details: ['ANSI 150 a 2500 lbs'],
+        standards: [{ label: 'ANSI', options: ['150-2500 lbs'] }],
+      },
     ],
   },
   {
@@ -205,7 +295,7 @@ const productCategories = [
     ],
   },
   {
-    title: 'Instrumentos',
+    title: 'Instrumentação',
     slug: 'instrumentos',
     image: productInstrumentos,
     items: [
@@ -360,8 +450,36 @@ function normalizePathname(pathname) {
   return pathname.replace(/\/+$/, '');
 }
 
+function slugifyProductLabel(label) {
+  return label
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+function getTechnicalSpec(specs, itemSlug, standardSlug, optionSlug) {
+  const standardSpecs = specs[itemSlug]?.[standardSlug];
+
+  if (!standardSpecs) {
+    return null;
+  }
+
+  if (standardSpecs[optionSlug]) {
+    return standardSpecs[optionSlug];
+  }
+
+  return Object.values(standardSpecs).find((spec) => {
+    const titleSlug = slugifyProductLabel(spec.title ?? '');
+    const sourceSlug = slugifyProductLabel(spec.sourceUrl?.split('/').filter(Boolean).at(-1) ?? '');
+
+    return titleSlug === optionSlug || sourceSlug === optionSlug || titleSlug.endsWith(optionSlug) || optionSlug.endsWith(titleSlug);
+  }) ?? null;
+}
+
 function getSectionIdFromLocation(location) {
-  if (getProductCategoryFromPath(location.pathname)) {
+  if (getProductRouteFromPath(location.pathname)) {
     return null;
   }
 
@@ -377,6 +495,34 @@ function getSectionIdFromLocation(location) {
 function getProductCategoryFromPath(pathname) {
   const normalizedPath = normalizePathname(pathname);
   return productCategories.find((category) => normalizedPath === `/produtos/${category.slug}`);
+}
+
+function getProductRouteFromPath(pathname) {
+  const normalizedPath = normalizePathname(pathname);
+  const parts = normalizedPath.split('/').filter(Boolean);
+
+  if (parts[0] !== 'produtos' || !parts[1]) {
+    return null;
+  }
+
+  const category = productCategories.find((item) => item.slug === parts[1]);
+
+  if (!category) {
+    return null;
+  }
+
+  const itemSlug = parts[2];
+  const productItem = itemSlug
+    ? category.items.find((item) => slugifyProductLabel(typeof item === 'string' ? item : item.label) === itemSlug)
+    : null;
+  const standardSlug = parts[3];
+  const standards = productItem && typeof productItem !== 'string' ? productItem.standards ?? [] : [];
+  const standard = standardSlug
+    ? standards.find((item) => slugifyProductLabel(item.label) === standardSlug)
+    : null;
+  const optionSlug = parts[4];
+
+  return { category, item: productItem ?? null, standard: standard ?? null, optionSlug: optionSlug ?? null };
 }
 
 function scrollToSection(sectionId, behavior = 'smooth') {
@@ -396,10 +542,6 @@ function ProductCategoryPage({ category, onNavigate }) {
   return (
     <section className="product-page section-surface">
       <div className="container">
-        <a className="product-page__back" href="/produtos" onClick={onNavigate('/produtos', 'produtos')}>
-          ← Voltar para produtos
-        </a>
-
         <div className="product-page__intro">
           <span className="eyebrow eyebrow-dark">Linha de produtos</span>
           <h1>{category.title}</h1>
@@ -409,54 +551,386 @@ function ProductCategoryPage({ category, onNavigate }) {
           </p>
         </div>
 
-        <div className="product-page__content">
-          <article className="product-page__list-card">
-            <h2>Subcategorias disponíveis</h2>
-            <div className="product-page__items">
+        <div className="product-page__layout">
+          <aside className="product-page__sidebar" aria-label="Categorias de produtos">
+            {productCategories.map((item) => {
+              const isActive = item.slug === category.slug;
+
+              return (
+                <a
+                  key={item.slug}
+                  className={isActive ? 'is-active' : ''}
+                  href={`/produtos/${item.slug}`}
+                  onClick={onNavigate(`/produtos/${item.slug}`)}
+                  aria-current={isActive ? 'page' : undefined}
+                >
+                  {item.title}
+                  {isActive ? <span aria-hidden="true">›</span> : null}
+                </a>
+              );
+            })}
+          </aside>
+
+          <article className="product-page__catalog" aria-label={`Itens da linha ${category.title}`}>
+            <div className="product-page__grid">
               {category.items.map((item) => {
                 const label = typeof item === 'string' ? item : item.label;
                 const image = typeof item === 'string' ? null : item.image;
                 const alt = typeof item === 'string' ? '' : item.alt ?? label;
                 const mediaClassName = typeof item === 'string' ? '' : item.mediaClassName ?? '';
+                const details = typeof item === 'string' ? [] : item.details ?? [];
+                const itemHref = `/produtos/${category.slug}/${slugifyProductLabel(label)}`;
 
                 return (
-                  <div key={label} className={`product-page__item ${image ? 'product-page__item--featured' : ''}`}>
-                    {image ? (
-                      <div className={`product-page__item-media ${mediaClassName}`.trim()}>
+                  <a
+                    key={label}
+                    className="product-page__card"
+                    href={itemHref}
+                    onClick={onNavigate(itemHref)}
+                    aria-label={`Ver opções de ${label}`}
+                  >
+                    <div className={`product-page__card-media ${mediaClassName}`.trim()}>
+                      {image ? (
                         <img src={image} alt={alt} />
-                      </div>
-                    ) : null}
-                    <div className="product-page__item-copy">
-                      <span>{label}</span>
-                      <a href={whatsappBase} target="_blank" rel="noreferrer" aria-label={`Consultar ${label}`}>
-                        Consultar &rarr;
-                      </a>
+                      ) : (
+                        <span aria-hidden="true">{label.slice(0, 1)}</span>
+                      )}
                     </div>
-                  </div>
+                    <div className="product-page__card-caption">
+                      <strong>{label}</strong>
+                      {details.length ? (
+                        <div className="product-page__card-details" aria-label={`Normas e classes de ${label}`}>
+                          {details.map((detail) => (
+                            <small key={detail}>{detail}</small>
+                          ))}
+                        </div>
+                      ) : null}
+                    </div>
+                  </a>
                 );
               })}
             </div>
           </article>
-
-          <aside className="product-page__cta">
-            <span className="eyebrow">Precisa de ajuda?</span>
-            <h2>Encontre a peça certa para sua instalação.</h2>
-            <p>Fale com a AltaPress para confirmar disponibilidade, especificações e condições de fornecimento.</p>
-            <a className="button button-secondary" href={whatsappBase} target="_blank" rel="noreferrer">
-              Fale Conosco
-            </a>
-          </aside>
         </div>
 
-        <div className="product-page__other-categories">
-          <h2>Outras categorias</h2>
-          <div>
-            {productCategories.filter((item) => item.slug !== category.slug).map((item) => (
-              <a key={item.slug} href={`/produtos/${item.slug}`} onClick={onNavigate(`/produtos/${item.slug}`)}>
-                {item.title} &rarr;
-              </a>
-            ))}
-          </div>
+        <div className="product-page__mobile-actions">
+          <a className="button button-primary" href={whatsappBase} target="_blank" rel="noreferrer">
+            Fale Conosco
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ProductItemPage({ category, productItem, onNavigate }) {
+  const label = typeof productItem === 'string' ? productItem : productItem.label;
+  const itemSlug = slugifyProductLabel(label);
+  const image = typeof productItem === 'string' ? null : productItem.image;
+  const alt = typeof productItem === 'string' ? '' : productItem.alt ?? label;
+  const mediaClassName = typeof productItem === 'string' ? '' : productItem.mediaClassName ?? '';
+  const standards = typeof productItem === 'string' ? [] : productItem.standards ?? [];
+  const fallbackCards = [
+    {
+      label: 'Especificação sob consulta',
+      options: ['Material', 'Bitola', 'Classe de pressão', 'Aplicação'],
+    },
+  ];
+  const cards = standards.length ? standards : fallbackCards;
+
+  return (
+    <section className="product-page section-surface">
+      <div className="container">
+        <div className="product-page__intro">
+          <span className="eyebrow eyebrow-dark">{category.title}</span>
+          <h1>{label}</h1>
+          <p>
+            Selecione uma norma, classe ou condição de fornecimento para falar com a equipe da AltaPress e confirmar a
+            peça correta para a sua aplicação.
+          </p>
+        </div>
+
+        <div className="product-page__layout">
+          <aside className="product-page__sidebar" aria-label="Categorias de produtos">
+            {productCategories.map((item) => {
+              const isActive = item.slug === category.slug;
+
+              return (
+                <a
+                  key={item.slug}
+                  className={isActive ? 'is-active' : ''}
+                  href={`/produtos/${item.slug}`}
+                  onClick={onNavigate(`/produtos/${item.slug}`)}
+                  aria-current={isActive ? 'page' : undefined}
+                >
+                  {item.title}
+                  {isActive ? <span aria-hidden="true">›</span> : null}
+                </a>
+              );
+            })}
+          </aside>
+
+          <article className="product-page__catalog" aria-label={`Opções de ${label}`}>
+            <a className="product-page__back-inline" href={`/produtos/${category.slug}`} onClick={onNavigate(`/produtos/${category.slug}`)}>
+              Voltar para {category.title}
+            </a>
+            <div className="product-page__grid">
+              {cards.map((card) => (
+                <a
+                  key={card.label}
+                  className="product-page__card product-page__card--detail"
+                  href={standards.length ? `/produtos/${category.slug}/${slugifyProductLabel(label)}/${slugifyProductLabel(card.label)}` : whatsappBase}
+                  target={standards.length ? undefined : '_blank'}
+                  rel={standards.length ? undefined : 'noreferrer'}
+                  onClick={standards.length ? onNavigate(`/produtos/${category.slug}/${slugifyProductLabel(label)}/${slugifyProductLabel(card.label)}`) : undefined}
+                  aria-label={standards.length ? `Ver classes de ${label} ${card.label}` : `Consultar ${label} ${card.label}`}
+                >
+                  <div className={`product-page__card-media ${mediaClassName}`.trim()}>
+                    {image ? (
+                      <img src={image} alt={alt} />
+                    ) : (
+                      <span aria-hidden="true">{label.slice(0, 1)}</span>
+                    )}
+                  </div>
+                  <div className="product-page__card-caption">
+                    <strong>{card.label}</strong>
+                    <ul className="product-page__card-list">
+                      {card.options.map((option) => (
+                        <li key={option}>{option}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ProductStandardPage({ category, productItem, standard, onNavigate }) {
+  const label = typeof productItem === 'string' ? productItem : productItem.label;
+  const itemSlug = slugifyProductLabel(label);
+  const image = typeof productItem === 'string' ? null : productItem.image;
+  const alt = typeof productItem === 'string' ? '' : productItem.alt ?? label;
+  const mediaClassName = typeof productItem === 'string' ? '' : productItem.mediaClassName ?? '';
+
+  return (
+    <section className="product-page section-surface">
+      <div className="container">
+        <div className="product-page__intro">
+          <span className="eyebrow eyebrow-dark">{label}</span>
+          <h1>{standard.label}</h1>
+          <p>
+            Escolha a classe de fornecimento e fale com a AltaPress para confirmar disponibilidade, dimensão e aplicação.
+          </p>
+        </div>
+
+        <div className="product-page__layout">
+          <aside className="product-page__sidebar" aria-label="Categorias de produtos">
+            {productCategories.map((item) => {
+              const isActive = item.slug === category.slug;
+
+              return (
+                <a
+                  key={item.slug}
+                  className={isActive ? 'is-active' : ''}
+                  href={`/produtos/${item.slug}`}
+                  onClick={onNavigate(`/produtos/${item.slug}`)}
+                  aria-current={isActive ? 'page' : undefined}
+                >
+                  {item.title}
+                  {isActive ? <span aria-hidden="true">›</span> : null}
+                </a>
+              );
+            })}
+          </aside>
+
+          <article className="product-page__catalog" aria-label={`Classes de ${label} ${standard.label}`}>
+            <a
+              className="product-page__back-inline"
+              href={`/produtos/${category.slug}/${slugifyProductLabel(label)}`}
+              onClick={onNavigate(`/produtos/${category.slug}/${slugifyProductLabel(label)}`)}
+            >
+              Voltar para {label}
+            </a>
+            <div className="product-page__grid">
+              {standard.options.map((option) => (
+                (() => {
+                  const optionSlug = slugifyProductLabel(option);
+                  const specHref = `/produtos/${category.slug}/${itemSlug}/${slugifyProductLabel(standard.label)}/${optionSlug}`;
+
+                  return (
+                    <a
+                      key={option}
+                      className="product-page__card product-page__card--class"
+                      href={specHref}
+                      onClick={onNavigate(specHref)}
+                      aria-label={`Ver tabela técnica de ${label} ${standard.label} ${option}`}
+                    >
+                      <div className={`product-page__card-media ${mediaClassName}`.trim()}>
+                        {image ? (
+                          <img src={image} alt={alt} />
+                        ) : (
+                          <span aria-hidden="true">{label.slice(0, 1)}</span>
+                        )}
+                      </div>
+                      <div className="product-page__card-caption">
+                        <strong>{option}</strong>
+                      </div>
+                    </a>
+                  );
+                })()
+              ))}
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ProductSpecPage({ category, productItem, standard, optionSlug, onNavigate }) {
+  const label = typeof productItem === 'string' ? productItem : productItem.label;
+  const itemSlug = slugifyProductLabel(label);
+  const standardSlug = slugifyProductLabel(standard.label);
+  const [spec, setSpec] = useState(null);
+  const [specStatus, setSpecStatus] = useState('loading');
+
+  useEffect(() => {
+    let isMounted = true;
+
+    setSpecStatus('loading');
+
+    import('./data/flangeTechnicalSpecs')
+      .then((module) => {
+        if (!isMounted) {
+          return;
+        }
+
+        const nextSpec = getTechnicalSpec(module.flangeTechnicalSpecs, itemSlug, standardSlug, optionSlug);
+        setSpec(nextSpec);
+        setSpecStatus(nextSpec ? 'ready' : 'missing');
+      })
+      .catch(() => {
+        if (isMounted) {
+          setSpecStatus('missing');
+        }
+      });
+
+    return () => {
+      isMounted = false;
+    };
+  }, [itemSlug, optionSlug, standardSlug]);
+
+  return (
+    <section className="product-page section-surface">
+      <div className="container">
+        <div className="product-page__layout">
+          <aside className="product-page__sidebar" aria-label="Categorias de produtos">
+            {productCategories.map((item) => {
+              const isActive = item.slug === category.slug;
+
+              return (
+                <a
+                  key={item.slug}
+                  className={isActive ? 'is-active' : ''}
+                  href={`/produtos/${item.slug}`}
+                  onClick={onNavigate(`/produtos/${item.slug}`)}
+                  aria-current={isActive ? 'page' : undefined}
+                >
+                  {item.title}
+                  {isActive ? <span aria-hidden="true">›</span> : null}
+                </a>
+              );
+            })}
+          </aside>
+
+          <article className="product-page__spec" aria-label={`Tabela técnica de ${label} ${standard.label}`}>
+            <a
+              className="product-page__back-inline"
+              href={`/produtos/${category.slug}/${itemSlug}/${standardSlug}`}
+              onClick={onNavigate(`/produtos/${category.slug}/${itemSlug}/${standardSlug}`)}
+            >
+              Voltar para {standard.label}
+            </a>
+
+            {specStatus === 'loading' ? (
+              <div className="product-page__spec-state">
+                Carregando especificações técnicas...
+              </div>
+            ) : null}
+
+            {specStatus === 'missing' ? (
+              <div className="product-page__spec-state">
+                Especificações técnicas sob consulta. Fale com a AltaPress para confirmar medidas e disponibilidade.
+              </div>
+            ) : null}
+
+            {spec ? (
+              <>
+                <h1 className="product-page__spec-title">{spec.title}</h1>
+
+                <div className="product-page__spec-overview">
+                  <div className="product-page__spec-figure">
+                    <h2>Figura</h2>
+                    {spec.images.length ? (
+                      <div className="product-page__spec-images">
+                        {spec.images.map((image) => (
+                          <img key={image.src} src={image.src} alt={image.alt} />
+                        ))}
+                      </div>
+                    ) : null}
+                  </div>
+
+                  <div className="product-page__spec-characteristics">
+                    <h2>Características</h2>
+                    {spec.characteristics?.length ? (
+                      <ul>
+                        {spec.characteristics.map((line) => (
+                          <li key={line}>{line}</li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p>Características técnicas sob consulta.</p>
+                    )}
+                  </div>
+                </div>
+
+                <p className="product-page__spec-note">{spec.note}</p>
+
+                {spec.tables.map((table, tableIndex) => {
+                  const [header, ...rows] = table;
+
+                  return (
+                    <div className="product-page__spec-table-wrap" key={`${spec.title}-${tableIndex}`}>
+                      <h2>Dimensões e peso aproximado</h2>
+                      <table className="product-page__spec-table">
+                        <thead>
+                          <tr>
+                            {header.map((cell) => (
+                              <th key={cell}>{cell}</th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {rows.map((row, rowIndex) => (
+                            <tr key={`${row.join('-')}-${rowIndex}`}>
+                              {row.map((cell, cellIndex) => (
+                                <td key={`${cell}-${cellIndex}`}>{cell}</td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  );
+                })}
+              </>
+            ) : null}
+          </article>
         </div>
       </div>
     </section>
@@ -670,7 +1144,8 @@ function App() {
     setActiveHeroSlide((currentSlide) => (currentSlide + 1) % heroSlides.length);
   };
 
-  const activeProductCategory = getProductCategoryFromPath(currentPathname);
+  const activeProductRoute = getProductRouteFromPath(currentPathname);
+  const activeProductCategory = activeProductRoute?.category ?? null;
   const isTechnicalInfoPage = currentPathname === '/informacoes-tecnicas';
 
   return (
@@ -747,8 +1222,29 @@ function App() {
       </header>
 
       <main>
-        {activeProductCategory ? (
-          <ProductCategoryPage category={activeProductCategory} onNavigate={handleInternalNavigation} />
+        {activeProductRoute?.item && activeProductRoute?.standard && activeProductRoute?.optionSlug ? (
+          <ProductSpecPage
+            category={activeProductRoute.category}
+            productItem={activeProductRoute.item}
+            standard={activeProductRoute.standard}
+            optionSlug={activeProductRoute.optionSlug}
+            onNavigate={handleProductNavigation}
+          />
+        ) : activeProductRoute?.item && activeProductRoute?.standard ? (
+          <ProductStandardPage
+            category={activeProductRoute.category}
+            productItem={activeProductRoute.item}
+            standard={activeProductRoute.standard}
+            onNavigate={handleProductNavigation}
+          />
+        ) : activeProductRoute?.item ? (
+          <ProductItemPage
+            category={activeProductRoute.category}
+            productItem={activeProductRoute.item}
+            onNavigate={handleProductNavigation}
+          />
+        ) : activeProductCategory ? (
+          <ProductCategoryPage category={activeProductCategory} onNavigate={handleProductNavigation} />
         ) : isTechnicalInfoPage ? (
           <TechnicalInfoPage />
         ) : (
@@ -903,17 +1399,26 @@ function App() {
               <span className="eyebrow">Quem Somos</span>
               <h2>Sobre a AltaPress</h2>
               <p>
-                Especialistas em peças hidráulicas de alta pressão, oferecemos qualidade e confiança para manter seus
-                sistemas funcionando com segurança.
+                A fundação da AltaPress é resultado da união da experiência e da visão empreendedora de Francis e Adriano,
+                profissionais com mais de 10 anos de atuação no mercado de soluções para a linha hidráulica industrial.
               </p>
               <p>
-                Nossa missão é garantir peças hidráulicas duráveis que mantenham seu equipamento funcionando sem falhas,
-                com apoio próximo e atendimento personalizado.
+                Após mais de uma década dedicados ao setor, unimos conhecimento técnico e vivência de mercado para criar
+                uma empresa que oferece muito mais do que produtos: uma parceira comprometida em entregar soluções com
+                qualidade, agilidade e atendimento especializado.
+              </p>
+              <p>
+                Somos uma empresa familiar, construída sobre ética, transparência e comprometimento, mas com visão moderna
+                e inovadora para atender a indústria com eficiência e excelência.
+              </p>
+              <p>
+                Trabalhamos com fornecedores de confiança e produtos de alta qualidade para garantir segurança, desempenho
+                e confiabilidade em cada operação, construindo relacionamentos duradouros em todo o Brasil.
               </p>
 
               <div className="quote-box">
-                <strong>Missão</strong>
-                <p>Garantir peças hidráulicas duráveis que mantenham seu equipamento funcionando sem falhas.</p>
+                <strong>AltaPress</strong>
+                <p>Experiência que conecta, qualidade que gera confiança.</p>
               </div>
 
               <a className="button button-secondary" href={whatsappBase} target="_blank" rel="noreferrer">

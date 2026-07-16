@@ -166,7 +166,7 @@ function cleanNode($, node) {
   });
 
   return element.html()
-    .replace(/Casa das Válvulas/gi, 'Alta Press')
+    .replace(/Casa das Válvulas/gi, 'AltaPress')
     .replace(/casadasvalvulasmg/gi, 'altapress')
     .replace(/\s+<\/(p|h2|h3|h4|li|td|th)>/g, '</$1>')
     .trim();
