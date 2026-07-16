@@ -118,10 +118,10 @@ export default function SupportChatWidget() {
   return (
     <div className={`support-chat ${isOpen ? 'is-open' : ''}`}>
       {isOpen ? (
-        <section className="support-chat__panel" style={compactPanelStyle} aria-label="Assistente virtual da Alta Press">
+        <section className="support-chat__panel" style={compactPanelStyle} aria-label="Assistente virtual da AltaPress">
           <header className="support-chat__header">
             <div className="support-chat__brand">
-              <img className="support-chat__brand-logo" src={altaPressChatLogo} alt="Logo Alta Press" />
+              <img className="support-chat__brand-logo" src={altaPressChatLogo} alt="Logo AltaPress" />
               <div>
                 <span className="support-chat__eyebrow">Assistente virtual</span>
                 <strong>Adriano</strong>

@@ -1,5 +1,5 @@
 export const businessProfile = {
-  companyName: 'Alta Press',
+  companyName: 'AltaPress',
   phone: '(31) 9 7267-1038',
   whatsapp: '(31) 9 9187-8767',
   whatsappUrl:
@@ -30,13 +30,13 @@ export const businessProfile = {
 };
 
 export const welcomeMessage =
-  'Ola! Sou o Adriano da Alta Press. Me diga qual peca ou aplicacao voce precisa.';
+  'Ola! Sou o Adriano da AltaPress. Me diga qual peca ou aplicacao voce precisa.';
 
 export function buildSystemPrompt() {
   return [
     `Voce e o assistente virtual da ${businessProfile.companyName}.`,
     'Responda sempre em portugues do Brasil, com objetividade, clareza tecnica e tom comercial profissional.',
-    'Seu objetivo principal e identificar a necessidade do cliente, recomendar os produtos da Alta Press e conduzir a conversa para pedido de orcamento ou contato comercial.',
+    'Seu objetivo principal e identificar a necessidade do cliente, recomendar os produtos da AltaPress e conduzir a conversa para pedido de orcamento ou contato comercial.',
     'Fale apenas sobre produtos, aplicacoes, atendimento, contato e duvidas comerciais da empresa.',
     'Quando o cliente perguntar sobre tamanho, bitola, rosca, material, pressao ou aplicacao da peca, explique o uso de forma consultiva e, se faltarem dados, peca as especificacoes tecnicas antes de recomendar.',
     `Para qualificar tecnicamente, voce pode pedir: ${businessProfile.technicalChecklist.join(', ')}.`,
@@ -80,11 +80,11 @@ export function buildMockReply(userMessage) {
   }
 
   if (includesAny(message, ['produto', 'valvula', 'valvulas', 'conexao', 'conexoes', 'peca', 'pecas'])) {
-    return `A Alta Press trabalha com ${businessProfile.products.join(', ')}. Se voce me informar a aplicacao, a bitola e o tipo da conexao ou valvula, eu consigo indicar a linha mais adequada e te direcionar para um orcamento rapido.`;
+    return `A AltaPress trabalha com ${businessProfile.products.join(', ')}. Se voce me informar a aplicacao, a bitola e o tipo da conexao ou valvula, eu consigo indicar a linha mais adequada e te direcionar para um orcamento rapido.`;
   }
 
   if (includesAny(message, ['tamanho', 'bitola', 'medida', 'rosca', 'diametro', 'polegada', 'mm'])) {
-    return `Para indicar a peca correta, preciso confirmar ${businessProfile.technicalChecklist.join(', ')}. Com esses dados, a Alta Press consegue recomendar a conexao ou valvula mais segura para sua aplicacao e agilizar seu atendimento comercial.`;
+    return `Para indicar a peca correta, preciso confirmar ${businessProfile.technicalChecklist.join(', ')}. Com esses dados, a AltaPress consegue recomendar a conexao ou valvula mais segura para sua aplicacao e agilizar seu atendimento comercial.`;
   }
 
   if (includesAny(message, ['serve', 'aplicacao', 'uso', 'funcao', 'funciona'])) {
@@ -92,15 +92,15 @@ export function buildMockReply(userMessage) {
   }
 
   if (includesAny(message, ['horario', 'atendimento', 'funciona', 'aberto'])) {
-    return `O atendimento da Alta Press acontece em ${businessProfile.hours}`;
+    return `O atendimento da AltaPress acontece em ${businessProfile.hours}`;
   }
 
   if (includesAny(message, ['endereco', 'onde fica', 'localizacao', 'localizacao', 'rua'])) {
-    return `A Alta Press fica em ${businessProfile.address}. Se preferir, eu tambem posso te passar o telefone ${businessProfile.phone} e o email ${businessProfile.email}.`;
+    return `A AltaPress fica em ${businessProfile.address}. Se preferir, eu tambem posso te passar o telefone ${businessProfile.phone} e o email ${businessProfile.email}.`;
   }
 
   if (includesAny(message, ['telefone', 'whatsapp', 'contato', 'email'])) {
-    return `Voce pode falar com a Alta Press pelo telefone ${businessProfile.phone} ou pelo email ${businessProfile.email}.`;
+    return `Voce pode falar com a AltaPress pelo telefone ${businessProfile.phone} ou pelo email ${businessProfile.email}.`;
   }
 
   return 'Me diga qual peca procura ou qual e a sua aplicacao para eu te orientar melhor.';

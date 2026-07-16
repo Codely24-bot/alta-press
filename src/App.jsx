@@ -6,10 +6,39 @@ import altaPressShowcaseGrid from './assets/alta-press-showcase-grid.png';
 import altaPressValvulaSeguranca from './assets/alta-press-valvula-seguranca.jpeg';
 import altaPressShowcaseVideo from './assets/alta-press-showcase-video.mp4';
 import productAcessorios from './assets/product-categories/acessorios.jpg';
+import productAcessorioGrampoU from './assets/product-accessories-normalized/grampo-u.png';
+import productAcessorioIndicadorNivel from './assets/product-accessories-normalized/indicador-de-nivel.png';
+import productAcessorioJuntaExpansao from './assets/product-accessories-normalized/junta-expansao.png';
+import productAcessorioVisorFluxo from './assets/product-accessories-normalized/visor-de-fluxo.png';
 import productConexoes from './assets/product-categories/conexoes.png';
+import productConexaoAltaPressao from './assets/product-connections-normalized/alta-pressao.png';
+import productConexaoColares from './assets/product-connections-normalized/colares.png';
+import productConexaoTubulares from './assets/product-connections-normalized/conexoes-tubulares.png';
+import productConexaoFerroMaleavel from './assets/product-connections-normalized/ferro-maleavel.png';
 import productFlanges from './assets/product-categories/flanges.png';
+import productFlangeCego from './assets/product-flanges-normalized/flange-cego.png';
+import productFlangeReducao from './assets/product-flanges-normalized/flange-de-reducao.png';
+import productFlangeEncaixe from './assets/product-flanges-normalized/flange-encaixe.png';
+import productFlangeLiso from './assets/product-flanges-normalized/flange-liso.png';
+import productFlangePescoco from './assets/product-flanges-normalized/flange-pescoco.png';
+import productFlangeRoscado from './assets/product-flanges-normalized/flange-roscado.png';
+import productFlangeSlipOn from './assets/product-flanges-normalized/flange-slip-on.png';
+import productFlangeSolto from './assets/product-flanges-normalized/flange-solto.png';
 import productInstrumentos from './assets/product-categories/instrumentos.jpg';
 import productValvulas from './assets/product-categories/valvulas.jpg';
+import productOrificioPescoco from './assets/product-flanges-normalized/orificio-pescoco.png';
+import productOrificioRoscado from './assets/product-flanges-normalized/orificio-roscado.png';
+import productOrificioSlipOn from './assets/product-flanges-normalized/orificio-slip-on.png';
+import productFiltroCesto from './assets/product-filters-normalized/filtro-cesto.png';
+import productFiltroY from './assets/product-filters-normalized/filtro-y.png';
+import productInstrumentoManometro from './assets/product-instruments-normalized/manometro.png';
+import productInstrumentoPressostatos from './assets/product-instruments-normalized/pressostatos.png';
+import productInstrumentoTermometro from './assets/product-instruments-normalized/termometro.png';
+import productInstrumentoVacuometro from './assets/product-instruments-normalized/vacuometro.png';
+import productPurgadorBoia from './assets/product-purgadores-normalized/boia.png';
+import productPurgadorTermodinamico from './assets/product-purgadores-normalized/termodinamico.png';
+import productVedacaoFitaPtfe from './assets/product-vedacoes-normalized/fita-ptfe.png';
+import productVedacaoJuntaVedacao from './assets/product-vedacoes-normalized/junta-vedacao.png';
 import productValvulaAngular from './assets/product-valves-normalized/valvula-angular.png';
 import productValvulaBorboleta from './assets/product-valves-normalized/valvula-borboleta.png';
 import productValvulaDescargaCaldeira from './assets/product-valves-normalized/valvula-descarga-caldeira.png';
@@ -59,7 +88,7 @@ const heroSlides = [
   },
   {
     image: media.heroSlideTwo,
-    alt: 'Banner institucional da Alta Press com conexões e soluções hidráulicas.',
+    alt: 'Banner institucional da AltaPress com conexões e soluções hidráulicas.',
   },
 ];
 
@@ -99,27 +128,27 @@ const productCategories = [
     slug: 'valvulas',
     image: productValvulas,
     items: [
-      { label: 'Angular', image: productValvulaAngular, alt: 'Válvula angular da Alta Press.' },
-      { label: 'Borboleta', image: productValvulaBorboleta, alt: 'Válvula borboleta da Alta Press.' },
-      { label: 'Descarga de caldeira', image: productValvulaDescargaCaldeira, alt: 'Válvula de descarga de caldeira da Alta Press.' },
-      { label: 'Diafragma', image: productValvulaDiafragma, alt: 'Válvula diafragma da Alta Press.' },
-      { label: 'Esfera', image: productValvulaEsfera, alt: 'Válvula esfera da Alta Press.' },
+      { label: 'Angular', image: productValvulaAngular, alt: 'Válvula angular da AltaPress.' },
+      { label: 'Borboleta', image: productValvulaBorboleta, alt: 'Válvula borboleta da AltaPress.' },
+      { label: 'Descarga de caldeira', image: productValvulaDescargaCaldeira, alt: 'Válvula de descarga de caldeira da AltaPress.' },
+      { label: 'Diafragma', image: productValvulaDiafragma, alt: 'Válvula diafragma da AltaPress.' },
+      { label: 'Esfera', image: productValvulaEsfera, alt: 'Válvula esfera da AltaPress.' },
       {
         label: 'Gaveta',
         image: productValvulaGaveta,
-        alt: 'Válvula gaveta da Alta Press.',
+        alt: 'Válvula gaveta da AltaPress.',
         mediaClassName: 'product-page__item-media--blend',
       },
-      { label: 'Globo', image: productValvulaGlobo, alt: 'Válvula globo da Alta Press.' },
-      { label: 'Guilhotina', image: productValvulaGuilhotina, alt: 'Válvula guilhotina da Alta Press.' },
-      { label: 'Macho', image: productValvulaMacho, alt: 'Válvula macho da Alta Press.' },
-      { label: 'Mangote', image: productValvulaMangote, alt: 'Válvula mangote da Alta Press.' },
-      { label: 'Para hidrante', image: productValvulaParaHidrante, alt: 'Válvula para hidrante da Alta Press.' },
-      { label: 'Passagem reta', image: productValvulaPassagemReta, alt: 'Válvula de passagem reta da Alta Press.' },
-      { label: 'Redutora de pressão', image: productValvulaRedutoraPressao, alt: 'Válvula redutora de pressão da Alta Press.' },
-      { label: 'Retenção', image: productValvulaRetencao, alt: 'Válvula de retenção da Alta Press.' },
-      { label: 'Segurança e alívio', image: productValvulaSegurancaAlivio, alt: 'Válvula de segurança e alívio da Alta Press.' },
-      { label: 'Solenóide', image: productValvulaSolenoide, alt: 'Válvula solenóide da Alta Press.' },
+      { label: 'Globo', image: productValvulaGlobo, alt: 'Válvula globo da AltaPress.' },
+      { label: 'Guilhotina', image: productValvulaGuilhotina, alt: 'Válvula guilhotina da AltaPress.' },
+      { label: 'Macho', image: productValvulaMacho, alt: 'Válvula macho da AltaPress.' },
+      { label: 'Mangote', image: productValvulaMangote, alt: 'Válvula mangote da AltaPress.' },
+      { label: 'Para hidrante', image: productValvulaParaHidrante, alt: 'Válvula para hidrante da AltaPress.' },
+      { label: 'Passagem reta', image: productValvulaPassagemReta, alt: 'Válvula de passagem reta da AltaPress.' },
+      { label: 'Redutora de pressão', image: productValvulaRedutoraPressao, alt: 'Válvula redutora de pressão da AltaPress.' },
+      { label: 'Retenção', image: productValvulaRetencao, alt: 'Válvula de retenção da AltaPress.' },
+      { label: 'Segurança e alívio', image: productValvulaSegurancaAlivio, alt: 'Válvula de segurança e alívio da AltaPress.' },
+      { label: 'Solenóide', image: productValvulaSolenoide, alt: 'Válvula solenóide da AltaPress.' },
     ],
   },
   {
@@ -127,25 +156,76 @@ const productCategories = [
     slug: 'flanges',
     image: productFlanges,
     items: [
-      'Flange Cego',
-      'Flange Pescoço',
-      'Flange Slip On',
-      'Flange Encaixe',
-      'Flange Roscado',
-      'Flange Solto',
-      'Flange Liso',
-      'Orifício Pescoço',
-      'Orifício Slip On',
-      'Orifício Roscado',
-      'De Redução',
+      { label: 'Flange Cego', image: productFlangeCego, alt: 'Flange cego da AltaPress.' },
+      { label: 'Flange Pescoço', image: productFlangePescoco, alt: 'Flange pescoço da AltaPress.' },
+      { label: 'Flange Slip On', image: productFlangeSlipOn, alt: 'Flange slip on da AltaPress.' },
+      { label: 'Flange Encaixe', image: productFlangeEncaixe, alt: 'Flange de encaixe da AltaPress.' },
+      { label: 'Flange Roscado', image: productFlangeRoscado, alt: 'Flange roscado da AltaPress.' },
+      { label: 'Flange Solto', image: productFlangeSolto, alt: 'Flange solto da AltaPress.' },
+      { label: 'Flange Liso', image: productFlangeLiso, alt: 'Flange liso da AltaPress.' },
+      { label: 'Orifício Pescoço', image: productOrificioPescoco, alt: 'Orifício com pescoço da AltaPress.' },
+      { label: 'Orifício Slip On', image: productOrificioSlipOn, alt: 'Orifício tipo slip on da AltaPress.' },
+      { label: 'Orifício Roscado', image: productOrificioRoscado, alt: 'Orifício tipo roscado da AltaPress.' },
+      { label: 'De Redução', image: productFlangeReducao, alt: 'Flange de redução da AltaPress.' },
     ],
   },
-  { title: 'Conexões', slug: 'conexoes', image: productConexoes, items: ['Alta pressão', 'Ferro maleável', 'Colares', 'Conexões tubulares'] },
-  { title: 'Filtros', slug: 'filtros', items: ['Tipo cesto', 'Tipo Y'] },
-  { title: 'Purgadores', slug: 'purgadores', items: ['Balde invertido', 'Bóia', 'Termodinâmico', 'Termostático'] },
-  { title: 'Vedações', slug: 'vedacoes', items: ["Anel O'Ring", 'Fita PTFE', 'Gaxeta', 'Junta de vedação'] },
-  { title: 'Instrumentos', slug: 'instrumentos', image: productInstrumentos, items: ['Manômetros', 'Termômetros', 'Pressostatos', 'Vacuômetros'] },
-  { title: 'Acessórios', slug: 'acessorios', image: productAcessorios, items: ['Amortecedor de vibração', 'Eliminador de ar', 'Grampo U', 'Indicador de nível', 'Juntas de expansão', 'Separador de umidade', 'Ventosas', 'Visor de fluxo'] },
+  {
+    title: 'Conexões',
+    slug: 'conexoes',
+    image: productConexoes,
+    items: [
+      { label: 'Alta pressão', image: productConexaoAltaPressao, alt: 'Conexões de alta pressão da AltaPress.' },
+      { label: 'Ferro maleável', image: productConexaoFerroMaleavel, alt: 'Conexões em ferro maleável da AltaPress.' },
+      { label: 'Colares', image: productConexaoColares, alt: 'Colares metálicos da AltaPress.' },
+      { label: 'Conexões tubulares', image: productConexaoTubulares, alt: 'Conexões tubulares da AltaPress.' },
+    ],
+  },
+  {
+    title: 'Filtros',
+    slug: 'filtros',
+    items: [
+      { label: 'Tipo cesto', image: productFiltroCesto, alt: 'Filtro tipo cesto da AltaPress.' },
+      { label: 'Tipo Y', image: productFiltroY, alt: 'Filtro tipo Y da AltaPress.' },
+    ],
+  },
+  {
+    title: 'Purgadores',
+    slug: 'purgadores',
+    items: [
+      { label: 'Bóia', image: productPurgadorBoia, alt: 'Purgador tipo bóia da AltaPress.' },
+      { label: 'Termodinâmico', image: productPurgadorTermodinamico, alt: 'Purgador termodinâmico da AltaPress.' },
+    ],
+  },
+  {
+    title: 'Vedações',
+    slug: 'vedacoes',
+    items: [
+      { label: 'Fita PTFE', image: productVedacaoFitaPtfe, alt: 'Fita PTFE da AltaPress.' },
+      { label: 'Junta de vedação', image: productVedacaoJuntaVedacao, alt: 'Junta de vedação da AltaPress.' },
+    ],
+  },
+  {
+    title: 'Instrumentos',
+    slug: 'instrumentos',
+    image: productInstrumentos,
+    items: [
+      { label: 'Manômetros', image: productInstrumentoManometro, alt: 'Manômetro da AltaPress.' },
+      { label: 'Termômetros', image: productInstrumentoTermometro, alt: 'Termômetro da AltaPress.' },
+      { label: 'Pressostatos', image: productInstrumentoPressostatos, alt: 'Pressostato da AltaPress.' },
+      { label: 'Vacuômetros', image: productInstrumentoVacuometro, alt: 'Vacuômetro da AltaPress.' },
+    ],
+  },
+  {
+    title: 'Acessórios',
+    slug: 'acessorios',
+    image: productAcessorios,
+    items: [
+      { label: 'Grampo U', image: productAcessorioGrampoU, alt: 'Grampo U da AltaPress.' },
+      { label: 'Indicador de nível', image: productAcessorioIndicadorNivel, alt: 'Indicador de nível da AltaPress.' },
+      { label: 'Juntas de expansão', image: productAcessorioJuntaExpansao, alt: 'Junta de expansão da AltaPress.' },
+      { label: 'Visor de fluxo', image: productAcessorioVisorFluxo, alt: 'Visor de fluxo da AltaPress.' },
+    ],
+  },
 ];
 
 const sectors = [
@@ -361,7 +441,7 @@ function ProductCategoryPage({ category, onNavigate }) {
           <aside className="product-page__cta">
             <span className="eyebrow">Precisa de ajuda?</span>
             <h2>Encontre a peça certa para sua instalação.</h2>
-            <p>Fale com a Alta Press para confirmar disponibilidade, especificações e condições de fornecimento.</p>
+            <p>Fale com a AltaPress para confirmar disponibilidade, especificações e condições de fornecimento.</p>
             <a className="button button-secondary" href={whatsappBase} target="_blank" rel="noreferrer">
               Fale Conosco
             </a>
@@ -392,10 +472,10 @@ function TechnicalInfoPage() {
       <div className="container">
         <div className="technical-page__intro">
           <span className="eyebrow eyebrow-dark">Informações Técnicas</span>
-          <h1>Biblioteca técnica Alta Press.</h1>
+          <h1>Biblioteca técnica AltaPress.</h1>
           <p>
             Consulte especificações, tabelas, imagens e orientações técnicas diretamente no site, sem visualizador de PDF
-            e com apresentação própria da Alta Press.
+            e com apresentação própria da AltaPress.
           </p>
         </div>
 
@@ -568,8 +648,8 @@ function App() {
     event.preventDefault();
 
     const message = name.trim()
-      ? `Olá, meu nome é ${name.trim()}. Gostaria de falar com a Alta Press sobre peças hidráulicas de alta pressão.`
-      : 'Olá, gostaria de falar com a Alta Press sobre peças hidráulicas de alta pressão.';
+      ? `Olá, meu nome é ${name.trim()}. Gostaria de falar com a AltaPress sobre peças hidráulicas de alta pressão.`
+      : 'Olá, gostaria de falar com a AltaPress sobre peças hidráulicas de alta pressão.';
 
     window.open(
       `https://wa.me/5531991878767?text=${encodeURIComponent(message)}`,
@@ -600,10 +680,10 @@ function App() {
           <a
             className="brand"
             href="/"
-            aria-label="Ir para a home da Alta Press"
+            aria-label="Ir para a home da AltaPress"
             onClick={handleInternalNavigation('/', 'home')}
           >
-            <img src={media.logo} alt="Logo Alta Press" />
+            <img src={media.logo} alt="Logo AltaPress" />
           </a>
 
           <button
@@ -655,10 +735,10 @@ function App() {
             </nav>
 
             <div className="header-socials" aria-label="Redes sociais">
-              <a href={socialLinks[0].href} target="_blank" rel="noreferrer" aria-label="Instagram da Alta Press">
+              <a href={socialLinks[0].href} target="_blank" rel="noreferrer" aria-label="Instagram da AltaPress">
                 <InstagramIcon />
               </a>
-              <a href={socialLinks[2].href} target="_blank" rel="noreferrer" aria-label="LinkedIn da Alta Press">
+              <a href={socialLinks[2].href} target="_blank" rel="noreferrer" aria-label="LinkedIn da AltaPress">
                 <LinkedInIcon />
               </a>
             </div>
@@ -673,7 +753,7 @@ function App() {
           <TechnicalInfoPage />
         ) : (
           <>
-        <section className="hero" id="home" aria-label="Destaques da Alta Press">
+        <section className="hero" id="home" aria-label="Destaques da AltaPress">
           <div className="hero-carousel-shell">
             <div className="hero-carousel" aria-roledescription="carousel" aria-label="Carrossel principal">
               {heroSlides.map((slide, index) => (
@@ -754,7 +834,7 @@ function App() {
               <span className="eyebrow eyebrow-dark">Produtos</span>
               <h2>Válvulas, conexões e suporte técnico para sistemas exigentes.</h2>
               <p>
-                Na Alta Press, oferecemos peças hidráulicas de alta pressão para garantir segurança e eficiência em seus
+                Na AltaPress, oferecemos peças hidráulicas de alta pressão para garantir segurança e eficiência em seus
                 sistemas.
               </p>
             </div>
@@ -821,7 +901,7 @@ function App() {
           <div className="container company-grid">
             <div className="company-copy">
               <span className="eyebrow">Quem Somos</span>
-              <h2>Sobre a Alta Press</h2>
+              <h2>Sobre a AltaPress</h2>
               <p>
                 Especialistas em peças hidráulicas de alta pressão, oferecemos qualidade e confiança para manter seus
                 sistemas funcionando com segurança.
@@ -841,12 +921,12 @@ function App() {
               </a>
             </div>
 
-            <div className="showcase-grid" aria-label="Galeria de imagens da Alta Press">
+            <div className="showcase-grid" aria-label="Galeria de imagens da AltaPress">
               <div className="showcase-card showcase-card-large">
-                <img src={media.showcaseOne} alt="Equipe e estrutura da Alta Press" />
+                <img src={media.showcaseOne} alt="Equipe e estrutura da AltaPress" />
               </div>
               <div className="showcase-card">
-                <img src={media.showcaseTwo} alt="Produtos e atendimento Alta Press" />
+                <img src={media.showcaseTwo} alt="Produtos e atendimento AltaPress" />
               </div>
               <div className="showcase-card">
                 <video
@@ -856,7 +936,7 @@ function App() {
                   muted
                   playsInline
                   preload="auto"
-                  aria-label="Video de produtos da Alta Press"
+                  aria-label="Video de produtos da AltaPress"
                 />
               </div>
             </div>
@@ -913,7 +993,7 @@ function App() {
 
             <article className="form-panel">
               <h3>Seu nome</h3>
-              <p>Digite seu nome e continue a conversa pelo WhatsApp da Alta Press.</p>
+              <p>Digite seu nome e continue a conversa pelo WhatsApp da AltaPress.</p>
 
               <form className="contact-form" onSubmit={handleSubmit}>
                 <label htmlFor="contact-name">Seu nome</label>
@@ -935,12 +1015,12 @@ function App() {
           <div className="container location-map-wrap">
             <div className="location-map__heading">
               <span className="eyebrow eyebrow-dark">Localização</span>
-              <h3>Visite a Alta Press</h3>
+              <h3>Visite a AltaPress</h3>
               <p>Rua Josias Machado, 236, Inconfidentes — CEP 32260-520</p>
             </div>
             <div className="location-map">
               <iframe
-                title="Mapa de localização da Alta Press"
+                title="Mapa de localização da AltaPress"
                 src="https://www.google.com/maps?q=Rua%20Josias%20Machado%2C%20236%2C%20Inconfidentes%2C%20CEP%2032260-520&output=embed"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
@@ -975,7 +1055,7 @@ function App() {
       <footer className="site-footer">
         <div className="container footer-grid">
           <div>
-            <img className="footer-logo" src={media.logo} alt="Alta Press" />
+            <img className="footer-logo" src={media.logo} alt="AltaPress" />
             <p>Fornecemos válvulas e conexões hidráulicas de alta pressão com qualidade e confiança.</p>
           </div>
 
@@ -1014,7 +1094,7 @@ function App() {
             href={whatsappBase}
             target="_blank"
             rel="noreferrer"
-            aria-label="Falar com a Alta Press no WhatsApp"
+            aria-label="Falar com a AltaPress no WhatsApp"
           >
             <span className="whatsapp-float__icon">
               <WhatsAppIcon />
