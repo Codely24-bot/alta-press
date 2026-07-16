@@ -796,8 +796,13 @@ function ProductSpecPage({ category, productItem, standard, optionSlug, onNaviga
   const label = typeof productItem === 'string' ? productItem : productItem.label;
   const itemSlug = slugifyProductLabel(label);
   const standardSlug = slugifyProductLabel(standard.label);
+  const image = typeof productItem === 'string' ? null : productItem.image;
+  const alt = typeof productItem === 'string' ? label : productItem.alt ?? label;
   const [spec, setSpec] = useState(null);
   const [specStatus, setSpecStatus] = useState('loading');
+  const figureImages = spec
+    ? [...(image ? [{ src: image, alt }] : []), ...(spec.images?.slice(1) ?? [])]
+    : [];
 
   useEffect(() => {
     let isMounted = true;
@@ -876,10 +881,10 @@ function ProductSpecPage({ category, productItem, standard, optionSlug, onNaviga
                 <div className="product-page__spec-overview">
                   <div className="product-page__spec-figure">
                     <h2>Figura</h2>
-                    {spec.images.length ? (
+                    {figureImages.length ? (
                       <div className="product-page__spec-images">
-                        {spec.images.map((image) => (
-                          <img key={image.src} src={image.src} alt={image.alt} />
+                        {figureImages.map((figureImage) => (
+                          <img key={figureImage.src} src={figureImage.src} alt={figureImage.alt} />
                         ))}
                       </div>
                     ) : null}
