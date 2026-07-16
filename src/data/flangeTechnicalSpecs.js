@@ -7601,7 +7601,7 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "flange-pescoco",
         "standardSlug": "ansi",
         "optionSlug": "150-lbs",
-        "title": "FLANGE DE PESCO–!O (WELDING NECK) - ANSI B 16.5 - 150 LBS",
+        "title": "FLANGE DE PESCOÇO (WELDING NECK) - ANSI B 16.5 - 150 LBS",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/flange-wn-com-pescoco/ansi/150-lbs/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
@@ -8058,7 +8058,7 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "flange-pescoco",
         "standardSlug": "ansi",
         "optionSlug": "300-lbs",
-        "title": "FLANGE DE PESCO–!O (WELDING NECK) - ANSI B 16.5 - 300 LBS",
+        "title": "FLANGE DE PESCOÇO (WELDING NECK) - ANSI B 16.5 - 300 LBS",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/flange-wn-com-pescoco/ansi/300-lbs/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
@@ -8502,7 +8502,7 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "flange-pescoco",
         "standardSlug": "ansi",
         "optionSlug": "600-lbs",
-        "title": "FLANGE DE PESCO–!O (WELDING NECK) - ANSI B 16.5 - 600 LBS",
+        "title": "FLANGE DE PESCOÇO (WELDING NECK) - ANSI B 16.5 - 600 LBS",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/flange-wn-com-pescoco/ansi/600-lbs/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
@@ -8940,7 +8940,7 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "flange-pescoco",
         "standardSlug": "ansi",
         "optionSlug": "900-lbs",
-        "title": "FLANGE DE PESCO–!O (WELDING NECK) - ANSI B 16.5 - 900 LBS",
+        "title": "FLANGE DE PESCOÇO (WELDING NECK) - ANSI B 16.5 - 900 LBS",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/flange-wn-com-pescoco/ansi/900-lbs/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
@@ -9337,7 +9337,7 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "flange-pescoco",
         "standardSlug": "ansi",
         "optionSlug": "1500-lbs",
-        "title": "FLANGE DE PESCO–!O (WELDING NECK) - ANSI B 16.5 - 1500 LBS",
+        "title": "FLANGE DE PESCOÇO (WELDING NECK) - ANSI B 16.5 - 1500 LBS",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/flange-wn-com-pescoco/ansi/1500-lbs/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
@@ -9656,7 +9656,7 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "flange-pescoco",
         "standardSlug": "ansi",
         "optionSlug": "2500-lbs",
-        "title": "FLANGE DE PESCO–!O (WELDING NECK) - ANSI B 16.5 - 2500 LBS",
+        "title": "FLANGE DE PESCOÇO (WELDING NECK) - ANSI B 16.5 - 2500 LBS",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/flange-wn-com-pescoco/ansi/2500-lbs/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
@@ -9912,7 +9912,7 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "flange-pescoco",
         "standardSlug": "din",
         "optionSlug": "classe-pn-6",
-        "title": "FLANGE DE PESCO–!O (WELDING NECK) - DIN 2631 - CLASSE PN 6",
+        "title": "FLANGE DE PESCOÇO (WELDING NECK) - DIN 2631 - CLASSE PN 6",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/flange-wn-com-pescoco/din/classe-pn-6/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
@@ -10750,7 +10750,7 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "flange-pescoco",
         "standardSlug": "din",
         "optionSlug": "classe-pn-10",
-        "title": "FLANGE DE PESCO–!O (WELDING NECK) - DIN 2632 - CLASSE PN 10",
+        "title": "FLANGE DE PESCOÇO (WELDING NECK) - DIN 2632 - CLASSE PN 10",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/flange-wn-com-pescoco/din/classe-pn-10/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
@@ -11421,7 +11421,7 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "flange-pescoco",
         "standardSlug": "din",
         "optionSlug": "classe-pn-16",
-        "title": "FLANGE DE PESCO–!O (WELDING NECK) - DIN 2633 - CLASSE PN 16",
+        "title": "FLANGE DE PESCOÇO (WELDING NECK) - DIN 2633 - CLASSE PN 16",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/flange-wn-com-pescoco/din/classe-pn-16/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
@@ -12139,7 +12139,7 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "flange-pescoco",
         "standardSlug": "din",
         "optionSlug": "classe-pn-25",
-        "title": "FLANGE DE PESCO–!O (WELDING NECK) - DIN 2634 - CLASSE PN 25",
+        "title": "FLANGE DE PESCOÇO (WELDING NECK) - DIN 2634 - CLASSE PN 25",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/flange-wn-com-pescoco/din/classe-pn-25/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
@@ -12630,7 +12630,7 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "flange-pescoco",
         "standardSlug": "din",
         "optionSlug": "classe-pn-40",
-        "title": "FLANGE DE PESCO–!O (WELDING NECK) - DIN 2635 - CLASSE PN 40",
+        "title": "FLANGE DE PESCOÇO (WELDING NECK) - DIN 2635 - CLASSE PN 40",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/flange-wn-com-pescoco/din/classe-pn-40/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
@@ -13146,7 +13146,7 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "flange-pescoco",
         "standardSlug": "din",
         "optionSlug": "classe-pn-64",
-        "title": "FLANGE DE PESCO–!O (WELDING NECK) - DIN 2636 - CLASSE PN 64",
+        "title": "FLANGE DE PESCOÇO (WELDING NECK) - DIN 2636 - CLASSE PN 64",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/flange-wn-com-pescoco/din/classe-pn-64/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
@@ -13583,7 +13583,7 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "flange-pescoco",
         "standardSlug": "din",
         "optionSlug": "classe-pn-100",
-        "title": "FLANGE DE PESCO–!O (WELDING NECK) - DIN 2637 - CLASSE PN 100",
+        "title": "FLANGE DE PESCOÇO (WELDING NECK) - DIN 2637 - CLASSE PN 100",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/flange-wn-com-pescoco/din/classe-pn-100/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
@@ -13989,7 +13989,7 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "flange-pescoco",
         "standardSlug": "jis",
         "optionSlug": "classe-30k",
-        "title": "FLANGE DE PESCO–!O (WELDING NECK) - JIS B2220-1995 B2238-1996 - CLASSE 30K",
+        "title": "FLANGE DE PESCOÇO (WELDING NECK) - JIS B2220-1995 B2238-1996 - CLASSE 30K",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/flange-wn-com-pescoco/jis/classe-30k/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
@@ -14401,7 +14401,7 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "flange-pescoco",
         "standardSlug": "jis",
         "optionSlug": "classe-40k",
-        "title": "FLANGE DE PESCO–!O (WELDING NECK) - JIS B2220-1995 B2238-1996 - CLASSE 40K",
+        "title": "FLANGE DE PESCOÇO (WELDING NECK) - JIS B2220-1995 B2238-1996 - CLASSE 40K",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/flange-wn-com-pescoco/jis/classe-40k/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
@@ -14793,7 +14793,7 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "flange-pescoco",
         "standardSlug": "jis",
         "optionSlug": "classe-63k",
-        "title": "FLANGE DE PESCO–!O (WELDING NECK) - JIS B2220-1995 B2238-1996 - CLASSE 63K",
+        "title": "FLANGE DE PESCOÇO (WELDING NECK) - JIS B2220-1995 B2238-1996 - CLASSE 63K",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/flange-wn-com-pescoco/jis/classe-63k/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
@@ -35635,14 +35635,14 @@ export const flangeTechnicalSpecs = {
           [
             [
               "DN",
-              "MENOR FURO CENTRAL OU ROSCA EM FLANGES COM PESCO–!O",
+              "MENOR FURO CENTRAL OU ROSCA EM FLANGES COM PESCOÇO",
               "REFER–`NCIAS SOBRE DIMENS–\"ES"
             ],
             [
               "(pol.)",
               "(pol.)",
               "(mm)",
-              "DI–\u001aMETRO EXTERNO, ESPESSURA, FACEAMENTO E GABARITO DE FURA–!ÒO Todas estas dimensões correspondem exatamente com as mesmas do flange normal do qual a redução é feita DI–\u001aMETRO E ALTURA DO PESCO–!O Para flanges de redução tipo sobreposto e roscado, independente do grau de redução, o diâmetro do pescoço na base (m) e a altura do mesmo (h1) são as mesmas de um flange normal do mesmo tipo e para a mesma pressão, porém um diâmetro nominal menor do que o diâmetro do qual a redução será feita. Para flange de redução de pescoço de solda de topo as dimensões do pescoço são as mesmas de um flange normal da mesma classe de pressão, do diâmetro nominal para o qual a redução é feita. FURO CENTRAL O diâmetro interno de flanges de redução tipo sobreposto é igual ao diâmetro interno de flanges normais do diâmetro nominal para o qual a redução é feita. Flanges de redução com rosca da classe 150 lbs, não necessitam encaixe. Nas classes 300 lbs e mais a profundidade do encaixe é de 1/4\" para roscas até 2\", e 3/8\" para roscas de 2.1/2\" e maior. Os diâmetros dos encaixes correspondem com os dos flanges normais. MENOR FURO CENTRAL Os menores diâmetros nominais para os quais flanges com pescoço podem ser furados, constam na tabela ao lado. Para reduções para diâmetro menor fornecemos FLANGES CEGOS com furo central ou rosca correspondente ao diâmetro nominal para o qual a redução é feita."
+              "DIÂMETRO EXTERNO, ESPESSURA, FACEAMENTO E GABARITO DE FURAÇÃO Todas estas dimensões correspondem exatamente com as mesmas do flange normal do qual a redução é feita DIÂMETRO E ALTURA DO PESCOÇO Para flanges de redução tipo sobreposto e roscado, independente do grau de redução, o diâmetro do pescoço na base (m) e a altura do mesmo (h1) são as mesmas de um flange normal do mesmo tipo e para a mesma pressão, porém um diâmetro nominal menor do que o diâmetro do qual a redução será feita. Para flange de redução de pescoço de solda de topo as dimensões do pescoço são as mesmas de um flange normal da mesma classe de pressão, do diâmetro nominal para o qual a redução é feita. FURO CENTRAL O diâmetro interno de flanges de redução tipo sobreposto é igual ao diâmetro interno de flanges normais do diâmetro nominal para o qual a redução é feita. Flanges de redução com rosca da classe 150 lbs, não necessitam encaixe. Nas classes 300 lbs e mais a profundidade do encaixe é de 1/4\" para roscas até 2\", e 3/8\" para roscas de 2.1/2\" e maior. Os diâmetros dos encaixes correspondem com os dos flanges normais. MENOR FURO CENTRAL Os menores diâmetros nominais para os quais flanges com pescoço podem ser furados, constam na tabela ao lado. Para reduções para diâmetro menor fornecemos FLANGES CEGOS com furo central ou rosca correspondente ao diâmetro nominal para o qual a redução é feita."
             ],
             [
               "1/2\"",

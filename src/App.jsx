@@ -128,27 +128,124 @@ const productCategories = [
     slug: 'valvulas',
     image: productValvulas,
     items: [
-      { label: 'Angular', image: productValvulaAngular, alt: 'Válvula angular da AltaPress.' },
-      { label: 'Borboleta', image: productValvulaBorboleta, alt: 'Válvula borboleta da AltaPress.' },
-      { label: 'Descarga de caldeira', image: productValvulaDescargaCaldeira, alt: 'Válvula de descarga de caldeira da AltaPress.' },
-      { label: 'Diafragma', image: productValvulaDiafragma, alt: 'Válvula diafragma da AltaPress.' },
-      { label: 'Esfera', image: productValvulaEsfera, alt: 'Válvula esfera da AltaPress.' },
+      {
+        label: 'Angular',
+        image: productValvulaAngular,
+        alt: 'Válvula angular da AltaPress.',
+        details: ['Ferro fundido', 'Aço', 'Bronze'],
+        standards: [{ label: 'Material', options: ['Ferro Fundido', 'Aço', 'Bronze'] }],
+      },
+      {
+        label: 'Borboleta',
+        image: productValvulaBorboleta,
+        alt: 'Válvula borboleta da AltaPress.',
+        details: ['Wafer', 'Lug'],
+        standards: [{ label: 'Tipo construtivo', options: ['Wafer', 'Lug'] }],
+      },
+      {
+        label: 'Descarga de caldeira',
+        image: productValvulaDescargaCaldeira,
+        alt: 'Válvula de descarga de caldeira da AltaPress.',
+        details: ['Aplicação em caldeiras', 'Especificação sob consulta'],
+        standards: [{ label: 'Aplicação', options: ['Descarga de caldeira'] }],
+      },
+      {
+        label: 'Diafragma',
+        image: productValvulaDiafragma,
+        alt: 'Válvula diafragma da AltaPress.',
+        details: ['Tipo A', 'Tipo R ou KB'],
+        standards: [{ label: 'Tipo', options: ['Tipo A', 'Tipo R ou KB'] }],
+      },
+      {
+        label: 'Esfera',
+        image: productValvulaEsfera,
+        alt: 'Válvula esfera da AltaPress.',
+        details: ['Monobloco', 'Bipartida', 'Tripartida'],
+        standards: [{ label: 'Construção', options: ['Monobloco', 'Bipartida', 'Tripartida'] }],
+      },
       {
         label: 'Gaveta',
         image: productValvulaGaveta,
         alt: 'Válvula gaveta da AltaPress.',
         mediaClassName: 'product-page__item-media--blend',
+        details: ['Haste ascendente', 'Haste fixa', 'Fecho rápido'],
+        standards: [{ label: 'Modelo', options: ['Haste Ascendente', 'Haste Fixa', 'Fecho Rápido'] }],
       },
-      { label: 'Globo', image: productValvulaGlobo, alt: 'Válvula globo da AltaPress.' },
-      { label: 'Guilhotina', image: productValvulaGuilhotina, alt: 'Válvula guilhotina da AltaPress.' },
-      { label: 'Macho', image: productValvulaMacho, alt: 'Válvula macho da AltaPress.' },
-      { label: 'Mangote', image: productValvulaMangote, alt: 'Válvula mangote da AltaPress.' },
-      { label: 'Para hidrante', image: productValvulaParaHidrante, alt: 'Válvula para hidrante da AltaPress.' },
-      { label: 'Passagem reta', image: productValvulaPassagemReta, alt: 'Válvula de passagem reta da AltaPress.' },
-      { label: 'Redutora de pressão', image: productValvulaRedutoraPressao, alt: 'Válvula redutora de pressão da AltaPress.' },
-      { label: 'Retenção', image: productValvulaRetencao, alt: 'Válvula de retenção da AltaPress.' },
-      { label: 'Segurança e alívio', image: productValvulaSegurancaAlivio, alt: 'Válvula de segurança e alívio da AltaPress.' },
-      { label: 'Solenóide', image: productValvulaSolenoide, alt: 'Válvula solenóide da AltaPress.' },
+      {
+        label: 'Globo',
+        image: productValvulaGlobo,
+        alt: 'Válvula globo da AltaPress.',
+        details: ['Forjada', 'Fundida', 'Ferro', 'Bronze', 'Agulha'],
+        standards: [{ label: 'Modelo', options: ['Forjada', 'Fundida', 'Ferro', 'Aerodinâmica', 'Bronze', 'Agulha'] }],
+      },
+      {
+        label: 'Guilhotina',
+        image: productValvulaGuilhotina,
+        alt: 'Válvula guilhotina da AltaPress.',
+        details: ['Wafer BR', 'Wafer com manga VG', 'Flangeada WG'],
+        standards: [{ label: 'Modelo', options: ['Wafer BR', 'Wafer com Manga VG', 'Flangeada WG'] }],
+      },
+      {
+        label: 'Macho',
+        image: productValvulaMacho,
+        alt: 'Válvula macho da AltaPress.',
+        details: ['Passagem reta', 'Especificação sob consulta'],
+        standards: [{ label: 'Aplicação', options: ['Passagem reta', 'Classe e bitola sob consulta'] }],
+      },
+      {
+        label: 'Mangote',
+        image: productValvulaMangote,
+        alt: 'Válvula mangote da AltaPress.',
+        details: ['Corpo aberto', 'Corpo fechado'],
+        standards: [{ label: 'Corpo', options: ['Corpo Aberto', 'Corpo Fechado'] }],
+      },
+      {
+        label: 'Para hidrante',
+        image: productValvulaParaHidrante,
+        alt: 'Válvula para hidrante da AltaPress.',
+        details: ['Combate a incêndio', 'Registro hidrante'],
+        standards: [{ label: 'Aplicação', options: ['Registro Hidrante', 'Combate a incêndio'] }],
+      },
+      {
+        label: 'Passagem reta',
+        image: productValvulaPassagemReta,
+        alt: 'Válvula de passagem reta da AltaPress.',
+        details: ['Fluxo direto', 'Especificação sob consulta'],
+        standards: [{ label: 'Aplicação', options: ['Passagem reta', 'Classe e bitola sob consulta'] }],
+      },
+      {
+        label: 'Redutora de pressão',
+        image: productValvulaRedutoraPressao,
+        alt: 'Válvula redutora de pressão da AltaPress.',
+        details: ['Controle de pressão', 'Especificação sob consulta'],
+        standards: [{ label: 'Aplicação', options: ['Controle de pressão', 'Classe e bitola sob consulta'] }],
+      },
+      {
+        label: 'Retenção',
+        image: productValvulaRetencao,
+        alt: 'Válvula de retenção da AltaPress.',
+        details: ['Aerodinâmica', 'Fundo de poço', 'Portinhola', 'Wafer'],
+        standards: [
+          {
+            label: 'Modelo',
+            options: ['Aerodinâmica', 'Fundo de Poço', 'Horizontal Pistão', 'Portinhola', 'Retenção Wafer', 'Retenção Vertical'],
+          },
+        ],
+      },
+      {
+        label: 'Segurança e alívio',
+        image: productValvulaSegurancaAlivio,
+        alt: 'Válvula de segurança e alívio da AltaPress.',
+        details: ['Segurança', 'Alívio', 'Calibração sob consulta'],
+        standards: [{ label: 'Aplicação', options: ['Segurança', 'Alívio', 'Calibração sob consulta'] }],
+      },
+      {
+        label: 'Solenóide',
+        image: productValvulaSolenoide,
+        alt: 'Válvula solenóide da AltaPress.',
+        details: ['Acionamento elétrico', 'Especificação sob consulta'],
+        standards: [{ label: 'Aplicação', options: ['Acionamento elétrico', 'Classe e bitola sob consulta'] }],
+      },
     ],
   },
   {
@@ -264,34 +361,138 @@ const productCategories = [
     slug: 'conexoes',
     image: productConexoes,
     items: [
-      { label: 'Alta pressão', image: productConexaoAltaPressao, alt: 'Conexões de alta pressão da AltaPress.' },
-      { label: 'Ferro maleável', image: productConexaoFerroMaleavel, alt: 'Conexões em ferro maleável da AltaPress.' },
-      { label: 'Colares', image: productConexaoColares, alt: 'Colares metálicos da AltaPress.' },
-      { label: 'Conexões tubulares', image: productConexaoTubulares, alt: 'Conexões tubulares da AltaPress.' },
+      {
+        label: 'Alta pressão',
+        image: productConexaoAltaPressao,
+        alt: 'Conexões de alta pressão da AltaPress.',
+        details: ['Rosca NPT/BSP', 'Solda SW'],
+        standards: [{ label: 'Forjadas', options: ['Rosca (NPT/BSP)', 'Solda (SW)'] }],
+      },
+      {
+        label: 'Ferro maleável',
+        image: productConexaoFerroMaleavel,
+        alt: 'Conexões em ferro maleável da AltaPress.',
+        details: ['Buchas', 'Cotovelos', 'Luvas', 'Tês', 'Uniões'],
+        standards: [
+          {
+            label: 'Tipos',
+            options: [
+              'Bucha Redução',
+              'Bujão',
+              'Cotovelo 45°',
+              'Cotovelo 90°',
+              'Cruzeta',
+              'Curva 45° Fêmea',
+              'Curva 45° M/F',
+              'Curva 90° Fêmea',
+              'Curva 90° Macho',
+              'Curva 90° M/F',
+              'Curva de Retorno',
+              'Flange Sextavado',
+              'Luva',
+              'Luva de Redução',
+              'Niple Duplo',
+              'Tampão',
+              'Tê 45°',
+              'Tê 90°',
+              'União',
+            ],
+          },
+        ],
+      },
+      {
+        label: 'Colares',
+        image: productConexaoColares,
+        alt: 'Colares metálicos da AltaPress.',
+        details: ['Colares metálicos', 'Bitola sob consulta'],
+        standards: [{ label: 'Aplicação', options: ['Colar metálico', 'Bitola sob consulta'] }],
+      },
+      {
+        label: 'Conexões tubulares',
+        image: productConexaoTubulares,
+        alt: 'Conexões tubulares da AltaPress.',
+        details: ['Cap', 'Curvas', 'Reduções', 'Tês'],
+        standards: [
+          {
+            label: 'Tipos',
+            options: [
+              'Cap',
+              'Curva 45°',
+              'Curva 90°',
+              'Curva 180°',
+              'Niple Concêntrico',
+              'Niple Excêntrico',
+              'Pestana',
+              'Redução Concêntrica',
+              'Redução Excêntrica',
+              'Tê 45°',
+              'Tê 45° de Redução',
+              'Tê 90°',
+              'Tê 90° de Redução',
+            ],
+          },
+        ],
+      },
     ],
   },
   {
     title: 'Filtros',
     slug: 'filtros',
     items: [
-      { label: 'Tipo cesto', image: productFiltroCesto, alt: 'Filtro tipo cesto da AltaPress.' },
-      { label: 'Tipo Y', image: productFiltroY, alt: 'Filtro tipo Y da AltaPress.' },
+      {
+        label: 'Tipo cesto',
+        image: productFiltroCesto,
+        alt: 'Filtro tipo cesto da AltaPress.',
+        details: ['Cesto simples', 'Flangeado'],
+        standards: [{ label: 'Modelo', options: ['Cesto Simples', 'Flangeado'] }],
+      },
+      {
+        label: 'Tipo Y',
+        image: productFiltroY,
+        alt: 'Filtro tipo Y da AltaPress.',
+        details: ['Flangeado', 'Rosca', 'Bronze'],
+        standards: [{ label: 'Conexão', options: ['Flangeado', 'Rosca', 'Bronze'] }],
+      },
     ],
   },
   {
     title: 'Purgadores',
     slug: 'purgadores',
     items: [
-      { label: 'Bóia', image: productPurgadorBoia, alt: 'Purgador tipo bóia da AltaPress.' },
-      { label: 'Termodinâmico', image: productPurgadorTermodinamico, alt: 'Purgador termodinâmico da AltaPress.' },
+      {
+        label: 'Bóia',
+        image: productPurgadorBoia,
+        alt: 'Purgador tipo bóia da AltaPress.',
+        details: ['Tipo boia', 'Vapor e condensado'],
+        standards: [{ label: 'Tipo', options: ['Tipo Boia', 'Especificação sob consulta'] }],
+      },
+      {
+        label: 'Termodinâmico',
+        image: productPurgadorTermodinamico,
+        alt: 'Purgador termodinâmico da AltaPress.',
+        details: ['Termodinâmico', 'Vapor e condensado'],
+        standards: [{ label: 'Tipo', options: ['Termodinâmico', 'Especificação sob consulta'] }],
+      },
     ],
   },
   {
     title: 'Vedações',
     slug: 'vedacoes',
     items: [
-      { label: 'Fita PTFE', image: productVedacaoFitaPtfe, alt: 'Fita PTFE da AltaPress.' },
-      { label: 'Junta de vedação', image: productVedacaoJuntaVedacao, alt: 'Junta de vedação da AltaPress.' },
+      {
+        label: 'Fita PTFE',
+        image: productVedacaoFitaPtfe,
+        alt: 'Fita PTFE da AltaPress.',
+        details: ['Fita veda rosca', 'PTFE'],
+        standards: [{ label: 'Tipo', options: ['Fita veda rosca', 'PTFE'] }],
+      },
+      {
+        label: 'Junta de vedação',
+        image: productVedacaoJuntaVedacao,
+        alt: 'Junta de vedação da AltaPress.',
+        details: ['Junta vedação', 'Material sob consulta'],
+        standards: [{ label: 'Tipo', options: ['Junta Vedação', 'Material sob consulta'] }],
+      },
     ],
   },
   {
@@ -299,10 +500,34 @@ const productCategories = [
     slug: 'instrumentos',
     image: productInstrumentos,
     items: [
-      { label: 'Manômetros', image: productInstrumentoManometro, alt: 'Manômetro da AltaPress.' },
-      { label: 'Termômetros', image: productInstrumentoTermometro, alt: 'Termômetro da AltaPress.' },
-      { label: 'Pressostatos', image: productInstrumentoPressostatos, alt: 'Pressostato da AltaPress.' },
-      { label: 'Vacuômetros', image: productInstrumentoVacuometro, alt: 'Vacuômetro da AltaPress.' },
+      {
+        label: 'Manômetros',
+        image: productInstrumentoManometro,
+        alt: 'Manômetro da AltaPress.',
+        details: ['Pressão', 'Faixa sob consulta'],
+        standards: [{ label: 'Aplicação', options: ['Pressão', 'Faixa sob consulta'] }],
+      },
+      {
+        label: 'Termômetros',
+        image: productInstrumentoTermometro,
+        alt: 'Termômetro da AltaPress.',
+        details: ['Angular', 'Capela'],
+        standards: [{ label: 'Modelo', options: ['Angular', 'Capela'] }],
+      },
+      {
+        label: 'Pressostatos',
+        image: productInstrumentoPressostatos,
+        alt: 'Pressostato da AltaPress.',
+        details: ['Controle de pressão', 'Faixa sob consulta'],
+        standards: [{ label: 'Aplicação', options: ['Controle de pressão', 'Faixa sob consulta'] }],
+      },
+      {
+        label: 'Vacuômetros',
+        image: productInstrumentoVacuometro,
+        alt: 'Vacuômetro da AltaPress.',
+        details: ['Vácuo', 'Faixa sob consulta'],
+        standards: [{ label: 'Aplicação', options: ['Vácuo', 'Faixa sob consulta'] }],
+      },
     ],
   },
   {
@@ -310,10 +535,34 @@ const productCategories = [
     slug: 'acessorios',
     image: productAcessorios,
     items: [
-      { label: 'Grampo U', image: productAcessorioGrampoU, alt: 'Grampo U da AltaPress.' },
-      { label: 'Indicador de nível', image: productAcessorioIndicadorNivel, alt: 'Indicador de nível da AltaPress.' },
-      { label: 'Juntas de expansão', image: productAcessorioJuntaExpansao, alt: 'Junta de expansão da AltaPress.' },
-      { label: 'Visor de fluxo', image: productAcessorioVisorFluxo, alt: 'Visor de fluxo da AltaPress.' },
+      {
+        label: 'Grampo U',
+        image: productAcessorioGrampoU,
+        alt: 'Grampo U da AltaPress.',
+        details: ['Fixação', 'Bitola sob consulta'],
+        standards: [{ label: 'Aplicação', options: ['Fixação', 'Bitola sob consulta'] }],
+      },
+      {
+        label: 'Indicador de nível',
+        image: productAcessorioIndicadorNivel,
+        alt: 'Indicador de nível da AltaPress.',
+        details: ['Nível', 'Modelo sob consulta'],
+        standards: [{ label: 'Aplicação', options: ['Indicador de nível', 'Modelo sob consulta'] }],
+      },
+      {
+        label: 'Juntas de expansão',
+        image: productAcessorioJuntaExpansao,
+        alt: 'Junta de expansão da AltaPress.',
+        details: ['Flangeada', 'Dupla onda'],
+        standards: [{ label: 'Modelo', options: ['Flangeada', 'Dupla Onda'] }],
+      },
+      {
+        label: 'Visor de fluxo',
+        image: productAcessorioVisorFluxo,
+        alt: 'Visor de fluxo da AltaPress.',
+        details: ['Flangeado', 'Rosca', 'Bronze'],
+        standards: [{ label: 'Conexão', options: ['Flangeado', 'Rosca', 'Bronze'] }],
+      },
     ],
   },
 ];
@@ -459,6 +708,25 @@ function slugifyProductLabel(label) {
     .replace(/^-+|-+$/g, '');
 }
 
+function isConsultationOnlyOption(label) {
+  return /sob consulta/i.test(label);
+}
+
+function getVisibleProductStandards(productItem) {
+  if (!productItem || typeof productItem === 'string') {
+    return [];
+  }
+
+  return (productItem.standards ?? [])
+    .map((standard) => {
+      const realOptions = standard.options.filter((option) => !isConsultationOnlyOption(option));
+      const options = realOptions.length ? realOptions : standard.options;
+
+      return { ...standard, options };
+    })
+    .filter((standard) => standard.options.length);
+}
+
 function getTechnicalSpec(specs, itemSlug, standardSlug, optionSlug) {
   const standardSpecs = specs[itemSlug]?.[standardSlug];
 
@@ -516,7 +784,7 @@ function getProductRouteFromPath(pathname) {
     ? category.items.find((item) => slugifyProductLabel(typeof item === 'string' ? item : item.label) === itemSlug)
     : null;
   const standardSlug = parts[3];
-  const standards = productItem && typeof productItem !== 'string' ? productItem.standards ?? [] : [];
+  const standards = getVisibleProductStandards(productItem);
   const standard = standardSlug
     ? standards.find((item) => slugifyProductLabel(item.label) === standardSlug)
     : null;
@@ -578,7 +846,7 @@ function ProductCategoryPage({ category, onNavigate }) {
                 const image = typeof item === 'string' ? null : item.image;
                 const alt = typeof item === 'string' ? '' : item.alt ?? label;
                 const mediaClassName = typeof item === 'string' ? '' : item.mediaClassName ?? '';
-                const details = typeof item === 'string' ? [] : item.details ?? [];
+                const details = typeof item === 'string' ? [] : (item.details ?? []).filter((detail) => !isConsultationOnlyOption(detail));
                 const itemHref = `/produtos/${category.slug}/${slugifyProductLabel(label)}`;
 
                 return (
@@ -629,7 +897,7 @@ function ProductItemPage({ category, productItem, onNavigate }) {
   const image = typeof productItem === 'string' ? null : productItem.image;
   const alt = typeof productItem === 'string' ? '' : productItem.alt ?? label;
   const mediaClassName = typeof productItem === 'string' ? '' : productItem.mediaClassName ?? '';
-  const standards = typeof productItem === 'string' ? [] : productItem.standards ?? [];
+  const standards = getVisibleProductStandards(productItem);
   const fallbackCards = [
     {
       label: 'Especificação sob consulta',
@@ -801,7 +1069,10 @@ function ProductSpecPage({ category, productItem, standard, optionSlug, onNaviga
   const [spec, setSpec] = useState(null);
   const [specStatus, setSpecStatus] = useState('loading');
   const figureImages = spec
-    ? [...(image ? [{ src: image, alt }] : []), ...(spec.images?.slice(1) ?? [])]
+    ? [
+        ...(image ? [{ src: image, alt }] : []),
+        ...(category.slug === 'flanges' ? spec.images?.slice(1) ?? [] : []),
+      ]
     : [];
 
   useEffect(() => {
@@ -809,13 +1080,19 @@ function ProductSpecPage({ category, productItem, standard, optionSlug, onNaviga
 
     setSpecStatus('loading');
 
-    import('./data/flangeTechnicalSpecs')
-      .then((module) => {
+    Promise.all([
+      import('./data/flangeTechnicalSpecs'),
+      import('./data/productTechnicalSpecs'),
+    ])
+      .then(([flangeModule, productModule]) => {
         if (!isMounted) {
           return;
         }
 
-        const nextSpec = getTechnicalSpec(module.flangeTechnicalSpecs, itemSlug, standardSlug, optionSlug);
+        const nextSpec =
+          getTechnicalSpec(flangeModule.flangeTechnicalSpecs, itemSlug, standardSlug, optionSlug) ??
+          getTechnicalSpec(productModule.productTechnicalSpecs, itemSlug, standardSlug, optionSlug);
+
         setSpec(nextSpec);
         setSpecStatus(nextSpec ? 'ready' : 'missing');
       })

@@ -253,6 +253,8 @@ input {
   border-radius: 999px;
   border: 1px solid transparent;
   font-weight: 600;
+  line-height: 1.15;
+  text-align: center;
   transition:
     transform 0.2s ease,
     background-color 0.2s ease,
