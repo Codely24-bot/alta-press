@@ -1681,7 +1681,7 @@ function App() {
               <span className="eyebrow">Quem Somos</span>
               <h2>Sobre a AltaPress</h2>
               <p>
-                A fundação da AltaPress é resultado da união da experiência e da visão empreendedora de Francis e Adriano,
+                A fundação da AltaPress é resultado da união, experiência e visão empreendedora de Francis e Adriano,
                 profissionais com mais de 10 anos de atuação no mercado de soluções para a linha hidráulica industrial.
               </p>
               <p>
