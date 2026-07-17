@@ -7,23 +7,23 @@ export const productTechnicalSpecs = {
         "optionSlug": "ferro-fundido",
         "title": "Ferro Fundido",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/angular/angular-ferro/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "VÃ¡lvula globo tipo angular em ferro fundido ASTM A 126;",
+          "Válvula globo tipo angular em ferro fundido ASTM A 126;",
           "Classe 125 lb;",
           "Tampa aparafusada;",
           "Internos em bronze;",
           "Haste com rosca e volante ascendentes;",
-          "Flanges padrÃ£o ANSI B 16.1;",
-          "Face plana padrÃ£o ANSI B 16.10."
+          "Flanges padrão ANSI B 16.1;",
+          "Face plana padrão ANSI B 16.10."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-v-c3-a1lvula-globo-angular-classe-368x245-png-8f16447edf.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/V%C3%A1lvula-Globo-Angular-Classe-368x245.png",
             "alt": "Ferro Fundido"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-angular-ferro-368x245-png-0c1df07827.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-Angular-Ferro-368x245.png",
             "alt": "Ferro Fundido"
           }
         ],
@@ -44,25 +44,25 @@ export const productTechnicalSpecs = {
         "itemSlug": "angular",
         "standardSlug": "material",
         "optionSlug": "aco",
-        "title": "AÃ§o",
+        "title": "Aço",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/angular/angular-aco/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "VÃ¡lvula globo, tipo angular, em aÃ§o carbono fundido ASTM A 216 Grau WCB;",
+          "Válvula globo, tipo angular, em aço carbono fundido ASTM A 216 Grau WCB;",
           "Classe 150 lb;",
           "Tampa aparafusada;",
-          "Internos em aÃ§o inoxidÃ¡vel;",
+          "Internos em aço inoxidável;",
           "Haste com rosca e volante ascendentes;",
-          "Fanges padrÃ£o ANSI B 16.5 face com ressalto e face a face padrÃ£o ANSI B16.10."
+          "Fanges padrão ANSI B 16.5 face com ressalto e face a face padrão ANSI B16.10."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-fig-15-valv-ang-wcb-150-flang-368x245-png-a861ed83c2.png",
-            "alt": "AÃ§o"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/FIG-15-VALV-ANG-WCB-150-FLANG-368x245.png",
+            "alt": "Aço"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-angular-wcb-368x245-png-273d0a54db.png",
-            "alt": "AÃ§o"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-Angular-WCB-368x245.png",
+            "alt": "Aço"
           }
         ],
         "tables": [
@@ -84,15 +84,15 @@ export const productTechnicalSpecs = {
         "optionSlug": "bronze",
         "title": "Bronze",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/angular/angular-bronze/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "VÃ¡lvula Globo Angular â€“ tipo hidrante de incÃªndio;",
-          "Classe de pressÃ£o:",
+          "Válvula Globo Angular – tipo hidrante de incêndio;",
+          "Classe de pressão:",
           "200lbs / 300lbs"
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-v-c3-a1lvula-globo-angular-bronze-368x245-png-deb4047f29.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/V%C3%A1lvula-Globo-Angular-Bronze-368x245.png",
             "alt": "Bronze"
           }
         ],
@@ -100,7 +100,7 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -108,7 +108,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -121,51 +121,51 @@ export const productTechnicalSpecs = {
         "itemSlug": "borboleta",
         "standardSlug": "tipo-construtivo",
         "optionSlug": "wafer",
-        "title": "VÃ¡lvula Borboleta Tipo Wafer",
+        "title": "Válvula Borboleta Tipo Wafer",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/borboleta/borboleta-wafer/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "Norma de fabricaÃ§Ã£o: API 609, Classe 150 lbs.",
-          "Montagem: Entre flanges padrÃ£o ANSI ou DIN.",
-          "Corpo: ConstruÃ§Ã£o estreita (wafer) com sede resiliente substituÃ­vel.",
-          "AplicaÃ§Ãµes: Adequada para diversos fluidos, com temperatura de trabalho atÃ© 200 Â°C e pressÃ£o de atÃ© 10 bar",
-          "Materiais DisponÃ­veis:",
-          "Corpo: Ferro fundido ASTM A126, aÃ§o carbono ASTM A216 Gr.",
-          "WCB, aÃ§o inoxidÃ¡vel ASTM A351 Gr.",
-          "Disco: Ferro fundido nodular GGG40 ou aÃ§o inoxidÃ¡vel AISI 316.",
-          "VedaÃ§Ã£o: EPDM, NBR (Buna-N), Neoprene, Viton, Hypalon, Silicone ou Metal/Metal.",
-          "Acionamentos DisponÃ­veis:"
+          "Norma de fabricação: API 609, Classe 150 lbs.",
+          "Montagem: Entre flanges padrão ANSI ou DIN.",
+          "Corpo: Construção estreita (wafer) com sede resiliente substituível.",
+          "Aplicações: Adequada para diversos fluidos, com temperatura de trabalho até 200 °C e pressão de até 10 bar",
+          "Materiais Disponíveis:",
+          "Corpo: Ferro fundido ASTM A126, aço carbono ASTM A216 Gr.",
+          "WCB, aço inoxidável ASTM A351 Gr.",
+          "Disco: Ferro fundido nodular GGG40 ou aço inoxidável AISI 316.",
+          "Vedação: EPDM, NBR (Buna-N), Neoprene, Viton, Hypalon, Silicone ou Metal/Metal.",
+          "Acionamentos Disponíveis:"
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-cdv-2018-borboleta-wafer-368x245-png-8cb2af1ea5.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/cdv_2018_BORBOLETA-WAFER-368x245.png",
             "alt": "Wafer"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-borboleta-wafer-svi-cx-368x245-png-b53aa1eb6d.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/BORBOLETA-WAFER-SVI-CX-368x245.png",
             "alt": "Wafer"
           }
         ],
         "tables": [
           [
             [
-              "DescriÃ§Ã£o",
-              "Classe de PressÃ£o"
+              "Descrição",
+              "Classe de Pressão"
             ],
             [
-              "VÃ¡lvula Borboleta, tipo wafer, corpo em AÃ§o InoxidÃ¡vel ASTM A 351 Gr. CF8.",
+              "Válvula Borboleta, tipo wafer, corpo em Aço Inoxidável ASTM A 351 Gr. CF8.",
               "150 lbs"
             ],
             [
-              "VÃ¡lvula Borboleta, tipo wafer, corpo em AÃ§o InoxidÃ¡vel ASTM A 351 Gr. CF8M.",
+              "Válvula Borboleta, tipo wafer, corpo em Aço Inoxidável ASTM A 351 Gr. CF8M.",
               "150 lbs"
             ],
             [
-              "VÃ¡lvula Borboleta, tipo wafer, corpo em AÃ§o Carbono ASTM A 216 Gr. WCB.",
+              "Válvula Borboleta, tipo wafer, corpo em Aço Carbono ASTM A 216 Gr. WCB.",
               "150 lbs"
             ],
             [
-              "VÃ¡lvula Borboleta, tipo wafer, corpo em Ferro Fundido ASTM A 126.",
+              "Válvula Borboleta, tipo wafer, corpo em Ferro Fundido ASTM A 126.",
               "150 lbs"
             ]
           ],
@@ -182,22 +182,22 @@ export const productTechnicalSpecs = {
             ],
             [
               "Neoprene",
-              "Caixa de ReduÃ§Ã£o",
+              "Caixa de Redução",
               "2 - Corpo"
             ],
             [
               "Hypalon",
-              "Atuador PneumÃ¡tico",
+              "Atuador Pneumático",
               "3 - Sede"
             ],
             [
               "Viton",
-              "Atuador ElÃ©trico",
+              "Atuador Elétrico",
               "4 - Disco"
             ],
             [
               "Etileno Propileno (EPDM)",
-              "Atuador HidrÃ¡ulico",
+              "Atuador Hidráulico",
               "--"
             ],
             [
@@ -219,15 +219,15 @@ export const productTechnicalSpecs = {
         "optionSlug": "lug",
         "title": "Lug",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/borboleta/borboleta-lug/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "VÃ¡lvula Borboleta tipo LUG, para montagens entre flanges.",
-          "Corpo estrito com sede resiliente facilmente desmontÃ¡vel para a troca de vedaÃ§Ã£o e borboleta.",
-          "AplicaÃ§Ã£o para variados fluidos com temperatura de trabalho atÃ© 200Â°C e fechamento estanque normalmente a 10 bar."
+          "Válvula Borboleta tipo LUG, para montagens entre flanges.",
+          "Corpo estrito com sede resiliente facilmente desmontável para a troca de vedação e borboleta.",
+          "Aplicação para variados fluidos com temperatura de trabalho até 200°C e fechamento estanque normalmente a 10 bar."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-borboleta-368x245-png-4e5ed3e3c1.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/Borboleta-368x245.png",
             "alt": "Lug"
           }
         ],
@@ -235,7 +235,7 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -243,7 +243,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -258,30 +258,30 @@ export const productTechnicalSpecs = {
         "optionSlug": "descarga-de-caldeira",
         "title": "Descarga de caldeira",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/aquecimento-e-refrigeracao/vapor-e-fluidos-termicos/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "Adequado para NH3, R22, R134a e outros refrigerantes aprovados DisponÃ­vel Globo 180graus DisponÃ­vel Angular 90 graus Anel de PTFE ( teflon ) TambÃ©m disponÃ­vel com obturador para vÃ¡lvula de expansÃ£o Teste de corpo:",
+          "Adequado para NH3, R22, R134a e outros refrigerantes aprovados Disponível Globo 180graus Disponível Angular 90 graus Anel de PTFE ( teflon ) Também disponível com obturador para válvula de expansão Teste de corpo:",
           "27 bar Teste de estanqueidade:",
-          "21 bar Teste de contra vedaÃ§Ã£o:",
-          "21 bar Classe de PressÃ£o do corpo:",
-          "PN45 Temperatura de operaÃ§Ã£o:",
+          "21 bar Teste de contra vedação:",
+          "21 bar Classe de Pressão do corpo:",
+          "PN45 Temperatura de operação:",
           "50 C a 120 C Fabricada inteiramente no Brasil"
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2022-07-vapor-01-jpg-0d7a127658.png",
-            "alt": "Vapor e FluÃ­dos TÃ©rmicos"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/VAPOR-01.jpg",
+            "alt": "Vapor e Fluídos Térmicos"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2022-07-vapor-02-jpg-5e865439cc.png",
-            "alt": "Vapor e FluÃ­dos TÃ©rmicos"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/VAPOR-02.jpg",
+            "alt": "Vapor e Fluídos Térmicos"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -289,7 +289,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -304,23 +304,23 @@ export const productTechnicalSpecs = {
         "optionSlug": "tipo-a",
         "title": "Tipo A",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/diafragma/tipo-a/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "Para uso geral, oferece fluxo suave e operaÃ§Ã£o simples em qualquer posiÃ§Ã£o.",
-          "Seu projeto proporciona longa vida Ãºtil do diafragma em serviÃ§os de regulagem e fechamento.",
-          "Outras caracterÃ­sticas sÃ£o o indicador de abertura e o comando permanentemente lubrificado.",
-          "Uma ampla gama de materiais de corpos, revestimentos, diafragmas, atuadores e acessÃ³rios, permitem-nos fornecer a valvulas certa para condiÃ§Ãµes particulares de operaÃ§Ã£o.",
+          "Para uso geral, oferece fluxo suave e operação simples em qualquer posição.",
+          "Seu projeto proporciona longa vida útil do diafragma em serviços de regulagem e fechamento.",
+          "Outras características são o indicador de abertura e o comando permanentemente lubrificado.",
+          "Uma ampla gama de materiais de corpos, revestimentos, diafragmas, atuadores e acessórios, permitem-nos fornecer a valvulas certa para condições particulares de operação.",
           "Os revestimentos substituem a necessidade de se utilizar corpos.",
-          "Em ligas especiais e metais nobres que sÃ£o mais caros.",
-          "Utilizada no manuseio de fluidos abrasivos, corrosivos, lamas, polpas e uma grande variedade de fluidos com sÃ³lidos em suspensÃ£o."
+          "Em ligas especiais e metais nobres que são mais caros.",
+          "Utilizada no manuseio de fluidos abrasivos, corrosivos, lamas, polpas e uma grande variedade de fluidos com sólidos em suspensão."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-diafragma-e2-80-93tipoa-368x245-png-0c0c4b9430.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Diafragma%E2%80%93TipoA-368x245.png",
             "alt": "Tipo A"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-diafragma-tipo-a1-368x245-png-ef65282209.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-Diafragma-Tipo-A1-368x245.png",
             "alt": "Tipo A"
           }
         ],
@@ -328,7 +328,7 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -336,7 +336,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -347,24 +347,24 @@ export const productTechnicalSpecs = {
         "optionSlug": "tipo-r-ou-kb",
         "title": "Tipo R ou KB",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/diafragma/tipo-r/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "Para uso geral, oferece fluxo suave e operaÃ§Ã£o simples em qualquer posiÃ§Ã£o.",
-          "Seu projeto proporciona longa vida Ãºtil do diafragma em serviÃ§os de regulagem e fechamento.",
-          "Outras caracterÃ­sticas sÃ£o o indicador de abertura e o comando permanentemente lubrificado.",
-          "Uma ampla gama de materiais de corpos, revestimentos, diafragmas, atuadores e acessÃ³rios, permitem-nos fornecer a valvulas certa para condiÃ§Ãµes particulares de operaÃ§Ã£o.",
+          "Para uso geral, oferece fluxo suave e operação simples em qualquer posição.",
+          "Seu projeto proporciona longa vida útil do diafragma em serviços de regulagem e fechamento.",
+          "Outras características são o indicador de abertura e o comando permanentemente lubrificado.",
+          "Uma ampla gama de materiais de corpos, revestimentos, diafragmas, atuadores e acessórios, permitem-nos fornecer a valvulas certa para condições particulares de operação.",
           "Os revestimentos substituem a necessidade de se utilizar corpos.",
-          "Em ligas especiais e metais nobres que sÃ£o mais caros.",
-          "Utilizada no manuseio de fluidos abrasivos, lama corrosiva, fluidos que cristalizam em suspensÃ£o.",
-          "Seu projeto de passagem reta integral, facilita o uso de escovas e varetas para a limpeza das vÃ¡lvulas."
+          "Em ligas especiais e metais nobres que são mais caros.",
+          "Utilizada no manuseio de fluidos abrasivos, lama corrosiva, fluidos que cristalizam em suspensão.",
+          "Seu projeto de passagem reta integral, facilita o uso de escovas e varetas para a limpeza das válvulas."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-diafragma-e2-80-93tipo-r-ou-kb-368x245-png-9681d36ec7.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Diafragma%E2%80%93Tipo-R-ou-KB-368x245.png",
             "alt": "Tipo R ou KB"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-diafragma-tipo-a1-368x245-png-ef65282209.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-Diafragma-Tipo-A1-368x245.png",
             "alt": "Tipo R ou KB"
           }
         ],
@@ -372,7 +372,7 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -380,7 +380,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -395,18 +395,18 @@ export const productTechnicalSpecs = {
         "optionSlug": "monobloco",
         "title": "Monobloco",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/esfera/monobloco/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "VÃ¡lvula de bloqueio de fluxo.",
-          "DisponÃ­vel em passagem reduzida classe de pressÃ£o PN25 e passagem plena classe de pressÃ£o PN 30 Indicada para uso em redes de Ã¡gua e ar, quando utilizadas a temperatura ambiente."
+          "Válvula de bloqueio de fluxo.",
+          "Disponível em passagem reduzida classe de pressão PN25 e passagem plena classe de pressão PN 30 Indicada para uso em redes de água e ar, quando utilizadas a temperatura ambiente."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-esfera-monobloco-368x245-png-8c7dbd6c89.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Esfera-Monobloco-368x245.png",
             "alt": "Monobloco"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-monobloco-368x245-png-f30138e23e.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-Monobloco-368x245.png",
             "alt": "Monobloco"
           }
         ],
@@ -441,19 +441,19 @@ export const productTechnicalSpecs = {
         "optionSlug": "bipartida",
         "title": "Bipartida",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/esfera/bipartida/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "Bipartida para aplicaÃ§Ã£o industrial conforme condiÃ§Ã£o de operaÃ§Ã£o.",
-          "Material, bitola, classe de pressÃ£o e acabamento definidos sob consulta tÃ©cnica.",
+          "Bipartida para aplicação industrial conforme condição de operação.",
+          "Material, bitola, classe de pressão e acabamento definidos sob consulta técnica.",
           "Fornecimento conforme disponibilidade e requisitos do projeto."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-esfera-bipartida-368x245-png-d6cd1648ad.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Esfera-Bipartida-368x245.png",
             "alt": "Bipartida"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-bipartida-368x245-png-e7556656c2.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-bipartida-368x245.png",
             "alt": "Bipartida"
           }
         ],
@@ -461,7 +461,7 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -469,7 +469,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -480,19 +480,19 @@ export const productTechnicalSpecs = {
         "optionSlug": "tripartida",
         "title": "Tripartida",
         "sourceUrl": "https://www.valaco.com.br/produtos/val_esfera_tri.html",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "Tripartida para aplicação industrial conforme condição de operação.",
-          "Material, bitola, classe de pressão e acabamento definidos sob consulta técnica.",
+          "Tripartida para aplicacao industrial conforme condicao de operacao.",
+          "Material, bitola, classe de pressao e acabamento definidos sob consulta tecnica.",
           "Fornecimento conforme disponibilidade e requisitos do projeto."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-tripartida-rosca-368x245-png-0694112f4e.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Tripartida-Rosca-368x245.png",
             "alt": "Rosca | Solda"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-tripartida-flangeada-368x245-png-742606d640.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Tripartida-Flangeada-368x245.png",
             "alt": "Flangeada"
           }
         ],
@@ -523,19 +523,19 @@ export const productTechnicalSpecs = {
         "optionSlug": "haste-ascendente",
         "title": "Haste Ascendente",
         "sourceUrl": "https://www.valaco.com.br/produtos/val_gaveta_ha.html",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "Haste Ascendente para aplicação industrial conforme condição de operação.",
-          "Material, bitola, classe de pressão e acabamento definidos sob consulta técnica.",
+          "Haste Ascendente para aplicacao industrial conforme condicao de operacao.",
+          "Material, bitola, classe de pressao e acabamento definidos sob consulta tecnica.",
           "Fornecimento conforme disponibilidade e requisitos do projeto."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-globo-forjada-368x245-png-eb4f88c889.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Globo-Forjada-368x245.png",
             "alt": "Forjada"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-gaveta-ferro-368x245-png-5c8453a92d.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Gaveta-Ferro-368x245.png",
             "alt": "Fundida"
           }
         ],
@@ -543,7 +543,7 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -551,7 +551,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -562,19 +562,19 @@ export const productTechnicalSpecs = {
         "optionSlug": "haste-fixa",
         "title": "Haste Fixa",
         "sourceUrl": "https://www.valaco.com.br/produtos/val_gaveta_hf.html",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "Haste Fixa para aplicação industrial conforme condição de operação.",
-          "Material, bitola, classe de pressão e acabamento definidos sob consulta técnica.",
+          "Haste Fixa para aplicacao industrial conforme condicao de operacao.",
+          "Material, bitola, classe de pressao e acabamento definidos sob consulta tecnica.",
           "Fornecimento conforme disponibilidade e requisitos do projeto."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-gaveta-a-c3-87o-368x245-png-4a2eeb0ed0.png",
-            "alt": "AÃ§o"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/GAVETA-A%C3%87O-368x245.png",
+            "alt": "Aço"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-gaveta-ferro-368x245-png-f9e3750b55.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/GAVETA-FERRO-368x245.png",
             "alt": "Ferro"
           }
         ],
@@ -582,7 +582,7 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -590,7 +590,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -599,37 +599,37 @@ export const productTechnicalSpecs = {
         "itemSlug": "gaveta",
         "standardSlug": "modelo",
         "optionSlug": "fecho-rapido",
-        "title": "Fecho RÃ¡pido",
+        "title": "Fecho Rápido",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/gaveta/gaveta-fecho-rapido/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "VÃ¡lvula gaveta de fecho rÃ¡pido, em bronze fundido ASTM B 62;",
+          "Válvula gaveta de fecho rápido, em bronze fundido ASTM B 62;",
           "Tampa roscada;",
           "Fecho duplo paralelo;"
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-gaveta-fecho-r-c3-a1pido-368x245-png-f821dc6fc5.png",
-            "alt": "Fecho RÃ¡pido"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Gaveta-fecho-r%C3%A1pido-368x245.png",
+            "alt": "Fecho Rápido"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-gaveta-fecho-rapido-368x245-png-27fcb76e41.png",
-            "alt": "Fecho RÃ¡pido"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-GAVETA-fecho-rapido-368x245.png",
+            "alt": "Fecho Rápido"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
-              "Fecho RÃ¡pido"
+              "Fecho Rápido"
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -644,24 +644,24 @@ export const productTechnicalSpecs = {
         "optionSlug": "forjada",
         "title": "Forjada",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/globo/globo-forjada/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "VÃ¡lvula globo em aÃ§o carbono forjado ASTM A 105;",
+          "Válvula globo em aço carbono forjado ASTM A 105;",
           "Classe 800 lb;",
           "Castelo em arco;",
           "Tampa aparafusada;",
           "Haste ascendente em rosca trapezoidal externa;",
           "Volante ascendente;",
           "Extremidades rosqueadas segundo ANSI B 2.1 (NPT) ou BSP ou com encaixe para solda segundo ANSI B 16.11;",
-          "Internos em aÃ§o inoxidÃ¡vel."
+          "Internos em aço inoxidável."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-globo-forjada-368x245-png-eb4f88c889.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Globo-Forjada-368x245.png",
             "alt": "Forjada"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-globo-forjada-800-368x245-png-650d392750.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-globo-forjada-800-368x245.png",
             "alt": "Forjada"
           }
         ],
@@ -669,7 +669,7 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -677,7 +677,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -688,24 +688,24 @@ export const productTechnicalSpecs = {
         "optionSlug": "fundida",
         "title": "Fundida",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/globo/globo-fundida/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "VÃ¡lvula globo, em aÃ§o carbono fundido ASTM A 216 Grau WCB;",
+          "Válvula globo, em aço carbono fundido ASTM A 216 Grau WCB;",
           "Classe 150 lb;",
           "Tampa aparafusada;",
-          "Internos em aÃ§o inoxidÃ¡vel;",
+          "Internos em aço inoxidável;",
           "Haste com rosca externa e volantes ascendentes;",
-          "Flanges padrÃ£o ANSI B 16.5;",
+          "Flanges padrão ANSI B 16.5;",
           "Face com ressalto;",
-          "Face a face padrÃ£o ANSI B 16.10."
+          "Face a face padrão ANSI B 16.10."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-globo-fundida-368x245-png-3bd407a6fd.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Globo-Fundida-368x245.png",
             "alt": "Fundida"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-globo-wcb-150-368x245-png-11922396d6.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-globo-WCB-150-368x245.png",
             "alt": "Fundida"
           }
         ],
@@ -713,7 +713,7 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -721,7 +721,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -732,23 +732,23 @@ export const productTechnicalSpecs = {
         "optionSlug": "ferro",
         "title": "Ferro",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/globo/globo-ferro/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "VÃ¡lvula globo em ferro fundido ASTM A 126;",
+          "Válvula globo em ferro fundido ASTM A 126;",
           "Classe 125 lb;",
           "Tampa aparafusada;",
           "Internos em bronze;",
           "Haste com rosca externa e volante ascendentes;",
-          "Flanges padrÃ£o ANSI B 16.1 â€“ face plana;",
-          "Face a face padrÃ£o ANSI B 16.10."
+          "Flanges padrão ANSI B 16.1 – face plana;",
+          "Face a face padrão ANSI B 16.10."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-globo-ferro-368x245-png-ee1bd76da7.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Globo-Ferro-368x245.png",
             "alt": "Ferro"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-globo-ff-125-368x245-png-be61abdd51.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-globo-FF-125-368x245.png",
             "alt": "Ferro"
           }
         ],
@@ -773,23 +773,23 @@ export const productTechnicalSpecs = {
         "itemSlug": "globo",
         "standardSlug": "modelo",
         "optionSlug": "aerodinamica",
-        "title": "AerodinÃ¢mica",
+        "title": "Aerodinâmica",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/globo/globo-aerodinamica/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "VÃ¡lvula aerodinÃ¢mica construÃ­da em ferro fundido ASTM A 126;",
-          "VedaÃ§Ã£o em aÃ§o inoxidÃ¡vel;",
-          "Flanges padrÃ£o DIN 2533;",
+          "Válvula aerodinâmica construída em ferro fundido ASTM A 126;",
+          "Vedação em aço inoxidável;",
+          "Flanges padrão DIN 2533;",
           "Face a face DIN 3300."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-globo-aerodin-c3-a2mica-368x245-png-34de438eed.png",
-            "alt": "AerodinÃ¢mica"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Globo-Aerodin%C3%A2mica-368x245.png",
+            "alt": "Aerodinâmica"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-globo-aero-ff-125-368x245-png-b383e691f2.png",
-            "alt": "AerodinÃ¢mica"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-globo-AERO-FF-125-368x245.png",
+            "alt": "Aerodinâmica"
           }
         ],
         "tables": [
@@ -811,18 +811,18 @@ export const productTechnicalSpecs = {
         "optionSlug": "bronze",
         "title": "Bronze",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/globo/globo-bronze/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "VÃ¡lvula globo, em bronze fundido ASTM B 62.",
-          "FIG 101 â€“ Classe 125lbs FIG 01 â€“ Classe 150lbs FIG 13 â€“ Classe 150lbs â€“ FLANGEADA FIG 06 â€“ Classe 200lbs FIG 11 â€“ Classe 300lbs"
+          "Válvula globo, em bronze fundido ASTM B 62.",
+          "FIG 101 – Classe 125lbs FIG 01 – Classe 150lbs FIG 13 – Classe 150lbs – FLANGEADA FIG 06 – Classe 200lbs FIG 11 – Classe 300lbs"
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-globo-bronze-368x245-png-82784dabcd.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Globo-Bronze-368x245.png",
             "alt": "Bronze"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-globo-bronze-368x245-png-23bc2b10b9.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-globo-bronze-368x245.png",
             "alt": "Bronze"
           }
         ],
@@ -830,7 +830,7 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -838,7 +838,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -849,10 +849,10 @@ export const productTechnicalSpecs = {
         "optionSlug": "agulha",
         "title": "Agulha",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/globo/globo-tipo-agulha/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "VÃ¡lvula globo tipo ponta de agulha, em aÃ§o carbono laminado;",
-          "Disco de vedaÃ§Ã£o em aÃ§o inoxidÃ¡vel;",
+          "Válvula globo tipo ponta de agulha, em aço carbono laminado;",
+          "Disco de vedação em aço inoxidável;",
           "Castelo roscado;",
           "Haste ascendente;",
           "Volante ascendente;",
@@ -860,11 +860,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-globo-agulha-368x245-png-b94d549ece.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Globo-Agulha-368x245.png",
             "alt": "Agulha"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-globo-agulha-3000-368x245-png-51618c2c39.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-globo-AGULHA-3000-368x245.png",
             "alt": "Agulha"
           }
         ],
@@ -872,7 +872,7 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -880,7 +880,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -895,18 +895,18 @@ export const productTechnicalSpecs = {
         "optionSlug": "wafer-br",
         "title": "Wafer BR",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/guilhotina/guilhotina-wafer-br/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "O modelo BR Ã© uma vÃ¡lvula guilhotina bidirecional tipo wafer projetada para aplicaÃ§Ã£o na indÃºstria em geral.",
-          "A forma construtiva do corpo e da sede possibilita um fechamento sem incrustaÃ§Ã£o de sÃ³lidos, de aplicaÃ§Ã£o nos segmentos de Papel e Celulose, Tratamento de Ãgua e Efluentes, Alimentos e Bebidas, Energia, MineraÃ§Ã£o, QuÃ­mico, Etc."
+          "O modelo BR é uma válvula guilhotina bidirecional tipo wafer projetada para aplicação na indústria em geral.",
+          "A forma construtiva do corpo e da sede possibilita um fechamento sem incrustação de sólidos, de aplicação nos segmentos de Papel e Celulose, Tratamento de Água e Efluentes, Alimentos e Bebidas, Energia, Mineração, Químico, Etc."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2019-05-guilhotina-br-368x245-png-3f6332ee58.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2019/05/Guilhotina-BR-368x245.png",
             "alt": "Wafer BR"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-guilh-br-368x245-png-9629005d19.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-GUILH-BR-368x245.png",
             "alt": "Wafer BR"
           }
         ],
@@ -914,7 +914,7 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -922,7 +922,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -933,18 +933,18 @@ export const productTechnicalSpecs = {
         "optionSlug": "wafer-com-manga-vg",
         "title": "Wafer Com Manga VG",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/guilhotina/guilhotina-wafer-com-manga-vg/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "O modelo VG Ã© uma vÃ¡lvula bidirecional wafer, dotada de duas mangas elastomÃ©ricas com alma metÃ¡lica projetada para utilizaÃ§Ã£o no tratamento de fluidos abrasivos e com aplicaÃ§Ãµes nos segmentos de:",
-          "MineraÃ§Ã£o, QuÃ­mico, EnergÃ©tico, Tratamento de Ã¡gua e efluentes, etc."
+          "O modelo VG é uma válvula bidirecional wafer, dotada de duas mangas elastoméricas com alma metálica projetada para utilização no tratamento de fluidos abrasivos e com aplicações nos segmentos de:",
+          "Mineração, Químico, Energético, Tratamento de água e efluentes, etc."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-valv-guilh-wafer-368x245-png-7ffbb3e0ca.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/VALV-GUILH-WAFER-368x245.png",
             "alt": "Wafer Com Manga VG"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-guilh-vg-299x245-png-d6a62007da.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-GUILH-VG-299x245.png",
             "alt": "Wafer Com Manga VG"
           }
         ],
@@ -952,7 +952,7 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -960,7 +960,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -971,18 +971,18 @@ export const productTechnicalSpecs = {
         "optionSlug": "flangeada-wg",
         "title": "Flangeada WG",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/guilhotina/guilhotina-flangeada-wg/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "O modelo WG Ã© uma vÃ¡lvula bidirecional flangeada, dotada de duas mangas elastomÃ©ricas com alma metÃ¡lica projetada para utilizaÃ§Ã£o no tratamento de fluidos abrasivos e com aplicaÃ§Ãµes nos segmentos de:",
-          "MineraÃ§Ã£o, QuÃ­mico, EnergÃ©tico, Tratamento de Ã¡gua e efluentes, etc."
+          "O modelo WG é uma válvula bidirecional flangeada, dotada de duas mangas elastoméricas com alma metálica projetada para utilização no tratamento de fluidos abrasivos e com aplicações nos segmentos de:",
+          "Mineração, Químico, Energético, Tratamento de água e efluentes, etc."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-guilhotina-flangeada-368x245-png-ff8d34355d.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Guilhotina-Flangeada-368x245.png",
             "alt": "Flangeada WG"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-guilh-wg-329x245-png-631445816f.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-GUILH-WG-329x245.png",
             "alt": "Flangeada WG"
           }
         ],
@@ -993,7 +993,7 @@ export const productTechnicalSpecs = {
               "Download"
             ],
             [
-              "FIG. 64 - VÃLVULA GUILHOTINA FLANGEADA COM MANGA 300LBS - MOD. HG_altapress",
+              "FIG. 64 - VÁLVULA GUILHOTINA FLANGEADA COM MANGA 300LBS - MOD. HG_altapress",
               "Download"
             ]
           ]
@@ -1009,30 +1009,30 @@ export const productTechnicalSpecs = {
         "optionSlug": "passagem-reta",
         "title": "Passagem reta",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/aquecimento-e-refrigeracao/vapor-e-fluidos-termicos/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "Adequado para NH3, R22, R134a e outros refrigerantes aprovados DisponÃ­vel Globo 180graus DisponÃ­vel Angular 90 graus Anel de PTFE ( teflon ) TambÃ©m disponÃ­vel com obturador para vÃ¡lvula de expansÃ£o Teste de corpo:",
+          "Adequado para NH3, R22, R134a e outros refrigerantes aprovados Disponível Globo 180graus Disponível Angular 90 graus Anel de PTFE ( teflon ) Também disponível com obturador para válvula de expansão Teste de corpo:",
           "27 bar Teste de estanqueidade:",
-          "21 bar Teste de contra vedaÃ§Ã£o:",
-          "21 bar Classe de PressÃ£o do corpo:",
-          "PN45 Temperatura de operaÃ§Ã£o:",
+          "21 bar Teste de contra vedação:",
+          "21 bar Classe de Pressão do corpo:",
+          "PN45 Temperatura de operação:",
           "50 C a 120 C Fabricada inteiramente no Brasil"
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2022-07-vapor-01-jpg-0d7a127658.png",
-            "alt": "Vapor e FluÃ­dos TÃ©rmicos"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/VAPOR-01.jpg",
+            "alt": "Vapor e Fluídos Térmicos"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2022-07-vapor-02-jpg-5e865439cc.png",
-            "alt": "Vapor e FluÃ­dos TÃ©rmicos"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/VAPOR-02.jpg",
+            "alt": "Vapor e Fluídos Térmicos"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -1040,7 +1040,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -1051,30 +1051,30 @@ export const productTechnicalSpecs = {
         "optionSlug": "classe-e-bitola-sob-consulta",
         "title": "Classe e bitola sob consulta",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/aquecimento-e-refrigeracao/vapor-e-fluidos-termicos/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "Adequado para NH3, R22, R134a e outros refrigerantes aprovados DisponÃ­vel Globo 180graus DisponÃ­vel Angular 90 graus Anel de PTFE ( teflon ) TambÃ©m disponÃ­vel com obturador para vÃ¡lvula de expansÃ£o Teste de corpo:",
+          "Adequado para NH3, R22, R134a e outros refrigerantes aprovados Disponível Globo 180graus Disponível Angular 90 graus Anel de PTFE ( teflon ) Também disponível com obturador para válvula de expansão Teste de corpo:",
           "27 bar Teste de estanqueidade:",
-          "21 bar Teste de contra vedaÃ§Ã£o:",
-          "21 bar Classe de PressÃ£o do corpo:",
-          "PN45 Temperatura de operaÃ§Ã£o:",
+          "21 bar Teste de contra vedação:",
+          "21 bar Classe de Pressão do corpo:",
+          "PN45 Temperatura de operação:",
           "50 C a 120 C Fabricada inteiramente no Brasil"
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2022-07-vapor-01-jpg-0d7a127658.png",
-            "alt": "Vapor e FluÃ­dos TÃ©rmicos"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/VAPOR-01.jpg",
+            "alt": "Vapor e Fluídos Térmicos"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2022-07-vapor-02-jpg-5e865439cc.png",
-            "alt": "Vapor e FluÃ­dos TÃ©rmicos"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/VAPOR-02.jpg",
+            "alt": "Vapor e Fluídos Térmicos"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -1082,7 +1082,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -1097,18 +1097,18 @@ export const productTechnicalSpecs = {
         "optionSlug": "corpo-aberto",
         "title": "Corpo Aberto",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/mangote/corpo-aberto/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "As vÃ¡lvulas Mangote corpo aberto, de passagem reta, sÃ£o fabricadas em copo de aÃ§o carbono com mecanismo de apeto do mangote de borracha, para controle de fluidos.",
-          "SÃ£o indicadas para o uso em diversos fluidos inclusive abrasivos e corrosivos com grande quantidade de sÃ³lidos em suspensÃ£o, lamas, polpas, minÃ©rios esgotos industriais e sanitÃ¡rios, manuseio de pos secos, etc."
+          "As válvulas Mangote corpo aberto, de passagem reta, são fabricadas em copo de aço carbono com mecanismo de apeto do mangote de borracha, para controle de fluidos.",
+          "São indicadas para o uso em diversos fluidos inclusive abrasivos e corrosivos com grande quantidade de sólidos em suspensão, lamas, polpas, minérios esgotos industriais e sanitários, manuseio de pos secos, etc."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-mangote-aberta-368x245-png-4c787213c0.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Mangote-aberta-368x245.png",
             "alt": "Corpo Aberto"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-mangote-aberto-368x229-png-510b64dd53.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-Mangote-Aberto-368x229.png",
             "alt": "Corpo Aberto"
           }
         ],
@@ -1116,7 +1116,7 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -1124,7 +1124,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -1135,18 +1135,18 @@ export const productTechnicalSpecs = {
         "optionSlug": "corpo-fechado",
         "title": "Corpo Fechado",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/mangote/corpo-fechado/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "O equipamento permite uma operaÃ§Ã£o segura, previne acidentes e protege da aÃ§Ã£o de intempÃ©ries e condiÃ§Ãµes adversas do ambiente.",
+          "O equipamento permite uma operação segura, previne acidentes e protege da ação de intempéries e condições adversas do ambiente.",
           "Sua estrutura construtiva fechada, evita vazamentos ao ambiente em caso de desgaste do Mangote de borracha."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-mangote-fechada-368x245-png-6e28650994.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Mangote-fechada-368x245.png",
             "alt": "Corpo Fechado"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-mangote-fechado-368x245-png-0d45ba155d.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-Mangote-Fechado-368x245.png",
             "alt": "Corpo Fechado"
           }
         ],
@@ -1154,7 +1154,7 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -1162,7 +1162,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -1177,20 +1177,20 @@ export const productTechnicalSpecs = {
         "optionSlug": "registro-hidrante",
         "title": "Registro Hidrante",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/combate-incendio/valvula-angular/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "VÃ¡lvula hidrante de incÃªndio tipo globo;",
+          "Válvula hidrante de incêndio tipo globo;",
           "Corpo de bronze fundido, ASTM B62, castelo roscado no corpo;",
-          "Disco de vedaÃ§Ã£o neopreme;",
-          "Haste asacendente com rosca de entrada de 2.1/2â€ e saÃ­sa com rosca externa de 5 ou 7,5 fios."
+          "Disco de vedação neopreme;",
+          "Haste asacendente com rosca de entrada de 2.1/2” e saísa com rosca externa de 5 ou 7,5 fios."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-v-c3-a1lvula-globo-angular-bronze-368x245-png-deb4047f29.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/V%C3%A1lvula-Globo-Angular-Bronze-368x245.png",
             "alt": "Registro Hidrante"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-v-c3-81lvula-globo-angular-368x245-png-a05ad1f6be.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/V%C3%81LVULA-GLOBO-ANGULAR-368x245.png",
             "alt": "Registro Hidrante"
           }
         ],
@@ -1198,7 +1198,7 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -1206,7 +1206,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -1215,22 +1215,22 @@ export const productTechnicalSpecs = {
         "itemSlug": "para-hidrante",
         "standardSlug": "aplicacao",
         "optionSlug": "combate-a-incendio",
-        "title": "Combate a incÃªndio",
+        "title": "Combate a incêndio",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/combate-incendio/valvula-angular/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "VÃ¡lvula hidrante de incÃªndio tipo globo;",
+          "Válvula hidrante de incêndio tipo globo;",
           "Corpo de bronze fundido, ASTM B62, castelo roscado no corpo;",
-          "Disco de vedaÃ§Ã£o neopreme;",
-          "Haste asacendente com rosca de entrada de 2.1/2â€ e saÃ­sa com rosca externa de 5 ou 7,5 fios."
+          "Disco de vedação neopreme;",
+          "Haste asacendente com rosca de entrada de 2.1/2” e saísa com rosca externa de 5 ou 7,5 fios."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-v-c3-a1lvula-globo-angular-bronze-368x245-png-deb4047f29.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/V%C3%A1lvula-Globo-Angular-Bronze-368x245.png",
             "alt": "Registro Hidrante"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-v-c3-81lvula-globo-angular-368x245-png-a05ad1f6be.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/V%C3%81LVULA-GLOBO-ANGULAR-368x245.png",
             "alt": "Registro Hidrante"
           }
         ],
@@ -1238,15 +1238,15 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
-              "Combate a incÃªndio"
+              "Combate a incêndio"
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -1261,30 +1261,30 @@ export const productTechnicalSpecs = {
         "optionSlug": "passagem-reta",
         "title": "Passagem reta",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/aquecimento-e-refrigeracao/vapor-e-fluidos-termicos/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "Adequado para NH3, R22, R134a e outros refrigerantes aprovados DisponÃ­vel Globo 180graus DisponÃ­vel Angular 90 graus Anel de PTFE ( teflon ) TambÃ©m disponÃ­vel com obturador para vÃ¡lvula de expansÃ£o Teste de corpo:",
+          "Adequado para NH3, R22, R134a e outros refrigerantes aprovados Disponível Globo 180graus Disponível Angular 90 graus Anel de PTFE ( teflon ) Também disponível com obturador para válvula de expansão Teste de corpo:",
           "27 bar Teste de estanqueidade:",
-          "21 bar Teste de contra vedaÃ§Ã£o:",
-          "21 bar Classe de PressÃ£o do corpo:",
-          "PN45 Temperatura de operaÃ§Ã£o:",
+          "21 bar Teste de contra vedação:",
+          "21 bar Classe de Pressão do corpo:",
+          "PN45 Temperatura de operação:",
           "50 C a 120 C Fabricada inteiramente no Brasil"
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2022-07-vapor-01-jpg-0d7a127658.png",
-            "alt": "Vapor e FluÃ­dos TÃ©rmicos"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/VAPOR-01.jpg",
+            "alt": "Vapor e Fluídos Térmicos"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2022-07-vapor-02-jpg-5e865439cc.png",
-            "alt": "Vapor e FluÃ­dos TÃ©rmicos"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/VAPOR-02.jpg",
+            "alt": "Vapor e Fluídos Térmicos"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -1292,7 +1292,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -1303,30 +1303,30 @@ export const productTechnicalSpecs = {
         "optionSlug": "classe-e-bitola-sob-consulta",
         "title": "Classe e bitola sob consulta",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/aquecimento-e-refrigeracao/vapor-e-fluidos-termicos/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "Adequado para NH3, R22, R134a e outros refrigerantes aprovados DisponÃ­vel Globo 180graus DisponÃ­vel Angular 90 graus Anel de PTFE ( teflon ) TambÃ©m disponÃ­vel com obturador para vÃ¡lvula de expansÃ£o Teste de corpo:",
+          "Adequado para NH3, R22, R134a e outros refrigerantes aprovados Disponível Globo 180graus Disponível Angular 90 graus Anel de PTFE ( teflon ) Também disponível com obturador para válvula de expansão Teste de corpo:",
           "27 bar Teste de estanqueidade:",
-          "21 bar Teste de contra vedaÃ§Ã£o:",
-          "21 bar Classe de PressÃ£o do corpo:",
-          "PN45 Temperatura de operaÃ§Ã£o:",
+          "21 bar Teste de contra vedação:",
+          "21 bar Classe de Pressão do corpo:",
+          "PN45 Temperatura de operação:",
           "50 C a 120 C Fabricada inteiramente no Brasil"
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2022-07-vapor-01-jpg-0d7a127658.png",
-            "alt": "Vapor e FluÃ­dos TÃ©rmicos"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/VAPOR-01.jpg",
+            "alt": "Vapor e Fluídos Térmicos"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2022-07-vapor-02-jpg-5e865439cc.png",
-            "alt": "Vapor e FluÃ­dos TÃ©rmicos"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/VAPOR-02.jpg",
+            "alt": "Vapor e Fluídos Térmicos"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -1334,7 +1334,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -1347,40 +1347,40 @@ export const productTechnicalSpecs = {
         "itemSlug": "redutora-de-pressao",
         "standardSlug": "aplicacao",
         "optionSlug": "controle-de-pressao",
-        "title": "Controle de pressÃ£o",
+        "title": "Controle de pressão",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/aquecimento-e-refrigeracao/vapor-e-fluidos-termicos/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "Adequado para NH3, R22, R134a e outros refrigerantes aprovados DisponÃ­vel Globo 180graus DisponÃ­vel Angular 90 graus Anel de PTFE ( teflon ) TambÃ©m disponÃ­vel com obturador para vÃ¡lvula de expansÃ£o Teste de corpo:",
+          "Adequado para NH3, R22, R134a e outros refrigerantes aprovados Disponível Globo 180graus Disponível Angular 90 graus Anel de PTFE ( teflon ) Também disponível com obturador para válvula de expansão Teste de corpo:",
           "27 bar Teste de estanqueidade:",
-          "21 bar Teste de contra vedaÃ§Ã£o:",
-          "21 bar Classe de PressÃ£o do corpo:",
-          "PN45 Temperatura de operaÃ§Ã£o:",
+          "21 bar Teste de contra vedação:",
+          "21 bar Classe de Pressão do corpo:",
+          "PN45 Temperatura de operação:",
           "50 C a 120 C Fabricada inteiramente no Brasil"
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2022-07-vapor-01-jpg-0d7a127658.png",
-            "alt": "Vapor e FluÃ­dos TÃ©rmicos"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/VAPOR-01.jpg",
+            "alt": "Vapor e Fluídos Térmicos"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2022-07-vapor-02-jpg-5e865439cc.png",
-            "alt": "Vapor e FluÃ­dos TÃ©rmicos"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/VAPOR-02.jpg",
+            "alt": "Vapor e Fluídos Térmicos"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
-              "Controle de pressÃ£o"
+              "Controle de pressão"
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -1391,30 +1391,30 @@ export const productTechnicalSpecs = {
         "optionSlug": "classe-e-bitola-sob-consulta",
         "title": "Classe e bitola sob consulta",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/aquecimento-e-refrigeracao/vapor-e-fluidos-termicos/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "Adequado para NH3, R22, R134a e outros refrigerantes aprovados DisponÃ­vel Globo 180graus DisponÃ­vel Angular 90 graus Anel de PTFE ( teflon ) TambÃ©m disponÃ­vel com obturador para vÃ¡lvula de expansÃ£o Teste de corpo:",
+          "Adequado para NH3, R22, R134a e outros refrigerantes aprovados Disponível Globo 180graus Disponível Angular 90 graus Anel de PTFE ( teflon ) Também disponível com obturador para válvula de expansão Teste de corpo:",
           "27 bar Teste de estanqueidade:",
-          "21 bar Teste de contra vedaÃ§Ã£o:",
-          "21 bar Classe de PressÃ£o do corpo:",
-          "PN45 Temperatura de operaÃ§Ã£o:",
+          "21 bar Teste de contra vedação:",
+          "21 bar Classe de Pressão do corpo:",
+          "PN45 Temperatura de operação:",
           "50 C a 120 C Fabricada inteiramente no Brasil"
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2022-07-vapor-01-jpg-0d7a127658.png",
-            "alt": "Vapor e FluÃ­dos TÃ©rmicos"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/VAPOR-01.jpg",
+            "alt": "Vapor e Fluídos Térmicos"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2022-07-vapor-02-jpg-5e865439cc.png",
-            "alt": "Vapor e FluÃ­dos TÃ©rmicos"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/VAPOR-02.jpg",
+            "alt": "Vapor e Fluídos Térmicos"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -1422,7 +1422,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -1435,43 +1435,43 @@ export const productTechnicalSpecs = {
         "itemSlug": "retencao",
         "standardSlug": "modelo",
         "optionSlug": "aerodinamica",
-        "title": "AerodinÃ¢mica",
+        "title": "Aerodinâmica",
         "sourceUrl": "https://www.valaco.com.br/produtos/val_retencao_horizontal_aero.html",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "â€¢ Dimensionamento para proporcionar mÃ­nima perda de carga;",
-          "â€¢ VedaÃ§Ã£o semelhante Ã  da vÃ¡lvula globo, permitindo aplicaÃ§Ãµes equivalentes, porÃ©m em condiÃ§Ãµes mais severas;",
-          "â€¢ ConstruÃ§Ã£o conforme DIN e ASTM;",
-          "â€¢ Face a Face (L) conforme norma DIN 3300;",
-          "â€¢ Flanges padrÃ£o DIN 2545.",
-          "CF8, flange padrÃ£o DIN 2545.",
-          "PN 40 V1800 VÃ¡lvula de RetenÃ§Ã£o tipo AerodinÃ¢mica, corpo em AÃ§o InoxidÃ¡vel ASTM A 351 Gr.",
-          "CF8M, flange padrÃ£o DIN 2545.",
-          "PN 40 V1801 VÃ¡lvula de RetenÃ§Ã£o tipo AerodinÃ¢mica, corpo em AÃ§o Carbono ASTM A 216 Gr.",
-          "WCB, flange padrÃ£o DIN 2545."
+          "• Dimensionamento para proporcionar mínima perda de carga;",
+          "• Vedação semelhante à da válvula globo, permitindo aplicações equivalentes, porém em condições mais severas;",
+          "• Construção conforme DIN e ASTM;",
+          "• Face a Face (L) conforme norma DIN 3300;",
+          "• Flanges padrão DIN 2545.",
+          "CF8, flange padrão DIN 2545.",
+          "PN 40 V1800 Válvula de Retenção tipo Aerodinâmica, corpo em Aço Inoxidável ASTM A 351 Gr.",
+          "CF8M, flange padrão DIN 2545.",
+          "PN 40 V1801 Válvula de Retenção tipo Aerodinâmica, corpo em Aço Carbono ASTM A 216 Gr.",
+          "WCB, flange padrão DIN 2545."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-reten-c3-a7-c3-a3o-aerodin-c3-a2mica-a-c3-a7o-368x245-png-1085ec2d7a.png",
-            "alt": "AÃ§o"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Reten%C3%A7%C3%A3o-Aerodin%C3%A2mica-A%C3%A7o-368x245.png",
+            "alt": "Aço"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-reten-c3-a7-c3-a3o-aerodin-c3-a2mica-ferro-368x245-png-3006239a7b.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Reten%C3%A7%C3%A3o-Aerodin%C3%A2mica-Ferro-368x245.png",
             "alt": "Ferro"
           }
         ],
         "tables": [
           [
             [
-              "PressÃ£o de ServiÃ§o - Classe PN 16"
+              "Pressão de Serviço - Classe PN 16"
             ],
             [
-              "Vapor a 300Â°C sem Choque",
-              "10 kg/cmlÂ²"
+              "Vapor a 300°C sem Choque",
+              "10 kg/cml²"
             ],
             [
-              "Ãgua, Ã³leo e gÃ¡s a 120Â°C sem Choque",
-              "16 kg/cmÂ²"
+              "Água, óleo e gás a 120°C sem Choque",
+              "16 kg/cm²"
             ]
           ]
         ]
@@ -1480,21 +1480,21 @@ export const productTechnicalSpecs = {
         "itemSlug": "retencao",
         "standardSlug": "modelo",
         "optionSlug": "fundo-de-poco",
-        "title": "Fundo de PoÃ§o",
+        "title": "Fundo de Poço",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/retencao/fundo-de-poco/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "VÃ¡lvula de retenÃ§Ã£o tipo fundo de poÃ§o utilizada em linhas de sucÃ§Ã£o para manter a coluna de lÃ­quido e impedir retorno do fluido.",
-          "AplicaÃ§Ã£o tÃ­pica em bombas, captaÃ§Ã£o e sistemas hidrÃ¡ulicos que exigem retenÃ§Ã£o automÃ¡tica no sentido inverso.",
-          "Material, conexÃ£o, bitola e classe de pressÃ£o definidos conforme fluido e condiÃ§Ã£o de operaÃ§Ã£o."
+          "Válvula de retenção tipo fundo de poço utilizada em linhas de sucção para manter a coluna de líquido e impedir retorno do fluido.",
+          "Aplicação típica em bombas, captação e sistemas hidráulicos que exigem retenção automática no sentido inverso.",
+          "Material, conexão, bitola e classe de pressão definidos conforme fluido e condição de operação."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2025-07-valvula-retencao-fundo-de-poco-ferro-368x245-jpg-be4b868e07.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2025/07/Valvula-Retencao-Fundo-de-Poco-Ferro-368x245.jpg",
             "alt": "Ferro"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2025-07-valvula-retencao-fundo-de-poco-bronze-368x245-jpg-1e8593e81e.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2025/07/Valvula-Retencao-Fundo-de-Poco-Bronze-368x245.jpg",
             "alt": "Bronze"
           }
         ],
@@ -1502,15 +1502,15 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "RetenÃ§Ã£o fundo de poÃ§o",
-              "Fundo de PoÃ§o"
+              "Retenção fundo de poço",
+              "Fundo de Poço"
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -1519,21 +1519,21 @@ export const productTechnicalSpecs = {
         "itemSlug": "retencao",
         "standardSlug": "modelo",
         "optionSlug": "horizontal-pistao",
-        "title": "Horizontal PistÃ£o",
+        "title": "Horizontal Pistão",
         "sourceUrl": "https://www.valaco.com.br/produtos/val_retencao_horizontal_pistao.html",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "Horizontal PistÃ£o para aplicação industrial conforme condição de operação.",
-          "Material, bitola, classe de pressão e acabamento definidos sob consulta técnica.",
+          "Horizontal Pistão para aplicacao industrial conforme condicao de operacao.",
+          "Material, bitola, classe de pressao e acabamento definidos sob consulta tecnica.",
           "Fornecimento conforme disponibilidade e requisitos do projeto."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-reten-c3-a7-c3-a3o-pist-c3-a3o-fundida-368x245-png-0074eba612.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Reten%C3%A7%C3%A3o-Pist%C3%A3o-Fundida-368x245.png",
             "alt": "Forjada"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-reten-c3-a7-c3-a3o-pist-c3-a3o-forjada-368x245-png-e2d223bd6c.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Reten%C3%A7%C3%A3o-Pist%C3%A3o-Forjada-368x245.png",
             "alt": "Fundida"
           }
         ],
@@ -1541,15 +1541,15 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
-              "Horizontal PistÃ£o"
+              "Horizontal Pistão"
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -1560,19 +1560,19 @@ export const productTechnicalSpecs = {
         "optionSlug": "portinhola",
         "title": "Portinhola",
         "sourceUrl": "https://www.valaco.com.br/produtos/val_retencao_portinhola.html",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "Portinhola para aplicação industrial conforme condição de operação.",
-          "Material, bitola, classe de pressão e acabamento definidos sob consulta técnica.",
+          "Portinhola para aplicacao industrial conforme condicao de operacao.",
+          "Material, bitola, classe de pressao e acabamento definidos sob consulta tecnica.",
           "Fornecimento conforme disponibilidade e requisitos do projeto."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-reten-c3-a7-c3-a3o-portinhola-a-c3-a7o-368x245-png-c779c8b0db.png",
-            "alt": "AÃ§o"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Reten%C3%A7%C3%A3o-Portinhola-A%C3%A7o-368x245.png",
+            "alt": "Aço"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-reten-c3-87-c3-83o-portinhola-368x245-png-e6880980cb.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/RETEN%C3%87%C3%83O-PORTINHOLA-368x245.png",
             "alt": "Ferro"
           }
         ],
@@ -1580,7 +1580,7 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -1588,7 +1588,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -1597,21 +1597,21 @@ export const productTechnicalSpecs = {
         "itemSlug": "retencao",
         "standardSlug": "modelo",
         "optionSlug": "retencao-wafer",
-        "title": "RetenÃ§Ã£o Wafer",
+        "title": "Retenção Wafer",
         "sourceUrl": "https://www.valaco.com.br/produtos/val_retencao_wafer.html",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "RetenÃ§Ã£o Wafer para aplicação industrial conforme condição de operação.",
-          "Material, bitola, classe de pressão e acabamento definidos sob consulta técnica.",
+          "Retenção Wafer para aplicacao industrial conforme condicao de operacao.",
+          "Material, bitola, classe de pressao e acabamento definidos sob consulta tecnica.",
           "Fornecimento conforme disponibilidade e requisitos do projeto."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-reten-c3-87-c3-83o-dupla-portinhola-368x245-png-d7b28f22fa.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/RETEN%C3%87%C3%83O-dupla-portinhola-368x245.png",
             "alt": "Dupla Portinhola"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-reten-c3-a7-c3-a3o-disco-368x245-png-8981d81b51.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Reten%C3%A7%C3%A3o-Disco-368x245.png",
             "alt": "Tipo Disco"
           }
         ],
@@ -1619,15 +1619,15 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
-              "RetenÃ§Ã£o Wafer"
+              "Retenção Wafer"
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -1636,37 +1636,37 @@ export const productTechnicalSpecs = {
         "itemSlug": "retencao",
         "standardSlug": "modelo",
         "optionSlug": "retencao-vertical",
-        "title": "RetenÃ§Ã£o Vertical",
+        "title": "Retenção Vertical",
         "sourceUrl": "https://www.valaco.com.br/produtos/val_retencao_vertical.html",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "RetenÃ§Ã£o Vertical para aplicação industrial conforme condição de operação.",
-          "Material, bitola, classe de pressão e acabamento definidos sob consulta técnica.",
+          "Retenção Vertical para aplicacao industrial conforme condicao de operacao.",
+          "Material, bitola, classe de pressao e acabamento definidos sob consulta tecnica.",
           "Fornecimento conforme disponibilidade e requisitos do projeto."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-reten-c3-a7-c3-a3o-vertical-368x245-png-ffcbf14a0d.png",
-            "alt": "RetenÃ§Ã£o Vertical"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Reten%C3%A7%C3%A3o-Vertical-368x245.png",
+            "alt": "Retenção Vertical"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-ret-vertical-bronze-368x245-png-75530729d5.png",
-            "alt": "RetenÃ§Ã£o Vertical"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-RET-VERTICAL-bronze-368x245.png",
+            "alt": "Retenção Vertical"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
-              "RetenÃ§Ã£o Vertical"
+              "Retenção Vertical"
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -1679,36 +1679,36 @@ export const productTechnicalSpecs = {
         "itemSlug": "seguranca-e-alivio",
         "standardSlug": "aplicacao",
         "optionSlug": "seguranca",
-        "title": "SeguranÃ§a",
+        "title": "Segurança",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/seguranca-e-alivio/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "VÃ¡lvula de seguranÃ§a com mola;",
+          "Válvula de segurança com mola;",
           "Corpo em bronze fundido ASTM B 62;"
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-valvula-seguranca-e-alivio-368x245-png-6983de2ef3.png",
-            "alt": "SeguranÃ§a e AlÃ­vio"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/VALVULA-SEGURANCA-E-ALIVIO-368x245.png",
+            "alt": "Segurança e Alívio"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-alivio-bronze-368x245-png-e2f11aba5e.png",
-            "alt": "SeguranÃ§a e AlÃ­vio"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-ALIVIO-bronze-368x245.png",
+            "alt": "Segurança e Alívio"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
-              "SeguranÃ§a"
+              "Segurança"
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -1717,36 +1717,36 @@ export const productTechnicalSpecs = {
         "itemSlug": "seguranca-e-alivio",
         "standardSlug": "aplicacao",
         "optionSlug": "alivio",
-        "title": "AlÃ­vio",
+        "title": "Alívio",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/seguranca-e-alivio/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "VÃ¡lvula de seguranÃ§a com mola;",
+          "Válvula de segurança com mola;",
           "Corpo em bronze fundido ASTM B 62;"
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-valvula-seguranca-e-alivio-368x245-png-6983de2ef3.png",
-            "alt": "SeguranÃ§a e AlÃ­vio"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/VALVULA-SEGURANCA-E-ALIVIO-368x245.png",
+            "alt": "Segurança e Alívio"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-alivio-bronze-368x245-png-e2f11aba5e.png",
-            "alt": "SeguranÃ§a e AlÃ­vio"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-ALIVIO-bronze-368x245.png",
+            "alt": "Segurança e Alívio"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
-              "AlÃ­vio"
+              "Alívio"
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -1755,36 +1755,36 @@ export const productTechnicalSpecs = {
         "itemSlug": "seguranca-e-alivio",
         "standardSlug": "aplicacao",
         "optionSlug": "calibracao-sob-consulta",
-        "title": "CalibraÃ§Ã£o sob consulta",
+        "title": "Calibração sob consulta",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/seguranca-e-alivio/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "VÃ¡lvula de seguranÃ§a com mola;",
+          "Válvula de segurança com mola;",
           "Corpo em bronze fundido ASTM B 62;"
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-valvula-seguranca-e-alivio-368x245-png-6983de2ef3.png",
-            "alt": "SeguranÃ§a e AlÃ­vio"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/VALVULA-SEGURANCA-E-ALIVIO-368x245.png",
+            "alt": "Segurança e Alívio"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-alivio-bronze-368x245-png-e2f11aba5e.png",
-            "alt": "SeguranÃ§a e AlÃ­vio"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-ALIVIO-bronze-368x245.png",
+            "alt": "Segurança e Alívio"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
-              "CalibraÃ§Ã£o sob consulta"
+              "Calibração sob consulta"
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -1797,40 +1797,40 @@ export const productTechnicalSpecs = {
         "itemSlug": "solenoide",
         "standardSlug": "aplicacao",
         "optionSlug": "acionamento-eletrico",
-        "title": "Acionamento elÃ©trico",
+        "title": "Acionamento elétrico",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/aquecimento-e-refrigeracao/valvula-de-refrigeracao/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "Adequado para NH3, R22, R134a e outros refrigerantes aprovados DisponÃ­vel Globo 180graus DisponÃ­vel Angular 90 graus Anel de PTFE ( teflon ) TambÃ©m disponÃ­vel com obturador para vÃ¡lvula de expansÃ£o Teste de corpo:",
+          "Adequado para NH3, R22, R134a e outros refrigerantes aprovados Disponível Globo 180graus Disponível Angular 90 graus Anel de PTFE ( teflon ) Também disponível com obturador para válvula de expansão Teste de corpo:",
           "27 bar Teste de estanqueidade:",
-          "21 bar Teste de contra vedaÃ§Ã£o:",
-          "21 bar Classe de PressÃ£o do corpo:",
-          "PN45 Temperatura de operaÃ§Ã£o:",
+          "21 bar Teste de contra vedação:",
+          "21 bar Classe de Pressão do corpo:",
+          "PN45 Temperatura de operação:",
           "50 C a 120 C Fabricada inteiramente no Brasil"
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2022-07-refrigeracao-01-jpg-cdbb43b118.png",
-            "alt": "RefrigeraÃ§Ã£o"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/REFRIGERACAO-01.jpg",
+            "alt": "Refrigeração"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2022-07-refrigeracao-02-jpg-ce5692448a.png",
-            "alt": "RefrigeraÃ§Ã£o"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/REFRIGERACAO-02.jpg",
+            "alt": "Refrigeração"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
-              "Acionamento elÃ©trico"
+              "Acionamento elétrico"
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -1841,30 +1841,30 @@ export const productTechnicalSpecs = {
         "optionSlug": "classe-e-bitola-sob-consulta",
         "title": "Classe e bitola sob consulta",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/valvulas/aquecimento-e-refrigeracao/valvula-de-refrigeracao/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "Adequado para NH3, R22, R134a e outros refrigerantes aprovados DisponÃ­vel Globo 180graus DisponÃ­vel Angular 90 graus Anel de PTFE ( teflon ) TambÃ©m disponÃ­vel com obturador para vÃ¡lvula de expansÃ£o Teste de corpo:",
+          "Adequado para NH3, R22, R134a e outros refrigerantes aprovados Disponível Globo 180graus Disponível Angular 90 graus Anel de PTFE ( teflon ) Também disponível com obturador para válvula de expansão Teste de corpo:",
           "27 bar Teste de estanqueidade:",
-          "21 bar Teste de contra vedaÃ§Ã£o:",
-          "21 bar Classe de PressÃ£o do corpo:",
-          "PN45 Temperatura de operaÃ§Ã£o:",
+          "21 bar Teste de contra vedação:",
+          "21 bar Classe de Pressão do corpo:",
+          "PN45 Temperatura de operação:",
           "50 C a 120 C Fabricada inteiramente no Brasil"
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2022-07-refrigeracao-01-jpg-cdbb43b118.png",
-            "alt": "RefrigeraÃ§Ã£o"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/REFRIGERACAO-01.jpg",
+            "alt": "Refrigeração"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2022-07-refrigeracao-02-jpg-ce5692448a.png",
-            "alt": "RefrigeraÃ§Ã£o"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/REFRIGERACAO-02.jpg",
+            "alt": "Refrigeração"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -1872,7 +1872,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -1887,36 +1887,36 @@ export const productTechnicalSpecs = {
         "optionSlug": "rosca-npt-bsp",
         "title": "Rosca (NPT/BSP)",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-forjadas/rosca/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o forjada para alta pressÃ£o com extremidade rosca NPT/BSP.",
-          "AplicaÃ§Ã£o em linhas industriais de vapor, Ã³leo, gÃ¡s, Ã¡gua e fluidos compatÃ­veis.",
-          "Materiais usuais sob consulta: aÃ§o carbono, aÃ§o inoxidÃ¡vel e outras ligas conforme necessidade da operaÃ§Ã£o.",
-          "Classe, bitola e acabamento definidos conforme pressÃ£o de trabalho e norma aplicÃ¡vel."
+          "Conexão forjada para alta pressão com extremidade rosca NPT/BSP.",
+          "Aplicação em linhas industriais de vapor, óleo, gás, água e fluidos compatíveis.",
+          "Materiais usuais sob consulta: aço carbono, aço inoxidável e outras ligas conforme necessidade da operação.",
+          "Classe, bitola e acabamento definidos conforme pressão de trabalho e norma aplicável."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2024-09-bucha-forjada-368x245-png-d605ca37ac.png",
-            "alt": "Bucha ReduÃ§Ã£o"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/09/bucha-forjada-368x245.png",
+            "alt": "Bucha Redução"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2024-09-bujao-cabeca-quadrada-368x245-png-be87fb3094.png",
-            "alt": "BujÃ£o Cab. Quad."
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/09/bujao-cabeca-quadrada-368x245.png",
+            "alt": "Bujão Cab. Quad."
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃµes forjadas",
+              "Conexões forjadas",
               "Rosca (NPT/BSP)"
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -1927,36 +1927,36 @@ export const productTechnicalSpecs = {
         "optionSlug": "solda-sw",
         "title": "Solda (SW)",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-forjadas/solda/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o forjada para alta pressÃ£o com extremidade solda SW.",
-          "AplicaÃ§Ã£o em linhas industriais de vapor, Ã³leo, gÃ¡s, Ã¡gua e fluidos compatÃ­veis.",
-          "Materiais usuais sob consulta: aÃ§o carbono, aÃ§o inoxidÃ¡vel e outras ligas conforme necessidade da operaÃ§Ã£o.",
-          "Classe, bitola e acabamento definidos conforme pressÃ£o de trabalho e norma aplicÃ¡vel."
+          "Conexão forjada para alta pressão com extremidade solda SW.",
+          "Aplicação em linhas industriais de vapor, óleo, gás, água e fluidos compatíveis.",
+          "Materiais usuais sob consulta: aço carbono, aço inoxidável e outras ligas conforme necessidade da operação.",
+          "Classe, bitola e acabamento definidos conforme pressão de trabalho e norma aplicável."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2024-11-tampao-sw-368x245-png-f20962362a.png",
-            "alt": "TampÃ£o"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/11/tampao-sw-368x245.png",
+            "alt": "Tampão"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-e1-368x245-png-b64053f055.png",
-            "alt": "Cotovelo 45Â°"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/E1-368x245.png",
+            "alt": "Cotovelo 45°"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃµes forjadas",
+              "Conexões forjadas",
               "Solda (SW)"
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -1969,18 +1969,18 @@ export const productTechnicalSpecs = {
         "itemSlug": "ferro-maleavel",
         "standardSlug": "tipos",
         "optionSlug": "bucha-reducao",
-        "title": "Bucha ReduÃ§Ã£o",
+        "title": "Bucha Redução",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-ferro-maleavel-tupy/bucha-de-reducao/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o em ferro maleÃ¡vel para tubulaÃ§Ãµes industriais e prediais com rosca BSP ou NPT.",
-          "Produzida para montagem roscada, com opÃ§Ãµes preto ou galvanizado conforme aplicaÃ§Ã£o.",
-          "Faixas de pressÃ£o e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
-          "Bitolas e acabamentos definidos sob consulta tÃ©cnica."
+          "Conexão em ferro maleável para tubulações industriais e prediais com rosca BSP ou NPT.",
+          "Produzida para montagem roscada, com opções preto ou galvanizado conforme aplicação.",
+          "Faixas de pressão e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
+          "Bitolas e acabamentos definidos sob consulta técnica."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-28-368x245-png-0a847d1d3f.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/28-368x245.png",
             "alt": "Bucha Red. BSP"
           }
         ],
@@ -1988,15 +1988,15 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃ£o ferro maleÃ¡vel",
-              "Bucha ReduÃ§Ã£o"
+              "Conexão ferro maleável",
+              "Bucha Redução"
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -2005,34 +2005,34 @@ export const productTechnicalSpecs = {
         "itemSlug": "ferro-maleavel",
         "standardSlug": "tipos",
         "optionSlug": "bujao",
-        "title": "BujÃ£o",
+        "title": "Bujão",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-ferro-maleavel-tupy/bujao/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o em ferro maleÃ¡vel para tubulaÃ§Ãµes industriais e prediais com rosca BSP ou NPT.",
-          "Produzida para montagem roscada, com opÃ§Ãµes preto ou galvanizado conforme aplicaÃ§Ã£o.",
-          "Faixas de pressÃ£o e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
-          "Bitolas e acabamentos definidos sob consulta tÃ©cnica."
+          "Conexão em ferro maleável para tubulações industriais e prediais com rosca BSP ou NPT.",
+          "Produzida para montagem roscada, com opções preto ou galvanizado conforme aplicação.",
+          "Faixas de pressão e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
+          "Bitolas e acabamentos definidos sob consulta técnica."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-27-368x245-png-9ce77acc99.png",
-            "alt": "BujÃ£o BSP"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/27-368x245.png",
+            "alt": "Bujão BSP"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃ£o ferro maleÃ¡vel",
-              "BujÃ£o"
+              "Conexão ferro maleável",
+              "Bujão"
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -2041,34 +2041,34 @@ export const productTechnicalSpecs = {
         "itemSlug": "ferro-maleavel",
         "standardSlug": "tipos",
         "optionSlug": "cotovelo-45",
-        "title": "Cotovelo 45Â°",
+        "title": "Cotovelo 45°",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-ferro-maleavel-tupy/cotovelo-45/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o em ferro maleÃ¡vel para tubulaÃ§Ãµes industriais e prediais com rosca BSP ou NPT.",
-          "Produzida para montagem roscada, com opÃ§Ãµes preto ou galvanizado conforme aplicaÃ§Ã£o.",
-          "Faixas de pressÃ£o e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
-          "Bitolas e acabamentos definidos sob consulta tÃ©cnica."
+          "Conexão em ferro maleável para tubulações industriais e prediais com rosca BSP ou NPT.",
+          "Produzida para montagem roscada, com opções preto ou galvanizado conforme aplicação.",
+          "Faixas de pressão e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
+          "Bitolas e acabamentos definidos sob consulta técnica."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-alta-press-c3-a3o2-368x245-png-c33e7498aa.png",
-            "alt": "Cotovelo 45Â° BSP"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/Alta-Press%C3%A3o2-368x245.png",
+            "alt": "Cotovelo 45° BSP"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃ£o ferro maleÃ¡vel",
-              "Cotovelo 45Â°"
+              "Conexão ferro maleável",
+              "Cotovelo 45°"
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -2077,34 +2077,34 @@ export const productTechnicalSpecs = {
         "itemSlug": "ferro-maleavel",
         "standardSlug": "tipos",
         "optionSlug": "cotovelo-90",
-        "title": "Cotovelo 90Â°",
+        "title": "Cotovelo 90°",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-ferro-maleavel-tupy/cotovelo-90/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o em ferro maleÃ¡vel para tubulaÃ§Ãµes industriais e prediais com rosca BSP ou NPT.",
-          "Produzida para montagem roscada, com opÃ§Ãµes preto ou galvanizado conforme aplicaÃ§Ã£o.",
-          "Faixas de pressÃ£o e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
-          "Bitolas e acabamentos definidos sob consulta tÃ©cnica."
+          "Conexão em ferro maleável para tubulações industriais e prediais com rosca BSP ou NPT.",
+          "Produzida para montagem roscada, com opções preto ou galvanizado conforme aplicação.",
+          "Faixas de pressão e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
+          "Bitolas e acabamentos definidos sob consulta técnica."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-alta-press-c3-a3o12-368x245-png-6040c73292.png",
-            "alt": "Cotovelo 90Â° BSP"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/Alta-Press%C3%A3o12-368x245.png",
+            "alt": "Cotovelo 90° BSP"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃ£o ferro maleÃ¡vel",
-              "Cotovelo 90Â°"
+              "Conexão ferro maleável",
+              "Cotovelo 90°"
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -2115,16 +2115,16 @@ export const productTechnicalSpecs = {
         "optionSlug": "cruzeta",
         "title": "Cruzeta",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-ferro-maleavel-tupy/cruzeta/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o em ferro maleÃ¡vel para tubulaÃ§Ãµes industriais e prediais com rosca BSP ou NPT.",
-          "Produzida para montagem roscada, com opÃ§Ãµes preto ou galvanizado conforme aplicaÃ§Ã£o.",
-          "Faixas de pressÃ£o e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
-          "Bitolas e acabamentos definidos sob consulta tÃ©cnica."
+          "Conexão em ferro maleável para tubulações industriais e prediais com rosca BSP ou NPT.",
+          "Produzida para montagem roscada, com opções preto ou galvanizado conforme aplicação.",
+          "Faixas de pressão e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
+          "Bitolas e acabamentos definidos sob consulta técnica."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-24-368x245-png-2523c14d25.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/24-368x245.png",
             "alt": "Cruzeta BSP"
           }
         ],
@@ -2132,15 +2132,15 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃ£o ferro maleÃ¡vel",
+              "Conexão ferro maleável",
               "Cruzeta"
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -2149,34 +2149,34 @@ export const productTechnicalSpecs = {
         "itemSlug": "ferro-maleavel",
         "standardSlug": "tipos",
         "optionSlug": "curva-45-femea",
-        "title": "Curva 45Â° FÃªmea",
+        "title": "Curva 45° Fêmea",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-ferro-maleavel-tupy/curva-45-femea/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o em ferro maleÃ¡vel para tubulaÃ§Ãµes industriais e prediais com rosca BSP ou NPT.",
-          "Produzida para montagem roscada, com opÃ§Ãµes preto ou galvanizado conforme aplicaÃ§Ã£o.",
-          "Faixas de pressÃ£o e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
-          "Bitolas e acabamentos definidos sob consulta tÃ©cnica."
+          "Conexão em ferro maleável para tubulações industriais e prediais com rosca BSP ou NPT.",
+          "Produzida para montagem roscada, com opções preto ou galvanizado conforme aplicação.",
+          "Faixas de pressão e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
+          "Bitolas e acabamentos definidos sob consulta técnica."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2024-10-curva-45-c2-b0-femea-368x245-png-0b1e65dead.png",
-            "alt": "Curva 45 Â° F BSP"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/10/Curva-45%C2%B0-Femea-368x245.png",
+            "alt": "Curva 45 ° F BSP"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃ£o ferro maleÃ¡vel",
-              "Curva 45Â° FÃªmea"
+              "Conexão ferro maleável",
+              "Curva 45° Fêmea"
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -2185,34 +2185,34 @@ export const productTechnicalSpecs = {
         "itemSlug": "ferro-maleavel",
         "standardSlug": "tipos",
         "optionSlug": "curva-45-m-f",
-        "title": "Curva 45Â° M/F",
+        "title": "Curva 45° M/F",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-ferro-maleavel-tupy/curva-45-macho-femea/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o em ferro maleÃ¡vel para tubulaÃ§Ãµes industriais e prediais com rosca BSP ou NPT.",
-          "Produzida para montagem roscada, com opÃ§Ãµes preto ou galvanizado conforme aplicaÃ§Ã£o.",
-          "Faixas de pressÃ£o e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
-          "Bitolas e acabamentos definidos sob consulta tÃ©cnica."
+          "Conexão em ferro maleável para tubulações industriais e prediais com rosca BSP ou NPT.",
+          "Produzida para montagem roscada, com opções preto ou galvanizado conforme aplicação.",
+          "Faixas de pressão e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
+          "Bitolas e acabamentos definidos sob consulta técnica."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2024-10-curva-45-c2-b0-macho-femea-368x245-png-e3d3fcc7a2.png",
-            "alt": "Curva 45Â° M/F BSP"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/10/Curva-45%C2%B0-Macho-Femea-368x245.png",
+            "alt": "Curva 45° M/F BSP"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃ£o ferro maleÃ¡vel",
-              "Curva 45Â° M/F"
+              "Conexão ferro maleável",
+              "Curva 45° M/F"
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -2221,34 +2221,34 @@ export const productTechnicalSpecs = {
         "itemSlug": "ferro-maleavel",
         "standardSlug": "tipos",
         "optionSlug": "curva-90-femea",
-        "title": "Curva 90Â° FÃªmea",
+        "title": "Curva 90° Fêmea",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-ferro-maleavel-tupy/curva-90-femea/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o em ferro maleÃ¡vel para tubulaÃ§Ãµes industriais e prediais com rosca BSP ou NPT.",
-          "Produzida para montagem roscada, com opÃ§Ãµes preto ou galvanizado conforme aplicaÃ§Ã£o.",
-          "Faixas de pressÃ£o e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
-          "Bitolas e acabamentos definidos sob consulta tÃ©cnica."
+          "Conexão em ferro maleável para tubulações industriais e prediais com rosca BSP ou NPT.",
+          "Produzida para montagem roscada, com opções preto ou galvanizado conforme aplicação.",
+          "Faixas de pressão e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
+          "Bitolas e acabamentos definidos sob consulta técnica."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-19-368x245-png-6178f3a0b6.png",
-            "alt": "Curva 90Â° F BSP"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/19-368x245.png",
+            "alt": "Curva 90° F BSP"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃ£o ferro maleÃ¡vel",
-              "Curva 90Â° FÃªmea"
+              "Conexão ferro maleável",
+              "Curva 90° Fêmea"
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -2257,34 +2257,34 @@ export const productTechnicalSpecs = {
         "itemSlug": "ferro-maleavel",
         "standardSlug": "tipos",
         "optionSlug": "curva-90-macho",
-        "title": "Curva 90Â° Macho",
+        "title": "Curva 90° Macho",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-ferro-maleavel-tupy/curva-90-macho/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o em ferro maleÃ¡vel para tubulaÃ§Ãµes industriais e prediais com rosca BSP ou NPT.",
-          "Produzida para montagem roscada, com opÃ§Ãµes preto ou galvanizado conforme aplicaÃ§Ã£o.",
-          "Faixas de pressÃ£o e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
-          "Bitolas e acabamentos definidos sob consulta tÃ©cnica."
+          "Conexão em ferro maleável para tubulações industriais e prediais com rosca BSP ou NPT.",
+          "Produzida para montagem roscada, com opções preto ou galvanizado conforme aplicação.",
+          "Faixas de pressão e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
+          "Bitolas e acabamentos definidos sob consulta técnica."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-20-368x245-png-fb7159ba6d.png",
-            "alt": "Curva 90Â° M BSP"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/20-368x245.png",
+            "alt": "Curva 90° M BSP"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃ£o ferro maleÃ¡vel",
-              "Curva 90Â° Macho"
+              "Conexão ferro maleável",
+              "Curva 90° Macho"
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -2293,34 +2293,34 @@ export const productTechnicalSpecs = {
         "itemSlug": "ferro-maleavel",
         "standardSlug": "tipos",
         "optionSlug": "curva-90-m-f",
-        "title": "Curva 90Â° M/F",
+        "title": "Curva 90° M/F",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-ferro-maleavel-tupy/curva-90-macho-femea/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o em ferro maleÃ¡vel para tubulaÃ§Ãµes industriais e prediais com rosca BSP ou NPT.",
-          "Produzida para montagem roscada, com opÃ§Ãµes preto ou galvanizado conforme aplicaÃ§Ã£o.",
-          "Faixas de pressÃ£o e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
-          "Bitolas e acabamentos definidos sob consulta tÃ©cnica."
+          "Conexão em ferro maleável para tubulações industriais e prediais com rosca BSP ou NPT.",
+          "Produzida para montagem roscada, com opções preto ou galvanizado conforme aplicação.",
+          "Faixas de pressão e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
+          "Bitolas e acabamentos definidos sob consulta técnica."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-21-368x245-png-d557bdf9f5.png",
-            "alt": "Curva 90Â° M/F BSP"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/21-368x245.png",
+            "alt": "Curva 90° M/F BSP"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃ£o ferro maleÃ¡vel",
-              "Curva 90Â° M/F"
+              "Conexão ferro maleável",
+              "Curva 90° M/F"
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -2331,16 +2331,16 @@ export const productTechnicalSpecs = {
         "optionSlug": "curva-de-retorno",
         "title": "Curva de Retorno",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-ferro-maleavel-tupy/curva-de-retorno/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o em ferro maleÃ¡vel para tubulaÃ§Ãµes industriais e prediais com rosca BSP ou NPT.",
-          "Produzida para montagem roscada, com opÃ§Ãµes preto ou galvanizado conforme aplicaÃ§Ã£o.",
-          "Faixas de pressÃ£o e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
-          "Bitolas e acabamentos definidos sob consulta tÃ©cnica."
+          "Conexão em ferro maleável para tubulações industriais e prediais com rosca BSP ou NPT.",
+          "Produzida para montagem roscada, com opções preto ou galvanizado conforme aplicação.",
+          "Faixas de pressão e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
+          "Bitolas e acabamentos definidos sob consulta técnica."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-23-368x245-png-9bc624d93f.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/23-368x245.png",
             "alt": "Curva Retorno BSP"
           }
         ],
@@ -2348,15 +2348,15 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃ£o ferro maleÃ¡vel",
+              "Conexão ferro maleável",
               "Curva de Retorno"
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -2367,16 +2367,16 @@ export const productTechnicalSpecs = {
         "optionSlug": "flange-sextavado",
         "title": "Flange Sextavado",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-ferro-maleavel-tupy/flange-com-sextavado/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o em ferro maleÃ¡vel para tubulaÃ§Ãµes industriais e prediais com rosca BSP ou NPT.",
-          "Produzida para montagem roscada, com opÃ§Ãµes preto ou galvanizado conforme aplicaÃ§Ã£o.",
-          "Faixas de pressÃ£o e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
-          "Bitolas e acabamentos definidos sob consulta tÃ©cnica."
+          "Conexão em ferro maleável para tubulações industriais e prediais com rosca BSP ou NPT.",
+          "Produzida para montagem roscada, com opções preto ou galvanizado conforme aplicação.",
+          "Faixas de pressão e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
+          "Bitolas e acabamentos definidos sob consulta técnica."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2024-10-flange-com-sextavado-368x245-png-f3ec80980c.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/10/Flange-com-Sextavado-368x245.png",
             "alt": "Flange Sextavado BSP"
           }
         ],
@@ -2384,15 +2384,15 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃ£o ferro maleÃ¡vel",
+              "Conexão ferro maleável",
               "Flange Sextavado"
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -2401,18 +2401,18 @@ export const productTechnicalSpecs = {
         "itemSlug": "ferro-maleavel",
         "standardSlug": "tipos",
         "optionSlug": "luva-reducao-m-f",
-        "title": "Luva ReduÃ§Ã£o M/F",
+        "title": "Luva Redução M/F",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-ferro-maleavel-tupy/luva-de-reducao-macho-femea/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o em ferro maleÃ¡vel para tubulaÃ§Ãµes industriais e prediais com rosca BSP ou NPT.",
-          "Produzida para montagem roscada, com opÃ§Ãµes preto ou galvanizado conforme aplicaÃ§Ã£o.",
-          "Faixas de pressÃ£o e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
-          "Bitolas e acabamentos definidos sob consulta tÃ©cnica."
+          "Conexão em ferro maleável para tubulações industriais e prediais com rosca BSP ou NPT.",
+          "Produzida para montagem roscada, com opções preto ou galvanizado conforme aplicação.",
+          "Faixas de pressão e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
+          "Bitolas e acabamentos definidos sob consulta técnica."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-15-368x245-png-41bd4d70ee.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/15-368x245.png",
             "alt": "Luva Red. M/F BSP"
           }
         ],
@@ -2420,15 +2420,15 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃ£o ferro maleÃ¡vel",
-              "Luva ReduÃ§Ã£o M/F"
+              "Conexão ferro maleável",
+              "Luva Redução M/F"
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -2439,16 +2439,16 @@ export const productTechnicalSpecs = {
         "optionSlug": "luva-m-f",
         "title": "Luva M/F",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-ferro-maleavel-tupy/luva-macho-femea/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o em ferro maleÃ¡vel para tubulaÃ§Ãµes industriais e prediais com rosca BSP ou NPT.",
-          "Produzida para montagem roscada, com opÃ§Ãµes preto ou galvanizado conforme aplicaÃ§Ã£o.",
-          "Faixas de pressÃ£o e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
-          "Bitolas e acabamentos definidos sob consulta tÃ©cnica."
+          "Conexão em ferro maleável para tubulações industriais e prediais com rosca BSP ou NPT.",
+          "Produzida para montagem roscada, com opções preto ou galvanizado conforme aplicação.",
+          "Faixas de pressão e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
+          "Bitolas e acabamentos definidos sob consulta técnica."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-alta-press-c3-a3o10-368x245-png-787c9b4101.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/Alta-Press%C3%A3o10-368x245.png",
             "alt": "Luva M/F BSP"
           }
         ],
@@ -2456,15 +2456,15 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃ£o ferro maleÃ¡vel",
+              "Conexão ferro maleável",
               "Luva M/F"
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -2475,16 +2475,16 @@ export const productTechnicalSpecs = {
         "optionSlug": "niple-duplo-red",
         "title": "Niple Duplo Red.",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-ferro-maleavel-tupy/niple-duplo-de-reducao/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o em ferro maleÃ¡vel para tubulaÃ§Ãµes industriais e prediais com rosca BSP ou NPT.",
-          "Produzida para montagem roscada, com opÃ§Ãµes preto ou galvanizado conforme aplicaÃ§Ã£o.",
-          "Faixas de pressÃ£o e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
-          "Bitolas e acabamentos definidos sob consulta tÃ©cnica."
+          "Conexão em ferro maleável para tubulações industriais e prediais com rosca BSP ou NPT.",
+          "Produzida para montagem roscada, com opções preto ou galvanizado conforme aplicação.",
+          "Faixas de pressão e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
+          "Bitolas e acabamentos definidos sob consulta técnica."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-04-368x245-png-be12e43c5e.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/04-368x245.png",
             "alt": "Niple Duplo Red. BSP"
           }
         ],
@@ -2492,15 +2492,15 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃ£o ferro maleÃ¡vel",
+              "Conexão ferro maleável",
               "Niple Duplo Red."
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -2509,34 +2509,34 @@ export const productTechnicalSpecs = {
         "itemSlug": "ferro-maleavel",
         "standardSlug": "tipos",
         "optionSlug": "te-90",
-        "title": "TÃª 90Â°",
+        "title": "Tê 90°",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-ferro-maleavel-tupy/te-90/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o em ferro maleÃ¡vel para tubulaÃ§Ãµes industriais e prediais com rosca BSP ou NPT.",
-          "Produzida para montagem roscada, com opÃ§Ãµes preto ou galvanizado conforme aplicaÃ§Ã£o.",
-          "Faixas de pressÃ£o e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
-          "Bitolas e acabamentos definidos sob consulta tÃ©cnica."
+          "Conexão em ferro maleável para tubulações industriais e prediais com rosca BSP ou NPT.",
+          "Produzida para montagem roscada, com opções preto ou galvanizado conforme aplicação.",
+          "Faixas de pressão e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
+          "Bitolas e acabamentos definidos sob consulta técnica."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-06-368x245-png-6b05dd3abe.png",
-            "alt": "TÃª 90Â° BSP"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/06-368x245.png",
+            "alt": "Tê 90° BSP"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃ£o ferro maleÃ¡vel",
-              "TÃª 90Â°"
+              "Conexão ferro maleável",
+              "Tê 90°"
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -2545,34 +2545,34 @@ export const productTechnicalSpecs = {
         "itemSlug": "ferro-maleavel",
         "standardSlug": "tipos",
         "optionSlug": "te-90-de-reducao",
-        "title": "TÃª 90Â° de ReduÃ§Ã£o",
+        "title": "Tê 90° de Redução",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-ferro-maleavel-tupy/te-90-de-reducao/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o em ferro maleÃ¡vel para tubulaÃ§Ãµes industriais e prediais com rosca BSP ou NPT.",
-          "Produzida para montagem roscada, com opÃ§Ãµes preto ou galvanizado conforme aplicaÃ§Ã£o.",
-          "Faixas de pressÃ£o e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
-          "Bitolas e acabamentos definidos sob consulta tÃ©cnica."
+          "Conexão em ferro maleável para tubulações industriais e prediais com rosca BSP ou NPT.",
+          "Produzida para montagem roscada, com opções preto ou galvanizado conforme aplicação.",
+          "Faixas de pressão e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
+          "Bitolas e acabamentos definidos sob consulta técnica."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-m-c3-a9dia-press-c3-a3o5-368x245-png-5145b6cf25.png",
-            "alt": "TÃª 90Â° Red. BSP"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/M%C3%A9dia-Press%C3%A3o5-368x245.png",
+            "alt": "Tê 90° Red. BSP"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃ£o ferro maleÃ¡vel",
-              "TÃª 90Â° de ReduÃ§Ã£o"
+              "Conexão ferro maleável",
+              "Tê 90° de Redução"
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -2581,34 +2581,34 @@ export const productTechnicalSpecs = {
         "itemSlug": "ferro-maleavel",
         "standardSlug": "tipos",
         "optionSlug": "uniao",
-        "title": "UniÃ£o",
+        "title": "União",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-ferro-maleavel-tupy/uniao/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o em ferro maleÃ¡vel para tubulaÃ§Ãµes industriais e prediais com rosca BSP ou NPT.",
-          "Produzida para montagem roscada, com opÃ§Ãµes preto ou galvanizado conforme aplicaÃ§Ã£o.",
-          "Faixas de pressÃ£o e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
-          "Bitolas e acabamentos definidos sob consulta tÃ©cnica."
+          "Conexão em ferro maleável para tubulações industriais e prediais com rosca BSP ou NPT.",
+          "Produzida para montagem roscada, com opções preto ou galvanizado conforme aplicação.",
+          "Faixas de pressão e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
+          "Bitolas e acabamentos definidos sob consulta técnica."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-alta-press-c3-a3o4-368x245-png-7c458b1e83.png",
-            "alt": "UniÃ£o BSP"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/Alta-Press%C3%A3o4-368x245.png",
+            "alt": "União BSP"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃ£o ferro maleÃ¡vel",
-              "UniÃ£o"
+              "Conexão ferro maleável",
+              "União"
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -2617,34 +2617,34 @@ export const productTechnicalSpecs = {
         "itemSlug": "ferro-maleavel",
         "standardSlug": "tipos",
         "optionSlug": "cotovelo-90-m-f",
-        "title": "Cotovelo 90Â° M/F",
+        "title": "Cotovelo 90° M/F",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-ferro-maleavel-tupy/cotovelo-90-macho-femea/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o em ferro maleÃ¡vel para tubulaÃ§Ãµes industriais e prediais com rosca BSP ou NPT.",
-          "Produzida para montagem roscada, com opÃ§Ãµes preto ou galvanizado conforme aplicaÃ§Ã£o.",
-          "Faixas de pressÃ£o e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
-          "Bitolas e acabamentos definidos sob consulta tÃ©cnica."
+          "Conexão em ferro maleável para tubulações industriais e prediais com rosca BSP ou NPT.",
+          "Produzida para montagem roscada, com opções preto ou galvanizado conforme aplicação.",
+          "Faixas de pressão e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
+          "Bitolas e acabamentos definidos sob consulta técnica."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-26-368x245-png-5d9857e772.png",
-            "alt": "Cot. 90Â° M/F BSP"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/26-368x245.png",
+            "alt": "Cot. 90° M/F BSP"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃ£o ferro maleÃ¡vel",
-              "Cotovelo 90Â° M/F"
+              "Conexão ferro maleável",
+              "Cotovelo 90° M/F"
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -2655,16 +2655,16 @@ export const productTechnicalSpecs = {
         "optionSlug": "luva",
         "title": "Luva",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-ferro-maleavel-tupy/luva/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o em ferro maleÃ¡vel para tubulaÃ§Ãµes industriais e prediais com rosca BSP ou NPT.",
-          "Produzida para montagem roscada, com opÃ§Ãµes preto ou galvanizado conforme aplicaÃ§Ã£o.",
-          "Faixas de pressÃ£o e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
-          "Bitolas e acabamentos definidos sob consulta tÃ©cnica."
+          "Conexão em ferro maleável para tubulações industriais e prediais com rosca BSP ou NPT.",
+          "Produzida para montagem roscada, com opções preto ou galvanizado conforme aplicação.",
+          "Faixas de pressão e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
+          "Bitolas e acabamentos definidos sob consulta técnica."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-16-368x245-png-b985fbf33e.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/16-368x245.png",
             "alt": "Luva BSP"
           }
         ],
@@ -2672,15 +2672,15 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃ£o ferro maleÃ¡vel",
+              "Conexão ferro maleável",
               "Luva"
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -2689,18 +2689,18 @@ export const productTechnicalSpecs = {
         "itemSlug": "ferro-maleavel",
         "standardSlug": "tipos",
         "optionSlug": "luva-de-reducao",
-        "title": "Luva de ReduÃ§Ã£o",
+        "title": "Luva de Redução",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-ferro-maleavel-tupy/luva-de-reducao/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o em ferro maleÃ¡vel para tubulaÃ§Ãµes industriais e prediais com rosca BSP ou NPT.",
-          "Produzida para montagem roscada, com opÃ§Ãµes preto ou galvanizado conforme aplicaÃ§Ã£o.",
-          "Faixas de pressÃ£o e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
-          "Bitolas e acabamentos definidos sob consulta tÃ©cnica."
+          "Conexão em ferro maleável para tubulações industriais e prediais com rosca BSP ou NPT.",
+          "Produzida para montagem roscada, com opções preto ou galvanizado conforme aplicação.",
+          "Faixas de pressão e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
+          "Bitolas e acabamentos definidos sob consulta técnica."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-15-368x245-png-41bd4d70ee.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/15-368x245.png",
             "alt": "Luva Red. BSP"
           }
         ],
@@ -2708,15 +2708,15 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃ£o ferro maleÃ¡vel",
-              "Luva de ReduÃ§Ã£o"
+              "Conexão ferro maleável",
+              "Luva de Redução"
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -2725,34 +2725,34 @@ export const productTechnicalSpecs = {
         "itemSlug": "ferro-maleavel",
         "standardSlug": "tipos",
         "optionSlug": "tampao",
-        "title": "TampÃ£o",
+        "title": "Tampão",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-ferro-maleavel-tupy/tampao/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o em ferro maleÃ¡vel para tubulaÃ§Ãµes industriais e prediais com rosca BSP ou NPT.",
-          "Produzida para montagem roscada, com opÃ§Ãµes preto ou galvanizado conforme aplicaÃ§Ã£o.",
-          "Faixas de pressÃ£o e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
-          "Bitolas e acabamentos definidos sob consulta tÃ©cnica."
+          "Conexão em ferro maleável para tubulações industriais e prediais com rosca BSP ou NPT.",
+          "Produzida para montagem roscada, com opções preto ou galvanizado conforme aplicação.",
+          "Faixas de pressão e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
+          "Bitolas e acabamentos definidos sob consulta técnica."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-m-c3-a9dia-press-c3-a3o4-368x245-png-23f008e8d6.png",
-            "alt": "TampÃ£o BSP"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/M%C3%A9dia-Press%C3%A3o4-368x245.png",
+            "alt": "Tampão BSP"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃ£o ferro maleÃ¡vel",
-              "TampÃ£o"
+              "Conexão ferro maleável",
+              "Tampão"
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -2763,16 +2763,16 @@ export const productTechnicalSpecs = {
         "optionSlug": "niple-duplo",
         "title": "Niple Duplo",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-ferro-maleavel-tupy/niple-duplo/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o em ferro maleÃ¡vel para tubulaÃ§Ãµes industriais e prediais com rosca BSP ou NPT.",
-          "Produzida para montagem roscada, com opÃ§Ãµes preto ou galvanizado conforme aplicaÃ§Ã£o.",
-          "Faixas de pressÃ£o e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
-          "Bitolas e acabamentos definidos sob consulta tÃ©cnica."
+          "Conexão em ferro maleável para tubulações industriais e prediais com rosca BSP ou NPT.",
+          "Produzida para montagem roscada, com opções preto ou galvanizado conforme aplicação.",
+          "Faixas de pressão e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
+          "Bitolas e acabamentos definidos sob consulta técnica."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-13-368x245-png-4e53f49ae2.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/13-368x245.png",
             "alt": "Niple Duplo BSP"
           }
         ],
@@ -2780,15 +2780,15 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃ£o ferro maleÃ¡vel",
+              "Conexão ferro maleável",
               "Niple Duplo"
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -2797,34 +2797,34 @@ export const productTechnicalSpecs = {
         "itemSlug": "ferro-maleavel",
         "standardSlug": "tipos",
         "optionSlug": "te-45",
-        "title": "TÃª 45Â°",
+        "title": "Tê 45°",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-ferro-maleavel-tupy/te-45/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o em ferro maleÃ¡vel para tubulaÃ§Ãµes industriais e prediais com rosca BSP ou NPT.",
-          "Produzida para montagem roscada, com opÃ§Ãµes preto ou galvanizado conforme aplicaÃ§Ã£o.",
-          "Faixas de pressÃ£o e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
-          "Bitolas e acabamentos definidos sob consulta tÃ©cnica."
+          "Conexão em ferro maleável para tubulações industriais e prediais com rosca BSP ou NPT.",
+          "Produzida para montagem roscada, com opções preto ou galvanizado conforme aplicação.",
+          "Faixas de pressão e temperatura devem ser confirmadas conforme norma ISO 49/NBR 6943, ASME/ANSI B16.3 ou ASME/ANSI B16.39.",
+          "Bitolas e acabamentos definidos sob consulta técnica."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-10-368x245-png-1297d2bd36.png",
-            "alt": "TÃª 45Â° BSP"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/10-368x245.png",
+            "alt": "Tê 45° BSP"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃ£o ferro maleÃ¡vel",
-              "TÃª 45Â°"
+              "Conexão ferro maleável",
+              "Tê 45°"
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -2839,20 +2839,20 @@ export const productTechnicalSpecs = {
         "optionSlug": "colar-metalico",
         "title": "Sistema de Acoplamento K20",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/alvenius/acoplamento-k20/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "A simplicidade dos acoplamentos Alvenius dispensa a utilizaÃ§Ã£o de mÃ£o de obra especializada e ferramentas especiais, facilitando sua montagem.",
-          "O Sistema Alvenius K Ã© montado com dois, trÃªs, quatro, seis ou oito parafusos, dependendo do diÃ¢metro e do tipo de acoplamento.",
-          "A instalaÃ§Ã£o, sem o processo de solda, resulta em uma grande vantagem para diversos usuÃ¡rios e pode ser atÃ© seis vezes mais rÃ¡pida quando comparada a sistemas tradicionais, como: rosca, flange ou solda.",
-          "Qualquer serviÃ§o de inspeÃ§Ã£o ou manutenÃ§Ã£o Ã© realizado rapidamente e de maneira independente entre os diversos componentes da linha, diminuindo, assim, o tempo de parada"
+          "A simplicidade dos acoplamentos Alvenius dispensa a utilização de mão de obra especializada e ferramentas especiais, facilitando sua montagem.",
+          "O Sistema Alvenius K é montado com dois, três, quatro, seis ou oito parafusos, dependendo do diâmetro e do tipo de acoplamento.",
+          "A instalação, sem o processo de solda, resulta em uma grande vantagem para diversos usuários e pode ser até seis vezes mais rápida quando comparada a sistemas tradicionais, como: rosca, flange ou solda.",
+          "Qualquer serviço de inspeção ou manutenção é realizado rapidamente e de maneira independente entre os diversos componentes da linha, diminuindo, assim, o tempo de parada"
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2026-02-alvenius-02-368x245-png-c0f41e95f7.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2026/02/Alvenius-02-368x245.png",
             "alt": "Acoplamento K20"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2026-02-medidas-k20-368x245-png-b4350c3e2c.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2026/02/Medidas-k20-368x245.png",
             "alt": "Acoplamento K20"
           }
         ],
@@ -2879,20 +2879,20 @@ export const productTechnicalSpecs = {
         "optionSlug": "bitola-sob-consulta",
         "title": "Sistema de Acoplamento K20",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/alvenius/acoplamento-k20/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "A simplicidade dos acoplamentos Alvenius dispensa a utilizaÃ§Ã£o de mÃ£o de obra especializada e ferramentas especiais, facilitando sua montagem.",
-          "O Sistema Alvenius K Ã© montado com dois, trÃªs, quatro, seis ou oito parafusos, dependendo do diÃ¢metro e do tipo de acoplamento.",
-          "A instalaÃ§Ã£o, sem o processo de solda, resulta em uma grande vantagem para diversos usuÃ¡rios e pode ser atÃ© seis vezes mais rÃ¡pida quando comparada a sistemas tradicionais, como: rosca, flange ou solda.",
-          "Qualquer serviÃ§o de inspeÃ§Ã£o ou manutenÃ§Ã£o Ã© realizado rapidamente e de maneira independente entre os diversos componentes da linha, diminuindo, assim, o tempo de parada"
+          "A simplicidade dos acoplamentos Alvenius dispensa a utilização de mão de obra especializada e ferramentas especiais, facilitando sua montagem.",
+          "O Sistema Alvenius K é montado com dois, três, quatro, seis ou oito parafusos, dependendo do diâmetro e do tipo de acoplamento.",
+          "A instalação, sem o processo de solda, resulta em uma grande vantagem para diversos usuários e pode ser até seis vezes mais rápida quando comparada a sistemas tradicionais, como: rosca, flange ou solda.",
+          "Qualquer serviço de inspeção ou manutenção é realizado rapidamente e de maneira independente entre os diversos componentes da linha, diminuindo, assim, o tempo de parada"
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2026-02-alvenius-02-368x245-png-c0f41e95f7.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2026/02/Alvenius-02-368x245.png",
             "alt": "Acoplamento K20"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2026-02-medidas-k20-368x245-png-b4350c3e2c.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2026/02/Medidas-k20-368x245.png",
             "alt": "Acoplamento K20"
           }
         ],
@@ -2923,29 +2923,29 @@ export const productTechnicalSpecs = {
         "optionSlug": "cap",
         "title": "Cap",
         "sourceUrl": "https://www.valaco.com.br/produtos/conexoes_tb_cap.html",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "â€¢ DimensÃµes conforme ANSI B 16.9;",
-          "â€¢ Material conforme indicaÃ§Ãµes de materiais para conexÃµes: - AÃ§o Carbono ASTM A 234 Gr.",
-          "- AÃ§o InoxidÃ¡vel AISI 304 ou 304L;",
-          "- AÃ§o InoxidÃ¡vel AISI 316 ou 316L;",
-          "â€¢ Extremidades biseladas para solda de topo.",
-          "O peso aproximado Ã© para conexÃµes em AÃ§o Carbono ASTM A 234 Gr.",
-          "Veja os Materiais Permitidos para ConexÃµes Tubulares;",
-          "Veja a TolerÃ¢ncia para ConexÃµes de Solda;",
-          "Veja a Tabela de Espessura de Tubos e ConexÃµes Tubulares;",
-          "Para converter unidades de medida acesse a seÃ§Ã£o de ConversÃ£o de Medidas;"
+          "• Dimensões conforme ANSI B 16.9;",
+          "• Material conforme indicações de materiais para conexões: - Aço Carbono ASTM A 234 Gr.",
+          "- Aço Inoxidável AISI 304 ou 304L;",
+          "- Aço Inoxidável AISI 316 ou 316L;",
+          "• Extremidades biseladas para solda de topo.",
+          "O peso aproximado é para conexões em Aço Carbono ASTM A 234 Gr.",
+          "Veja os Materiais Permitidos para Conexões Tubulares;",
+          "Veja a Tolerância para Conexões de Solda;",
+          "Veja a Tabela de Espessura de Tubos e Conexões Tubulares;",
+          "Para converter unidades de medida acesse a seção de Conversão de Medidas;"
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-c1-368x245-png-aa12179461.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/C1-368x245.png",
             "alt": "Cap"
           }
         ],
         "tables": [
           [
             [
-              "DiÃ¢metro",
+              "Diâmetro",
               "Espessura da Parede T (mm)",
               "Comprimento E (mm)",
               "Peso Aproximado (kg) *Ver Notas (1)"
@@ -3324,31 +3324,31 @@ export const productTechnicalSpecs = {
         "itemSlug": "conexoes-tubulares",
         "standardSlug": "tipos",
         "optionSlug": "curva-45",
-        "title": "Curva 45Â°",
+        "title": "Curva 45°",
         "sourceUrl": "https://www.valaco.com.br/produtos/conexoes_tb_curva_45.html",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "â€¢ DimensÃµes conforme ANSI B 16.9;",
-          "â€¢ Material conforme indicaÃ§Ãµes de materiais para conexÃµes: - AÃ§o Carbono ASTM A 234 Gr.",
-          "- AÃ§o InoxidÃ¡vel AISI 304 ou 304L;",
-          "- AÃ§o InoxidÃ¡vel AISI 316 ou 316L;",
-          "â€¢ Extremidades biseladas para solda de topo.",
-          "DIMENSÃ•ES E PESO APROXIMADO DiÃ¢metro Espessura da Parede T (mm) Centro a Face B (mm) Peso Aproximado (kg) *Ver Notas (1) Nominal Externo Schedule DN (pol.) OD (mm) Standard 40 XS 80 Std.",
-          "O peso aproximado Ã© para conexÃµes em AÃ§o Carbono ASTM A 234 Gr.",
-          "Veja os Materiais Permitidos para ConexÃµes Tubulares;",
-          "Veja a TolerÃ¢ncia para Curvas de AÃ§o para Solda de Topo;",
-          "Veja a Tabela de Espessura de Tubos e ConexÃµes Tubulares;"
+          "• Dimensões conforme ANSI B 16.9;",
+          "• Material conforme indicações de materiais para conexões: - Aço Carbono ASTM A 234 Gr.",
+          "- Aço Inoxidável AISI 304 ou 304L;",
+          "- Aço Inoxidável AISI 316 ou 316L;",
+          "• Extremidades biseladas para solda de topo.",
+          "DIMENSÕES E PESO APROXIMADO Diâmetro Espessura da Parede T (mm) Centro a Face B (mm) Peso Aproximado (kg) *Ver Notas (1) Nominal Externo Schedule DN (pol.) OD (mm) Standard 40 XS 80 Std.",
+          "O peso aproximado é para conexões em Aço Carbono ASTM A 234 Gr.",
+          "Veja os Materiais Permitidos para Conexões Tubulares;",
+          "Veja a Tolerância para Curvas de Aço para Solda de Topo;",
+          "Veja a Tabela de Espessura de Tubos e Conexões Tubulares;"
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-c9-368x245-png-1aaf9dd18e.png",
-            "alt": "Curva 45Â°"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/C9-368x245.png",
+            "alt": "Curva 45°"
           }
         ],
         "tables": [
           [
             [
-              "DiÃ¢metro",
+              "Diâmetro",
               "Espessura da Parede T (mm)",
               "Centro a Face B (mm)",
               "Peso Aproximado (kg) *Ver Notas (1)"
@@ -3637,31 +3637,31 @@ export const productTechnicalSpecs = {
         "itemSlug": "conexoes-tubulares",
         "standardSlug": "tipos",
         "optionSlug": "curva-90",
-        "title": "Curva 90Â°",
+        "title": "Curva 90°",
         "sourceUrl": "https://www.valaco.com.br/produtos/conexoes_tb_curva_90.html",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "â€¢ DimensÃµes conforme ANSI B 16.9;",
-          "â€¢ Material conforme indicaÃ§Ãµes de materiais para conexÃµes: - AÃ§o Carbono ASTM A 234 Gr.",
-          "- AÃ§o InoxidÃ¡vel AISI 304 ou 304L;",
-          "- AÃ§o InoxidÃ¡vel AISI 316 ou 316L;",
-          "â€¢ Extremidades biseladas para solda de topo;",
-          "â€¢ Modelos disponÃ­veis: - Raio Curto;",
+          "• Dimensões conforme ANSI B 16.9;",
+          "• Material conforme indicações de materiais para conexões: - Aço Carbono ASTM A 234 Gr.",
+          "- Aço Inoxidável AISI 304 ou 304L;",
+          "- Aço Inoxidável AISI 316 ou 316L;",
+          "• Extremidades biseladas para solda de topo;",
+          "• Modelos disponíveis: - Raio Curto;",
           "- Raio N x DN (Sob consulta).",
-          "DIMENSÃ•ES E PESO APROXIMADO DiÃ¢metro Espessura da Parede T (mm) Centro a Face A (mm) Peso Aproximado (kg) *Ver Notas (1) Nominal Externo Schedule DN (pol.) OD (mm) Standard 40 XS 80 Raio Longo Raio Curto Std.",
-          "O peso aproximado Ã© para conexÃµes em AÃ§o Carbono ASTM A 234 Gr.",
-          "WPB para curvas 90Â° de Raio Longo;"
+          "DIMENSÕES E PESO APROXIMADO Diâmetro Espessura da Parede T (mm) Centro a Face A (mm) Peso Aproximado (kg) *Ver Notas (1) Nominal Externo Schedule DN (pol.) OD (mm) Standard 40 XS 80 Raio Longo Raio Curto Std.",
+          "O peso aproximado é para conexões em Aço Carbono ASTM A 234 Gr.",
+          "WPB para curvas 90° de Raio Longo;"
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-c10-368x245-png-d455fc7841.png",
-            "alt": "Curva 90Â°"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/C10-368x245.png",
+            "alt": "Curva 90°"
           }
         ],
         "tables": [
           [
             [
-              "DiÃ¢metro",
+              "Diâmetro",
               "Espessura da Parede T (mm)",
               "Centro a Face A (mm)",
               "Peso Aproximado (kg) *Ver Notas (1)"
@@ -3972,31 +3972,31 @@ export const productTechnicalSpecs = {
         "itemSlug": "conexoes-tubulares",
         "standardSlug": "tipos",
         "optionSlug": "curva-180",
-        "title": "Curva 180Â°",
+        "title": "Curva 180°",
         "sourceUrl": "https://www.valaco.com.br/produtos/conexoes_tb_curva_180.html",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "â€¢ DimensÃµes conforme ANSI B 16.9;",
-          "â€¢ Material conforme indicaÃ§Ãµes de materiais para conexÃµes: - AÃ§o Carbono ASTM A 234 Gr.",
-          "- AÃ§o InoxidÃ¡vel AISI 304 ou 304L;",
-          "- AÃ§o InoxidÃ¡vel AISI 316 ou 316L;",
-          "â€¢ Extremidades biseladas para solda de topo;",
-          "â€¢ Modelos disponÃ­veis: - Raio Curto;",
+          "• Dimensões conforme ANSI B 16.9;",
+          "• Material conforme indicações de materiais para conexões: - Aço Carbono ASTM A 234 Gr.",
+          "- Aço Inoxidável AISI 304 ou 304L;",
+          "- Aço Inoxidável AISI 316 ou 316L;",
+          "• Extremidades biseladas para solda de topo;",
+          "• Modelos disponíveis: - Raio Curto;",
           "- Raio N x DN (Sob consulta).",
-          "Veja os Materiais Permitidos para ConexÃµes Tubulares;",
-          "Veja a TolerÃ¢ncia para Curvas de AÃ§o para Solda de Topo;",
-          "Veja a Tabela de Espessura de Tubos e ConexÃµes Tubulares;"
+          "Veja os Materiais Permitidos para Conexões Tubulares;",
+          "Veja a Tolerância para Curvas de Aço para Solda de Topo;",
+          "Veja a Tabela de Espessura de Tubos e Conexões Tubulares;"
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-c7-368x245-png-f98e60a80a.png",
-            "alt": "Curva 180Â°"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/C7-368x245.png",
+            "alt": "Curva 180°"
           }
         ],
         "tables": [
           [
             [
-              "DiÃ¢metro",
+              "Diâmetro",
               "Espessura da Parede T (mm)",
               "Centro a Face A (mm)",
               "Centro a Centro O (mm)",
@@ -4308,34 +4308,34 @@ export const productTechnicalSpecs = {
         "itemSlug": "conexoes-tubulares",
         "standardSlug": "tipos",
         "optionSlug": "niple-concent",
-        "title": "Niple ConcÃªnt.",
+        "title": "Niple Concênt.",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-tubulares/niple-concentrico/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o tubular para solda de topo em sistemas industriais de conduÃ§Ã£o de fluidos.",
-          "DimensÃµes usuais conforme ANSI/ASME B16.9, B16.28 ou MSS SP-43, conforme o tipo de conexÃ£o.",
-          "Materiais usuais sob consulta: aÃ§o carbono ASTM A234 WPB, aÃ§o inoxidÃ¡vel AISI 304/304L, AISI 316/316L e outras ligas.",
-          "Schedule, diÃ¢metro e raio definidos conforme projeto e pressÃ£o de trabalho."
+          "Conexão tubular para solda de topo em sistemas industriais de condução de fluidos.",
+          "Dimensões usuais conforme ANSI/ASME B16.9, B16.28 ou MSS SP-43, conforme o tipo de conexão.",
+          "Materiais usuais sob consulta: aço carbono ASTM A234 WPB, aço inoxidável AISI 304/304L, AISI 316/316L e outras ligas.",
+          "Schedule, diâmetro e raio definidos conforme projeto e pressão de trabalho."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2024-10-niple-concentrico-368x245-png-eac83511b9.png",
-            "alt": "Niple ConcÃªntrico"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/10/NIPLE-CONCENTRICO-368x245.png",
+            "alt": "Niple Concêntrico"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃ£o tubular",
-              "Niple ConcÃªnt."
+              "Conexão tubular",
+              "Niple Concênt."
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -4344,34 +4344,34 @@ export const productTechnicalSpecs = {
         "itemSlug": "conexoes-tubulares",
         "standardSlug": "tipos",
         "optionSlug": "niple-excent",
-        "title": "Niple ExcÃªnt.",
+        "title": "Niple Excênt.",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-tubulares/niple-excentrico/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o tubular para solda de topo em sistemas industriais de conduÃ§Ã£o de fluidos.",
-          "DimensÃµes usuais conforme ANSI/ASME B16.9, B16.28 ou MSS SP-43, conforme o tipo de conexÃ£o.",
-          "Materiais usuais sob consulta: aÃ§o carbono ASTM A234 WPB, aÃ§o inoxidÃ¡vel AISI 304/304L, AISI 316/316L e outras ligas.",
-          "Schedule, diÃ¢metro e raio definidos conforme projeto e pressÃ£o de trabalho."
+          "Conexão tubular para solda de topo em sistemas industriais de condução de fluidos.",
+          "Dimensões usuais conforme ANSI/ASME B16.9, B16.28 ou MSS SP-43, conforme o tipo de conexão.",
+          "Materiais usuais sob consulta: aço carbono ASTM A234 WPB, aço inoxidável AISI 304/304L, AISI 316/316L e outras ligas.",
+          "Schedule, diâmetro e raio definidos conforme projeto e pressão de trabalho."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2024-10-niple-excentrico-368x245-png-4c87a89fc0.png",
-            "alt": "Niple ExcÃªntrico"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/10/NIPLE-EXCENTRICO-368x245.png",
+            "alt": "Niple Excêntrico"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃ£o tubular",
-              "Niple ExcÃªnt."
+              "Conexão tubular",
+              "Niple Excênt."
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -4382,22 +4382,22 @@ export const productTechnicalSpecs = {
         "optionSlug": "pestana",
         "title": "Pestana",
         "sourceUrl": "https://www.valaco.com.br/produtos/conexoes_tb_pestana.html",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "â€¢ DimensÃµes conforme ANSI B 16.9 e MSS SP 43;",
-          "â€¢ Material conforme indicaÃ§Ãµes de materiais para conexÃµes: - AÃ§o Carbono ASTM A 234 Gr.",
-          "- AÃ§o InoxidÃ¡vel AISI 304 ou 304L;",
-          "- AÃ§o InoxidÃ¡vel AISI 316 ou 316L;",
-          "â€¢ Modelos disponÃ­veis: - Curta Estampada (Figura CT107-C);",
+          "• Dimensões conforme ANSI B 16.9 e MSS SP 43;",
+          "• Material conforme indicações de materiais para conexões: - Aço Carbono ASTM A 234 Gr.",
+          "- Aço Inoxidável AISI 304 ou 304L;",
+          "- Aço Inoxidável AISI 316 ou 316L;",
+          "• Modelos disponíveis: - Curta Estampada (Figura CT107-C);",
           "- MSS SP 43 (Figura CT107-M);",
           "- Longa - ANSI B 16 (Figura CT107-L).",
           "Tipo \"A\" para flange Solto (lap Joint);",
           "Tipo \"B\" para flange Sobreposto (Slip On);",
-          "Veja os Materiais Permitidos para ConexÃµes Tubulares;"
+          "Veja os Materiais Permitidos para Conexões Tubulares;"
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2024-10-pestana-368x245-png-a93d8e80a2.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/10/PESTANA-368x245.png",
             "alt": "Pestana"
           }
         ],
@@ -4416,27 +4416,27 @@ export const productTechnicalSpecs = {
             ],
             [
               "3.",
-              "Veja os Materiais Permitidos para ConexÃµes Tubulares;"
+              "Veja os Materiais Permitidos para Conexões Tubulares;"
             ],
             [
               "4.",
-              "Veja a TolerÃ¢ncia para Curvas de AÃ§o para Solda de Topo;"
+              "Veja a Tolerância para Curvas de Aço para Solda de Topo;"
             ],
             [
               "5.",
-              "Veja a Tabela de Espessura de Tubos e ConexÃµes Tubulares;"
+              "Veja a Tabela de Espessura de Tubos e Conexões Tubulares;"
             ],
             [
               "6.",
-              "Para converter unidades de medida acesse a seÃ§Ã£o de ConversÃ£o de Medidas;"
+              "Para converter unidades de medida acesse a seção de Conversão de Medidas;"
             ],
             [
               "7.",
-              "Veja ResistÃªncia Ã  CorrosÃ£o dos materiais da conexÃ£o;"
+              "Veja Resistência à Corrosão dos materiais da conexão;"
             ],
             [
               "8.",
-              "Veja ComposiÃ§Ã£o QuÃ­mica e Propriedades MecÃ¢nicas dos materiais da conexÃ£o."
+              "Veja Composição Química e Propriedades Mecânicas dos materiais da conexão."
             ]
           ]
         ]
@@ -4445,34 +4445,34 @@ export const productTechnicalSpecs = {
         "itemSlug": "conexoes-tubulares",
         "standardSlug": "tipos",
         "optionSlug": "reducao-concent",
-        "title": "ReduÃ§Ã£o ConcÃªnt.",
+        "title": "Redução Concênt.",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-tubulares/reducao-concentrica/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o tubular para solda de topo em sistemas industriais de conduÃ§Ã£o de fluidos.",
-          "DimensÃµes usuais conforme ANSI/ASME B16.9, B16.28 ou MSS SP-43, conforme o tipo de conexÃ£o.",
-          "Materiais usuais sob consulta: aÃ§o carbono ASTM A234 WPB, aÃ§o inoxidÃ¡vel AISI 304/304L, AISI 316/316L e outras ligas.",
-          "Schedule, diÃ¢metro e raio definidos conforme projeto e pressÃ£o de trabalho."
+          "Conexão tubular para solda de topo em sistemas industriais de condução de fluidos.",
+          "Dimensões usuais conforme ANSI/ASME B16.9, B16.28 ou MSS SP-43, conforme o tipo de conexão.",
+          "Materiais usuais sob consulta: aço carbono ASTM A234 WPB, aço inoxidável AISI 304/304L, AISI 316/316L e outras ligas.",
+          "Schedule, diâmetro e raio definidos conforme projeto e pressão de trabalho."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-c5-368x245-png-2291d56c62.png",
-            "alt": "ReduÃ§Ã£o ConcÃªntrica"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/C5-368x245.png",
+            "alt": "Redução Concêntrica"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃ£o tubular",
-              "ReduÃ§Ã£o ConcÃªnt."
+              "Conexão tubular",
+              "Redução Concênt."
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -4481,34 +4481,34 @@ export const productTechnicalSpecs = {
         "itemSlug": "conexoes-tubulares",
         "standardSlug": "tipos",
         "optionSlug": "reducao-excent",
-        "title": "ReduÃ§Ã£o ExcÃªnt.",
+        "title": "Redução Excênt.",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-tubulares/reducao-excentrica/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o tubular para solda de topo em sistemas industriais de conduÃ§Ã£o de fluidos.",
-          "DimensÃµes usuais conforme ANSI/ASME B16.9, B16.28 ou MSS SP-43, conforme o tipo de conexÃ£o.",
-          "Materiais usuais sob consulta: aÃ§o carbono ASTM A234 WPB, aÃ§o inoxidÃ¡vel AISI 304/304L, AISI 316/316L e outras ligas.",
-          "Schedule, diÃ¢metro e raio definidos conforme projeto e pressÃ£o de trabalho."
+          "Conexão tubular para solda de topo em sistemas industriais de condução de fluidos.",
+          "Dimensões usuais conforme ANSI/ASME B16.9, B16.28 ou MSS SP-43, conforme o tipo de conexão.",
+          "Materiais usuais sob consulta: aço carbono ASTM A234 WPB, aço inoxidável AISI 304/304L, AISI 316/316L e outras ligas.",
+          "Schedule, diâmetro e raio definidos conforme projeto e pressão de trabalho."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-c4-368x245-png-9a0bade0ab.png",
-            "alt": "ReduÃ§Ã£o ExcÃªntrica"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/C4-368x245.png",
+            "alt": "Redução Excêntrica"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃ£o tubular",
-              "ReduÃ§Ã£o ExcÃªnt."
+              "Conexão tubular",
+              "Redução Excênt."
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -4517,31 +4517,31 @@ export const productTechnicalSpecs = {
         "itemSlug": "conexoes-tubulares",
         "standardSlug": "tipos",
         "optionSlug": "te-45",
-        "title": "TÃª 45Â°",
+        "title": "Tê 45°",
         "sourceUrl": "https://www.valaco.com.br/produtos/conexoes_tb_te_45.html",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "â€¢ DimensÃµes conforme ANSI B 16.9;",
-          "â€¢ Material conforme indicaÃ§Ãµes de materiais para conexÃµes: - AÃ§o Carbono ASTM A 234 Gr.",
-          "- AÃ§o InoxidÃ¡vel AISI 304 ou 304L;",
-          "- AÃ§o InoxidÃ¡vel AISI 316 ou 316L;",
-          "â€¢ Extremidades biseladas para solda de topo;",
-          "â€¢ Com costura aparente ou removida.",
-          "O peso aproximado Ã© para conexÃµes em AÃ§o Carbono ASTM A 234 Gr.",
-          "Veja os Materiais Permitidos para ConexÃµes Tubulares;",
-          "Veja a TolerÃ¢ncia para ConexÃµes de Solda;",
-          "Veja a Tabela de Espessura de Tubos e ConexÃµes Tubulares;"
+          "• Dimensões conforme ANSI B 16.9;",
+          "• Material conforme indicações de materiais para conexões: - Aço Carbono ASTM A 234 Gr.",
+          "- Aço Inoxidável AISI 304 ou 304L;",
+          "- Aço Inoxidável AISI 316 ou 316L;",
+          "• Extremidades biseladas para solda de topo;",
+          "• Com costura aparente ou removida.",
+          "O peso aproximado é para conexões em Aço Carbono ASTM A 234 Gr.",
+          "Veja os Materiais Permitidos para Conexões Tubulares;",
+          "Veja a Tolerância para Conexões de Solda;",
+          "Veja a Tabela de Espessura de Tubos e Conexões Tubulares;"
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2024-10-te-45-368x245-png-1741cce3e3.png",
-            "alt": "TÃª 45Â°"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/10/TE-45-368x245.png",
+            "alt": "Tê 45°"
           }
         ],
         "tables": [
           [
             [
-              "DiÃ¢metro",
+              "Diâmetro",
               "Espessura da Parede T (mm)",
               "Centro a Face",
               "Peso Aproximado (kg) *Ver Notas (1)"
@@ -4814,34 +4814,34 @@ export const productTechnicalSpecs = {
         "itemSlug": "conexoes-tubulares",
         "standardSlug": "tipos",
         "optionSlug": "te-45-de-reducao",
-        "title": "TÃª 45Â° de ReduÃ§Ã£o",
+        "title": "Tê 45° de Redução",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-tubulares/te-45-de-reducao/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o tubular para solda de topo em sistemas industriais de conduÃ§Ã£o de fluidos.",
-          "DimensÃµes usuais conforme ANSI/ASME B16.9, B16.28 ou MSS SP-43, conforme o tipo de conexÃ£o.",
-          "Materiais usuais sob consulta: aÃ§o carbono ASTM A234 WPB, aÃ§o inoxidÃ¡vel AISI 304/304L, AISI 316/316L e outras ligas.",
-          "Schedule, diÃ¢metro e raio definidos conforme projeto e pressÃ£o de trabalho."
+          "Conexão tubular para solda de topo em sistemas industriais de condução de fluidos.",
+          "Dimensões usuais conforme ANSI/ASME B16.9, B16.28 ou MSS SP-43, conforme o tipo de conexão.",
+          "Materiais usuais sob consulta: aço carbono ASTM A234 WPB, aço inoxidável AISI 304/304L, AISI 316/316L e outras ligas.",
+          "Schedule, diâmetro e raio definidos conforme projeto e pressão de trabalho."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2024-10-te-45-reducao-368x245-png-69cd3810f9.png",
-            "alt": "TÃª 45Â° de ReduÃ§Ã£o"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/10/TE-45-REDUCAO-368x245.png",
+            "alt": "Tê 45° de Redução"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃ£o tubular",
-              "TÃª 45Â° de ReduÃ§Ã£o"
+              "Conexão tubular",
+              "Tê 45° de Redução"
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -4850,31 +4850,31 @@ export const productTechnicalSpecs = {
         "itemSlug": "conexoes-tubulares",
         "standardSlug": "tipos",
         "optionSlug": "te-90",
-        "title": "TÃª 90Â°",
+        "title": "Tê 90°",
         "sourceUrl": "https://www.valaco.com.br/produtos/conexoes_tb_te_90.html",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "â€¢ DimensÃµes conforme ANSI B 16.9;",
-          "â€¢ Material conforme indicaÃ§Ãµes de materiais para conexÃµes: - AÃ§o Carbono ASTM A 234 Gr.",
-          "- AÃ§o InoxidÃ¡vel AISI 304 ou 304L;",
-          "- AÃ§o InoxidÃ¡vel AISI 316 ou 316L;",
-          "â€¢ Extremidades biseladas para solda de topo.",
-          "O peso aproximado Ã© para conexÃµes em AÃ§o Carbono ASTM A 234 Gr.",
-          "Veja os Materiais Permitidos para ConexÃµes Tubulares;",
-          "Veja a TolerÃ¢ncia para ConexÃµes de Solda;",
-          "Veja a Tabela de Espessura de Tubos e ConexÃµes Tubulares;",
-          "Para converter unidades de medida acesse a seÃ§Ã£o de ConversÃ£o de Medidas;"
+          "• Dimensões conforme ANSI B 16.9;",
+          "• Material conforme indicações de materiais para conexões: - Aço Carbono ASTM A 234 Gr.",
+          "- Aço Inoxidável AISI 304 ou 304L;",
+          "- Aço Inoxidável AISI 316 ou 316L;",
+          "• Extremidades biseladas para solda de topo.",
+          "O peso aproximado é para conexões em Aço Carbono ASTM A 234 Gr.",
+          "Veja os Materiais Permitidos para Conexões Tubulares;",
+          "Veja a Tolerância para Conexões de Solda;",
+          "Veja a Tabela de Espessura de Tubos e Conexões Tubulares;",
+          "Para converter unidades de medida acesse a seção de Conversão de Medidas;"
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-c3-368x245-png-57c2fdf378.png",
-            "alt": "TÃª 90Â°"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/C3-368x245.png",
+            "alt": "Tê 90°"
           }
         ],
         "tables": [
           [
             [
-              "DiÃ¢metro",
+              "Diâmetro",
               "Espessura da Parede T (mm)",
               "Centro a Face",
               "Peso Aproximado (kg) *Ver Notas (1)"
@@ -5122,34 +5122,34 @@ export const productTechnicalSpecs = {
         "itemSlug": "conexoes-tubulares",
         "standardSlug": "tipos",
         "optionSlug": "te-90-de-reducao",
-        "title": "TÃª 90Â° de ReduÃ§Ã£o",
+        "title": "Tê 90° de Redução",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/conexoes/conexoes-tubulares/te-90-de-reducao/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "ConexÃ£o tubular para solda de topo em sistemas industriais de conduÃ§Ã£o de fluidos.",
-          "DimensÃµes usuais conforme ANSI/ASME B16.9, B16.28 ou MSS SP-43, conforme o tipo de conexÃ£o.",
-          "Materiais usuais sob consulta: aÃ§o carbono ASTM A234 WPB, aÃ§o inoxidÃ¡vel AISI 304/304L, AISI 316/316L e outras ligas.",
-          "Schedule, diÃ¢metro e raio definidos conforme projeto e pressÃ£o de trabalho."
+          "Conexão tubular para solda de topo em sistemas industriais de condução de fluidos.",
+          "Dimensões usuais conforme ANSI/ASME B16.9, B16.28 ou MSS SP-43, conforme o tipo de conexão.",
+          "Materiais usuais sob consulta: aço carbono ASTM A234 WPB, aço inoxidável AISI 304/304L, AISI 316/316L e outras ligas.",
+          "Schedule, diâmetro e raio definidos conforme projeto e pressão de trabalho."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-08-c2-368x245-png-aa769eb7e4.png",
-            "alt": "TÃª 90Â° de ReduÃ§Ã£o"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/C2-368x245.png",
+            "alt": "Tê 90° de Redução"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "ConexÃ£o tubular",
-              "TÃª 90Â° de ReduÃ§Ã£o"
+              "Conexão tubular",
+              "Tê 90° de Redução"
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -5164,37 +5164,37 @@ export const productTechnicalSpecs = {
         "optionSlug": "cesto-simples",
         "title": "Cesto Simples",
         "sourceUrl": "https://www.valaco.com.br/produtos/filtro_cesto_simples.html",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "â€¢ Dispensa ferramentas para manutenÃ§Ã£o;",
-          "â€¢ Elemento filtrante substituÃ­vel;",
-          "â€¢ Extremidades flangeadas padrÃ£o ANSI B 16.5.",
-          "â€¢ NÃ£o hÃ¡ vazameto ou perda de lÃ­quido na remoÃ§Ã£o da tampa;",
-          "â€¢ NÃ£o possui peÃ§as pequenas ou frÃ¡geis.",
-          "V2316 V2317 Filtro tipo Cesto, Corpo em AÃ§o InoxidÃ¡vel ASTM A 351 Gr.",
-          "V2318 V2319 Filtro tipo Cesto, Corpo em AÃ§o Carbono ASTM A 216 Gr.",
+          "• Dispensa ferramentas para manutenção;",
+          "• Elemento filtrante substituível;",
+          "• Extremidades flangeadas padrão ANSI B 16.5.",
+          "• Não há vazameto ou perda de líquido na remoção da tampa;",
+          "• Não possui peças pequenas ou frágeis.",
+          "V2316 V2317 Filtro tipo Cesto, Corpo em Aço Inoxidável ASTM A 351 Gr.",
+          "V2318 V2319 Filtro tipo Cesto, Corpo em Aço Carbono ASTM A 216 Gr.",
           "V2320 V2321 Filtro tipo Cesto, Corpo em Ferro Fundido ASTM A 126.",
-          "V2322 V2323 Flangeada Componentes 1 - Volante 2 - Tampa mÃ³vel 3 - Copilha 4 - Eixo 5 - Tampa 6 - GuarniÃ§Ã£o 7 - Corpo 8 - Cesto 9 - BujÃ£o (plug) Elemento Filtrante AÃ§o InoxidÃ¡vel AISI 304 AÃ§o InoxidÃ¡vel AISI 316 Notas: 1.",
-          "Veja ComposiÃ§Ã£o QuÃ­mica e Propriedades MecÃ¢nicas dos materiais do corpo do filtro;"
+          "V2322 V2323 Flangeada Componentes 1 - Volante 2 - Tampa móvel 3 - Copilha 4 - Eixo 5 - Tampa 6 - Guarnição 7 - Corpo 8 - Cesto 9 - Bujão (plug) Elemento Filtrante Aço Inoxidável AISI 304 Aço Inoxidável AISI 316 Notas: 1.",
+          "Veja Composição Química e Propriedades Mecânicas dos materiais do corpo do filtro;"
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-filtro-y-flangeado-368x245-png-2081c75885.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Filtro-Y-Flangeado-368x245.png",
             "alt": "Flangeado"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-filtro-y-roscado-368x245-png-0d7fe912ca.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Filtro-Y-Roscado-368x245.png",
             "alt": "Rosca"
           }
         ],
         "tables": [
           [
             [
-              "DescriÃ§Ã£o",
+              "Descrição",
               "Figura"
             ],
             [
-              "Classe de PressÃ£o (lbs)"
+              "Classe de Pressão (lbs)"
             ],
             [
               "125",
@@ -5203,17 +5203,17 @@ export const productTechnicalSpecs = {
               "300"
             ],
             [
-              "Filtro tipo Cesto, Corpo em AÃ§o InoxidÃ¡vel ASTM A 351 Gr. CF8.",
+              "Filtro tipo Cesto, Corpo em Aço Inoxidável ASTM A 351 Gr. CF8.",
               "V2316",
               "V2317"
             ],
             [
-              "Filtro tipo Cesto, Corpo em AÃ§o InoxidÃ¡vel ASTM A 351 Gr. CF8M.",
+              "Filtro tipo Cesto, Corpo em Aço Inoxidável ASTM A 351 Gr. CF8M.",
               "V2318",
               "V2319"
             ],
             [
-              "Filtro tipo Cesto, Corpo em AÃ§o Carbono ASTM A 216 Gr. WCB.",
+              "Filtro tipo Cesto, Corpo em Aço Carbono ASTM A 216 Gr. WCB.",
               "V2320",
               "V2321"
             ],
@@ -5229,15 +5229,15 @@ export const productTechnicalSpecs = {
             ],
             [
               "1.",
-              "Veja ComposiÃ§Ã£o QuÃ­mica e Propriedades MecÃ¢nicas dos materiais do corpo do filtro;"
+              "Veja Composição Química e Propriedades Mecânicas dos materiais do corpo do filtro;"
             ],
             [
               "2.",
-              "Veja ResistÃªncia Ã  CorrosÃ£o dos materiais do corpo;"
+              "Veja Resistência à Corrosão dos materiais do corpo;"
             ],
             [
               "3.",
-              "Para converter unidades de temperatura e pressÃ£o acesse a seÃ§Ã£o de ConversÃ£o de Medidas."
+              "Para converter unidades de temperatura e pressão acesse a seção de Conversão de Medidas."
             ]
           ]
         ]
@@ -5248,19 +5248,19 @@ export const productTechnicalSpecs = {
         "optionSlug": "flangeado",
         "title": "Flangeado",
         "sourceUrl": "https://www.valaco.com.br/produtos/filtro_cesto.html",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "Flangeado para aplicação industrial conforme condição de operação.",
-          "Material, bitola, classe de pressão e acabamento definidos sob consulta técnica.",
+          "Flangeado para aplicacao industrial conforme condicao de operacao.",
+          "Material, bitola, classe de pressao e acabamento definidos sob consulta tecnica.",
           "Fornecimento conforme disponibilidade e requisitos do projeto."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-filtro-y-flangeado-368x245-png-2081c75885.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Filtro-Y-Flangeado-368x245.png",
             "alt": "Flangeado"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-filtro-y-roscado-368x245-png-0d7fe912ca.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Filtro-Y-Roscado-368x245.png",
             "alt": "Rosca"
           }
         ],
@@ -5268,7 +5268,7 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -5276,7 +5276,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -5291,26 +5291,26 @@ export const productTechnicalSpecs = {
         "optionSlug": "flangeado",
         "title": "Flangeado",
         "sourceUrl": "https://www.valaco.com.br/produtos/filtro_y_flg.html",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "â€¢ Para uso em linhas de vapor, gases ou lÃ­quidos;",
-          "â€¢ Ã€ pedido pode ser fornecida com rosca \"C\";",
-          "â€¢ Elemento filtrante substituÃ­vel;",
-          "â€¢ Extremidades flangeadas padrÃ£o ANSI B 16.5.",
-          "V2306 V2307 V2308 Filtro tipo \"Y\" , Corpo em AÃ§o InoxidÃ¡vel ASTM A 351 Gr.",
-          "V2309 V2310 V2311 Filtro tipo \"Y\" , Corpo em AÃ§o Carbono ASTM A 216 Gr.",
+          "• Para uso em linhas de vapor, gases ou líquidos;",
+          "• À pedido pode ser fornecida com rosca \"C\";",
+          "• Elemento filtrante substituível;",
+          "• Extremidades flangeadas padrão ANSI B 16.5.",
+          "V2306 V2307 V2308 Filtro tipo \"Y\" , Corpo em Aço Inoxidável ASTM A 351 Gr.",
+          "V2309 V2310 V2311 Filtro tipo \"Y\" , Corpo em Aço Carbono ASTM A 216 Gr.",
           "V2312 V2313 V2314 Filtro tipo \"Y\" , Corpo em Ferro Fundido ASTM A 126.",
-          "V2315 EXTREMIDADES FLANGEADAS Componentes 1 - Corpo 2 - Elemento Filtrante 3 - Tampa Elemento Filtrante AÃ§o InoxidÃ¡vel AISI 304 AÃ§o InoxidÃ¡vel AISI 316 Notas: 1.",
-          "Veja ComposiÃ§Ã£o QuÃ­mica e Propriedades MecÃ¢nicas dos materiais do corpo do filtro;",
-          "Veja ResistÃªncia Ã  CorrosÃ£o dos materiais do corpo;"
+          "V2315 EXTREMIDADES FLANGEADAS Componentes 1 - Corpo 2 - Elemento Filtrante 3 - Tampa Elemento Filtrante Aço Inoxidável AISI 304 Aço Inoxidável AISI 316 Notas: 1.",
+          "Veja Composição Química e Propriedades Mecânicas dos materiais do corpo do filtro;",
+          "Veja Resistência à Corrosão dos materiais do corpo;"
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-filtro-y-flangeado-368x245-png-2081c75885.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Filtro-Y-Flangeado-368x245.png",
             "alt": "Flangeado"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-filtro-y-roscado-368x245-png-0d7fe912ca.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Filtro-Y-Roscado-368x245.png",
             "alt": "Rosca"
           }
         ],
@@ -5337,18 +5337,17 @@ export const productTechnicalSpecs = {
         "optionSlug": "rosca",
         "title": "Rosca",
         "sourceUrl": "https://www.valaco.com.br/produtos/filtro_y_rscsw.html",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "â€¢ Em AÃ§o Forjado e Ferro Fundido",
-          "var scJsHost = ((\"https:\" == document.location.protocol) ? \"https://secure.\" : \"http://www.\");"
+          "• Em Aço Forjado e Ferro Fundido",
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-filtro-y-flangeado-368x245-png-2081c75885.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Filtro-Y-Flangeado-368x245.png",
             "alt": "Flangeado"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-filtro-y-roscado-368x245-png-0d7fe912ca.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Filtro-Y-Roscado-368x245.png",
             "alt": "Rosca"
           }
         ],
@@ -5356,7 +5355,7 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -5364,7 +5363,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -5375,24 +5374,24 @@ export const productTechnicalSpecs = {
         "optionSlug": "bronze",
         "title": "Bronze",
         "sourceUrl": "https://www.valaco.com.br/produtos/filtro_y_rscsw_brz.html",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "â€¢ Corpo de bronze e filtro de aÃ§o inoxidÃ¡vel com 95 furos por cmÂ² de 0,5mm de diÃ¢metro;",
-          "â€¢ Nas medidas de 2.1/2\" e 3\" filtro com 43 furos por cmÂ² de 0,8mm de diÃ¢metro;",
-          "â€¢ DiÃ¢metro nominal de 1/2\" a 3\".",
-          "Materiais do Corpo e Tampa Classe de PressÃ£o Bronze ASTM B62 C836 150 s (300 WOG) / PN 20 Notas: 1.",
-          "Veja ComposiÃ§Ã£o QuÃ­mica e Propriedades MecÃ¢nicas dos materiais do corpo da vÃ¡lvula;",
-          "Veja ResistÃªncia Ã  CorrosÃ£o dos materiais do corpo da vÃ¡lvula;",
-          "Para converter unidades de temperatura e pressÃ£o acesse a seÃ§Ã£o de ConversÃ£o de Medidas;",
-          "Veja recomendaÃ§Ã£o para utilizaÃ§Ã£o das vÃ¡lvulas mais usuais."
+          "• Corpo de bronze e filtro de aço inoxidável com 95 furos por cm² de 0,5mm de diâmetro;",
+          "• Nas medidas de 2.1/2\" e 3\" filtro com 43 furos por cm² de 0,8mm de diâmetro;",
+          "• Diâmetro nominal de 1/2\" a 3\".",
+          "Materiais do Corpo e Tampa Classe de Pressão Bronze ASTM B62 C836 150 s (300 WOG) / PN 20 Notas: 1.",
+          "Veja Composição Química e Propriedades Mecânicas dos materiais do corpo da válvula;",
+          "Veja Resistência à Corrosão dos materiais do corpo da válvula;",
+          "Para converter unidades de temperatura e pressão acesse a seção de Conversão de Medidas;",
+          "Veja recomendação para utilização das válvulas mais usuais."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-filtro-y-flangeado-368x245-png-2081c75885.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Filtro-Y-Flangeado-368x245.png",
             "alt": "Flangeado"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-filtro-y-roscado-368x245-png-0d7fe912ca.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Filtro-Y-Roscado-368x245.png",
             "alt": "Rosca"
           }
         ],
@@ -5400,7 +5399,7 @@ export const productTechnicalSpecs = {
           [
             [
               "Materiais do Corpo e Tampa",
-              "Classe de PressÃ£o"
+              "Classe de Pressão"
             ],
             [
               "Bronze ASTM B62 C836",
@@ -5419,15 +5418,15 @@ export const productTechnicalSpecs = {
         "optionSlug": "tipo-boia",
         "title": "Tipo Boia",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/acessorios/purgador/tipo-boia/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "O purgador tipo boia Ã© um dispositivo mecÃ¢nico projetado para eliminar automaticamente o condensado (Ã¡gua) gerado em sistemas de vapor, sem permitir o escape do prÃ³prio vapor.",
-          "Seu funcionamento Ã© baseado em uma boia interna que sobe ou desce de acordo com o nÃ­vel de lÃ­quido dentro da cÃ¢mara, acionando uma vÃ¡lvula de descarga.",
-          "Esse modelo Ã© ideal para aplicaÃ§Ãµes com carga tÃ©rmica variÃ¡vel, pois permite a drenagem contÃ­nua do condensado assim que ele se forma, mantendo o sistema mais eficiente e evitando golpes de arÃ­ete."
+          "O purgador tipo boia é um dispositivo mecânico projetado para eliminar automaticamente o condensado (água) gerado em sistemas de vapor, sem permitir o escape do próprio vapor.",
+          "Seu funcionamento é baseado em uma boia interna que sobe ou desce de acordo com o nível de líquido dentro da câmara, acionando uma válvula de descarga.",
+          "Esse modelo é ideal para aplicações com carga térmica variável, pois permite a drenagem contínua do condensado assim que ele se forma, mantendo o sistema mais eficiente e evitando golpes de aríete."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-purgador-de-boia-368x245-png-b68a0fb2bd.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Purgador-de-boia-368x245.png",
             "alt": "Tipo Boia"
           }
         ],
@@ -5435,7 +5434,7 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -5443,7 +5442,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -5452,17 +5451,17 @@ export const productTechnicalSpecs = {
         "itemSlug": "boia",
         "standardSlug": "tipo",
         "optionSlug": "especificacao-sob-consulta",
-        "title": "EspecificaÃ§Ã£o sob consulta",
+        "title": "Especificação sob consulta",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/acessorios/purgador/tipo-boia/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "O purgador tipo boia Ã© um dispositivo mecÃ¢nico projetado para eliminar automaticamente o condensado (Ã¡gua) gerado em sistemas de vapor, sem permitir o escape do prÃ³prio vapor.",
-          "Seu funcionamento Ã© baseado em uma boia interna que sobe ou desce de acordo com o nÃ­vel de lÃ­quido dentro da cÃ¢mara, acionando uma vÃ¡lvula de descarga.",
-          "Esse modelo Ã© ideal para aplicaÃ§Ãµes com carga tÃ©rmica variÃ¡vel, pois permite a drenagem contÃ­nua do condensado assim que ele se forma, mantendo o sistema mais eficiente e evitando golpes de arÃ­ete."
+          "O purgador tipo boia é um dispositivo mecânico projetado para eliminar automaticamente o condensado (água) gerado em sistemas de vapor, sem permitir o escape do próprio vapor.",
+          "Seu funcionamento é baseado em uma boia interna que sobe ou desce de acordo com o nível de líquido dentro da câmara, acionando uma válvula de descarga.",
+          "Esse modelo é ideal para aplicações com carga térmica variável, pois permite a drenagem contínua do condensado assim que ele se forma, mantendo o sistema mais eficiente e evitando golpes de aríete."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-purgador-de-boia-368x245-png-b68a0fb2bd.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Purgador-de-boia-368x245.png",
             "alt": "Tipo Boia"
           }
         ],
@@ -5470,15 +5469,15 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
-              "EspecificaÃ§Ã£o sob consulta"
+              "Especificação sob consulta"
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -5491,39 +5490,39 @@ export const productTechnicalSpecs = {
         "itemSlug": "termodinamico",
         "standardSlug": "tipo",
         "optionSlug": "termodinamico",
-        "title": "TermodinÃ¢mico",
+        "title": "Termodinâmico",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/acessorios/purgador/termodinamico/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "O purgador termodinÃ¢mico, tambÃ©m conhecido como purgador de disco, Ã© um equipamento projetado para remover o condensado de sistemas de vapor com alta eficiÃªncia e confiabilidade.",
-          "Ele funciona com base na diferenÃ§a de velocidade e pressÃ£o entre o vapor e o condensado, utilizando um disco mÃ³vel que abre e fecha conforme a energia tÃ©rmica presente no fluido.",
-          "Esse tipo de purgador Ã© extremamente resistente e compacto, com apenas uma peÃ§a mÃ³vel, o que o torna ideal para instalaÃ§Ãµes com altas pressÃµes, variaÃ§Ãµes de temperatura e condiÃ§Ãµes agressivas.",
-          "Ele permite drenagem intermitente, mantendo o sistema de vapor livre de Ã¡gua e operando com mÃ¡xima eficiÃªncia.",
+          "O purgador termodinâmico, também conhecido como purgador de disco, é um equipamento projetado para remover o condensado de sistemas de vapor com alta eficiência e confiabilidade.",
+          "Ele funciona com base na diferença de velocidade e pressão entre o vapor e o condensado, utilizando um disco móvel que abre e fecha conforme a energia térmica presente no fluido.",
+          "Esse tipo de purgador é extremamente resistente e compacto, com apenas uma peça móvel, o que o torna ideal para instalações com altas pressões, variações de temperatura e condições agressivas.",
+          "Ele permite drenagem intermitente, mantendo o sistema de vapor livre de água e operando com máxima eficiência.",
           "O corpo (420F):",
-          "AÃ§o inox temperado;",
-          "PressÃ£o de trabalho:",
-          "0,25 kgf/cm (3,5 psi) atÃ© 250 2kgf/cm CondiÃ§Ãµes:",
+          "Aço inox temperado;",
+          "Pressão de trabalho:",
+          "0,25 kgf/cm (3,5 psi) até 250 2kgf/cm Condições:",
           "Vapor saturado, superaquecido ou ar comprimido."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-purgador-termodinamico-368x245-png-2caa50281f.png",
-            "alt": "TermodinÃ¢mico"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Purgador-Termodinamico-368x245.png",
+            "alt": "Termodinâmico"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
-              "TermodinÃ¢mico"
+              "Termodinâmico"
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -5532,39 +5531,39 @@ export const productTechnicalSpecs = {
         "itemSlug": "termodinamico",
         "standardSlug": "tipo",
         "optionSlug": "especificacao-sob-consulta",
-        "title": "EspecificaÃ§Ã£o sob consulta",
+        "title": "Especificação sob consulta",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/acessorios/purgador/termodinamico/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "O purgador termodinÃ¢mico, tambÃ©m conhecido como purgador de disco, Ã© um equipamento projetado para remover o condensado de sistemas de vapor com alta eficiÃªncia e confiabilidade.",
-          "Ele funciona com base na diferenÃ§a de velocidade e pressÃ£o entre o vapor e o condensado, utilizando um disco mÃ³vel que abre e fecha conforme a energia tÃ©rmica presente no fluido.",
-          "Esse tipo de purgador Ã© extremamente resistente e compacto, com apenas uma peÃ§a mÃ³vel, o que o torna ideal para instalaÃ§Ãµes com altas pressÃµes, variaÃ§Ãµes de temperatura e condiÃ§Ãµes agressivas.",
-          "Ele permite drenagem intermitente, mantendo o sistema de vapor livre de Ã¡gua e operando com mÃ¡xima eficiÃªncia.",
+          "O purgador termodinâmico, também conhecido como purgador de disco, é um equipamento projetado para remover o condensado de sistemas de vapor com alta eficiência e confiabilidade.",
+          "Ele funciona com base na diferença de velocidade e pressão entre o vapor e o condensado, utilizando um disco móvel que abre e fecha conforme a energia térmica presente no fluido.",
+          "Esse tipo de purgador é extremamente resistente e compacto, com apenas uma peça móvel, o que o torna ideal para instalações com altas pressões, variações de temperatura e condições agressivas.",
+          "Ele permite drenagem intermitente, mantendo o sistema de vapor livre de água e operando com máxima eficiência.",
           "O corpo (420F):",
-          "AÃ§o inox temperado;",
-          "PressÃ£o de trabalho:",
-          "0,25 kgf/cm (3,5 psi) atÃ© 250 2kgf/cm CondiÃ§Ãµes:",
+          "Aço inox temperado;",
+          "Pressão de trabalho:",
+          "0,25 kgf/cm (3,5 psi) até 250 2kgf/cm Condições:",
           "Vapor saturado, superaquecido ou ar comprimido."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-purgador-termodinamico-368x245-png-2caa50281f.png",
-            "alt": "TermodinÃ¢mico"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Purgador-Termodinamico-368x245.png",
+            "alt": "Termodinâmico"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
-              "EspecificaÃ§Ã£o sob consulta"
+              "Especificação sob consulta"
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -5579,15 +5578,15 @@ export const productTechnicalSpecs = {
         "optionSlug": "fita-veda-rosca",
         "title": "Fita veda rosca",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/diversos/fita-veda-rosca/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "Fita veda rosca em PTFE indicada para vedaÃ§Ã£o de conexÃµes roscadas.",
-          "AplicaÃ§Ã£o em instalaÃ§Ãµes hidrÃ¡ulicas, pneumÃ¡ticas e industriais compatÃ­veis com PTFE.",
+          "Fita veda rosca em PTFE indicada para vedação de conexões roscadas.",
+          "Aplicação em instalações hidráulicas, pneumáticas e industriais compatíveis com PTFE.",
           "Fornecimento em rolos e medidas sob consulta."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2025-07-fita-veda-rosca-368x245-jpg-f466945089.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2025/07/fita-veda-rosca-368x245.jpg",
             "alt": "Fita veda rosca"
           }
         ],
@@ -5595,7 +5594,7 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -5603,7 +5602,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -5614,15 +5613,15 @@ export const productTechnicalSpecs = {
         "optionSlug": "ptfe",
         "title": "PTFE",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/diversos/fita-veda-rosca/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "PTFE com alta estabilidade quÃ­mica e baixo coeficiente de atrito.",
-          "Indicado para vedaÃ§Ã£o de roscas e aplicaÃ§Ãµes compatÃ­veis com a faixa de trabalho do material.",
-          "Medidas e apresentaÃ§Ã£o conforme necessidade de fornecimento."
+          "PTFE com alta estabilidade química e baixo coeficiente de atrito.",
+          "Indicado para vedação de roscas e aplicações compatíveis com a faixa de trabalho do material.",
+          "Medidas e apresentação conforme necessidade de fornecimento."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2025-07-fita-veda-rosca-368x245-jpg-f466945089.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2025/07/fita-veda-rosca-368x245.jpg",
             "alt": "Fita veda rosca"
           }
         ],
@@ -5630,7 +5629,7 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -5638,7 +5637,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -5651,33 +5650,33 @@ export const productTechnicalSpecs = {
         "itemSlug": "junta-de-vedacao",
         "standardSlug": "tipo",
         "optionSlug": "junta-vedacao",
-        "title": "Junta VedaÃ§Ã£o",
+        "title": "Junta Vedação",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/diversos/junta-vedacao/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "Juntas de vedaÃ§Ã£o fabricadas em papelÃ£o hidrÃ¡ulico de baixo custo para trabalhos com Ã¡gua quente, combustÃ­veis, etanol, derivados de petrÃ³leo, vapor superaquecido e diversos produtos quÃ­micos.",
-          "Livre de amianto, suporta temperatura mÃ¡xima de 210Â°C atÃ© 530Â°C, dependendo da caracterÃ­stica do papelÃ£o.",
-          "Sob alta temperatura e pressÃ£o de atÃ© 150 Bar."
+          "Juntas de vedação fabricadas em papelão hidráulico de baixo custo para trabalhos com água quente, combustíveis, etanol, derivados de petróleo, vapor superaquecido e diversos produtos químicos.",
+          "Livre de amianto, suporta temperatura máxima de 210°C até 530°C, dependendo da característica do papelão.",
+          "Sob alta temperatura e pressão de até 150 Bar."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-junta-veda-c3-a7-c3-a3o-papel-c3-a3o-hidr-c3-a1ulico-368x245-png-1dc608f75e.png",
-            "alt": "Junta VedaÃ§Ã£o"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Junta-veda%C3%A7%C3%A3o-papel%C3%A3o-hidr%C3%A1ulico-368x245.png",
+            "alt": "Junta Vedação"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
-              "Junta VedaÃ§Ã£o"
+              "Junta Vedação"
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -5688,23 +5687,23 @@ export const productTechnicalSpecs = {
         "optionSlug": "material-sob-consulta",
         "title": "Material sob consulta",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/diversos/junta-vedacao/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "Juntas de vedaÃ§Ã£o fabricadas em papelÃ£o hidrÃ¡ulico de baixo custo para trabalhos com Ã¡gua quente, combustÃ­veis, etanol, derivados de petrÃ³leo, vapor superaquecido e diversos produtos quÃ­micos.",
-          "Livre de amianto, suporta temperatura mÃ¡xima de 210Â°C atÃ© 530Â°C, dependendo da caracterÃ­stica do papelÃ£o.",
-          "Sob alta temperatura e pressÃ£o de atÃ© 150 Bar."
+          "Juntas de vedação fabricadas em papelão hidráulico de baixo custo para trabalhos com água quente, combustíveis, etanol, derivados de petróleo, vapor superaquecido e diversos produtos químicos.",
+          "Livre de amianto, suporta temperatura máxima de 210°C até 530°C, dependendo da característica do papelão.",
+          "Sob alta temperatura e pressão de até 150 Bar."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-junta-veda-c3-a7-c3-a3o-papel-c3-a3o-hidr-c3-a1ulico-368x245-png-1dc608f75e.png",
-            "alt": "Junta VedaÃ§Ã£o"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Junta-veda%C3%A7%C3%A3o-papel%C3%A3o-hidr%C3%A1ulico-368x245.png",
+            "alt": "Junta Vedação"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -5712,7 +5711,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -5725,34 +5724,34 @@ export const productTechnicalSpecs = {
         "itemSlug": "manometros",
         "standardSlug": "aplicacao",
         "optionSlug": "pressao",
-        "title": "PressÃ£o",
+        "title": "Pressão",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/instrumentacao/manometro/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "Indicados para utilizaÃ§Ã£o onde sÃ£o necessÃ¡rios precisÃ£o e melhor nÃ­vel de leitura que os instrumentos de diÃ¢metros menores.",
-          "Possuem mecanismo com ajuste de angularidade e linearidade, alta durabilidade e excelente repetibilidade nas mediÃ§Ãµes.",
-          "Os manÃ´metros com lÃ­quido anti vibraÃ§Ã£o (Glicerina) sÃ£o indicados em mÃ¡quinas ou equipamentos onde ocorre vibraÃ§Ã£o ou pulsaÃ§Ã£o constante.",
-          "Devido ao preenchimento com lÃ­quido, as oscilaÃ§Ãµes dos componentes internos sÃ£o amenizadas, proporcionando leitura mais precisa, reduÃ§Ã£o considerÃ¡vel no desgaste dos materiais e maior durabilidade do instrumento."
+          "Indicados para utilização onde são necessários precisão e melhor nível de leitura que os instrumentos de diâmetros menores.",
+          "Possuem mecanismo com ajuste de angularidade e linearidade, alta durabilidade e excelente repetibilidade nas medições.",
+          "Os manômetros com líquido anti vibração (Glicerina) são indicados em máquinas ou equipamentos onde ocorre vibração ou pulsação constante.",
+          "Devido ao preenchimento com líquido, as oscilações dos componentes internos são amenizadas, proporcionando leitura mais precisa, redução considerável no desgaste dos materiais e maior durabilidade do instrumento."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-man-c3-b4metros-368x245-png-a248fa617d.png",
-            "alt": "ManÃ´metro"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Man%C3%B4metros-368x245.png",
+            "alt": "Manômetro"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
-              "PressÃ£o"
+              "Pressão"
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -5763,24 +5762,24 @@ export const productTechnicalSpecs = {
         "optionSlug": "faixa-sob-consulta",
         "title": "Faixa sob consulta",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/instrumentacao/manometro/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "Indicados para utilizaÃ§Ã£o onde sÃ£o necessÃ¡rios precisÃ£o e melhor nÃ­vel de leitura que os instrumentos de diÃ¢metros menores.",
-          "Possuem mecanismo com ajuste de angularidade e linearidade, alta durabilidade e excelente repetibilidade nas mediÃ§Ãµes.",
-          "Os manÃ´metros com lÃ­quido anti vibraÃ§Ã£o (Glicerina) sÃ£o indicados em mÃ¡quinas ou equipamentos onde ocorre vibraÃ§Ã£o ou pulsaÃ§Ã£o constante.",
-          "Devido ao preenchimento com lÃ­quido, as oscilaÃ§Ãµes dos componentes internos sÃ£o amenizadas, proporcionando leitura mais precisa, reduÃ§Ã£o considerÃ¡vel no desgaste dos materiais e maior durabilidade do instrumento."
+          "Indicados para utilização onde são necessários precisão e melhor nível de leitura que os instrumentos de diâmetros menores.",
+          "Possuem mecanismo com ajuste de angularidade e linearidade, alta durabilidade e excelente repetibilidade nas medições.",
+          "Os manômetros com líquido anti vibração (Glicerina) são indicados em máquinas ou equipamentos onde ocorre vibração ou pulsação constante.",
+          "Devido ao preenchimento com líquido, as oscilações dos componentes internos são amenizadas, proporcionando leitura mais precisa, redução considerável no desgaste dos materiais e maior durabilidade do instrumento."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-man-c3-b4metros-368x245-png-a248fa617d.png",
-            "alt": "ManÃ´metro"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Man%C3%B4metros-368x245.png",
+            "alt": "Manômetro"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -5788,7 +5787,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -5803,14 +5802,14 @@ export const productTechnicalSpecs = {
         "optionSlug": "angular",
         "title": "Angular",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/instrumentacao/termometro/angular/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "TermÃ´metros de enorme aplicaÃ§Ã£o industrial devido Ã  variedade de tamanhos e escalas.",
-          "SÃ£o indicados para utilizaÃ§Ã£o em processos e equipamentos diversos, tais como, fornos industriais, caldeiras e outros."
+          "Termômetros de enorme aplicação industrial devido à variedade de tamanhos e escalas.",
+          "São indicados para utilização em processos e equipamentos diversos, tais como, fornos industriais, caldeiras e outros."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-term-c3-b4metro-reto-368x245-png-0fcfaeb0e1.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Term%C3%B4metro-reto-368x245.png",
             "alt": "Angular"
           }
         ],
@@ -5818,7 +5817,7 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -5826,7 +5825,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -5837,15 +5836,15 @@ export const productTechnicalSpecs = {
         "optionSlug": "capela",
         "title": "Capela",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/instrumentacao/termometro/capela/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "TermÃ´metro tipo capela para indicaÃ§Ã£o local de temperatura em processos industriais.",
-          "DisponÃ­vel em faixas de mediÃ§Ã£o e comprimentos de haste sob consulta.",
-          "AplicaÃ§Ã£o em linhas de vapor, Ã¡gua, Ã³leo e outros fluidos compatÃ­veis."
+          "Termômetro tipo capela para indicação local de temperatura em processos industriais.",
+          "Disponível em faixas de medição e comprimentos de haste sob consulta.",
+          "Aplicação em linhas de vapor, água, óleo e outros fluidos compatíveis."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-term-c3-b4metro-capela-368x245-png-6548244771.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Term%C3%B4metro-capela-368x245.png",
             "alt": "Capela"
           }
         ],
@@ -5853,7 +5852,7 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -5861,7 +5860,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -5874,17 +5873,17 @@ export const productTechnicalSpecs = {
         "itemSlug": "pressostatos",
         "standardSlug": "aplicacao",
         "optionSlug": "controle-de-pressao",
-        "title": "Controle de pressÃ£o",
+        "title": "Controle de pressão",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/instrumentacao/pressostato/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "Pressostato para controle, alarme ou proteÃ§Ã£o por pressÃ£o em sistemas industriais.",
-          "Faixa de ajuste, contato elÃ©trico e conexÃ£o definidos conforme o processo.",
-          "AplicaÃ§Ã£o em bombas, compressores, linhas hidrÃ¡ulicas e pneumÃ¡ticas."
+          "Pressostato para controle, alarme ou proteção por pressão em sistemas industriais.",
+          "Faixa de ajuste, contato elétrico e conexão definidos conforme o processo.",
+          "Aplicação em bombas, compressores, linhas hidráulicas e pneumáticas."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2021-09-pressostato-jpg-7b049c0b9f.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2021/09/Pressostato.jpg",
             "alt": "Pressostato"
           }
         ],
@@ -5892,15 +5891,15 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Pressostato",
-              "Controle de pressÃ£o"
+              "Controle de pressão"
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -5911,15 +5910,15 @@ export const productTechnicalSpecs = {
         "optionSlug": "faixa-sob-consulta",
         "title": "Faixa sob consulta",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/instrumentacao/pressostato/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "Faixa de pressÃ£o selecionada conforme ponto de atuaÃ§Ã£o, fluido e condiÃ§Ã£o de operaÃ§Ã£o.",
-          "ConfiguraÃ§Ãµes elÃ©tricas e mecÃ¢nicas sob consulta tÃ©cnica.",
-          "AplicaÃ§Ã£o em automaÃ§Ã£o, proteÃ§Ã£o e monitoramento de sistemas pressurizados."
+          "Faixa de pressão selecionada conforme ponto de atuação, fluido e condição de operação.",
+          "Configurações elétricas e mecânicas sob consulta técnica.",
+          "Aplicação em automação, proteção e monitoramento de sistemas pressurizados."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2021-09-pressostato-jpg-7b049c0b9f.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2021/09/Pressostato.jpg",
             "alt": "Pressostato"
           }
         ],
@@ -5927,15 +5926,15 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
-              "Faixa de pressÃ£o",
+              "Faixa de pressão",
               "Faixa sob consulta"
             ],
             [
               "Fornecimento",
-              "Material, bitola e acabamento sob consulta tÃ©cnica"
+              "Material, bitola e acabamento sob consulta técnica"
             ]
           ]
         ]
@@ -5948,34 +5947,34 @@ export const productTechnicalSpecs = {
         "itemSlug": "vacuometros",
         "standardSlug": "aplicacao",
         "optionSlug": "vacuo",
-        "title": "VÃ¡cuo",
+        "title": "Vácuo",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/instrumentacao/manometro/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "Indicados para utilizaÃ§Ã£o onde sÃ£o necessÃ¡rios precisÃ£o e melhor nÃ­vel de leitura que os instrumentos de diÃ¢metros menores.",
-          "Possuem mecanismo com ajuste de angularidade e linearidade, alta durabilidade e excelente repetibilidade nas mediÃ§Ãµes.",
-          "Os manÃ´metros com lÃ­quido anti vibraÃ§Ã£o (Glicerina) sÃ£o indicados em mÃ¡quinas ou equipamentos onde ocorre vibraÃ§Ã£o ou pulsaÃ§Ã£o constante.",
-          "Devido ao preenchimento com lÃ­quido, as oscilaÃ§Ãµes dos componentes internos sÃ£o amenizadas, proporcionando leitura mais precisa, reduÃ§Ã£o considerÃ¡vel no desgaste dos materiais e maior durabilidade do instrumento."
+          "Indicados para utilização onde são necessários precisão e melhor nível de leitura que os instrumentos de diâmetros menores.",
+          "Possuem mecanismo com ajuste de angularidade e linearidade, alta durabilidade e excelente repetibilidade nas medições.",
+          "Os manômetros com líquido anti vibração (Glicerina) são indicados em máquinas ou equipamentos onde ocorre vibração ou pulsação constante.",
+          "Devido ao preenchimento com líquido, as oscilações dos componentes internos são amenizadas, proporcionando leitura mais precisa, redução considerável no desgaste dos materiais e maior durabilidade do instrumento."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-man-c3-b4metros-368x245-png-a248fa617d.png",
-            "alt": "ManÃ´metro"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Man%C3%B4metros-368x245.png",
+            "alt": "Manômetro"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
-              "VÃ¡cuo"
+              "Vácuo"
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -5986,24 +5985,24 @@ export const productTechnicalSpecs = {
         "optionSlug": "faixa-sob-consulta",
         "title": "Faixa sob consulta",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/instrumentacao/manometro/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "Indicados para utilizaÃ§Ã£o onde sÃ£o necessÃ¡rios precisÃ£o e melhor nÃ­vel de leitura que os instrumentos de diÃ¢metros menores.",
-          "Possuem mecanismo com ajuste de angularidade e linearidade, alta durabilidade e excelente repetibilidade nas mediÃ§Ãµes.",
-          "Os manÃ´metros com lÃ­quido anti vibraÃ§Ã£o (Glicerina) sÃ£o indicados em mÃ¡quinas ou equipamentos onde ocorre vibraÃ§Ã£o ou pulsaÃ§Ã£o constante.",
-          "Devido ao preenchimento com lÃ­quido, as oscilaÃ§Ãµes dos componentes internos sÃ£o amenizadas, proporcionando leitura mais precisa, reduÃ§Ã£o considerÃ¡vel no desgaste dos materiais e maior durabilidade do instrumento."
+          "Indicados para utilização onde são necessários precisão e melhor nível de leitura que os instrumentos de diâmetros menores.",
+          "Possuem mecanismo com ajuste de angularidade e linearidade, alta durabilidade e excelente repetibilidade nas medições.",
+          "Os manômetros com líquido anti vibração (Glicerina) são indicados em máquinas ou equipamentos onde ocorre vibração ou pulsação constante.",
+          "Devido ao preenchimento com líquido, as oscilações dos componentes internos são amenizadas, proporcionando leitura mais precisa, redução considerável no desgaste dos materiais e maior durabilidade do instrumento."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-man-c3-b4metros-368x245-png-a248fa617d.png",
-            "alt": "ManÃ´metro"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Man%C3%B4metros-368x245.png",
+            "alt": "Manômetro"
           }
         ],
         "tables": [
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -6011,7 +6010,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -6026,19 +6025,19 @@ export const productTechnicalSpecs = {
         "optionSlug": "fixacao",
         "title": "Grampo U",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/diversos/grampo-u/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "O Grampo tipo U Ã© utilizado para fixaÃ§Ã£o de eletrodutos em estruturas metÃ¡licas ou de concreto, sendo essencial em instalaÃ§Ãµes elÃ©tricas, hidrÃ¡ulicas e industriais.",
-          "Fabricado em aÃ§o carbono, aÃ§o inox ou alumÃ­nio, o grampo acompanha duas porcas e duas arruelas de pressÃ£o no mesmo material da peÃ§a principal.",
-          "DisponÃ­vel em diversos diÃ¢metros, Ã© uma soluÃ§Ã£o segura, resistente e prÃ¡tica para suportes e fixaÃ§Ãµes industriais."
+          "O Grampo tipo U é utilizado para fixação de eletrodutos em estruturas metálicas ou de concreto, sendo essencial em instalações elétricas, hidráulicas e industriais.",
+          "Fabricado em aço carbono, aço inox ou alumínio, o grampo acompanha duas porcas e duas arruelas de pressão no mesmo material da peça principal.",
+          "Disponível em diversos diâmetros, é uma solução segura, resistente e prática para suportes e fixações industriais."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-grampou-2-368x245-png-54cbb7a755.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/GrampoU-2-368x245.png",
             "alt": "Grampo U"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-grampo-u-235x245-png-bbdbe4593b.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-Grampo-U-235x245.png",
             "alt": "Grampo U"
           }
         ],
@@ -6049,15 +6048,15 @@ export const productTechnicalSpecs = {
             ],
             [
               "DN",
-              "DIMENSÃ•ES (mm)",
-              "PADRÃƒO",
+              "DIMENSÕES (mm)",
+              "PADRÃO",
               "PESADO"
             ],
             [
               "A",
               "B",
-              "É¸D",
-              "É¸D"
+              "ɸD",
+              "ɸD"
             ],
             [
               "3/8\"",
@@ -6161,19 +6160,19 @@ export const productTechnicalSpecs = {
         "optionSlug": "bitola-sob-consulta",
         "title": "Grampo U",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/diversos/grampo-u/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "O Grampo tipo U Ã© utilizado para fixaÃ§Ã£o de eletrodutos em estruturas metÃ¡licas ou de concreto, sendo essencial em instalaÃ§Ãµes elÃ©tricas, hidrÃ¡ulicas e industriais.",
-          "Fabricado em aÃ§o carbono, aÃ§o inox ou alumÃ­nio, o grampo acompanha duas porcas e duas arruelas de pressÃ£o no mesmo material da peÃ§a principal.",
-          "DisponÃ­vel em diversos diÃ¢metros, Ã© uma soluÃ§Ã£o segura, resistente e prÃ¡tica para suportes e fixaÃ§Ãµes industriais."
+          "O Grampo tipo U é utilizado para fixação de eletrodutos em estruturas metálicas ou de concreto, sendo essencial em instalações elétricas, hidráulicas e industriais.",
+          "Fabricado em aço carbono, aço inox ou alumínio, o grampo acompanha duas porcas e duas arruelas de pressão no mesmo material da peça principal.",
+          "Disponível em diversos diâmetros, é uma solução segura, resistente e prática para suportes e fixações industriais."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-grampou-2-368x245-png-54cbb7a755.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/GrampoU-2-368x245.png",
             "alt": "Grampo U"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-grampo-u-235x245-png-bbdbe4593b.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-Grampo-U-235x245.png",
             "alt": "Grampo U"
           }
         ],
@@ -6184,15 +6183,15 @@ export const productTechnicalSpecs = {
             ],
             [
               "DN",
-              "DIMENSÃ•ES (mm)",
-              "PADRÃƒO",
+              "DIMENSÕES (mm)",
+              "PADRÃO",
               "PESADO"
             ],
             [
               "A",
               "B",
-              "É¸D",
-              "É¸D"
+              "ɸD",
+              "ɸD"
             ],
             [
               "3/8\"",
@@ -6298,28 +6297,28 @@ export const productTechnicalSpecs = {
         "itemSlug": "indicador-de-nivel",
         "standardSlug": "aplicacao",
         "optionSlug": "indicador-de-nivel",
-        "title": "Indicador de nÃ­vel",
+        "title": "Indicador de nível",
         "sourceUrl": "https://www.valaco.com.br/produtos/indicador_nivel_brz.html",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "â€¢ Para uso em tanques, reservatÃ³rios, caldeiras, autoclaves e outras instalaÃ§Ãµes similares;",
-          "â€¢ VedaÃ§Ã£o tipo agulha;",
-          "â€¢ VÃ¡lvula de purga de 1/8 BSPT;",
-          "â€¢ Extremidade com rosca ;",
-          "â€¢ DiÃ¢metro nominal de 3/8\" a 2\".",
-          "Materiais do Corpo e Tampa Classe de PressÃ£o Bronze ASTM B62 C836 150 s (300 WOG) / PN 20 Notas: 1.",
-          "Veja ComposiÃ§Ã£o QuÃ­mica e Propriedades MecÃ¢nicas dos materiais do corpo da vÃ¡lvula;",
-          "Veja ResistÃªncia Ã  CorrosÃ£o dos materiais do corpo da vÃ¡lvula;",
-          "Para converter unidades de temperatura e pressÃ£o acesse a seÃ§Ã£o de ConversÃ£o de Medidas;",
-          "Veja recomendaÃ§Ã£o para utilizaÃ§Ã£o das vÃ¡lvulas mais usuais."
+          "• Para uso em tanques, reservatórios, caldeiras, autoclaves e outras instalações similares;",
+          "• Vedação tipo agulha;",
+          "• Válvula de purga de 1/8 BSPT;",
+          "• Extremidade com rosca ;",
+          "• Diâmetro nominal de 3/8\" a 2\".",
+          "Materiais do Corpo e Tampa Classe de Pressão Bronze ASTM B62 C836 150 s (300 WOG) / PN 20 Notas: 1.",
+          "Veja Composição Química e Propriedades Mecânicas dos materiais do corpo da válvula;",
+          "Veja Resistência à Corrosão dos materiais do corpo da válvula;",
+          "Para converter unidades de temperatura e pressão acesse a seção de Conversão de Medidas;",
+          "Veja recomendação para utilização das válvulas mais usuais."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2021-09-indicador-local-de-pressao-2-368x245-jpg-de9c75d34b.png",
-            "alt": "Indicador Local de PressÃ£o"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2021/09/Indicador-Local-de-Pressao-2-368x245.jpg",
+            "alt": "Indicador Local de Pressão"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2021-09-indicador-local-de-temperatura-2-368x245-jpg-42e36da6ee.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2021/09/Indicador-Local-de-Temperatura-2-368x245.jpg",
             "alt": "Indicador Local de Temperatura"
           }
         ],
@@ -6327,7 +6326,7 @@ export const productTechnicalSpecs = {
           [
             [
               "Materiais do Corpo e Tampa",
-              "Classe de PressÃ£o"
+              "Classe de Pressão"
             ],
             [
               "Bronze ASTM B62 C836",
@@ -6342,26 +6341,26 @@ export const productTechnicalSpecs = {
         "optionSlug": "modelo-sob-consulta",
         "title": "Modelo sob consulta",
         "sourceUrl": "https://www.valaco.com.br/produtos/indicador_nivel_brz.html",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "â€¢ Para uso em tanques, reservatÃ³rios, caldeiras, autoclaves e outras instalaÃ§Ãµes similares;",
-          "â€¢ VedaÃ§Ã£o tipo agulha;",
-          "â€¢ VÃ¡lvula de purga de 1/8 BSPT;",
-          "â€¢ Extremidade com rosca ;",
-          "â€¢ DiÃ¢metro nominal de 3/8\" a 2\".",
-          "Materiais do Corpo e Tampa Classe de PressÃ£o Bronze ASTM B62 C836 150 s (300 WOG) / PN 20 Notas: 1.",
-          "Veja ComposiÃ§Ã£o QuÃ­mica e Propriedades MecÃ¢nicas dos materiais do corpo da vÃ¡lvula;",
-          "Veja ResistÃªncia Ã  CorrosÃ£o dos materiais do corpo da vÃ¡lvula;",
-          "Para converter unidades de temperatura e pressÃ£o acesse a seÃ§Ã£o de ConversÃ£o de Medidas;",
-          "Veja recomendaÃ§Ã£o para utilizaÃ§Ã£o das vÃ¡lvulas mais usuais."
+          "• Para uso em tanques, reservatórios, caldeiras, autoclaves e outras instalações similares;",
+          "• Vedação tipo agulha;",
+          "• Válvula de purga de 1/8 BSPT;",
+          "• Extremidade com rosca ;",
+          "• Diâmetro nominal de 3/8\" a 2\".",
+          "Materiais do Corpo e Tampa Classe de Pressão Bronze ASTM B62 C836 150 s (300 WOG) / PN 20 Notas: 1.",
+          "Veja Composição Química e Propriedades Mecânicas dos materiais do corpo da válvula;",
+          "Veja Resistência à Corrosão dos materiais do corpo da válvula;",
+          "Para converter unidades de temperatura e pressão acesse a seção de Conversão de Medidas;",
+          "Veja recomendação para utilização das válvulas mais usuais."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2021-09-indicador-local-de-pressao-2-368x245-jpg-de9c75d34b.png",
-            "alt": "Indicador Local de PressÃ£o"
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2021/09/Indicador-Local-de-Pressao-2-368x245.jpg",
+            "alt": "Indicador Local de Pressão"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2021-09-indicador-local-de-temperatura-2-368x245-jpg-42e36da6ee.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2021/09/Indicador-Local-de-Temperatura-2-368x245.jpg",
             "alt": "Indicador Local de Temperatura"
           }
         ],
@@ -6369,7 +6368,7 @@ export const productTechnicalSpecs = {
           [
             [
               "Materiais do Corpo e Tampa",
-              "Classe de PressÃ£o"
+              "Classe de Pressão"
             ],
             [
               "Bronze ASTM B62 C836",
@@ -6388,18 +6387,18 @@ export const productTechnicalSpecs = {
         "optionSlug": "flangeada",
         "title": "Flangeada",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/acessorios/junta-de-expansao/expansao-borracha-flangeada/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "SÃ£o projetadas para absorver vibraÃ§Ãµes e movimentos axiais, laterais e angulares em tubulaÃ§Ãµes ou equipamentos.",
-          "ConstituÃ­das de um corpo de elastÃ´mero (revestido com PTFE quando necessÃ¡rio) e terminais flanges de aÃ§o carbono (DN 1.1/4â€³ atÃ© 80â€³) ou ferro fundido."
+          "São projetadas para absorver vibrações e movimentos axiais, laterais e angulares em tubulações ou equipamentos.",
+          "Constituídas de um corpo de elastômero (revestido com PTFE quando necessário) e terminais flanges de aço carbono (DN 1.1/4″ até 80″) ou ferro fundido."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-junta-expans-c3-a3o-flangeada-368x245-png-1d2ebf1680.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Junta-expans%C3%A3o-flangeada-368x245.png",
             "alt": "Flangeada"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-junta-exp-flang3-png-522be87eb7.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-JUNTA-EXP-FLANG3.png",
             "alt": "Flangeada"
           }
         ],
@@ -6407,7 +6406,7 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -6415,7 +6414,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -6426,18 +6425,18 @@ export const productTechnicalSpecs = {
         "optionSlug": "dupla-onda",
         "title": "Dupla Onda",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/acessorios/junta-de-expansao/expansao-borracha-dupla-onda/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "SÃ£o projetadas para absorver vibraÃ§Ãµes e movimentos axiais, laterais e angulares em tubulaÃ§Ãµes ou equipamentos.",
-          "ConstituÃ­das de um corpo de elastÃ´mero (revestido com PTFE quando necessÃ¡rio) e terminais tipo uniÃµes roscadas em ferro fundido (DN 3/4â€³ atÃ© 3â€³)."
+          "São projetadas para absorver vibrações e movimentos axiais, laterais e angulares em tubulações ou equipamentos.",
+          "Constituídas de um corpo de elastômero (revestido com PTFE quando necessário) e terminais tipo uniões roscadas em ferro fundido (DN 3/4″ até 3″)."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-junta-expans-c3-a3o-dupla-onda-368x245-png-fd3117cccb.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Junta-expans%C3%A3o-dupla-onda-368x245.png",
             "alt": "Dupla Onda"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-junta-exp-rosca-png-a8ac58869d.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-JUNTA-EXP-ROSCA.png",
             "alt": "Dupla Onda"
           }
         ],
@@ -6445,7 +6444,7 @@ export const productTechnicalSpecs = {
           [
             [
               "Item",
-              "EspecificaÃ§Ã£o"
+              "Especificação"
             ],
             [
               "Produto",
@@ -6453,7 +6452,7 @@ export const productTechnicalSpecs = {
             ],
             [
               "Fornecimento",
-              "Material, bitola e classe sob consulta tÃ©cnica"
+              "Material, bitola e classe sob consulta técnica"
             ]
           ]
         ]
@@ -6468,25 +6467,25 @@ export const productTechnicalSpecs = {
         "optionSlug": "flangeado",
         "title": "Visor de Fluxo Flangeado",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/acessorios/visor/flangeado/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "O Visor de Fluxo Flangeado Ã© um acessÃ³rio industrial utilizado para permitir a inspeÃ§Ã£o visual do fluido dentro de uma tubulaÃ§Ã£o pressurizada.",
-          "Esse tipo de visor Ã© conectado Ã  linha por meio de flanges padronizados (ANSI ou DIN), garantindo vedaÃ§Ã£o segura e fÃ¡cil instalaÃ§Ã£o em sistemas de mÃ©dia e alta pressÃ£o."
+          "O Visor de Fluxo Flangeado é um acessório industrial utilizado para permitir a inspeção visual do fluido dentro de uma tubulação pressurizada.",
+          "Esse tipo de visor é conectado à linha por meio de flanges padronizados (ANSI ou DIN), garantindo vedação segura e fácil instalação em sistemas de média e alta pressão."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-visor-de-fluxo-flangeado-368x245-png-0d39140d9d.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Visor-de-fluxo-flangeado-368x245.png",
             "alt": "Flangeado"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-visor-flangeado-368x209-png-e0fd9d8171.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-VISOR-FLANGEADO-368x209.png",
             "alt": "Flangeado"
           }
         ],
         "tables": [
           [
             [
-              "DistÃ¢ncia entre Faces (mm)"
+              "Distância entre Faces (mm)"
             ],
             [
               "DN",
@@ -6523,26 +6522,26 @@ export const productTechnicalSpecs = {
         "optionSlug": "rosca",
         "title": "Rosca",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/acessorios/visor/rosca/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "O visor de fluxo com rosca normalmente Ã© fornecido em janela simples tem como funÃ§Ã£o facilitar a visualizaÃ§Ã£o interna da tubulaÃ§Ã£o.",
-          "Devido ao tamanho e peso reduzido, tambÃ©m pode ser utilizado em mangueiras para visualizaÃ§Ã£o do fluido.",
+          "O visor de fluxo com rosca normalmente é fornecido em janela simples tem como função facilitar a visualização interna da tubulação.",
+          "Devido ao tamanho e peso reduzido, também pode ser utilizado em mangueiras para visualização do fluido.",
           "Fabricado como opcional com dupla janela."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-visor-de-fluxo-rosca-368x245-png-d1f6929502.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Visor-de-fluxo-rosca-368x245.png",
             "alt": "Rosca"
           },
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-visor-rosca-png-1a309d0b86.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-VISOR-ROSCA.png",
             "alt": "Rosca"
           }
         ],
         "tables": [
           [
             [
-              "DistÃ¢ncia entre Faces (mm)"
+              "Distância entre Faces (mm)"
             ],
             [
               "DN",
@@ -6575,22 +6574,22 @@ export const productTechnicalSpecs = {
         "optionSlug": "bronze",
         "title": "Bronze",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/acessorios/visor/bronze/",
-        "note": "*Todos os desenhos e imagens sÃ£o meramente ilustrativos.",
+        "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "Bronze para aplicaÃ§Ã£o industrial conforme condiÃ§Ã£o de operaÃ§Ã£o.",
-          "Material, bitola, classe de pressÃ£o e acabamento definidos sob consulta tÃ©cnica.",
+          "Bronze para aplicação industrial conforme condição de operação.",
+          "Material, bitola, classe de pressão e acabamento definidos sob consulta técnica.",
           "Fornecimento conforme disponibilidade e requisitos do projeto."
         ],
         "images": [
           {
-            "src": "/catalog-images/wp-content-uploads-2018-07-visor-de-fluxo-bronze-368x245-png-ec3fbfbb7f.png",
+            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Visor-de-fluxo-bronze-368x245.png",
             "alt": "Bronze"
           }
         ],
         "tables": [
           [
             [
-              "DimensÃµes (mm)"
+              "Dimensões (mm)"
             ],
             [
               "DN",
@@ -6628,4 +6627,3 @@ export const productTechnicalSpecs = {
     }
   }
 };
-

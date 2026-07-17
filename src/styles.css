@@ -685,6 +685,10 @@ input {
   object-fit: cover;
 }
 
+.service-card__image--support img {
+  object-position: center;
+}
+
 .service-card__body {
   display: grid;
   gap: 12px;
@@ -826,6 +830,8 @@ input {
 
 .product-page__spec {
   min-width: 0;
+  max-width: 1180px;
+  margin: 0 auto;
 }
 
 .product-page__back-inline {
@@ -873,6 +879,27 @@ input {
   height: 100%;
   max-height: 178px;
   object-fit: contain;
+}
+
+.product-page__card-media--mouse-zoom {
+  cursor: zoom-in;
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.product-page__card-media--mouse-zoom img {
+  transform-origin: var(--zoom-x, 50%) var(--zoom-y, 50%);
+  transition: transform 280ms ease, filter 280ms ease;
+}
+
+.product-page__card:hover .product-page__card-media--mouse-zoom img,
+.product-page__card:focus-visible .product-page__card-media--mouse-zoom img {
+  filter: drop-shadow(0 14px 18px rgba(26, 38, 51, 0.16));
+  transform: scale(1.18);
+}
+
+.product-page__card:hover .product-page__card-media--mouse-zoom,
+.product-page__card:focus-visible .product-page__card-media--mouse-zoom {
+  box-shadow: inset 0 0 0 1px rgba(168, 199, 214, 0.78);
 }
 
 .product-page__card-media span {
@@ -965,19 +992,131 @@ input {
   flex-wrap: wrap;
   gap: 18px;
   align-items: flex-start;
+  width: min(100%, 620px);
   margin-top: 18px;
 }
 
-.product-page__spec-images img {
-  width: min(220px, 42vw);
-  max-height: 180px;
-  object-fit: contain;
-  border: 2px solid transparent;
+.product-page__spec-image-frame {
+  width: min(100%, 620px);
+  height: clamp(300px, 42vw, 520px);
+  padding: 26px;
+  border: 1px solid rgba(26, 38, 51, 0.1);
+  border-radius: 22px;
   background: var(--white);
+  cursor: zoom-in;
+  overflow: hidden;
+  transition: border-color 180ms ease, box-shadow 180ms ease;
 }
 
-.product-page__spec-images img:first-child {
+.product-page__spec-image-frame:first-child {
   border-color: var(--sky);
+}
+
+.product-page__spec-image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform-origin: var(--zoom-x, 50%) var(--zoom-y, 50%);
+  transition: transform 280ms ease;
+}
+
+.product-page__spec-image-frame:hover,
+.product-page__spec-image-frame:focus-within {
+  box-shadow: 0 18px 38px rgba(26, 38, 51, 0.14);
+}
+
+.product-page__spec-image-frame:hover img,
+.product-page__spec-image-frame:focus-within img {
+  transform: scale(1.18);
+}
+
+.product-page__animated-gallery {
+  display: grid;
+  gap: 18px;
+  width: min(100%, 620px);
+  margin-top: 18px;
+}
+
+.product-page__animated-gallery-main {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  min-height: clamp(300px, 42vw, 520px);
+  padding: 26px;
+  border: 1px solid rgba(26, 38, 51, 0.1);
+  border-radius: 22px;
+  background: transparent;
+  cursor: zoom-in;
+  overflow: hidden;
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.product-page__animated-gallery-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  animation: product-gallery-pop 260ms ease both;
+  filter: drop-shadow(0 18px 18px rgba(26, 38, 51, 0.14));
+  transform-origin: var(--zoom-x, 50%) var(--zoom-y, 50%);
+  transition: transform 280ms ease;
+}
+
+.product-page__animated-gallery-main:hover {
+  border-color: rgba(168, 199, 214, 0.78);
+  box-shadow: 0 18px 38px rgba(26, 38, 51, 0.14);
+}
+
+.product-page__animated-gallery-main:hover img {
+  transform: scale(1.18);
+}
+
+.product-page__animated-gallery-thumbs {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.product-page__animated-gallery-thumbs button {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  min-width: 0;
+  padding: 8px;
+  border: 2px solid rgba(26, 38, 51, 0.08);
+  border-radius: 16px;
+  background: transparent;
+  cursor: pointer;
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.product-page__animated-gallery-thumbs button:hover,
+.product-page__animated-gallery-thumbs button:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(26, 38, 51, 0.35);
+  box-shadow: 0 12px 22px rgba(26, 38, 51, 0.12);
+  outline: none;
+}
+
+.product-page__animated-gallery-thumbs button.is-active {
+  border-color: #2677f0;
+  box-shadow: 0 0 0 3px rgba(38, 119, 240, 0.16);
+}
+
+.product-page__animated-gallery-thumbs img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@keyframes product-gallery-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.975);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .product-page__spec-note {
@@ -1000,9 +1139,14 @@ input {
 
 .product-page__spec-overview {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.92fr);
-  gap: 56px;
+  grid-template-columns: minmax(340px, 620px) minmax(320px, 1fr);
+  gap: clamp(28px, 4vw, 56px);
   align-items: start;
+}
+
+.product-page__spec-figure,
+.product-page__spec-characteristics {
+  min-width: 0;
 }
 
 .product-page__spec-figure h2,
@@ -1021,8 +1165,9 @@ input {
   margin: 26px 0 0;
   padding: 0;
   color: var(--muted);
-  font-size: 1rem;
-  line-height: 1.55;
+  font-size: clamp(0.96rem, 1.05vw, 1.04rem);
+  line-height: 1.68;
+  overflow-wrap: anywhere;
 }
 
 .product-page__spec-characteristics ul {
@@ -1030,7 +1175,7 @@ input {
 }
 
 .product-page__spec-characteristics li + li {
-  margin-top: 5px;
+  margin-top: 9px;
 }
 
 .product-page__spec-state {
@@ -1086,6 +1231,24 @@ input {
 
 .product-page__spec-table td:first-child {
   font-weight: 800;
+}
+
+@media (max-width: 1180px) {
+  .product-page__spec-overview {
+    grid-template-columns: 1fr;
+  }
+
+  .product-page__animated-gallery {
+    width: min(100%, 680px);
+  }
+
+  .product-page__spec-images {
+    width: min(100%, 680px);
+  }
+
+  .product-page__spec-image-frame {
+    width: min(100%, 680px);
+  }
 }
 
 .product-page__list-card,
@@ -1618,6 +1781,167 @@ input {
   object-fit: cover;
 }
 
+.instagram-section {
+  padding: clamp(54px, 8vw, 96px) 0;
+  background: #202020;
+  color: var(--white);
+}
+
+.instagram-section__inner {
+  display: grid;
+  justify-items: start;
+  gap: 32px;
+  max-width: 700px;
+}
+
+.instagram-section__heading {
+  display: grid;
+  gap: 24px;
+}
+
+.instagram-section__heading h2 {
+  margin: 0;
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+  font-size: clamp(1.9rem, 4vw, 2.55rem);
+  font-weight: 700;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.instagram-section__heading span {
+  display: block;
+  width: 88px;
+  height: 3px;
+  background: var(--white);
+}
+
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  width: min(100%, 338px);
+}
+
+.instagram-tile {
+  position: relative;
+  display: block;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: #07100f;
+}
+
+.instagram-tile img,
+.instagram-tile video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 220ms ease, opacity 220ms ease;
+}
+
+.instagram-tile::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background-color 220ms ease;
+}
+
+.instagram-tile:hover img,
+.instagram-tile:focus-visible img,
+.instagram-tile:hover video,
+.instagram-tile:focus-visible video {
+  transform: scale(1.06);
+}
+
+.instagram-tile:hover::after,
+.instagram-tile:focus-visible::after {
+  background: rgba(0, 0, 0, 0.16);
+}
+
+.instagram-tile__play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-bottom: 13px solid transparent;
+  border-left: 20px solid var(--white);
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.45));
+  transform: translate(-42%, -50%);
+}
+
+.instagram-follow-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 42px;
+  padding: 0 18px;
+  border-radius: 5px;
+  background: var(--navy);
+  color: var(--white);
+  font-weight: 600;
+  transition: background-color 180ms ease, transform 180ms ease;
+}
+
+.instagram-follow-button:hover,
+.instagram-follow-button:focus-visible {
+  background: var(--navy-deep);
+  transform: translateY(-1px);
+}
+
+.instagram-follow-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.instagram-panel {
+  align-content: center;
+  justify-items: center;
+  background:
+    radial-gradient(circle at top right, rgba(168, 199, 214, 0.28), transparent 34%),
+    linear-gradient(180deg, var(--white), var(--surface-strong));
+  color: var(--text);
+}
+
+.instagram-panel__logo {
+  width: clamp(132px, 18vw, 178px);
+  margin-bottom: 6px;
+}
+
+.instagram-panel .instagram-section__heading {
+  justify-items: center;
+  width: min(100%, 338px);
+  text-align: center;
+}
+
+.instagram-panel .instagram-section__heading h2 {
+  color: var(--navy-deep);
+  font-size: clamp(1.7rem, 3vw, 2.15rem);
+}
+
+.instagram-panel .instagram-section__heading span {
+  background: var(--navy);
+}
+
+.instagram-panel .instagram-grid {
+  width: min(100%, 338px);
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.instagram-panel .instagram-tile {
+  aspect-ratio: 1;
+  border-radius: 8px;
+}
+
+.instagram-panel .instagram-follow-button {
+  margin-top: 2px;
+}
+
 .banner-card {
   display: flex;
   align-items: center;
@@ -1633,6 +1957,10 @@ input {
 
 .section-contact {
   padding-top: 28px;
+}
+
+.section-contact .contact-grid {
+  align-items: stretch;
 }
 
 .location-map-wrap {
@@ -1739,8 +2067,31 @@ input {
 }
 
 .social-row a {
-  background: var(--navy-deep);
+  justify-content: center;
+  gap: 12px;
+  min-width: 176px;
+  min-height: 42px;
+  padding: 0 18px;
+  border-radius: 5px;
+  background: var(--navy);
   color: var(--white);
+  font-weight: 600;
+  transition: background-color 180ms ease, transform 180ms ease;
+}
+
+.social-row a:hover,
+.social-row a:focus-visible {
+  background: var(--navy-deep);
+  transform: translateY(-1px);
+}
+
+.social-row a svg {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-panel .social-row {
+  justify-content: center;
 }
 
 .contact-form {
@@ -2534,6 +2885,18 @@ input {
     font-size: 0.92rem;
   }
 
+  .instagram-section__inner {
+    justify-items: stretch;
+  }
+
+  .instagram-grid {
+    width: 100%;
+  }
+
+  .instagram-follow-button {
+    width: 100%;
+  }
+
   .product-page__mobile-actions {
     display: grid;
     margin-top: 24px;
@@ -2546,6 +2909,20 @@ input {
 
   .product-page__spec-title {
     text-align: left;
+  }
+
+  .product-page__animated-gallery-main {
+    min-height: 280px;
+    border-radius: 18px;
+  }
+
+  .product-page__spec-image-frame {
+    height: 280px;
+    border-radius: 18px;
+  }
+
+  .product-page__animated-gallery-thumbs {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .location-map-wrap {

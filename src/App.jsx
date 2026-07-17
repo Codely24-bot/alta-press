@@ -2,19 +2,69 @@
 import SupportChatWidget from './components/SupportChatWidget';
 import { technicalContent } from './data/technicalContent';
 import altaPressMascotSupport from './assets/alta-press-mascot-support.png';
-import altaPressShowcaseGrid from './assets/alta-press-showcase-grid.png';
 import altaPressValvulaSeguranca from './assets/alta-press-valvula-seguranca.jpeg';
 import altaPressShowcaseVideo from './assets/alta-press-showcase-video.mp4';
+import instagramReelDa2l80jyzlo from './assets/instagram-reel-da2l80jyzlo.jpg';
+import redebrasValvulasPlimat from './assets/redebras-valvulas-plimat-cortada.jpg';
 import productAcessorios from './assets/product-categories/acessorios.jpg';
-import productAcessorioGrampoU from './assets/product-accessories-normalized/grampo-u.png';
-import productAcessorioIndicadorNivel from './assets/product-accessories-normalized/indicador-de-nivel.png';
+import productAcessorioFiltro from './assets/product-accessories-normalized/filtro.png';
+import productAcessorioFiltroBronze from './assets/product-accessories-normalized/filtro-bronze.png';
+import productAcessorioFiltroCestoSimples from './assets/product-accessories-normalized/filtro-cesto-simples.png';
+import productAcessorioFiltroFlangeado from './assets/product-accessories-normalized/filtro-flangeado.png';
 import productAcessorioJuntaExpansao from './assets/product-accessories-normalized/junta-expansao.png';
-import productAcessorioVisorFluxo from './assets/product-accessories-normalized/visor-de-fluxo.png';
-import productConexoes from './assets/product-categories/conexoes.png';
+import productAcessorioJuntaExpansaoDuplaOnda from './assets/product-accessories-normalized/junta-expansao-dupla-onda.png';
+import productAcessorioTorneiraTuboSifao from './assets/product-accessories-normalized/torneira-tubo-sifao.png';
+import productAcessorioTuboSifao from './assets/product-accessories-normalized/tubo-sifao.png';
+import productAcessorioVisor from './assets/product-accessories-normalized/visor.png';
+import productAcessorioVisorBronze from './assets/product-accessories-normalized/visor-bronze.png';
+import productAcessorioVisorFlangeado from './assets/product-accessories-normalized/visor-flangeado.png';
 import productConexaoAltaPressao from './assets/product-connections-normalized/alta-pressao.png';
 import productConexaoColares from './assets/product-connections-normalized/colares.png';
 import productConexaoTubulares from './assets/product-connections-normalized/conexoes-tubulares.png';
 import productConexaoFerroMaleavel from './assets/product-connections-normalized/ferro-maleavel.png';
+import productConexaoBuchaReducao from './assets/product-connections-options/bucha-reducao.png';
+import productConexaoBujao from './assets/product-connections-options/bujao.png';
+import productConexaoCap from './assets/product-connections-options/cap.png';
+import productConexaoCotovelo45 from './assets/product-connections-options/cotovelo-45.png';
+import productConexaoCotovelo90 from './assets/product-connections-options/cotovelo-90.png';
+import productConexaoCotovelo90Mf from './assets/product-connections-options/cotovelo-90-mf.png';
+import productConexaoCruzeta from './assets/product-connections-options/cruzeta.png';
+import productConexaoCurva45 from './assets/product-connections-options/curva-45.png';
+import productConexaoCurva45Femea from './assets/product-connections-options/curva-45-femea.png';
+import productConexaoCurva45Mf from './assets/product-connections-options/curva-45-mf.png';
+import productConexaoCurva90 from './assets/product-connections-options/curva-90.png';
+import productConexaoCurva90Femea from './assets/product-connections-options/curva-90-femea.png';
+import productConexaoCurva90Macho from './assets/product-connections-options/curva-90-macho.png';
+import productConexaoCurva90Mf from './assets/product-connections-options/curva-90-mf.png';
+import productConexaoCurva180 from './assets/product-connections-options/curva-180.png';
+import productConexaoCurvaRetorno from './assets/product-connections-options/curva-retorno.png';
+import productConexaoFerroTe45 from './assets/product-connections-options/ferro-te-45.png';
+import productConexaoFerroTe90 from './assets/product-connections-options/ferro-te-90.png';
+import productConexaoFerroTe90Reducao from './assets/product-connections-options/ferro-te-90-reducao.png';
+import productConexaoFlangeSextavado from './assets/product-connections-options/flange-sextavado.png';
+import productConexaoForjadaRosca from './assets/product-connections-options/forjada-rosca.png';
+import productConexaoForjadaSolda from './assets/product-connections-options/forjada-solda.png';
+import productConexaoLuva from './assets/product-connections-options/luva.png';
+import productConexaoLuvaMf from './assets/product-connections-options/luva-mf.png';
+import productConexaoLuvaReducao from './assets/product-connections-options/luva-reducao.png';
+import productConexaoLuvaReducaoMf from './assets/product-connections-options/luva-reducao-mf.png';
+import productConexaoNipleConcentrico from './assets/product-connections-options/niple-concentrico.png';
+import productConexaoNipleDuplo from './assets/product-connections-options/niple-duplo.png';
+import productConexaoNipleDuploReducao from './assets/product-connections-options/niple-duplo-reducao.png';
+import productConexaoNipleExcentrico from './assets/product-connections-options/niple-excentrico.png';
+import productConexaoPestana from './assets/product-connections-options/pestana.png';
+import productConexaoReducaoConcentrica from './assets/product-connections-options/reducao-concentrica.png';
+import productConexaoReducaoExcentrica from './assets/product-connections-options/reducao-excentrica.png';
+import productConexaoTampao from './assets/product-connections-options/tampao.png';
+import productConexaoTe45 from './assets/product-connections-options/te-45.png';
+import productConexaoTe45Reducao from './assets/product-connections-options/te-45-reducao.png';
+import productConexaoTe90 from './assets/product-connections-options/te-90.png';
+import productConexaoTe90Reducao from './assets/product-connections-options/te-90-reducao.png';
+import productConexaoUniao from './assets/product-connections-options/uniao.png';
+import productDiversos from './assets/product-categories/diversos.png';
+import productDiversoEngateRapido from './assets/product-diversos-normalized/engate-rapido.png';
+import productDiversoEspigao from './assets/product-diversos-normalized/espigao.png';
+import productDiversoGrampoU from './assets/product-diversos-normalized/grampo-u.png';
 import productFlanges from './assets/product-categories/flanges.png';
 import productFlangeCego from './assets/product-flanges-normalized/flange-cego.png';
 import productFlangeReducao from './assets/product-flanges-normalized/flange-de-reducao.png';
@@ -29,8 +79,6 @@ import productValvulas from './assets/product-categories/valvulas.jpg';
 import productOrificioPescoco from './assets/product-flanges-normalized/orificio-pescoco.png';
 import productOrificioRoscado from './assets/product-flanges-normalized/orificio-roscado.png';
 import productOrificioSlipOn from './assets/product-flanges-normalized/orificio-slip-on.png';
-import productFiltroCesto from './assets/product-filters-normalized/filtro-cesto.png';
-import productFiltroY from './assets/product-filters-normalized/filtro-y.png';
 import productInstrumentoManometro from './assets/product-instruments-normalized/manometro.png';
 import productInstrumentoPressostatos from './assets/product-instruments-normalized/pressostatos.png';
 import productInstrumentoTermometro from './assets/product-instruments-normalized/termometro.png';
@@ -39,33 +87,76 @@ import productPurgadorBoia from './assets/product-purgadores-normalized/boia.png
 import productPurgadorTermodinamico from './assets/product-purgadores-normalized/termodinamico.png';
 import productVedacaoFitaPtfe from './assets/product-vedacoes-normalized/fita-ptfe.png';
 import productVedacaoJuntaVedacao from './assets/product-vedacoes-normalized/junta-vedacao.png';
+import productValvulaAquecimentoRefrigeracao from './assets/product-valves-normalized/valvula-aquecimento-refrigeracao.png';
 import productValvulaAngular from './assets/product-valves-normalized/valvula-angular.png';
 import productValvulaBorboleta from './assets/product-valves-normalized/valvula-borboleta.png';
-import productValvulaDescargaCaldeira from './assets/product-valves-normalized/valvula-descarga-caldeira.png';
 import productValvulaDiafragma from './assets/product-valves-normalized/valvula-diafragma.png';
 import productValvulaEsfera from './assets/product-valves-normalized/valvula-esfera.png';
 import productValvulaGaveta from './assets/product-valves-normalized/valvula-gaveta.png';
 import productValvulaGlobo from './assets/product-valves-normalized/valvula-globo.png';
-import productValvulaGuilhotina from './assets/product-valves-normalized/valvula-guilhotina.png';
 import productValvulaMangote from './assets/product-valves-normalized/valvula-mangote.png';
-import productValvulaMacho from './assets/product-valves-normalized/valvula-macho.png';
-import productValvulaParaHidrante from './assets/product-valves-normalized/valvula-para-hidrante.png';
-import productValvulaPassagemReta from './assets/product-valves-normalized/valvula-passagem-reta.png';
-import productValvulaRedutoraPressao from './assets/product-valves-normalized/valvula-redutora-pressao.png';
 import productValvulaRetencao from './assets/product-valves-normalized/valvula-retencao.png';
 import productValvulaSegurancaAlivio from './assets/product-valves-normalized/valvula-seguranca-alivio.png';
-import productValvulaSolenoide from './assets/product-valves-normalized/valvula-solenoide.png';
+import productValvulaOpcaoAngularAco from './assets/product-valves-options/angular__aco.png';
+import productValvulaOpcaoAngularBronze from './assets/product-valves-options/angular__bronze.png';
+import productValvulaOpcaoAngularFerroFundido from './assets/product-valves-options/angular__ferro-fundido.png';
+import productValvulaOpcaoBorboletaLug from './assets/product-valves-options/borboleta__lug.png';
+import productValvulaOpcaoBorboletaWafer from './assets/product-valves-options/borboleta__wafer.png';
+import productValvulaOpcaoDescargaCaldeira from './assets/product-valves-options/descarga-de-caldeira__descarga-de-caldeira.png';
+import productValvulaOpcaoDiafragmaTipoA from './assets/product-valves-options/diafragma__tipo-a.png';
+import productValvulaOpcaoDiafragmaTipoR from './assets/product-valves-options/diafragma__tipo-r-ou-kb.png';
+import productValvulaOpcaoEsferaBipartida from './assets/product-valves-options/esfera__bipartida.png';
+import productValvulaOpcaoEsferaMonobloco from './assets/product-valves-options/esfera__monobloco.png';
+import productValvulaOpcaoEsferaTripartida from './assets/product-valves-options/esfera__tripartida.png';
+import productValvulaOpcaoGavetaFechoRapido from './assets/product-valves-options/gaveta__fecho-rapido.png';
+import productValvulaOpcaoGavetaHasteAscendente from './assets/product-valves-options/gaveta__haste-ascendente.png';
+import productValvulaOpcaoGavetaHasteFixa from './assets/product-valves-options/gaveta__haste-fixa.png';
+import productValvulaOpcaoGloboAerodinamica from './assets/product-valves-options/globo__aerodinamica.png';
+import productValvulaOpcaoGloboAgulha from './assets/product-valves-options/globo__agulha.png';
+import productValvulaOpcaoGloboBronze from './assets/product-valves-options/globo__bronze.png';
+import productValvulaOpcaoGloboFerro from './assets/product-valves-options/globo__ferro.png';
+import productValvulaOpcaoGloboForjada from './assets/product-valves-options/globo__forjada.png';
+import productValvulaOpcaoGloboFundida from './assets/product-valves-options/globo__fundida.png';
+import productValvulaGuilhotinaSerie03 from './assets/product-valves-guilhotina/guilhotina-serie-03.png';
+import productValvulaGuilhotinaSerie03m from './assets/product-valves-guilhotina/guilhotina-serie-03m.png';
+import productValvulaGuilhotinaSerie04 from './assets/product-valves-guilhotina/guilhotina-serie-04.png';
+import productValvulaGuilhotinaSerie05n from './assets/product-valves-guilhotina/guilhotina-serie-05n.png';
+import productValvulaGuilhotinaSerie07 from './assets/product-valves-guilhotina/guilhotina-serie-07.png';
+import productValvulaGuilhotinaSerie15 from './assets/product-valves-guilhotina/guilhotina-serie-15.png';
+import productValvulaOpcaoMangoteCorpoAberto from './assets/product-valves-options/mangote__corpo-aberto.png';
+import productValvulaOpcaoMangoteCorpoFechado from './assets/product-valves-options/mangote__corpo-fechado.png';
+import productValvulaOpcaoRetencaoAerodinamica from './assets/product-valves-options/retencao__aerodinamica.png';
+import productValvulaOpcaoRetencaoFundoPoco from './assets/product-valves-options/retencao__fundo-de-poco.png';
+import productValvulaOpcaoRetencaoHorizontalPistao from './assets/product-valves-options/retencao__horizontal-pistao.png';
+import productValvulaOpcaoRetencaoPortinhola from './assets/product-valves-options/retencao__portinhola.png';
+import productValvulaOpcaoRetencaoVertical from './assets/product-valves-options/retencao__retencao-vertical.png';
+import productValvulaOpcaoRetencaoWafer from './assets/product-valves-options/retencao__retencao-wafer.png';
+import productValvulaOpcaoSegurancaAlivio from './assets/product-valves-options/seguranca-e-alivio__alivio.png';
+import productValvulaOpcaoSegurancaCalibracao from './assets/product-valves-options/seguranca-e-alivio__calibracao-sob-consulta.png';
+import productValvulaOpcaoSeguranca from './assets/product-valves-options/seguranca-e-alivio__seguranca.png';
+
+const guilhotinaGalleryModules = import.meta.glob('./assets/product-valves-guilhotina-gallery/*.png', {
+  eager: true,
+  import: 'default',
+});
+
+const guilhotinaGalleryImages = Object.fromEntries(
+  Object.entries(guilhotinaGalleryModules).map(([path, src]) => [
+    path.split('/').pop().replace('.png', ''),
+    src,
+  ])
+);
 
 const media = {
   logo: '/brand/altapress-logo.png',
   heroSlideOne:
     'https://images.unsplash.com/photo-1620203853151-496c7228306c?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwzfHx2YWx2ZXN8ZW58MHx8fHwxNzc0NzI3NzEwfDA&ixlib=rb-4.1.0&w=1366&q=70&auto=format',
   heroSlideTwo: 'https://assets.zyrosite.com/B5g6vpLBQyiLl9pq/sem-nome-2500-x-1000-px-3-6PCHTfsHBWEZasav.png',
-  support: 'https://assets.zyrosite.com/B5g6vpLBQyiLl9pq/whatsapp-image-2026-01-06-at-20.51.32-oj8sLCya4lLhNSvu.jpeg',
+  support: redebrasValvulasPlimat,
   valves: productValvulas,
-  connections: productConexoes,
+  connections: productConexaoTubulares,
   showcaseOne: altaPressValvulaSeguranca,
-  showcaseTwo: altaPressShowcaseGrid,
+  showcaseTwo: productValvulaGuilhotinaSerie05n,
 };
 
 const navItems = [
@@ -129,25 +220,39 @@ const productCategories = [
     image: productValvulas,
     items: [
       {
+        label: 'Descarga de caldeira',
+        image: productValvulaAquecimentoRefrigeracao,
+        alt: 'Válvula para aquecimento e refrigeração da AltaPress.',
+        displayLabel: 'Aquecimento e Refrigeração',
+        details: ['Vapor', 'Fluidos térmicos'],
+        standards: [{ label: 'Aplicação', options: ['Descarga de caldeira'] }],
+        optionImages: {
+          'Descarga de caldeira': productValvulaOpcaoDescargaCaldeira,
+        },
+      },
+      {
         label: 'Angular',
         image: productValvulaAngular,
         alt: 'Válvula angular da AltaPress.',
         details: ['Ferro fundido', 'Aço', 'Bronze'],
         standards: [{ label: 'Material', options: ['Ferro Fundido', 'Aço', 'Bronze'] }],
+        optionImages: {
+          'Ferro Fundido': productValvulaOpcaoAngularFerroFundido,
+          Aço: productValvulaOpcaoAngularAco,
+          Bronze: productValvulaOpcaoAngularBronze,
+        },
       },
       {
         label: 'Borboleta',
         image: productValvulaBorboleta,
         alt: 'Válvula borboleta da AltaPress.',
+        displayLabel: 'Válvula Borboleta',
         details: ['Wafer', 'Lug'],
         standards: [{ label: 'Tipo construtivo', options: ['Wafer', 'Lug'] }],
-      },
-      {
-        label: 'Descarga de caldeira',
-        image: productValvulaDescargaCaldeira,
-        alt: 'Válvula de descarga de caldeira da AltaPress.',
-        details: ['Aplicação em caldeiras', 'Especificação sob consulta'],
-        standards: [{ label: 'Aplicação', options: ['Descarga de caldeira'] }],
+        optionImages: {
+          Wafer: productValvulaOpcaoBorboletaWafer,
+          Lug: productValvulaOpcaoBorboletaLug,
+        },
       },
       {
         label: 'Diafragma',
@@ -155,70 +260,80 @@ const productCategories = [
         alt: 'Válvula diafragma da AltaPress.',
         details: ['Tipo A', 'Tipo R ou KB'],
         standards: [{ label: 'Tipo', options: ['Tipo A', 'Tipo R ou KB'] }],
+        optionImages: {
+          'Tipo A': productValvulaOpcaoDiafragmaTipoA,
+          'Tipo R ou KB': productValvulaOpcaoDiafragmaTipoR,
+        },
       },
       {
         label: 'Esfera',
         image: productValvulaEsfera,
         alt: 'Válvula esfera da AltaPress.',
+        displayLabel: 'Válvula Esfera',
         details: ['Monobloco', 'Bipartida', 'Tripartida'],
         standards: [{ label: 'Construção', options: ['Monobloco', 'Bipartida', 'Tripartida'] }],
+        optionImages: {
+          Monobloco: productValvulaOpcaoEsferaMonobloco,
+          Bipartida: productValvulaOpcaoEsferaBipartida,
+          Tripartida: productValvulaOpcaoEsferaTripartida,
+        },
       },
       {
         label: 'Gaveta',
         image: productValvulaGaveta,
         alt: 'Válvula gaveta da AltaPress.',
+        displayLabel: 'Válvula Gaveta',
         mediaClassName: 'product-page__item-media--blend',
         details: ['Haste ascendente', 'Haste fixa', 'Fecho rápido'],
         standards: [{ label: 'Modelo', options: ['Haste Ascendente', 'Haste Fixa', 'Fecho Rápido'] }],
+        optionImages: {
+          'Haste Ascendente': productValvulaOpcaoGavetaHasteAscendente,
+          'Haste Fixa': productValvulaOpcaoGavetaHasteFixa,
+          'Fecho Rápido': productValvulaOpcaoGavetaFechoRapido,
+        },
       },
       {
         label: 'Globo',
         image: productValvulaGlobo,
         alt: 'Válvula globo da AltaPress.',
+        displayLabel: 'Válvulas Globo',
         details: ['Forjada', 'Fundida', 'Ferro', 'Bronze', 'Agulha'],
         standards: [{ label: 'Modelo', options: ['Forjada', 'Fundida', 'Ferro', 'Aerodinâmica', 'Bronze', 'Agulha'] }],
+        optionImages: {
+          Forjada: productValvulaOpcaoGloboForjada,
+          Fundida: productValvulaOpcaoGloboFundida,
+          Ferro: productValvulaOpcaoGloboFerro,
+          Aerodinâmica: productValvulaOpcaoGloboAerodinamica,
+          Bronze: productValvulaOpcaoGloboBronze,
+          Agulha: productValvulaOpcaoGloboAgulha,
+        },
       },
       {
         label: 'Guilhotina',
-        image: productValvulaGuilhotina,
+        image: productValvulaGuilhotinaSerie03,
         alt: 'Válvula guilhotina da AltaPress.',
-        details: ['Wafer BR', 'Wafer com manga VG', 'Flangeada WG'],
-        standards: [{ label: 'Modelo', options: ['Wafer BR', 'Wafer com Manga VG', 'Flangeada WG'] }],
-      },
-      {
-        label: 'Macho',
-        image: productValvulaMacho,
-        alt: 'Válvula macho da AltaPress.',
-        details: ['Passagem reta', 'Especificação sob consulta'],
-        standards: [{ label: 'Aplicação', options: ['Passagem reta', 'Classe e bitola sob consulta'] }],
+        details: ['Série 03', 'Série 03M', 'Série 05N', 'Série 04', 'Série 07', 'Série 15'],
+        standards: [{ label: 'Modelo', options: ['Série 03', 'Série 03M', 'Série 05N', 'Série 04', 'Série 07', 'Série 15'] }],
+        optionImages: {
+          'Série 03': productValvulaGuilhotinaSerie03,
+          'Série 03M': productValvulaGuilhotinaSerie03m,
+          'Série 05N': productValvulaGuilhotinaSerie05n,
+          'Série 04': productValvulaGuilhotinaSerie04,
+          'Série 07': productValvulaGuilhotinaSerie07,
+          'Série 15': productValvulaGuilhotinaSerie15,
+        },
       },
       {
         label: 'Mangote',
         image: productValvulaMangote,
         alt: 'Válvula mangote da AltaPress.',
+        displayLabel: 'Válvulas Mangote',
         details: ['Corpo aberto', 'Corpo fechado'],
         standards: [{ label: 'Corpo', options: ['Corpo Aberto', 'Corpo Fechado'] }],
-      },
-      {
-        label: 'Para hidrante',
-        image: productValvulaParaHidrante,
-        alt: 'Válvula para hidrante da AltaPress.',
-        details: ['Combate a incêndio', 'Registro hidrante'],
-        standards: [{ label: 'Aplicação', options: ['Registro Hidrante', 'Combate a incêndio'] }],
-      },
-      {
-        label: 'Passagem reta',
-        image: productValvulaPassagemReta,
-        alt: 'Válvula de passagem reta da AltaPress.',
-        details: ['Fluxo direto', 'Especificação sob consulta'],
-        standards: [{ label: 'Aplicação', options: ['Passagem reta', 'Classe e bitola sob consulta'] }],
-      },
-      {
-        label: 'Redutora de pressão',
-        image: productValvulaRedutoraPressao,
-        alt: 'Válvula redutora de pressão da AltaPress.',
-        details: ['Controle de pressão', 'Especificação sob consulta'],
-        standards: [{ label: 'Aplicação', options: ['Controle de pressão', 'Classe e bitola sob consulta'] }],
+        optionImages: {
+          'Corpo Aberto': productValvulaOpcaoMangoteCorpoAberto,
+          'Corpo Fechado': productValvulaOpcaoMangoteCorpoFechado,
+        },
       },
       {
         label: 'Retenção',
@@ -231,6 +346,14 @@ const productCategories = [
             options: ['Aerodinâmica', 'Fundo de Poço', 'Horizontal Pistão', 'Portinhola', 'Retenção Wafer', 'Retenção Vertical'],
           },
         ],
+        optionImages: {
+          Aerodinâmica: productValvulaOpcaoRetencaoAerodinamica,
+          'Fundo de Poço': productValvulaOpcaoRetencaoFundoPoco,
+          'Horizontal Pistão': productValvulaOpcaoRetencaoHorizontalPistao,
+          Portinhola: productValvulaOpcaoRetencaoPortinhola,
+          'Retenção Wafer': productValvulaOpcaoRetencaoWafer,
+          'Retenção Vertical': productValvulaOpcaoRetencaoVertical,
+        },
       },
       {
         label: 'Segurança e alívio',
@@ -238,13 +361,11 @@ const productCategories = [
         alt: 'Válvula de segurança e alívio da AltaPress.',
         details: ['Segurança', 'Alívio', 'Calibração sob consulta'],
         standards: [{ label: 'Aplicação', options: ['Segurança', 'Alívio', 'Calibração sob consulta'] }],
-      },
-      {
-        label: 'Solenóide',
-        image: productValvulaSolenoide,
-        alt: 'Válvula solenóide da AltaPress.',
-        details: ['Acionamento elétrico', 'Especificação sob consulta'],
-        standards: [{ label: 'Aplicação', options: ['Acionamento elétrico', 'Classe e bitola sob consulta'] }],
+        optionImages: {
+          Segurança: productValvulaOpcaoSeguranca,
+          Alívio: productValvulaOpcaoSegurancaAlivio,
+          'Calibração sob consulta': productValvulaOpcaoSegurancaCalibracao,
+        },
       },
     ],
   },
@@ -359,7 +480,7 @@ const productCategories = [
   {
     title: 'Conexões',
     slug: 'conexoes',
-    image: productConexoes,
+    image: productConexaoTubulares,
     items: [
       {
         label: 'Alta pressão',
@@ -367,12 +488,16 @@ const productCategories = [
         alt: 'Conexões de alta pressão da AltaPress.',
         details: ['Rosca NPT/BSP', 'Solda SW'],
         standards: [{ label: 'Forjadas', options: ['Rosca (NPT/BSP)', 'Solda (SW)'] }],
+        optionImages: {
+          'Rosca (NPT/BSP)': productConexaoForjadaRosca,
+          'Solda (SW)': productConexaoForjadaSolda,
+        },
       },
       {
         label: 'Ferro maleável',
         image: productConexaoFerroMaleavel,
         alt: 'Conexões em ferro maleável da AltaPress.',
-        details: ['Buchas', 'Cotovelos', 'Luvas', 'Tês', 'Uniões'],
+        details: ['Buchas', 'Cotovelos', 'Luvas', 'Niples', 'Tês'],
         standards: [
           {
             label: 'Tipos',
@@ -381,6 +506,7 @@ const productCategories = [
               'Bujão',
               'Cotovelo 45°',
               'Cotovelo 90°',
+              'Cotovelo 90° M/F',
               'Cruzeta',
               'Curva 45° Fêmea',
               'Curva 45° M/F',
@@ -390,15 +516,45 @@ const productCategories = [
               'Curva de Retorno',
               'Flange Sextavado',
               'Luva',
+              'Luva M/F',
               'Luva de Redução',
+              'Luva Redução M/F',
               'Niple Duplo',
+              'Niple Duplo Redução',
               'Tampão',
               'Tê 45°',
               'Tê 90°',
+              'Tê 90° de Redução',
               'União',
             ],
           },
         ],
+        optionImages: {
+          'Bucha Redução': productConexaoBuchaReducao,
+          Bujão: productConexaoBujao,
+          'Cotovelo 45°': productConexaoCotovelo45,
+          'Cotovelo 90°': productConexaoCotovelo90,
+          'Cotovelo 90° M/F': productConexaoCotovelo90Mf,
+          Cruzeta: productConexaoCruzeta,
+          'Curva 45° Fêmea': productConexaoCurva45Femea,
+          'Curva 45° M/F': productConexaoCurva45Mf,
+          'Curva 90° Fêmea': productConexaoCurva90Femea,
+          'Curva 90° Macho': productConexaoCurva90Macho,
+          'Curva 90° M/F': productConexaoCurva90Mf,
+          'Curva de Retorno': productConexaoCurvaRetorno,
+          'Flange Sextavado': productConexaoFlangeSextavado,
+          Luva: productConexaoLuva,
+          'Luva M/F': productConexaoLuvaMf,
+          'Luva de Redução': productConexaoLuvaReducao,
+          'Luva Redução M/F': productConexaoLuvaReducaoMf,
+          'Niple Duplo': productConexaoNipleDuplo,
+          'Niple Duplo Redução': productConexaoNipleDuploReducao,
+          Tampão: productConexaoTampao,
+          'Tê 45°': productConexaoFerroTe45,
+          'Tê 90°': productConexaoFerroTe90,
+          'Tê 90° de Redução': productConexaoFerroTe90Reducao,
+          União: productConexaoUniao,
+        },
       },
       {
         label: 'Colares',
@@ -432,32 +588,48 @@ const productCategories = [
             ],
           },
         ],
+        optionImages: {
+          Cap: productConexaoCap,
+          'Curva 45°': productConexaoCurva45,
+          'Curva 90°': productConexaoCurva90,
+          'Curva 180°': productConexaoCurva180,
+          'Niple Concêntrico': productConexaoNipleConcentrico,
+          'Niple Excêntrico': productConexaoNipleExcentrico,
+          Pestana: productConexaoPestana,
+          'Redução Concêntrica': productConexaoReducaoConcentrica,
+          'Redução Excêntrica': productConexaoReducaoExcentrica,
+          'Tê 45°': productConexaoTe45,
+          'Tê 45° de Redução': productConexaoTe45Reducao,
+          'Tê 90°': productConexaoTe90,
+          'Tê 90° de Redução': productConexaoTe90Reducao,
+        },
       },
     ],
   },
   {
     title: 'Filtros',
     slug: 'filtros',
+    image: productAcessorioFiltro,
     items: [
       {
-        label: 'Tipo cesto',
-        image: productFiltroCesto,
-        alt: 'Filtro tipo cesto da AltaPress.',
-        details: ['Cesto simples', 'Flangeado'],
-        standards: [{ label: 'Modelo', options: ['Cesto Simples', 'Flangeado'] }],
-      },
-      {
-        label: 'Tipo Y',
-        image: productFiltroY,
-        alt: 'Filtro tipo Y da AltaPress.',
-        details: ['Flangeado', 'Rosca', 'Bronze'],
-        standards: [{ label: 'Conexão', options: ['Flangeado', 'Rosca', 'Bronze'] }],
+        label: 'Filtro',
+        image: productAcessorioFiltro,
+        alt: 'Filtro da AltaPress.',
+        details: ['Flangeado', 'Rosca', 'Bronze', 'Cesto simples'],
+        standards: [{ label: 'Modelo', options: ['Flangeado', 'Rosca', 'Bronze', 'Cesto Simples'] }],
+        optionImages: {
+          Flangeado: productAcessorioFiltroFlangeado,
+          Rosca: productAcessorioFiltro,
+          Bronze: productAcessorioFiltroBronze,
+          'Cesto Simples': productAcessorioFiltroCestoSimples,
+        },
       },
     ],
   },
   {
     title: 'Purgadores',
     slug: 'purgadores',
+    image: productPurgadorBoia,
     items: [
       {
         label: 'Bóia',
@@ -478,6 +650,7 @@ const productCategories = [
   {
     title: 'Vedações',
     slug: 'vedacoes',
+    image: productVedacaoFitaPtfe,
     items: [
       {
         label: 'Fita PTFE',
@@ -531,37 +704,73 @@ const productCategories = [
     ],
   },
   {
+    title: 'Diversos',
+    slug: 'diversos',
+    image: productDiversos,
+    items: [
+      {
+        label: 'Engate Rápido',
+        image: productDiversoEngateRapido,
+        alt: 'Engate rápido da AltaPress.',
+        details: [],
+        standards: [{ label: 'Aplicação', options: ['Engate Rápido', 'Especificação sob consulta'] }],
+      },
+      {
+        label: 'Espigão',
+        image: productDiversoEspigao,
+        alt: 'Espigão da AltaPress.',
+        details: [],
+        standards: [{ label: 'Aplicação', options: ['Espigão', 'Especificação sob consulta'] }],
+      },
+      {
+        label: 'Grampo U',
+        image: productDiversoGrampoU,
+        alt: 'Grampo U da AltaPress.',
+        details: [],
+        standards: [{ label: 'Aplicação', options: ['Fixação', 'Especificação sob consulta'] }],
+      },
+    ],
+  },
+  {
     title: 'Acessórios',
     slug: 'acessorios',
     image: productAcessorios,
     items: [
       {
-        label: 'Grampo U',
-        image: productAcessorioGrampoU,
-        alt: 'Grampo U da AltaPress.',
-        details: ['Fixação', 'Bitola sob consulta'],
-        standards: [{ label: 'Aplicação', options: ['Fixação', 'Bitola sob consulta'] }],
-      },
-      {
-        label: 'Indicador de nível',
-        image: productAcessorioIndicadorNivel,
-        alt: 'Indicador de nível da AltaPress.',
-        details: ['Nível', 'Modelo sob consulta'],
-        standards: [{ label: 'Aplicação', options: ['Indicador de nível', 'Modelo sob consulta'] }],
-      },
-      {
-        label: 'Juntas de expansão',
-        image: productAcessorioJuntaExpansao,
-        alt: 'Junta de expansão da AltaPress.',
-        details: ['Flangeada', 'Dupla onda'],
-        standards: [{ label: 'Modelo', options: ['Flangeada', 'Dupla Onda'] }],
-      },
-      {
-        label: 'Visor de fluxo',
-        image: productAcessorioVisorFluxo,
-        alt: 'Visor de fluxo da AltaPress.',
+        label: 'Visor de Fluxo',
+        image: productAcessorioVisor,
+        alt: 'Visor da AltaPress.',
+        displayLabel: 'Visor',
         details: ['Flangeado', 'Rosca', 'Bronze'],
         standards: [{ label: 'Conexão', options: ['Flangeado', 'Rosca', 'Bronze'] }],
+        optionImages: {
+          Flangeado: productAcessorioVisorFlangeado,
+          Rosca: productAcessorioVisor,
+          Bronze: productAcessorioVisorBronze,
+        },
+      },
+      {
+        label: 'Torneira e Tubo Sifão',
+        image: productAcessorioTorneiraTuboSifao,
+        alt: 'Torneira e tubo sifão da AltaPress.',
+        details: ['Robinete', 'Tubo sifão'],
+        standards: [{ label: 'Aplicação', options: ['Robinete', 'Tubo Sifão'] }],
+        optionImages: {
+          Robinete: productAcessorioTorneiraTuboSifao,
+          'Tubo Sifão': productAcessorioTuboSifao,
+        },
+      },
+      {
+        label: 'Juntas de Expansão',
+        image: productAcessorioJuntaExpansao,
+        alt: 'Junta de expansão da AltaPress.',
+        displayLabel: 'Junta de Expansão',
+        details: ['Flangeada', 'Dupla onda'],
+        standards: [{ label: 'Modelo', options: ['Flangeada', 'Dupla Onda'] }],
+        optionImages: {
+          Flangeada: productAcessorioJuntaExpansao,
+          'Dupla Onda': productAcessorioJuntaExpansaoDuplaOnda,
+        },
       },
     ],
   },
@@ -606,6 +815,15 @@ const socialLinks = [
   { label: 'Instagram', href: 'https://www.instagram.com/altapress.conexoes/' },
   { label: 'WhatsApp', href: whatsappBase },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/' },
+];
+
+const instagramPreviewItems = [
+  {
+    type: 'image',
+    src: instagramReelDa2l80jyzlo,
+    href: 'https://www.instagram.com/reel/Da2l80JyZLO/?igsh=MTZ3bWVxc2JyaXpodQ==',
+    alt: 'Reel da AltaPress no Instagram.',
+  },
 ];
 
 function WhatsAppIcon() {
@@ -727,6 +945,14 @@ function getVisibleProductStandards(productItem) {
     .filter((standard) => standard.options.length);
 }
 
+function getProductOptionImage(productItem, option) {
+  if (!productItem || typeof productItem === 'string') {
+    return null;
+  }
+
+  return productItem.optionImages?.[option] ?? null;
+}
+
 function getTechnicalSpec(specs, itemSlug, standardSlug, optionSlug) {
   const standardSpecs = specs[itemSlug]?.[standardSlug];
 
@@ -744,6 +970,142 @@ function getTechnicalSpec(specs, itemSlug, standardSlug, optionSlug) {
 
     return titleSlug === optionSlug || sourceSlug === optionSlug || titleSlug.endsWith(optionSlug) || optionSlug.endsWith(titleSlug);
   }) ?? null;
+}
+
+const guilhotinaActuationOptions = [
+  ['pneumatica-dupla-acao', 'Pneumática dupla ação'],
+  ['manual-volante', 'Manual por volante'],
+  ['redutor-engrenagem', 'Redutor de engrenagem'],
+  ['atuador-eletromecanico', 'Atuador eletromecânico'],
+  ['hidraulico-dupla-acao', 'Hidráulico dupla ação'],
+];
+
+function getGuilhotinaGalleryImages(serieSlug) {
+  return guilhotinaActuationOptions
+    .map(([suffix, label]) => ({
+      src: guilhotinaGalleryImages[`${serieSlug}-${suffix}`],
+      alt: `${label} - ${serieSlug.replace('serie-', 'Série ').toUpperCase()}`,
+    }))
+    .filter((image) => image.src);
+}
+
+function createGuilhotinaSpec({ title, description, type, application, sizes, extraCharacteristics = [] }) {
+  return {
+    title,
+    note: 'Imagens e referências da linha Guilhotina usadas com permissão.',
+    characteristics: [
+      description,
+      application,
+      ...extraCharacteristics,
+      'Acionamentos disponíveis: pneumática dupla ação, manual por volante, redutor de engrenagem, atuador eletromecânico e hidráulico dupla ação.',
+      `Conexões dos flanges conforme normas ANSI B16.5, DIN PN10, DIN PN16, JIS ou sob consulta. Tamanhos: ${sizes}.`,
+    ],
+    images: getGuilhotinaGalleryImages(slugifyProductLabel(title)),
+    tables: [
+      [
+        ['Série', title.replace('Série ', '')],
+        ['Tipo construtivo', type],
+        ['Aplicação', application],
+        ['Tamanhos', sizes],
+      ],
+      [
+        ['Acionamento', 'Disponibilidade'],
+        ['Pneumática dupla ação', 'Sob consulta'],
+        ['Manual por volante', 'Sob consulta'],
+        ['Redutor de engrenagem', 'Sob consulta'],
+        ['Atuador eletromecânico', 'Sob consulta'],
+        ['Hidráulico dupla ação', 'Sob consulta'],
+      ],
+      [
+        ['Norma de flange', 'Disponibilidade'],
+        ['ANSI B16.5', 'Sob consulta'],
+        ['DIN PN10', 'Sob consulta'],
+        ['DIN PN16', 'Sob consulta'],
+        ['JIS', 'Sob consulta'],
+      ],
+    ],
+  };
+}
+
+const guilhotinaSerieSpecs = {
+  'serie-03': {
+    ...createGuilhotinaSpec({
+      title: 'Série 03',
+      description: 'Válvula guilhotina flangeada, faca não passante ou passante curta, tipo LUG, SEMI-LUG ou Wafer.',
+      type: 'LUG / SEMI-LUG / Wafer',
+      application: 'Bloqueio e controle de vazão de fluidos abrasivos em processos industriais.',
+      sizes: 'N2” até DN24”',
+      extraCharacteristics: ['Vedação facial com obturador tipo faca e contra chanfro para melhor vedação.'],
+    }),
+  },
+  'serie-03m': {
+    ...createGuilhotinaSpec({
+      title: 'Série 03M',
+      description: 'Válvula guilhotina tipo LUG/Wafer, faca não passante, com vedação anelar revestida.',
+      type: 'LUG / Wafer',
+      application: 'Bloqueio e controle de fluidos abrasivos.',
+      sizes: 'N2” até DN32”',
+    }),
+  },
+  'serie-05n': {
+    ...createGuilhotinaSpec({
+      title: 'Série 05N',
+      description: 'Válvula guilhotina tipo LUG, faca não passante ou passante curta, com extremidade flangeada.',
+      type: 'Extremidade flangeada',
+      application: 'Bloqueio de fluidos abrasivos.',
+      sizes: 'N2” até DN32”',
+    }),
+  },
+  'serie-04': {
+    ...createGuilhotinaSpec({
+      title: 'Série 04',
+      description: 'Válvula guilhotina de faca passante longa.',
+      type: 'LUG / Wafer',
+      application: 'Bloqueio de vazão de fluidos.',
+      sizes: 'N2” até DN24”',
+    }),
+  },
+  'serie-07': {
+    ...createGuilhotinaSpec({
+      title: 'Série 07',
+      description: 'Válvula guilhotina de faca não passante desenvolvida sob medida.',
+      type: 'Sob medida',
+      application: 'Bloqueio e controle de vazão de fluidos conforme solicitação do projeto.',
+      sizes: 'Sob consulta',
+    }),
+  },
+  'serie-15': {
+    ...createGuilhotinaSpec({
+      title: 'Série 15',
+      description: 'Válvula guilhotina flangeada, faca não passante ou passante curta, com corpo flangeado tipo LUG.',
+      type: 'Flangeada / LUG',
+      application: 'Bloqueio de fluidos muito abrasivos.',
+      sizes: 'N2” até DN32”',
+      extraCharacteristics: ['Construção robusta para instalação entre flanges.'],
+    }),
+  },
+};
+
+function getProductTechnicalSpec(specs, categorySlug, itemSlug, standardSlug, optionSlug) {
+  const directSpec = getTechnicalSpec(specs, itemSlug, standardSlug, optionSlug);
+
+  if (directSpec) {
+    return directSpec;
+  }
+
+  if (categorySlug === 'valvulas' && itemSlug === 'guilhotina' && standardSlug === 'modelo') {
+    return guilhotinaSerieSpecs[optionSlug] ?? null;
+  }
+
+  if (categorySlug === 'filtros' && itemSlug === 'filtro' && standardSlug === 'modelo') {
+    if (optionSlug === 'cesto-simples') {
+      return getTechnicalSpec(specs, 'tipo-cesto', 'modelo', optionSlug);
+    }
+
+    return getTechnicalSpec(specs, 'tipo-y', 'conexao', optionSlug);
+  }
+
+  return null;
 }
 
 function getSectionIdFromLocation(location) {
@@ -806,6 +1168,52 @@ function scrollToSection(sectionId, behavior = 'smooth') {
   });
 }
 
+function ProductOverviewPage({ onNavigate }) {
+  return (
+    <section className="product-page section-surface">
+      <div className="container">
+        <div className="product-page__intro">
+          <span className="eyebrow eyebrow-dark">Linha de produtos</span>
+          <h1>Produtos</h1>
+          <p>
+            Escolha uma categoria para conferir nossas válvulas, conexões, flanges, acessórios, instrumentos e demais
+            soluções para sistemas hidráulicos e industriais.
+          </p>
+        </div>
+
+        <article className="product-page__catalog" aria-label="Categorias de produtos">
+          <div className="product-page__grid">
+            {productCategories.map((category) => {
+              const hasImage = Boolean(category.image);
+
+              return (
+                <a
+                  key={category.slug}
+                  className="product-page__card"
+                  href={`/produtos/${category.slug}`}
+                  onClick={onNavigate(`/produtos/${category.slug}`)}
+                  aria-label={`Ver categoria ${category.title}`}
+                >
+                  <div
+                    className={`product-page__card-media ${hasImage ? 'product-page__card-media--mouse-zoom' : ''}`.trim()}
+                    onMouseMove={hasImage ? handleProductImageZoomMove : undefined}
+                    onMouseLeave={hasImage ? handleProductImageZoomLeave : undefined}
+                  >
+                    {hasImage ? <img src={category.image} alt={category.title} /> : <span aria-hidden="true">{category.title.slice(0, 1)}</span>}
+                  </div>
+                  <div className="product-page__card-caption">
+                    <strong>{category.title}</strong>
+                  </div>
+                </a>
+              );
+            })}
+          </div>
+        </article>
+      </div>
+    </section>
+  );
+}
+
 function ProductCategoryPage({ category, onNavigate }) {
   return (
     <section className="product-page section-surface">
@@ -843,8 +1251,9 @@ function ProductCategoryPage({ category, onNavigate }) {
             <div className="product-page__grid">
               {category.items.map((item) => {
                 const label = typeof item === 'string' ? item : item.label;
+                const displayLabel = typeof item === 'string' ? item : item.displayLabel ?? label;
                 const image = typeof item === 'string' ? null : item.image;
-                const alt = typeof item === 'string' ? '' : item.alt ?? label;
+                const alt = typeof item === 'string' ? '' : item.alt ?? displayLabel;
                 const mediaClassName = typeof item === 'string' ? '' : item.mediaClassName ?? '';
                 const details = typeof item === 'string' ? [] : (item.details ?? []).filter((detail) => !isConsultationOnlyOption(detail));
                 const itemHref = `/produtos/${category.slug}/${slugifyProductLabel(label)}`;
@@ -855,19 +1264,23 @@ function ProductCategoryPage({ category, onNavigate }) {
                     className="product-page__card"
                     href={itemHref}
                     onClick={onNavigate(itemHref)}
-                    aria-label={`Ver opções de ${label}`}
+                    aria-label={`Ver opções de ${displayLabel}`}
                   >
-                    <div className={`product-page__card-media ${mediaClassName}`.trim()}>
+                    <div
+                      className={`product-page__card-media ${mediaClassName} ${image ? 'product-page__card-media--mouse-zoom' : ''}`.trim()}
+                      onMouseMove={image ? handleProductImageZoomMove : undefined}
+                      onMouseLeave={image ? handleProductImageZoomLeave : undefined}
+                    >
                       {image ? (
                         <img src={image} alt={alt} />
                       ) : (
-                        <span aria-hidden="true">{label.slice(0, 1)}</span>
+                        <span aria-hidden="true">{displayLabel.slice(0, 1)}</span>
                       )}
                     </div>
                     <div className="product-page__card-caption">
-                      <strong>{label}</strong>
+                      <strong>{displayLabel}</strong>
                       {details.length ? (
-                        <div className="product-page__card-details" aria-label={`Normas e classes de ${label}`}>
+                        <div className="product-page__card-details" aria-label={`Normas e classes de ${displayLabel}`}>
                           {details.map((detail) => (
                             <small key={detail}>{detail}</small>
                           ))}
@@ -893,9 +1306,10 @@ function ProductCategoryPage({ category, onNavigate }) {
 
 function ProductItemPage({ category, productItem, onNavigate }) {
   const label = typeof productItem === 'string' ? productItem : productItem.label;
+  const displayLabel = typeof productItem === 'string' ? productItem : productItem.displayLabel ?? label;
   const itemSlug = slugifyProductLabel(label);
   const image = typeof productItem === 'string' ? null : productItem.image;
-  const alt = typeof productItem === 'string' ? '' : productItem.alt ?? label;
+  const alt = typeof productItem === 'string' ? '' : productItem.alt ?? displayLabel;
   const mediaClassName = typeof productItem === 'string' ? '' : productItem.mediaClassName ?? '';
   const standards = getVisibleProductStandards(productItem);
   const fallbackCards = [
@@ -911,7 +1325,7 @@ function ProductItemPage({ category, productItem, onNavigate }) {
       <div className="container">
         <div className="product-page__intro">
           <span className="eyebrow eyebrow-dark">{category.title}</span>
-          <h1>{label}</h1>
+          <h1>{displayLabel}</h1>
           <p>
             Selecione uma norma, classe ou condição de fornecimento para falar com a equipe da AltaPress e confirmar a
             peça correta para a sua aplicação.
@@ -953,7 +1367,11 @@ function ProductItemPage({ category, productItem, onNavigate }) {
                   onClick={standards.length ? onNavigate(`/produtos/${category.slug}/${slugifyProductLabel(label)}/${slugifyProductLabel(card.label)}`) : undefined}
                   aria-label={standards.length ? `Ver classes de ${label} ${card.label}` : `Consultar ${label} ${card.label}`}
                 >
-                  <div className={`product-page__card-media ${mediaClassName}`.trim()}>
+                  <div
+                    className={`product-page__card-media ${mediaClassName} ${image ? 'product-page__card-media--mouse-zoom' : ''}`.trim()}
+                    onMouseMove={image ? handleProductImageZoomMove : undefined}
+                    onMouseLeave={image ? handleProductImageZoomLeave : undefined}
+                  >
                     {image ? (
                       <img src={image} alt={alt} />
                     ) : (
@@ -980,16 +1398,17 @@ function ProductItemPage({ category, productItem, onNavigate }) {
 
 function ProductStandardPage({ category, productItem, standard, onNavigate }) {
   const label = typeof productItem === 'string' ? productItem : productItem.label;
+  const displayLabel = typeof productItem === 'string' ? productItem : productItem.displayLabel ?? label;
   const itemSlug = slugifyProductLabel(label);
   const image = typeof productItem === 'string' ? null : productItem.image;
-  const alt = typeof productItem === 'string' ? '' : productItem.alt ?? label;
+  const alt = typeof productItem === 'string' ? '' : productItem.alt ?? displayLabel;
   const mediaClassName = typeof productItem === 'string' ? '' : productItem.mediaClassName ?? '';
 
   return (
     <section className="product-page section-surface">
       <div className="container">
         <div className="product-page__intro">
-          <span className="eyebrow eyebrow-dark">{label}</span>
+          <span className="eyebrow eyebrow-dark">{displayLabel}</span>
           <h1>{standard.label}</h1>
           <p>
             Escolha a classe de fornecimento e fale com a AltaPress para confirmar disponibilidade, dimensão e aplicação.
@@ -1016,19 +1435,21 @@ function ProductStandardPage({ category, productItem, standard, onNavigate }) {
             })}
           </aside>
 
-          <article className="product-page__catalog" aria-label={`Classes de ${label} ${standard.label}`}>
+          <article className="product-page__catalog" aria-label={`Classes de ${displayLabel} ${standard.label}`}>
             <a
               className="product-page__back-inline"
               href={`/produtos/${category.slug}/${slugifyProductLabel(label)}`}
               onClick={onNavigate(`/produtos/${category.slug}/${slugifyProductLabel(label)}`)}
             >
-              Voltar para {label}
+              Voltar para {displayLabel}
             </a>
             <div className="product-page__grid">
               {standard.options.map((option) => (
                 (() => {
                   const optionSlug = slugifyProductLabel(option);
                   const specHref = `/produtos/${category.slug}/${itemSlug}/${slugifyProductLabel(standard.label)}/${optionSlug}`;
+                  const optionImage = getProductOptionImage(productItem, option) ?? image;
+                  const optionAlt = optionImage === image ? alt : `${option} da AltaPress.`;
 
                   return (
                     <a
@@ -1036,11 +1457,15 @@ function ProductStandardPage({ category, productItem, standard, onNavigate }) {
                       className="product-page__card product-page__card--class"
                       href={specHref}
                       onClick={onNavigate(specHref)}
-                      aria-label={`Ver tabela técnica de ${label} ${standard.label} ${option}`}
+                      aria-label={`Ver tabela técnica de ${displayLabel} ${standard.label} ${option}`}
                     >
-                      <div className={`product-page__card-media ${mediaClassName}`.trim()}>
-                        {image ? (
-                          <img src={image} alt={alt} />
+                      <div
+                        className={`product-page__card-media ${mediaClassName} ${optionImage ? 'product-page__card-media--mouse-zoom' : ''}`.trim()}
+                        onMouseMove={optionImage ? handleProductImageZoomMove : undefined}
+                        onMouseLeave={optionImage ? handleProductImageZoomLeave : undefined}
+                      >
+                        {optionImage ? (
+                          <img src={optionImage} alt={optionAlt} />
                         ) : (
                           <span aria-hidden="true">{label.slice(0, 1)}</span>
                         )}
@@ -1060,20 +1485,81 @@ function ProductStandardPage({ category, productItem, standard, onNavigate }) {
   );
 }
 
+function handleProductImageZoomMove(event) {
+  const bounds = event.currentTarget.getBoundingClientRect();
+  const x = ((event.clientX - bounds.left) / bounds.width) * 100;
+  const y = ((event.clientY - bounds.top) / bounds.height) * 100;
+
+  event.currentTarget.style.setProperty('--zoom-x', `${x}%`);
+  event.currentTarget.style.setProperty('--zoom-y', `${y}%`);
+}
+
+function handleProductImageZoomLeave(event) {
+  event.currentTarget.style.removeProperty('--zoom-x');
+  event.currentTarget.style.removeProperty('--zoom-y');
+}
+
+function ProductSpecGallery({ images }) {
+  const [activeImage, setActiveImage] = useState(images[0] ?? null);
+  const galleryKey = images.map((imageItem) => imageItem.src).join('|');
+
+  useEffect(() => {
+    setActiveImage(images[0] ?? null);
+  }, [galleryKey]);
+
+  if (!images.length || !activeImage) {
+    return null;
+  }
+
+  return (
+    <div className="product-page__animated-gallery">
+      <div
+        className="product-page__animated-gallery-main"
+        onMouseMove={handleProductImageZoomMove}
+        onMouseLeave={handleProductImageZoomLeave}
+      >
+        <img src={activeImage.src} alt={activeImage.alt} />
+      </div>
+      <div className="product-page__animated-gallery-thumbs" aria-label="Variações de acionamento">
+        {images.map((galleryImage) => {
+          const isActive = galleryImage.src === activeImage.src;
+
+          return (
+            <button
+              key={galleryImage.src}
+              type="button"
+              className={isActive ? 'is-active' : ''}
+              onClick={() => setActiveImage(galleryImage)}
+              aria-pressed={isActive}
+              aria-label={`Ver ${galleryImage.alt}`}
+            >
+              <img src={galleryImage.src} alt="" />
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
 function ProductSpecPage({ category, productItem, standard, optionSlug, onNavigate }) {
   const label = typeof productItem === 'string' ? productItem : productItem.label;
   const itemSlug = slugifyProductLabel(label);
   const standardSlug = slugifyProductLabel(standard.label);
-  const image = typeof productItem === 'string' ? null : productItem.image;
-  const alt = typeof productItem === 'string' ? label : productItem.alt ?? label;
+  const selectedOption = standard.options.find((option) => slugifyProductLabel(option) === optionSlug);
+  const productImage = typeof productItem === 'string' ? null : productItem.image;
+  const image = (selectedOption ? getProductOptionImage(productItem, selectedOption) : null) ?? productImage;
+  const alt = selectedOption ? `${selectedOption} da AltaPress.` : typeof productItem === 'string' ? label : productItem.alt ?? label;
   const [spec, setSpec] = useState(null);
   const [specStatus, setSpecStatus] = useState('loading');
   const figureImages = spec
     ? [
-        ...(image ? [{ src: image, alt }] : []),
+        ...(category.slug === 'valvulas' && itemSlug === 'guilhotina' ? [] : image ? [{ src: image, alt }] : []),
         ...(category.slug === 'flanges' ? spec.images?.slice(1) ?? [] : []),
+        ...(category.slug === 'valvulas' && itemSlug === 'guilhotina' ? spec.images ?? [] : []),
       ]
     : [];
+  const hasInteractiveGallery = category.slug === 'valvulas' && itemSlug === 'guilhotina';
 
   useEffect(() => {
     let isMounted = true;
@@ -1091,7 +1577,7 @@ function ProductSpecPage({ category, productItem, standard, optionSlug, onNaviga
 
         const nextSpec =
           getTechnicalSpec(flangeModule.flangeTechnicalSpecs, itemSlug, standardSlug, optionSlug) ??
-          getTechnicalSpec(productModule.productTechnicalSpecs, itemSlug, standardSlug, optionSlug);
+          getProductTechnicalSpec(productModule.productTechnicalSpecs, category.slug, itemSlug, standardSlug, optionSlug);
 
         setSpec(nextSpec);
         setSpecStatus(nextSpec ? 'ready' : 'missing');
@@ -1159,11 +1645,22 @@ function ProductSpecPage({ category, productItem, standard, optionSlug, onNaviga
                   <div className="product-page__spec-figure">
                     <h2>Figura</h2>
                     {figureImages.length ? (
-                      <div className="product-page__spec-images">
-                        {figureImages.map((figureImage) => (
-                          <img key={figureImage.src} src={figureImage.src} alt={figureImage.alt} />
-                        ))}
-                      </div>
+                      hasInteractiveGallery ? (
+                        <ProductSpecGallery images={figureImages} />
+                      ) : (
+                        <div className="product-page__spec-images">
+                          {figureImages.map((figureImage) => (
+                            <div
+                              className="product-page__spec-image-frame"
+                              key={figureImage.src}
+                              onMouseMove={handleProductImageZoomMove}
+                              onMouseLeave={handleProductImageZoomLeave}
+                            >
+                              <img src={figureImage.src} alt={figureImage.alt} />
+                            </div>
+                          ))}
+                        </div>
+                      )
                     ) : null}
                   </div>
 
@@ -1428,6 +1925,7 @@ function App() {
 
   const activeProductRoute = getProductRouteFromPath(currentPathname);
   const activeProductCategory = activeProductRoute?.category ?? null;
+  const isProductsPage = currentPathname === '/produtos';
   const isTechnicalInfoPage = currentPathname === '/informacoes-tecnicas';
 
   return (
@@ -1504,7 +2002,9 @@ function App() {
       </header>
 
       <main>
-        {activeProductRoute?.item && activeProductRoute?.standard && activeProductRoute?.optionSlug ? (
+        {isProductsPage ? (
+          <ProductOverviewPage onNavigate={handleProductNavigation} />
+        ) : activeProductRoute?.item && activeProductRoute?.standard && activeProductRoute?.optionSlug ? (
           <ProductSpecPage
             category={activeProductRoute.category}
             productItem={activeProductRoute.item}
@@ -1581,7 +2081,7 @@ function App() {
                   </p>
 
                   <div className="hero-actions">
-                    <a className="button button-primary" href="/produtos" onClick={handleInternalNavigation('/produtos', 'produtos')}>
+                    <a className="button button-primary" href="/produtos" onClick={handleProductNavigation('/produtos')}>
                       Ver Produtos
                     </a>
                     <a
@@ -1623,7 +2123,7 @@ function App() {
 
                 return (
                 <article key={card.title} className="service-card">
-                  <div className="service-card__image">
+                  <div className={`service-card__image${card.title === 'Suporte Técnico' ? ' service-card__image--support' : ''}`}>
                     <img src={card.image} alt={card.title} />
                   </div>
                   <div className="service-card__body">
@@ -1772,30 +2272,47 @@ function App() {
               <div className="social-row">
                 {socialLinks.map((item) => (
                   <a key={item.label} href={item.href} target="_blank" rel="noreferrer">
+                    {item.label === 'Instagram' && <InstagramIcon />}
+                    {item.label === 'WhatsApp' && <WhatsAppIcon />}
+                    {item.label === 'LinkedIn' && <LinkedInIcon />}
                     {item.label}
                   </a>
                 ))}
               </div>
             </article>
 
-            <article className="form-panel">
-              <h3>Seu nome</h3>
-              <p>Digite seu nome e continue a conversa pelo WhatsApp da AltaPress.</p>
+            <article className="form-panel instagram-panel" aria-labelledby="contact-instagram-title">
+              <div className="instagram-section__heading">
+                <h2 id="contact-instagram-title">Siga no Instagram</h2>
+                <span aria-hidden="true" />
+              </div>
 
-              <form className="contact-form" onSubmit={handleSubmit}>
-                <label htmlFor="contact-name">Seu nome</label>
-                <input
-                  id="contact-name"
-                  name="contact-name"
-                  type="text"
-                  placeholder="Digite seu nome"
-                  value={name}
-                  onChange={(event) => setName(event.target.value)}
-                />
-                <button className="button button-primary" type="submit">
-                  Enviar
-                </button>
-              </form>
+              <div className="instagram-grid" aria-label="Prévias do Instagram da AltaPress">
+                {instagramPreviewItems.map((item, index) => (
+                  <a
+                  key={`${item.alt}-${index}`}
+                  className="instagram-tile"
+                  href={item.href ?? socialLinks[0].href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={item.href ? 'Abrir post da AltaPress no Instagram' : 'Abrir Instagram da AltaPress'}
+                >
+                    {item.type === 'video' && item.src === altaPressShowcaseVideo ? (
+                      <video src={item.src} muted playsInline preload="metadata" aria-label={item.alt} />
+                    ) : (
+                      <img src={item.src} alt={item.alt} />
+                    )}
+                    {item.type === 'video' ? (
+                      <span className="instagram-tile__play" aria-hidden="true" />
+                    ) : null}
+                  </a>
+                ))}
+              </div>
+
+              <a className="instagram-follow-button" href={socialLinks[0].href} target="_blank" rel="noreferrer">
+                <InstagramIcon />
+                Seguir no Instagram
+              </a>
             </article>
           </div>
 

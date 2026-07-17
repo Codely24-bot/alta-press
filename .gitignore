@@ -13,3 +13,5 @@ quem-somos.html
 .vercel
 .env*
 tmp/
+src/assets/product-valves-guilhotina-source/
+src/assets/product-valves-guilhotina-gallery-source/

@@ -15189,7 +15189,7 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "flange-slip-on",
         "standardSlug": "ansi",
         "optionSlug": "150-lbs",
-        "title": "FLANGE SOBREPOSTO COM REFOR–!O (SLIP ON) - ANSI B 16.5 - 150 LBS",
+        "title": "FLANGE SOBREPOSTO COM REFORÇO (SLIP ON) - ANSI B 16.5 - 150 LBS",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/flange-so-slip-on/ansi/150-lbs/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
@@ -15622,7 +15622,7 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "flange-slip-on",
         "standardSlug": "ansi",
         "optionSlug": "300-lbs",
-        "title": "FLANGE SOBREPOSTO COM REFOR–!O (SLIP ON) - ANSI B 16.5 - 300 LBS",
+        "title": "FLANGE SOBREPOSTO COM REFORÇO (SLIP ON) - ANSI B 16.5 - 300 LBS",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/flange-so-slip-on/ansi/300-lbs/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
@@ -16042,7 +16042,7 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "flange-slip-on",
         "standardSlug": "ansi",
         "optionSlug": "600-lbs",
-        "title": "FLANGE SOBREPOSTO COM REFOR–!O (SLIP ON) - ANSI B 16.5 - 600 LBS",
+        "title": "FLANGE SOBREPOSTO COM REFORÇO (SLIP ON) - ANSI B 16.5 - 600 LBS",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/flange-so-slip-on/ansi/600-lbs/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
@@ -16462,7 +16462,7 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "flange-slip-on",
         "standardSlug": "ansi",
         "optionSlug": "900-lbs",
-        "title": "FLANGE SOBREPOSTO COM REFOR–!O (SLIP ON) - ANSI B 16.5 - 900 LBS",
+        "title": "FLANGE SOBREPOSTO COM REFORÇO (SLIP ON) - ANSI B 16.5 - 900 LBS",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/flange-so-slip-on/ansi/900-lbs/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
@@ -16856,7 +16856,7 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "flange-slip-on",
         "standardSlug": "ansi",
         "optionSlug": "1500-lbs",
-        "title": "FLANGE SOBREPOSTO COM REFOR–!O (SLIP ON) - ANSI B 16.5 - 1500 LBS",
+        "title": "FLANGE SOBREPOSTO COM REFORÇO (SLIP ON) - ANSI B 16.5 - 1500 LBS",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/flange-so-slip-on/ansi/1500-lbs/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
@@ -17091,7 +17091,7 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "flange-slip-on",
         "standardSlug": "ansi",
         "optionSlug": "2500-lbs",
-        "title": "FLANGE SOBREPOSTO COM REFOR–!O (SLIP ON) - ANSI B 16.5 - 2500 LBS",
+        "title": "FLANGE SOBREPOSTO COM REFORÇO (SLIP ON) - ANSI B 16.5 - 2500 LBS",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/flange-so-slip-on/ansi/2500-lbs/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
@@ -17344,7 +17344,7 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "flange-slip-on",
         "standardSlug": "awwa",
         "optionSlug": "classe-d-175-150-psi",
-        "title": "FLANGE SOBREPOSTO COM REFOR–!O (SO) - AWWA C207-07 TABELA 3 - CLASSE D (175 - 150 PSI)",
+        "title": "FLANGE SOBREPOSTO COM REFORÇO (SO) - AWWA C207-07 TABELA 3 - CLASSE D (175 - 150 PSI)",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/flange-so-slip-on/awwa/classe-d-175-150-psi/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
@@ -17848,7 +17848,7 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "flange-slip-on",
         "standardSlug": "awwa",
         "optionSlug": "classe-e-275-psi",
-        "title": "FLANGE SOBREPOSTO COM REFOR–!O (SO) - AWWA C207-07 TABELA 4 - CLASSE E (275 PSI)",
+        "title": "FLANGE SOBREPOSTO COM REFORÇO (SO) - AWWA C207-07 TABELA 4 - CLASSE E (275 PSI)",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/flange-so-slip-on/awwa/classe-e-275-psi/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
@@ -18354,7 +18354,7 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "flange-slip-on",
         "standardSlug": "jis",
         "optionSlug": "classe-5k",
-        "title": "FLANGE SOBREPOSTO COM REFOR–!O (SO) - KS B1503 JIS B2220 - CLASSE 5K",
+        "title": "FLANGE SOBREPOSTO COM REFORÇO (SO) - KS B1503 JIS B2220 - CLASSE 5K",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/flange-so-slip-on/jis/classe-5k/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
@@ -18661,7 +18661,7 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "flange-slip-on",
         "standardSlug": "jis",
         "optionSlug": "classe-10k",
-        "title": "FLANGE SOBREPOSTO COM REFOR–!O (SO) - KS B1503 JIS B2220 - CLASSE 10K",
+        "title": "FLANGE SOBREPOSTO COM REFORÇO (SO) - KS B1503 JIS B2220 - CLASSE 10K",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/flange-so-slip-on/jis/classe-10k/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
@@ -19052,7 +19052,7 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "flange-slip-on",
         "standardSlug": "jis",
         "optionSlug": "classe-16k",
-        "title": "FLANGE SOBREPOSTO COM REFOR–!O (SO) - JIS B2220-1995 B2238-1996 - CLASSE 16K",
+        "title": "FLANGE SOBREPOSTO COM REFORÇO (SO) - JIS B2220-1995 B2238-1996 - CLASSE 16K",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/flange-so-slip-on/jis/classe-16k/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
@@ -19709,7 +19709,7 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "flange-slip-on",
         "standardSlug": "jis",
         "optionSlug": "classe-20k",
-        "title": "FLANGE SOBREPOSTO COM REFOR–!O (SO) - JIS B2220-1995 B2238-1996 - CLASSE 20K",
+        "title": "FLANGE SOBREPOSTO COM REFORÇO (SO) - JIS B2220-1995 B2238-1996 - CLASSE 20K",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/flange-so-slip-on/jis/classe-20k/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
@@ -20358,7 +20358,7 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "flange-slip-on",
         "standardSlug": "jis",
         "optionSlug": "classe-30k",
-        "title": "FLANGE SOBREPOSTO COM REFOR–!O (SO) - JIS B2220-1995 B2238-1996 - CLASSE 30K",
+        "title": "FLANGE SOBREPOSTO COM REFORÇO (SO) - JIS B2220-1995 B2238-1996 - CLASSE 30K",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/flange-so-slip-on/jis/classe-30k/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
@@ -35123,14 +35123,14 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "orificio-slip-on",
         "standardSlug": "ansi",
         "optionSlug": "300-lbs",
-        "title": "FLANGE ORIFÍCIO TIPO SOBREPOSTO COM REFOR–!O (SLIP ON) - ANSI B 16.36 - 300LBS",
+        "title": "FLANGE ORIFÍCIO TIPO SOBREPOSTO COM REFORÇO (SLIP ON) - ANSI B 16.36 - 300LBS",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/orificio-tipo-sobreposto/ansi/300-lbs/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "• Rosca NPT 1/2⬳;",
-          "• 12,7mm de furo para diâmetro nominal 4⬳ e maior;",
-          "• 9,5mm de furo para diâmetro nominal 3⬳",
-          "• 6,4mm de furo para diâmetro nominal 2.1/2⬳ e menor.",
+          "• Rosca NPT 1/2\";",
+          "• 12,7mm de furo para diâmetro nominal 4\" e maior;",
+          "• 9,5mm de furo para diâmetro nominal 3\"",
+          "• 6,4mm de furo para diâmetro nominal 2.1/2\" e menor.",
           "• Dimensões conforme ANSI B 16.36;",
           "• Materiais:",
           "– Aço Carbono ASTM A 181 Gr. I;",
@@ -35398,10 +35398,10 @@ export const flangeTechnicalSpecs = {
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/orificio-tipo-roscado/ansi/300-lbs/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
-          "• Rosca NPT 1/2⬳;",
-          "• 12,7mm de furo para diâmetro nominal 4⬳ e maior;",
-          "• 9,5mm de furo para diâmetro nominal 3⬳",
-          "• 6,4mm de furo para diâmetro nominal 2.1/2⬳ e menor.",
+          "• Rosca NPT 1/2\";",
+          "• 12,7mm de furo para diâmetro nominal 4\" e maior;",
+          "• 9,5mm de furo para diâmetro nominal 3\"",
+          "• 6,4mm de furo para diâmetro nominal 2.1/2\" e menor.",
           "• Dimensões conforme ANSI B 16.36;",
           "• Materiais:",
           "– Aço Carbono ASTM A 181 Gr. I;",
@@ -35597,7 +35597,7 @@ export const flangeTechnicalSpecs = {
         "itemSlug": "de-reducao",
         "standardSlug": "ansi",
         "optionSlug": "150-2500-lbs",
-        "title": "FLANGE DE REDU–!ÒO - ANSI B 16.5 - 150-2500 LBS",
+        "title": "FLANGE DE REDUÇÃO - ANSI B 16.5 - 150-2500 LBS",
         "sourceUrl": "https://casadasvalvulasmg.com.br/produtos/flanges/flange-de-reducao/ansi/150-2500-lbs/",
         "note": "*Todos os desenhos e imagens são meramente ilustrativos.",
         "characteristics": [
