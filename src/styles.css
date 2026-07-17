@@ -122,7 +122,10 @@ input {
   z-index: 2;
 }
 
-.brand img,
+.brand img {
+  width: clamp(76px, 9vw, 104px);
+}
+
 .footer-logo {
   width: clamp(108px, 14vw, 154px);
 }
@@ -3020,7 +3023,10 @@ input {
     width: 100%;
   }
 
-  .brand img,
+  .brand img {
+    width: 82px;
+  }
+
   .footer-logo {
     width: 118px;
   }
