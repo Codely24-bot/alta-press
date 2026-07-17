@@ -12,3 +12,4 @@ quem-somos.html
 
 .vercel
 .env*
+tmp/

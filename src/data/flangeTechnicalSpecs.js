@@ -31,11 +31,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-cego-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-cego-368x245-png-101fd93ca9.png",
             "alt": "150 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/11/des_cego-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-11-des-cego-368x220-png-c26f53400e.png",
             "alt": "150 lbs"
           }
         ],
@@ -374,11 +374,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-cego-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-cego-368x245-png-101fd93ca9.png",
             "alt": "300 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/11/des_cego-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-11-des-cego-368x220-png-c26f53400e.png",
             "alt": "300 lbs"
           }
         ],
@@ -697,11 +697,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-cego-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-cego-368x245-png-101fd93ca9.png",
             "alt": "600 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/11/des_B_cego-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-11-des-b-cego-368x220-png-cb8efd5652.png",
             "alt": "600 lbs"
           }
         ],
@@ -1020,11 +1020,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-cego-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-cego-368x245-png-101fd93ca9.png",
             "alt": "900 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/11/des_B_cego-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-11-des-b-cego-368x220-png-cb8efd5652.png",
             "alt": "900 lbs"
           }
         ],
@@ -1333,11 +1333,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-cego-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-cego-368x245-png-101fd93ca9.png",
             "alt": "1500 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/11/des_B_cego-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-11-des-b-cego-368x220-png-cb8efd5652.png",
             "alt": "1500 lbs"
           }
         ],
@@ -1586,11 +1586,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-cego-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-cego-368x245-png-101fd93ca9.png",
             "alt": "2500 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/11/des_B_cego-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-11-des-b-cego-368x220-png-cb8efd5652.png",
             "alt": "2500 lbs"
           }
         ],
@@ -1784,11 +1784,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-cego-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-cego-368x245-png-101fd93ca9.png",
             "alt": "Classe B (86 PSI)"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/11/awwa_cego-368x212.png",
+            "src": "/catalog-images/wp-content-uploads-2024-11-awwa-cego-368x212-png-dbef6740e4.png",
             "alt": "Classe B (86 PSI)"
           }
         ],
@@ -2130,11 +2130,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-cego-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-cego-368x245-png-101fd93ca9.png",
             "alt": "Classe D (175-150 PSI)"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/11/awwa_cego-368x212.png",
+            "src": "/catalog-images/wp-content-uploads-2024-11-awwa-cego-368x212-png-dbef6740e4.png",
             "alt": "Classe D (175-150 PSI)"
           }
         ],
@@ -2476,11 +2476,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-cego-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-cego-368x245-png-101fd93ca9.png",
             "alt": "Classe E (275 PSI)"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/11/awwa_cego-368x212.png",
+            "src": "/catalog-images/wp-content-uploads-2024-11-awwa-cego-368x212-png-dbef6740e4.png",
             "alt": "Classe E (275 PSI)"
           }
         ],
@@ -2822,11 +2822,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-cego-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-cego-368x245-png-101fd93ca9.png",
             "alt": "Classe F (300 PSI)"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/11/awwa_cego-368x212.png",
+            "src": "/catalog-images/wp-content-uploads-2024-11-awwa-cego-368x212-png-dbef6740e4.png",
             "alt": "Classe F (300 PSI)"
           }
         ],
@@ -3117,11 +3117,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-cego-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-cego-368x245-png-101fd93ca9.png",
             "alt": "Classe PN 6"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/11/cegoDIN2527-BT-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-11-cegodin2527-bt-368x245-png-58f794e9e3.png",
             "alt": "Classe PN 6"
           }
         ],
@@ -3426,11 +3426,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-cego-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-cego-368x245-png-101fd93ca9.png",
             "alt": "Classe PN 10"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/11/cegoDIN2527-BT-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-11-cegodin2527-bt-368x245-png-58f794e9e3.png",
             "alt": "Classe PN 10"
           }
         ],
@@ -3619,11 +3619,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-cego-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-cego-368x245-png-101fd93ca9.png",
             "alt": "Classe PN 16"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/11/cegoDIN2527-BT-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-11-cegodin2527-bt-368x245-png-58f794e9e3.png",
             "alt": "Classe PN 16"
           }
         ],
@@ -3928,11 +3928,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-cego-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-cego-368x245-png-101fd93ca9.png",
             "alt": "Classe PN 25"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/11/cegoDIN2527-BT-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-11-cegodin2527-bt-368x245-png-58f794e9e3.png",
             "alt": "Classe PN 25"
           }
         ],
@@ -4130,11 +4130,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-cego-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-cego-368x245-png-101fd93ca9.png",
             "alt": "Classe PN 40"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/11/cegoDIN2527-BT-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-11-cegodin2527-bt-368x245-png-58f794e9e3.png",
             "alt": "Classe PN 40"
           }
         ],
@@ -4439,11 +4439,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-cego-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-cego-368x245-png-101fd93ca9.png",
             "alt": "Classe PN 64"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/11/cegoDIN2527-BT-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-11-cegodin2527-bt-368x245-png-58f794e9e3.png",
             "alt": "Classe PN 64"
           }
         ],
@@ -4682,11 +4682,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-cego-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-cego-368x245-png-101fd93ca9.png",
             "alt": "Classe PN 100"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/11/cegoDIN2527-BT-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-11-cegodin2527-bt-368x245-png-58f794e9e3.png",
             "alt": "Classe PN 100"
           }
         ],
@@ -4983,11 +4983,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-cego-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-cego-368x245-png-101fd93ca9.png",
             "alt": "Classe 5K"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/11/cegoJISB2220-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-11-cegojisb2220-368x220-png-839fd27b76.png",
             "alt": "Classe 5K"
           }
         ],
@@ -5443,11 +5443,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-cego-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-cego-368x245-png-101fd93ca9.png",
             "alt": "Classe 10K"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/11/cegoJISB2220-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-11-cegojisb2220-368x220-png-839fd27b76.png",
             "alt": "Classe 10K"
           }
         ],
@@ -5903,11 +5903,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-cego-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-cego-368x245-png-101fd93ca9.png",
             "alt": "Classe 16K"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/11/cegoJISB2220-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-11-cegojisb2220-368x220-png-839fd27b76.png",
             "alt": "Classe 16K"
           }
         ],
@@ -6363,11 +6363,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-cego-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-cego-368x245-png-101fd93ca9.png",
             "alt": "Classe 20K"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/11/cegoJISB2220-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-11-cegojisb2220-368x220-png-839fd27b76.png",
             "alt": "Classe 20K"
           }
         ],
@@ -6784,11 +6784,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-cego-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-cego-368x245-png-101fd93ca9.png",
             "alt": "Classe 30K"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/11/cegoJISB2220-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-11-cegojisb2220-368x220-png-839fd27b76.png",
             "alt": "Classe 30K"
           }
         ],
@@ -7062,11 +7062,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-cego-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-cego-368x245-png-101fd93ca9.png",
             "alt": "Classe 40K"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/11/cegoJISB2220-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-11-cegojisb2220-368x220-png-839fd27b76.png",
             "alt": "Classe 40K"
           }
         ],
@@ -7340,11 +7340,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-cego-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-cego-368x245-png-101fd93ca9.png",
             "alt": "Classe 63K"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/11/cegoJISB2220-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-11-cegojisb2220-368x220-png-839fd27b76.png",
             "alt": "Classe 63K"
           }
         ],
@@ -7627,11 +7627,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-pesco%C3%A7o-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-pesco-c3-a7o-368x245-png-318ee4ac3a.png",
             "alt": "150 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/des_wn-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-des-wn-368x220-png-da9aad8b1b.png",
             "alt": "150 lbs"
           }
         ],
@@ -8084,11 +8084,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-pesco%C3%A7o-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-pesco-c3-a7o-368x245-png-318ee4ac3a.png",
             "alt": "300 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/des_wn-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-des-wn-368x220-png-da9aad8b1b.png",
             "alt": "300 lbs"
           }
         ],
@@ -8528,11 +8528,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-pesco%C3%A7o-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-pesco-c3-a7o-368x245-png-318ee4ac3a.png",
             "alt": "600 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/des_B_wn-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-des-b-wn-368x220-png-534b146be4.png",
             "alt": "600 lbs"
           }
         ],
@@ -8966,11 +8966,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-pesco%C3%A7o-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-pesco-c3-a7o-368x245-png-318ee4ac3a.png",
             "alt": "900 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/des_B_wn-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-des-b-wn-368x220-png-534b146be4.png",
             "alt": "900 lbs"
           }
         ],
@@ -9363,11 +9363,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-pesco%C3%A7o-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-pesco-c3-a7o-368x245-png-318ee4ac3a.png",
             "alt": "1500 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/des_B_wn-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-des-b-wn-368x220-png-534b146be4.png",
             "alt": "1500 lbs"
           }
         ],
@@ -9682,11 +9682,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-pesco%C3%A7o-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-pesco-c3-a7o-368x245-png-318ee4ac3a.png",
             "alt": "2500 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/des_B_wn-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-des-b-wn-368x220-png-534b146be4.png",
             "alt": "2500 lbs"
           }
         ],
@@ -9940,11 +9940,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-pesco%C3%A7o-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-pesco-c3-a7o-368x245-png-318ee4ac3a.png",
             "alt": "Classe PN 6"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/WNDIN-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-wndin-368x245-png-fcd62d3a65.png",
             "alt": "Classe PN 6"
           }
         ],
@@ -10778,11 +10778,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-pesco%C3%A7o-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-pesco-c3-a7o-368x245-png-318ee4ac3a.png",
             "alt": "Classe PN 10"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/WNDIN-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-wndin-368x245-png-fcd62d3a65.png",
             "alt": "Classe PN 10"
           }
         ],
@@ -11449,11 +11449,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-pesco%C3%A7o-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-pesco-c3-a7o-368x245-png-318ee4ac3a.png",
             "alt": "Classe PN 16"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/WNDIN-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-wndin-368x245-png-fcd62d3a65.png",
             "alt": "Classe PN 16"
           }
         ],
@@ -12167,11 +12167,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-pesco%C3%A7o-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-pesco-c3-a7o-368x245-png-318ee4ac3a.png",
             "alt": "Classe PN 25"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/WNDIN-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-wndin-368x245-png-fcd62d3a65.png",
             "alt": "Classe PN 25"
           }
         ],
@@ -12658,11 +12658,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-pesco%C3%A7o-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-pesco-c3-a7o-368x245-png-318ee4ac3a.png",
             "alt": "Classe PN 40"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/WNDIN-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-wndin-368x245-png-fcd62d3a65.png",
             "alt": "Classe PN 40"
           }
         ],
@@ -13174,11 +13174,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-pesco%C3%A7o-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-pesco-c3-a7o-368x245-png-318ee4ac3a.png",
             "alt": "Classe PN 64"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/WNDIN-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-wndin-368x245-png-fcd62d3a65.png",
             "alt": "Classe PN 64"
           }
         ],
@@ -13611,11 +13611,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-pesco%C3%A7o-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-pesco-c3-a7o-368x245-png-318ee4ac3a.png",
             "alt": "Classe PN 100"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/WNDIN-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-wndin-368x245-png-fcd62d3a65.png",
             "alt": "Classe PN 100"
           }
         ],
@@ -14010,11 +14010,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-pesco%C3%A7o-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-pesco-c3-a7o-368x245-png-318ee4ac3a.png",
             "alt": "Classe 30K"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/wnJISB2220-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-wnjisb2220-368x220-png-e4d21c56b2.png",
             "alt": "Classe 30K"
           }
         ],
@@ -14422,11 +14422,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-pesco%C3%A7o-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-pesco-c3-a7o-368x245-png-318ee4ac3a.png",
             "alt": "Classe 40K"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/wnJISB2220-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-wnjisb2220-368x220-png-e4d21c56b2.png",
             "alt": "Classe 40K"
           }
         ],
@@ -14814,11 +14814,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-pesco%C3%A7o-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-pesco-c3-a7o-368x245-png-318ee4ac3a.png",
             "alt": "Classe 63K"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/wnJISB2220-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-wnjisb2220-368x220-png-e4d21c56b2.png",
             "alt": "Classe 63K"
           }
         ],
@@ -15215,11 +15215,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-sobreposto-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-sobreposto-368x245-png-45be8effed.png",
             "alt": "150 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/des_so-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-des-so-368x220-png-6b0d7eaff3.png",
             "alt": "150 lbs"
           }
         ],
@@ -15648,11 +15648,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-sobreposto-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-sobreposto-368x245-png-45be8effed.png",
             "alt": "300 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/des_so-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-des-so-368x220-png-6b0d7eaff3.png",
             "alt": "300 lbs"
           }
         ],
@@ -16068,11 +16068,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-sobreposto-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-sobreposto-368x245-png-45be8effed.png",
             "alt": "600 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/des_B_so-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-des-b-so-368x220-png-590e9ff1ca.png",
             "alt": "600 lbs"
           }
         ],
@@ -16488,11 +16488,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-sobreposto-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-sobreposto-368x245-png-45be8effed.png",
             "alt": "900 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/des_B_so-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-des-b-so-368x220-png-590e9ff1ca.png",
             "alt": "900 lbs"
           }
         ],
@@ -16882,11 +16882,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-sobreposto-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-sobreposto-368x245-png-45be8effed.png",
             "alt": "1500 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/des_B_so-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-des-b-so-368x220-png-590e9ff1ca.png",
             "alt": "1500 lbs"
           }
         ],
@@ -17117,11 +17117,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-sobreposto-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-sobreposto-368x245-png-45be8effed.png",
             "alt": "2500 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/des_B_so-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-des-b-so-368x220-png-590e9ff1ca.png",
             "alt": "2500 lbs"
           }
         ],
@@ -17363,11 +17363,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-sobreposto-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-sobreposto-368x245-png-45be8effed.png",
             "alt": "Classe D (175-150 PSI)"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/awwa_so-368x212.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-awwa-so-368x212-png-90a91d98c7.png",
             "alt": "Classe D (175-150 PSI)"
           }
         ],
@@ -17867,11 +17867,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-sobreposto-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-sobreposto-368x245-png-45be8effed.png",
             "alt": "Classe E (275 PSI)"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/awwa_so-368x212.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-awwa-so-368x212-png-90a91d98c7.png",
             "alt": "Classe E (275 PSI)"
           }
         ],
@@ -18375,11 +18375,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-sobreposto-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-sobreposto-368x245-png-45be8effed.png",
             "alt": "Classe 5K"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/SOJISB2220-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-sojisb2220-368x220-png-6742348e45.png",
             "alt": "Classe 5K"
           }
         ],
@@ -18682,11 +18682,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-sobreposto-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-sobreposto-368x245-png-45be8effed.png",
             "alt": "Classe 10K"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/SOJISB2220-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-sojisb2220-368x220-png-6742348e45.png",
             "alt": "Classe 10K"
           }
         ],
@@ -19070,11 +19070,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-sobreposto-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-sobreposto-368x245-png-45be8effed.png",
             "alt": "Classe 16K"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/SOJISB222016k-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-sojisb222016k-368x220-png-73236075c6.png",
             "alt": "Classe 16K"
           }
         ],
@@ -19729,11 +19729,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-sobreposto-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-sobreposto-368x245-png-45be8effed.png",
             "alt": "Classe 20K"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/SOJISB222020k-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-sojisb222020k-368x245-png-099b4ff774.png",
             "alt": "Classe 20K"
           }
         ],
@@ -20377,11 +20377,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-sobreposto-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-sobreposto-368x245-png-45be8effed.png",
             "alt": "Classe 30K"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/SOJISB222030k-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-sojisb222030k-368x245-png-0c63dac52c.png",
             "alt": "Classe 30K"
           }
         ],
@@ -20906,11 +20906,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-encaixe-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-encaixe-368x245-png-148b178fad.png",
             "alt": "150 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/des_sw-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-des-sw-368x220-png-5c9a0acd2e.png",
             "alt": "150 lbs"
           }
         ],
@@ -21294,11 +21294,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-encaixe-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-encaixe-368x245-png-148b178fad.png",
             "alt": "300 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/des_sw-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-des-sw-368x220-png-5c9a0acd2e.png",
             "alt": "300 lbs"
           }
         ],
@@ -21672,11 +21672,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-encaixe-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-encaixe-368x245-png-148b178fad.png",
             "alt": "600 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/des_B_sw-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-des-b-sw-368x220-png-0861a0b4ab.png",
             "alt": "600 lbs"
           }
         ],
@@ -22050,11 +22050,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-encaixe-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-encaixe-368x245-png-148b178fad.png",
             "alt": "900 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/des_B_sw-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-des-b-sw-368x220-png-0861a0b4ab.png",
             "alt": "900 lbs"
           }
         ],
@@ -22399,11 +22399,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-encaixe-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-encaixe-368x245-png-148b178fad.png",
             "alt": "1500 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/des_B_sw-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-des-b-sw-368x220-png-0861a0b4ab.png",
             "alt": "1500 lbs"
           }
         ],
@@ -22678,11 +22678,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-roscado-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-roscado-368x245-png-8bf11ef22c.png",
             "alt": "150 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/des_rsc-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-des-rsc-368x220-png-324152f61f.png",
             "alt": "150 lbs"
           }
         ],
@@ -22922,11 +22922,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-roscado-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-roscado-368x245-png-8bf11ef22c.png",
             "alt": "300 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/des_rsc-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-des-rsc-368x220-png-324152f61f.png",
             "alt": "300 lbs"
           }
         ],
@@ -23178,11 +23178,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-roscado-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-roscado-368x245-png-8bf11ef22c.png",
             "alt": "600 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/des_B_rsc-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-des-b-rsc-368x220-png-9aef18ce70.png",
             "alt": "600 lbs"
           }
         ],
@@ -23434,11 +23434,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-roscado-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-roscado-368x245-png-8bf11ef22c.png",
             "alt": "900 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/des_B_rsc-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-des-b-rsc-368x220-png-9aef18ce70.png",
             "alt": "900 lbs"
           }
         ],
@@ -23676,11 +23676,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-roscado-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-roscado-368x245-png-8bf11ef22c.png",
             "alt": "1500 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/des_B_rsc-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-des-b-rsc-368x220-png-9aef18ce70.png",
             "alt": "1500 lbs"
           }
         ],
@@ -23918,11 +23918,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-roscado-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-roscado-368x245-png-8bf11ef22c.png",
             "alt": "2500 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/des_B_rsc-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-des-b-rsc-368x220-png-9aef18ce70.png",
             "alt": "2500 lbs"
           }
         ],
@@ -24155,11 +24155,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-roscado-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-roscado-368x245-png-8bf11ef22c.png",
             "alt": "Classe PN 6"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/rscDIN-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-rscdin-368x245-png-81f8a90968.png",
             "alt": "Classe PN 6"
           }
         ],
@@ -24420,11 +24420,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-roscado-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-roscado-368x245-png-8bf11ef22c.png",
             "alt": "Classe PN 10/PN 16"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/rscDIN-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-rscdin-368x245-png-81f8a90968.png",
             "alt": "Classe PN 10/PN 16"
           }
         ],
@@ -24685,11 +24685,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-roscado-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-roscado-368x245-png-8bf11ef22c.png",
             "alt": "Classe PN 25/PN 40"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/rscDIN-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-rscdin-368x245-png-81f8a90968.png",
             "alt": "Classe PN 25/PN 40"
           }
         ],
@@ -24950,11 +24950,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-roscado-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-roscado-368x245-png-8bf11ef22c.png",
             "alt": "Classe PN 64"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/rscDINPN64100-368x212.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-rscdinpn64100-368x212-png-fa97493d04.png",
             "alt": "Classe PN 64"
           }
         ],
@@ -25181,11 +25181,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-roscado-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-roscado-368x245-png-8bf11ef22c.png",
             "alt": "Classe PN 100"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/rscDINPN64100-368x212.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-rscdinpn64100-368x212-png-fa97493d04.png",
             "alt": "Classe PN 100"
           }
         ],
@@ -25486,11 +25486,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-solto-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-solto-368x245-png-3a7ab287df.png",
             "alt": "150 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/des_solto-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-des-solto-368x220-png-ba1f0a7cb7.png",
             "alt": "150 lbs"
           }
         ],
@@ -25818,11 +25818,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-solto-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-solto-368x245-png-3a7ab287df.png",
             "alt": "300 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/des_solto-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-des-solto-368x220-png-ba1f0a7cb7.png",
             "alt": "300 lbs"
           }
         ],
@@ -26150,11 +26150,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-solto-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-solto-368x245-png-3a7ab287df.png",
             "alt": "600 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/des_solto-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-des-solto-368x220-png-ba1f0a7cb7.png",
             "alt": "600 lbs"
           }
         ],
@@ -26482,11 +26482,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-solto-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-solto-368x245-png-3a7ab287df.png",
             "alt": "900 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/des_solto-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-des-solto-368x220-png-ba1f0a7cb7.png",
             "alt": "900 lbs"
           }
         ],
@@ -26788,11 +26788,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-solto-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-solto-368x245-png-3a7ab287df.png",
             "alt": "1500 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/des_solto-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-des-solto-368x220-png-ba1f0a7cb7.png",
             "alt": "1500 lbs"
           }
         ],
@@ -27094,11 +27094,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-solto-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-solto-368x245-png-3a7ab287df.png",
             "alt": "2500 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/12/des_solto-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2024-12-des-solto-368x220-png-ba1f0a7cb7.png",
             "alt": "2500 lbs"
           }
         ],
@@ -27349,11 +27349,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-liso-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-liso-368x245-png-e6a88cf128.png",
             "alt": "150 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2025/01/des_liso-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2025-01-des-liso-368x220-png-4b9497ac66.png",
             "alt": "150 lbs"
           }
         ],
@@ -27722,11 +27722,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-liso-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-liso-368x245-png-e6a88cf128.png",
             "alt": "300 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2025/01/des_liso-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2025-01-des-liso-368x220-png-4b9497ac66.png",
             "alt": "300 lbs"
           }
         ],
@@ -28084,11 +28084,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-liso-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-liso-368x245-png-e6a88cf128.png",
             "alt": "600 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2025/01/des_B_liso-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2025-01-des-b-liso-368x220-png-2b0dc81e79.png",
             "alt": "600 lbs"
           }
         ],
@@ -28446,11 +28446,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-liso-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-liso-368x245-png-e6a88cf128.png",
             "alt": "900 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2025/01/des_B_liso-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2025-01-des-b-liso-368x220-png-2b0dc81e79.png",
             "alt": "900 lbs"
           }
         ],
@@ -28786,11 +28786,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-liso-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-liso-368x245-png-e6a88cf128.png",
             "alt": "1500 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2025/01/des_B_liso-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2025-01-des-b-liso-368x220-png-2b0dc81e79.png",
             "alt": "1500 lbs"
           }
         ],
@@ -29005,11 +29005,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-liso-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-liso-368x245-png-e6a88cf128.png",
             "alt": "2500 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2025/01/des_B_liso-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2025-01-des-b-liso-368x220-png-2b0dc81e79.png",
             "alt": "2500 lbs"
           }
         ],
@@ -29219,11 +29219,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-liso-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-liso-368x245-png-e6a88cf128.png",
             "alt": "86 PSI"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2025/01/awwa_liso-368x212.png",
+            "src": "/catalog-images/wp-content-uploads-2025-01-awwa-liso-368x212-png-e103e19005.png",
             "alt": "86 PSI"
           }
         ],
@@ -29739,11 +29739,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-liso-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-liso-368x245-png-e6a88cf128.png",
             "alt": "175 – 150 PSI"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2025/01/awwa_liso-368x212.png",
+            "src": "/catalog-images/wp-content-uploads-2025-01-awwa-liso-368x212-png-e103e19005.png",
             "alt": "175 – 150 PSI"
           }
         ],
@@ -30259,11 +30259,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-liso-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-liso-368x245-png-e6a88cf128.png",
             "alt": "275 PSI"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2025/01/awwa_liso-368x212.png",
+            "src": "/catalog-images/wp-content-uploads-2025-01-awwa-liso-368x212-png-e103e19005.png",
             "alt": "275 PSI"
           }
         ],
@@ -30779,11 +30779,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-liso-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-liso-368x245-png-e6a88cf128.png",
             "alt": "300 PSI"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2025/01/awwa_liso-368x212.png",
+            "src": "/catalog-images/wp-content-uploads-2025-01-awwa-liso-368x212-png-e103e19005.png",
             "alt": "300 PSI"
           }
         ],
@@ -31103,11 +31103,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-liso-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-liso-368x245-png-e6a88cf128.png",
             "alt": "Classe PN6"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2025/01/lisoDIN-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2025-01-lisodin-368x245-png-57a2e32b63.png",
             "alt": "Classe PN6"
           }
         ],
@@ -31501,11 +31501,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-liso-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-liso-368x245-png-e6a88cf128.png",
             "alt": "Classe PN10"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2025/01/lisoDIN-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2025-01-lisodin-368x245-png-57a2e32b63.png",
             "alt": "Classe PN10"
           }
         ],
@@ -31915,11 +31915,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-liso-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-liso-368x245-png-e6a88cf128.png",
             "alt": "Classe 5K"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2025/01/lisoJIS2220-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2025-01-lisojis2220-368x220-png-2eaeed114d.png",
             "alt": "Classe 5K"
           }
         ],
@@ -32520,11 +32520,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-liso-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-liso-368x245-png-e6a88cf128.png",
             "alt": "Classe 10K"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2025/01/lisoJIS2220-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2025-01-lisojis2220-368x220-png-2eaeed114d.png",
             "alt": "Classe 10K"
           }
         ],
@@ -33125,11 +33125,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-liso-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-liso-368x245-png-e6a88cf128.png",
             "alt": "Classe 16K"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2025/01/lisoJIS2220-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2025-01-lisojis2220-368x220-png-2eaeed114d.png",
             "alt": "Classe 16K"
           }
         ],
@@ -33663,11 +33663,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-liso-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-liso-368x245-png-e6a88cf128.png",
             "alt": "Classe 20K"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2025/01/lisoJIS2220-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2025-01-lisojis2220-368x220-png-2eaeed114d.png",
             "alt": "Classe 20K"
           }
         ],
@@ -34156,11 +34156,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-liso-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-liso-368x245-png-e6a88cf128.png",
             "alt": "Classe 30K"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2025/01/lisoJIS2220-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2025-01-lisojis2220-368x220-png-2eaeed114d.png",
             "alt": "Classe 30K"
           }
         ],
@@ -34484,11 +34484,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-liso-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-liso-368x245-png-e6a88cf128.png",
             "alt": "Classe 40K"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2025/01/lisoJIS2220-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2025-01-lisojis2220-368x220-png-2eaeed114d.png",
             "alt": "Classe 40K"
           }
         ],
@@ -34812,11 +34812,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Flange-liso-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-flange-liso-368x245-png-e6a88cf128.png",
             "alt": "Classe 63K"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2025/01/lisoJIS2220-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2025-01-lisojis2220-368x220-png-2eaeed114d.png",
             "alt": "Classe 63K"
           }
         ],
@@ -35152,11 +35152,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/11/Orificio-Tipo-Sobreposto-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-11-orificio-tipo-sobreposto-368x245-png-2f56ceee6b.png",
             "alt": "300 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2025/01/des_orificio_so-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2025-01-des-orificio-so-368x220-png-7eb729c3b9.png",
             "alt": "300 lbs"
           }
         ],
@@ -35426,11 +35426,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/11/Orificio-Tipo-Roscado-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-11-orificio-tipo-roscado-368x245-png-37665912cb.png",
             "alt": "300 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2025/01/des_orificio_rsc-368x220.png",
+            "src": "/catalog-images/wp-content-uploads-2025-01-des-orificio-rsc-368x220-png-05cb7b2251.png",
             "alt": "300 lbs"
           }
         ],
@@ -35623,11 +35623,11 @@ export const flangeTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/11/De-Reducao-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-11-de-reducao-368x245-png-29cd47c5a3.png",
             "alt": "150-2500 lbs"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2025/01/des_reducao-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2025-01-des-reducao-368x245-png-c6782e8ef0.png",
             "alt": "150-2500 lbs"
           }
         ],
