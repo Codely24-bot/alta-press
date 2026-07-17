@@ -1646,7 +1646,7 @@ function App() {
                 <span className="eyebrow eyebrow-dark">Portfólio</span>
                 <h3>Uma linha completa para aplicações industriais.</h3>
                 <p>
-                  Altapress Válvulas e Conexões é especializada no fornecimento de soluções industriais em sistemas
+                  AltaPress Válvulas e Conexões é especializada no fornecimento de soluções industriais para sistemas
                   hidráulicos, oferecendo produtos de alta qualidade para aplicações que exigem desempenho, segurança e
                   durabilidade.
                 </p>
@@ -1704,7 +1704,7 @@ function App() {
               </div>
 
               <a className="button button-secondary" href={whatsappBase} target="_blank" rel="noreferrer">
-                Fale Conosco
+                Fale conosco
               </a>
             </div>
 
@@ -1723,7 +1723,7 @@ function App() {
                   muted
                   playsInline
                   preload="auto"
-                  aria-label="Video de produtos da AltaPress"
+                  aria-label="Vídeo de produtos da AltaPress"
                 />
               </div>
             </div>
@@ -1742,7 +1742,7 @@ function App() {
             </div>
 
             <a className="button button-primary" href="/contato" onClick={handleInternalNavigation('/contato', 'contato')}>
-              Ir Para Contato
+              Ir para o contato
             </a>
           </div>
         </section>
@@ -1751,7 +1751,7 @@ function App() {
           <div className="container contact-grid">
             <article className="contact-panel">
               <span className="eyebrow eyebrow-dark">Contato</span>
-              <h2>Fale Conosco</h2>
+              <h2>Fale conosco</h2>
               <p>Estamos prontos para ajudar com suas peças hidráulicas e encontrar a solução certa para sua operação.</p>
 
               <div className="contact-list">
@@ -1868,7 +1868,7 @@ function App() {
         </div>
 
         <div className="container footer-bottom">
-          <span>© 2026. Desenvolvido Por Visionsoftdev</span>
+          <span>© 2026. Desenvolvido por VisionSoftDev.</span>
         </div>
       </footer>
 

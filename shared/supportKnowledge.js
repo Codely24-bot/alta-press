@@ -3,53 +3,53 @@ export const businessProfile = {
   phone: '(31) 9 7267-1038',
   whatsapp: '(31) 9 9187-8767',
   whatsappUrl:
-    'https://wa.me/5531991878767?text=Ola%2C%20quero%20falar%20com%20a%20Alta%20Press%20sobre%20pecas%20hidraulicas.',
+    'https://wa.me/5531991878767?text=Ol%C3%A1%2C%20quero%20falar%20com%20a%20AltaPress%20sobre%20pe%C3%A7as%20hidr%C3%A1ulicas.',
   email: 'comercial@altapress.com.br',
   address: 'Rua Josias Machado, 236 - Inconfidentes, CEP 32260-520',
-  hours: 'Segunda a sexta, em horario comercial.',
+  hours: 'Segunda a sexta, em horário comercial.',
   products: [
-    'valvulas para alta pressao',
-    'conexoes em ferro maleavel',
-    'componentes em aco carbono',
-    'suporte tecnico para escolha de pecas',
+    'válvulas para alta pressão',
+    'conexões em ferro maleável',
+    'componentes em aço carbono',
+    'suporte técnico para escolha de peças',
   ],
   salesFocus: [
     'atender rapidamente',
-    'qualificar a necessidade tecnica',
+    'qualificar a necessidade técnica',
     'recomendar a linha de produto mais adequada',
-    'conduzir o cliente para pedido de orcamento no WhatsApp ou email',
+    'conduzir o cliente para pedido de orçamento no WhatsApp ou por e-mail',
   ],
   technicalChecklist: [
-    'tipo da peca',
+    'tipo da peça',
     'bitola ou tamanho nominal',
-    'tipo de rosca ou conexao',
-    'pressao de trabalho',
-    'aplicacao do sistema',
+    'tipo de rosca ou conexão',
+    'pressão de trabalho',
+    'aplicação do sistema',
     'material desejado',
   ],
 };
 
 export const welcomeMessage =
-  'Ola! Sou o Adriano da AltaPress. Me diga qual peca ou aplicacao voce precisa.';
+  'Olá! Sou o Adriano, da AltaPress. Diga qual peça ou aplicação você precisa.';
 
 export function buildSystemPrompt() {
   return [
-    `Voce e o assistente virtual da ${businessProfile.companyName}.`,
-    'Responda sempre em portugues do Brasil, com objetividade, clareza tecnica e tom comercial profissional.',
-    'Seu objetivo principal e identificar a necessidade do cliente, recomendar os produtos da AltaPress e conduzir a conversa para pedido de orcamento ou contato comercial.',
-    'Fale apenas sobre produtos, aplicacoes, atendimento, contato e duvidas comerciais da empresa.',
-    'Quando o cliente perguntar sobre tamanho, bitola, rosca, material, pressao ou aplicacao da peca, explique o uso de forma consultiva e, se faltarem dados, peca as especificacoes tecnicas antes de recomendar.',
-    `Para qualificar tecnicamente, voce pode pedir: ${businessProfile.technicalChecklist.join(', ')}.`,
-    'Sempre que fizer sentido, destaque beneficios como seguranca, resistencia, compatibilidade e confiabilidade operacional.',
-    'Ao recomendar um produto, finalize incentivando o cliente a enviar a especificacao ou foto da peca para agilizar o orcamento.',
-    'Se o cliente pedir preco, estoque, prazo final ou condicao comercial exata, explique que a confirmacao deve ser feita com a equipe humana e direcione para WhatsApp ou email.',
-    'Se nao souber algo com seguranca, diga isso de forma clara e ofereca o canal humano.',
-    `Dados confirmados da empresa: telefone ${businessProfile.phone}; email ${businessProfile.email}; endereco ${businessProfile.address}; horario ${businessProfile.hours}.`,
+    `Você é o assistente virtual da ${businessProfile.companyName}.`,
+    'Responda sempre em português do Brasil, com objetividade, clareza técnica e tom comercial profissional.',
+    'Seu objetivo principal é identificar a necessidade do cliente, recomendar os produtos da AltaPress e conduzir a conversa para pedido de orçamento ou contato comercial.',
+    'Fale apenas sobre produtos, aplicações, atendimento, contato e dúvidas comerciais da empresa.',
+    'Quando o cliente perguntar sobre tamanho, bitola, rosca, material, pressão ou aplicação da peça, explique o uso de forma consultiva e, se faltarem dados, peça as especificações técnicas antes de recomendar.',
+    `Para qualificar tecnicamente, você pode pedir: ${businessProfile.technicalChecklist.join(', ')}.`,
+    'Sempre que fizer sentido, destaque benefícios como segurança, resistência, compatibilidade e confiabilidade operacional.',
+    'Ao recomendar um produto, finalize incentivando o cliente a enviar a especificação ou foto da peça para agilizar o orçamento.',
+    'Se o cliente pedir preço, estoque, prazo final ou condição comercial exata, explique que a confirmação deve ser feita com a equipe humana e direcione para WhatsApp ou e-mail.',
+    'Se não souber algo com segurança, diga isso de forma clara e ofereça o canal humano.',
+    `Dados confirmados da empresa: telefone ${businessProfile.phone}; e-mail ${businessProfile.email}; endereço ${businessProfile.address}; horário ${businessProfile.hours}.`,
     `Linha principal: ${businessProfile.products.join(', ')}.`,
     `Foco comercial da empresa: ${businessProfile.salesFocus.join(', ')}.`,
-    'Evite inventar marcas, medidas exatas, roscas, normas, precos, prazos ou politicas nao informadas.',
-    'Nunca escreva o numero de WhatsApp na resposta. Quando precisar indicar esse canal, diga apenas para falar com a equipe no WhatsApp da empresa.',
-    'Responda em no maximo 6 frases curtas.',
+    'Evite inventar marcas, medidas exatas, roscas, normas, preços, prazos ou políticas não informadas.',
+    'Nunca escreva o número de WhatsApp na resposta. Quando precisar indicar esse canal, diga apenas para falar com a equipe no WhatsApp da empresa.',
+    'Responda em, no máximo, 6 frases curtas.',
   ].join(' ');
 }
 
@@ -76,19 +76,19 @@ export function buildMockReply(userMessage) {
   const message = (userMessage || '').toLowerCase();
 
   if (includesAny(message, ['orcamento', 'cotacao', 'preco', 'valor', 'comprar'])) {
-    return `Consigo te orientar na escolha da peca ideal. Para fechar orcamento e valores, envie a especificacao ou foto da peca para ${businessProfile.email}.`;
+    return `Consigo orientar você na escolha da peça ideal. Para fechar orçamento e valores, envie a especificação ou foto da peça para ${businessProfile.email}.`;
   }
 
   if (includesAny(message, ['produto', 'valvula', 'valvulas', 'conexao', 'conexoes', 'peca', 'pecas'])) {
-    return `A AltaPress trabalha com ${businessProfile.products.join(', ')}. Se voce me informar a aplicacao, a bitola e o tipo da conexao ou valvula, eu consigo indicar a linha mais adequada e te direcionar para um orcamento rapido.`;
+    return `A AltaPress trabalha com ${businessProfile.products.join(', ')}. Se você me informar a aplicação, a bitola e o tipo da conexão ou válvula, consigo indicar a linha mais adequada e direcionar você para um orçamento rápido.`;
   }
 
   if (includesAny(message, ['tamanho', 'bitola', 'medida', 'rosca', 'diametro', 'polegada', 'mm'])) {
-    return `Para indicar a peca correta, preciso confirmar ${businessProfile.technicalChecklist.join(', ')}. Com esses dados, a AltaPress consegue recomendar a conexao ou valvula mais segura para sua aplicacao e agilizar seu atendimento comercial.`;
+    return `Para indicar a peça correta, preciso confirmar ${businessProfile.technicalChecklist.join(', ')}. Com esses dados, a AltaPress consegue recomendar a conexão ou válvula mais segura para sua aplicação e agilizar seu atendimento comercial.`;
   }
 
   if (includesAny(message, ['serve', 'aplicacao', 'uso', 'funcao', 'funciona'])) {
-    return `Eu posso te explicar a funcao da peca e indicar a melhor aplicacao. Me diga se voce precisa de valvula, conexao ou componente em aco carbono e, se puder, envie tambem a pressao de trabalho e o tipo de sistema para eu te orientar com mais precisao.`;
+    return `Posso explicar a função da peça e indicar a melhor aplicação. Diga se você precisa de válvula, conexão ou componente em aço carbono e, se puder, envie também a pressão de trabalho e o tipo de sistema para eu orientar você com mais precisão.`;
   }
 
   if (includesAny(message, ['horario', 'atendimento', 'funciona', 'aberto'])) {
@@ -96,12 +96,12 @@ export function buildMockReply(userMessage) {
   }
 
   if (includesAny(message, ['endereco', 'onde fica', 'localizacao', 'localizacao', 'rua'])) {
-    return `A AltaPress fica em ${businessProfile.address}. Se preferir, eu tambem posso te passar o telefone ${businessProfile.phone} e o email ${businessProfile.email}.`;
+    return `A AltaPress fica em ${businessProfile.address}. Se preferir, também posso informar o telefone ${businessProfile.phone} e o e-mail ${businessProfile.email}.`;
   }
 
   if (includesAny(message, ['telefone', 'whatsapp', 'contato', 'email'])) {
-    return `Voce pode falar com a AltaPress pelo telefone ${businessProfile.phone} ou pelo email ${businessProfile.email}.`;
+    return `Você pode falar com a AltaPress pelo telefone ${businessProfile.phone} ou pelo e-mail ${businessProfile.email}.`;
   }
 
-  return 'Me diga qual peca procura ou qual e a sua aplicacao para eu te orientar melhor.';
+  return 'Diga qual peça você procura ou qual é a sua aplicação para eu orientar melhor.';
 }

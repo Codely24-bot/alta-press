@@ -45,7 +45,7 @@ function MessageBubble({ message }) {
 
   return (
     <div className={`support-chat__message support-chat__message--${message.role}`}>
-      <div className="support-chat__message-label">{message.role === 'assistant' ? 'Adriano' : 'Voce'}</div>
+      <div className="support-chat__message-label">{message.role === 'assistant' ? 'Adriano' : 'Você'}</div>
       <p>{content}</p>
     </div>
   );
@@ -60,7 +60,7 @@ function createMessage(role, content) {
 }
 
 export default function SupportChatWidget() {
-  const launcherMessage = 'Ol\u00E1, sou o Adriano, posso ajudar?';
+  const launcherMessage = 'Olá, sou o Adriano. Posso ajudar?';
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [inputValue, setInputValue] = useState('');
@@ -102,7 +102,7 @@ export default function SupportChatWidget() {
         ...currentMessages,
         createMessage(
           'assistant',
-          `Nao consegui responder agora. Envie um email para ${businessProfile.email} ou tente novamente em instantes.`,
+          `Não consegui responder agora. Envie um e-mail para ${businessProfile.email} ou tente novamente em instantes.`,
         ),
       ]);
     } finally {
@@ -140,7 +140,7 @@ export default function SupportChatWidget() {
 
           <div className="support-chat__status">
             <span className={`support-chat__status-dot support-chat__status-dot--${connectionMode}`} />
-            <span>{connectionMode === 'live' ? 'Conectado com IA' : 'Modo demonstracao'}</span>
+            <span>{connectionMode === 'live' ? 'Conectado à IA' : 'Modo de demonstração'}</span>
           </div>
 
           <div ref={messageListRef} className="support-chat__messages">
@@ -150,7 +150,7 @@ export default function SupportChatWidget() {
 
             {isLoading ? (
               <div className="support-chat__typing" aria-live="polite">
-                Adriano esta digitando...
+                Adriano está digitando...
               </div>
             ) : null}
           </div>
@@ -159,7 +159,7 @@ export default function SupportChatWidget() {
             <input
               type="text"
               name="support-chat-message"
-              placeholder="Digite sua duvida..."
+              placeholder="Digite sua dúvida..."
               value={inputValue}
               onChange={(event) => setInputValue(event.target.value)}
               disabled={isLoading}
