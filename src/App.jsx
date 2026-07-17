@@ -1108,6 +1108,11 @@ function getProductTechnicalSpec(specs, categorySlug, itemSlug, standardSlug, op
   return null;
 }
 
+function hasDesktopImageInteractions() {
+  return typeof window !== 'undefined'
+    && window.matchMedia('(min-width: 1181px) and (hover: hover) and (pointer: fine)').matches;
+}
+
 function getSectionIdFromLocation(location) {
   if (getProductRouteFromPath(location.pathname)) {
     return null;
@@ -1486,6 +1491,12 @@ function ProductStandardPage({ category, productItem, standard, onNavigate }) {
 }
 
 function handleProductImageZoomMove(event) {
+  if (!hasDesktopImageInteractions()) {
+    event.currentTarget.style.removeProperty('--zoom-x');
+    event.currentTarget.style.removeProperty('--zoom-y');
+    return;
+  }
+
   const bounds = event.currentTarget.getBoundingClientRect();
   const x = ((event.clientX - bounds.left) / bounds.width) * 100;
   const y = ((event.clientY - bounds.top) / bounds.height) * 100;
@@ -1927,9 +1938,10 @@ function App() {
   const activeProductCategory = activeProductRoute?.category ?? null;
   const isProductsPage = currentPathname === '/produtos';
   const isTechnicalInfoPage = currentPathname === '/informacoes-tecnicas';
+  const isProductDetailRoute = Boolean(activeProductRoute?.item);
 
   return (
-    <div className="site-shell">
+    <div className={`site-shell${isProductDetailRoute ? ' site-shell--product-detail' : ''}`}>
       <header ref={headerRef} className="site-header">
         <div className="container nav-bar">
           <a
