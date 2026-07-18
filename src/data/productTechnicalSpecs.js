@@ -19,11 +19,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/V%C3%A1lvula-Globo-Angular-Classe-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-v-c3-a1lvula-globo-angular-classe-368x245-png-8f16447edf.png",
             "alt": "Ferro Fundido"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-Angular-Ferro-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-angular-ferro-368x245-png-0c1df07827.png",
             "alt": "Ferro Fundido"
           }
         ],
@@ -57,11 +57,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/FIG-15-VALV-ANG-WCB-150-FLANG-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-fig-15-valv-ang-wcb-150-flang-368x245-png-a861ed83c2.png",
             "alt": "Aço"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-Angular-WCB-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-angular-wcb-368x245-png-273d0a54db.png",
             "alt": "Aço"
           }
         ],
@@ -92,7 +92,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/V%C3%A1lvula-Globo-Angular-Bronze-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-v-c3-a1lvula-globo-angular-bronze-368x245-png-deb4047f29.png",
             "alt": "Bronze"
           }
         ],
@@ -138,11 +138,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/cdv_2018_BORBOLETA-WAFER-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-cdv-2018-borboleta-wafer-368x245-png-8cb2af1ea5.png",
             "alt": "Wafer"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/BORBOLETA-WAFER-SVI-CX-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-borboleta-wafer-svi-cx-368x245-png-b53aa1eb6d.png",
             "alt": "Wafer"
           }
         ],
@@ -227,7 +227,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/Borboleta-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-borboleta-368x245-png-4e5ed3e3c1.png",
             "alt": "Lug"
           }
         ],
@@ -269,11 +269,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/VAPOR-01.jpg",
+            "src": "/catalog-images/wp-content-uploads-2022-07-vapor-01-jpg-0d7a127658.png",
             "alt": "Vapor e Fluídos Térmicos"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/VAPOR-02.jpg",
+            "src": "/catalog-images/wp-content-uploads-2022-07-vapor-02-jpg-5e865439cc.png",
             "alt": "Vapor e Fluídos Térmicos"
           }
         ],
@@ -316,11 +316,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Diafragma%E2%80%93TipoA-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-diafragma-e2-80-93tipoa-368x245-png-0c0c4b9430.png",
             "alt": "Tipo A"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-Diafragma-Tipo-A1-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-diafragma-tipo-a1-368x245-png-ef65282209.png",
             "alt": "Tipo A"
           }
         ],
@@ -360,11 +360,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Diafragma%E2%80%93Tipo-R-ou-KB-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-diafragma-e2-80-93tipo-r-ou-kb-368x245-png-9681d36ec7.png",
             "alt": "Tipo R ou KB"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-Diafragma-Tipo-A1-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-diafragma-tipo-a1-368x245-png-ef65282209.png",
             "alt": "Tipo R ou KB"
           }
         ],
@@ -402,11 +402,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Esfera-Monobloco-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-esfera-monobloco-368x245-png-8c7dbd6c89.png",
             "alt": "Monobloco"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-Monobloco-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-monobloco-368x245-png-f30138e23e.png",
             "alt": "Monobloco"
           }
         ],
@@ -449,11 +449,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Esfera-Bipartida-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-esfera-bipartida-368x245-png-d6cd1648ad.png",
             "alt": "Bipartida"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-bipartida-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-bipartida-368x245-png-e7556656c2.png",
             "alt": "Bipartida"
           }
         ],
@@ -488,11 +488,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Tripartida-Rosca-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-tripartida-rosca-368x245-png-0694112f4e.png",
             "alt": "Rosca | Solda"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Tripartida-Flangeada-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-tripartida-flangeada-368x245-png-742606d640.png",
             "alt": "Flangeada"
           }
         ],
@@ -531,11 +531,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Globo-Forjada-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-globo-forjada-368x245-png-eb4f88c889.png",
             "alt": "Forjada"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Gaveta-Ferro-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-gaveta-ferro-368x245-png-5c8453a92d.png",
             "alt": "Fundida"
           }
         ],
@@ -570,11 +570,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/GAVETA-A%C3%87O-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-gaveta-a-c3-87o-368x245-png-4a2eeb0ed0.png",
             "alt": "Aço"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/GAVETA-FERRO-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-gaveta-ferro-368x245-png-f9e3750b55.png",
             "alt": "Ferro"
           }
         ],
@@ -609,11 +609,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Gaveta-fecho-r%C3%A1pido-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-gaveta-fecho-r-c3-a1pido-368x245-png-f821dc6fc5.png",
             "alt": "Fecho Rápido"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-GAVETA-fecho-rapido-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-gaveta-fecho-rapido-368x245-png-27fcb76e41.png",
             "alt": "Fecho Rápido"
           }
         ],
@@ -657,11 +657,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Globo-Forjada-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-globo-forjada-368x245-png-eb4f88c889.png",
             "alt": "Forjada"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-globo-forjada-800-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-globo-forjada-800-368x245-png-650d392750.png",
             "alt": "Forjada"
           }
         ],
@@ -701,11 +701,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Globo-Fundida-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-globo-fundida-368x245-png-3bd407a6fd.png",
             "alt": "Fundida"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-globo-WCB-150-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-globo-wcb-150-368x245-png-11922396d6.png",
             "alt": "Fundida"
           }
         ],
@@ -744,11 +744,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Globo-Ferro-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-globo-ferro-368x245-png-ee1bd76da7.png",
             "alt": "Ferro"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-globo-FF-125-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-globo-ff-125-368x245-png-be61abdd51.png",
             "alt": "Ferro"
           }
         ],
@@ -784,11 +784,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Globo-Aerodin%C3%A2mica-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-globo-aerodin-c3-a2mica-368x245-png-34de438eed.png",
             "alt": "Aerodinâmica"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-globo-AERO-FF-125-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-globo-aero-ff-125-368x245-png-b383e691f2.png",
             "alt": "Aerodinâmica"
           }
         ],
@@ -818,11 +818,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Globo-Bronze-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-globo-bronze-368x245-png-82784dabcd.png",
             "alt": "Bronze"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-globo-bronze-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-globo-bronze-368x245-png-23bc2b10b9.png",
             "alt": "Bronze"
           }
         ],
@@ -860,11 +860,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Globo-Agulha-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-globo-agulha-368x245-png-b94d549ece.png",
             "alt": "Agulha"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-globo-AGULHA-3000-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-globo-agulha-3000-368x245-png-51618c2c39.png",
             "alt": "Agulha"
           }
         ],
@@ -902,11 +902,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2019/05/Guilhotina-BR-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2019-05-guilhotina-br-368x245-png-3f6332ee58.png",
             "alt": "Wafer BR"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-GUILH-BR-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-guilh-br-368x245-png-9629005d19.png",
             "alt": "Wafer BR"
           }
         ],
@@ -940,11 +940,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/VALV-GUILH-WAFER-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-valv-guilh-wafer-368x245-png-7ffbb3e0ca.png",
             "alt": "Wafer Com Manga VG"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-GUILH-VG-299x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-guilh-vg-299x245-png-d6a62007da.png",
             "alt": "Wafer Com Manga VG"
           }
         ],
@@ -978,11 +978,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Guilhotina-Flangeada-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-guilhotina-flangeada-368x245-png-ff8d34355d.png",
             "alt": "Flangeada WG"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-GUILH-WG-329x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-guilh-wg-329x245-png-631445816f.png",
             "alt": "Flangeada WG"
           }
         ],
@@ -1020,11 +1020,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/VAPOR-01.jpg",
+            "src": "/catalog-images/wp-content-uploads-2022-07-vapor-01-jpg-0d7a127658.png",
             "alt": "Vapor e Fluídos Térmicos"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/VAPOR-02.jpg",
+            "src": "/catalog-images/wp-content-uploads-2022-07-vapor-02-jpg-5e865439cc.png",
             "alt": "Vapor e Fluídos Térmicos"
           }
         ],
@@ -1062,11 +1062,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/VAPOR-01.jpg",
+            "src": "/catalog-images/wp-content-uploads-2022-07-vapor-01-jpg-0d7a127658.png",
             "alt": "Vapor e Fluídos Térmicos"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/VAPOR-02.jpg",
+            "src": "/catalog-images/wp-content-uploads-2022-07-vapor-02-jpg-5e865439cc.png",
             "alt": "Vapor e Fluídos Térmicos"
           }
         ],
@@ -1104,11 +1104,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Mangote-aberta-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-mangote-aberta-368x245-png-4c787213c0.png",
             "alt": "Corpo Aberto"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-Mangote-Aberto-368x229.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-mangote-aberto-368x229-png-510b64dd53.png",
             "alt": "Corpo Aberto"
           }
         ],
@@ -1142,11 +1142,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Mangote-fechada-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-mangote-fechada-368x245-png-6e28650994.png",
             "alt": "Corpo Fechado"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-Mangote-Fechado-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-mangote-fechado-368x245-png-0d45ba155d.png",
             "alt": "Corpo Fechado"
           }
         ],
@@ -1186,11 +1186,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/V%C3%A1lvula-Globo-Angular-Bronze-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-v-c3-a1lvula-globo-angular-bronze-368x245-png-deb4047f29.png",
             "alt": "Registro Hidrante"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/V%C3%81LVULA-GLOBO-ANGULAR-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-v-c3-81lvula-globo-angular-368x245-png-a05ad1f6be.png",
             "alt": "Registro Hidrante"
           }
         ],
@@ -1226,11 +1226,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/V%C3%A1lvula-Globo-Angular-Bronze-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-v-c3-a1lvula-globo-angular-bronze-368x245-png-deb4047f29.png",
             "alt": "Registro Hidrante"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/V%C3%81LVULA-GLOBO-ANGULAR-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-v-c3-81lvula-globo-angular-368x245-png-a05ad1f6be.png",
             "alt": "Registro Hidrante"
           }
         ],
@@ -1272,11 +1272,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/VAPOR-01.jpg",
+            "src": "/catalog-images/wp-content-uploads-2022-07-vapor-01-jpg-0d7a127658.png",
             "alt": "Vapor e Fluídos Térmicos"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/VAPOR-02.jpg",
+            "src": "/catalog-images/wp-content-uploads-2022-07-vapor-02-jpg-5e865439cc.png",
             "alt": "Vapor e Fluídos Térmicos"
           }
         ],
@@ -1314,11 +1314,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/VAPOR-01.jpg",
+            "src": "/catalog-images/wp-content-uploads-2022-07-vapor-01-jpg-0d7a127658.png",
             "alt": "Vapor e Fluídos Térmicos"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/VAPOR-02.jpg",
+            "src": "/catalog-images/wp-content-uploads-2022-07-vapor-02-jpg-5e865439cc.png",
             "alt": "Vapor e Fluídos Térmicos"
           }
         ],
@@ -1360,11 +1360,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/VAPOR-01.jpg",
+            "src": "/catalog-images/wp-content-uploads-2022-07-vapor-01-jpg-0d7a127658.png",
             "alt": "Vapor e Fluídos Térmicos"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/VAPOR-02.jpg",
+            "src": "/catalog-images/wp-content-uploads-2022-07-vapor-02-jpg-5e865439cc.png",
             "alt": "Vapor e Fluídos Térmicos"
           }
         ],
@@ -1402,11 +1402,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/VAPOR-01.jpg",
+            "src": "/catalog-images/wp-content-uploads-2022-07-vapor-01-jpg-0d7a127658.png",
             "alt": "Vapor e Fluídos Térmicos"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/VAPOR-02.jpg",
+            "src": "/catalog-images/wp-content-uploads-2022-07-vapor-02-jpg-5e865439cc.png",
             "alt": "Vapor e Fluídos Térmicos"
           }
         ],
@@ -1452,11 +1452,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Reten%C3%A7%C3%A3o-Aerodin%C3%A2mica-A%C3%A7o-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-reten-c3-a7-c3-a3o-aerodin-c3-a2mica-a-c3-a7o-368x245-png-1085ec2d7a.png",
             "alt": "Aço"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Reten%C3%A7%C3%A3o-Aerodin%C3%A2mica-Ferro-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-reten-c3-a7-c3-a3o-aerodin-c3-a2mica-ferro-368x245-png-3006239a7b.png",
             "alt": "Ferro"
           }
         ],
@@ -1490,11 +1490,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2025/07/Valvula-Retencao-Fundo-de-Poco-Ferro-368x245.jpg",
+            "src": "/catalog-images/wp-content-uploads-2025-07-valvula-retencao-fundo-de-poco-ferro-368x245-jpg-be4b868e07.png",
             "alt": "Ferro"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2025/07/Valvula-Retencao-Fundo-de-Poco-Bronze-368x245.jpg",
+            "src": "/catalog-images/wp-content-uploads-2025-07-valvula-retencao-fundo-de-poco-bronze-368x245-jpg-1e8593e81e.png",
             "alt": "Bronze"
           }
         ],
@@ -1529,11 +1529,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Reten%C3%A7%C3%A3o-Pist%C3%A3o-Fundida-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-reten-c3-a7-c3-a3o-pist-c3-a3o-fundida-368x245-png-0074eba612.png",
             "alt": "Forjada"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Reten%C3%A7%C3%A3o-Pist%C3%A3o-Forjada-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-reten-c3-a7-c3-a3o-pist-c3-a3o-forjada-368x245-png-e2d223bd6c.png",
             "alt": "Fundida"
           }
         ],
@@ -1568,11 +1568,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Reten%C3%A7%C3%A3o-Portinhola-A%C3%A7o-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-reten-c3-a7-c3-a3o-portinhola-a-c3-a7o-368x245-png-c779c8b0db.png",
             "alt": "Aço"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/RETEN%C3%87%C3%83O-PORTINHOLA-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-reten-c3-87-c3-83o-portinhola-368x245-png-e6880980cb.png",
             "alt": "Ferro"
           }
         ],
@@ -1607,11 +1607,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/RETEN%C3%87%C3%83O-dupla-portinhola-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-reten-c3-87-c3-83o-dupla-portinhola-368x245-png-d7b28f22fa.png",
             "alt": "Dupla Portinhola"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Reten%C3%A7%C3%A3o-Disco-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-reten-c3-a7-c3-a3o-disco-368x245-png-8981d81b51.png",
             "alt": "Tipo Disco"
           }
         ],
@@ -1646,11 +1646,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Reten%C3%A7%C3%A3o-Vertical-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-reten-c3-a7-c3-a3o-vertical-368x245-png-ffcbf14a0d.png",
             "alt": "Retenção Vertical"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-RET-VERTICAL-bronze-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-ret-vertical-bronze-368x245-png-75530729d5.png",
             "alt": "Retenção Vertical"
           }
         ],
@@ -1688,11 +1688,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/VALVULA-SEGURANCA-E-ALIVIO-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-valvula-seguranca-e-alivio-368x245-png-6983de2ef3.png",
             "alt": "Segurança e Alívio"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-ALIVIO-bronze-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-alivio-bronze-368x245-png-e2f11aba5e.png",
             "alt": "Segurança e Alívio"
           }
         ],
@@ -1726,11 +1726,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/VALVULA-SEGURANCA-E-ALIVIO-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-valvula-seguranca-e-alivio-368x245-png-6983de2ef3.png",
             "alt": "Segurança e Alívio"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-ALIVIO-bronze-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-alivio-bronze-368x245-png-e2f11aba5e.png",
             "alt": "Segurança e Alívio"
           }
         ],
@@ -1764,11 +1764,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/VALVULA-SEGURANCA-E-ALIVIO-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-valvula-seguranca-e-alivio-368x245-png-6983de2ef3.png",
             "alt": "Segurança e Alívio"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-ALIVIO-bronze-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-alivio-bronze-368x245-png-e2f11aba5e.png",
             "alt": "Segurança e Alívio"
           }
         ],
@@ -1810,11 +1810,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/REFRIGERACAO-01.jpg",
+            "src": "/catalog-images/wp-content-uploads-2022-07-refrigeracao-01-jpg-cdbb43b118.png",
             "alt": "Refrigeração"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/REFRIGERACAO-02.jpg",
+            "src": "/catalog-images/wp-content-uploads-2022-07-refrigeracao-02-jpg-ce5692448a.png",
             "alt": "Refrigeração"
           }
         ],
@@ -1852,11 +1852,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/REFRIGERACAO-01.jpg",
+            "src": "/catalog-images/wp-content-uploads-2022-07-refrigeracao-01-jpg-cdbb43b118.png",
             "alt": "Refrigeração"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2022/07/REFRIGERACAO-02.jpg",
+            "src": "/catalog-images/wp-content-uploads-2022-07-refrigeracao-02-jpg-ce5692448a.png",
             "alt": "Refrigeração"
           }
         ],
@@ -1896,11 +1896,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/09/bucha-forjada-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-09-bucha-forjada-368x245-png-d605ca37ac.png",
             "alt": "Bucha Redução"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/09/bujao-cabeca-quadrada-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-09-bujao-cabeca-quadrada-368x245-png-be87fb3094.png",
             "alt": "Bujão Cab. Quad."
           }
         ],
@@ -1936,11 +1936,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/11/tampao-sw-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-11-tampao-sw-368x245-png-f20962362a.png",
             "alt": "Tampão"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/E1-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-e1-368x245-png-b64053f055.png",
             "alt": "Cotovelo 45°"
           }
         ],
@@ -1980,7 +1980,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/28-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-28-368x245-png-0a847d1d3f.png",
             "alt": "Bucha Red. BSP"
           }
         ],
@@ -2016,7 +2016,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/27-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-27-368x245-png-9ce77acc99.png",
             "alt": "Bujão BSP"
           }
         ],
@@ -2052,7 +2052,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/Alta-Press%C3%A3o2-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-alta-press-c3-a3o2-368x245-png-c33e7498aa.png",
             "alt": "Cotovelo 45° BSP"
           }
         ],
@@ -2088,7 +2088,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/Alta-Press%C3%A3o12-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-alta-press-c3-a3o12-368x245-png-6040c73292.png",
             "alt": "Cotovelo 90° BSP"
           }
         ],
@@ -2124,7 +2124,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/24-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-24-368x245-png-2523c14d25.png",
             "alt": "Cruzeta BSP"
           }
         ],
@@ -2160,7 +2160,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/10/Curva-45%C2%B0-Femea-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-10-curva-45-c2-b0-femea-368x245-png-0b1e65dead.png",
             "alt": "Curva 45 ° F BSP"
           }
         ],
@@ -2196,7 +2196,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/10/Curva-45%C2%B0-Macho-Femea-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-10-curva-45-c2-b0-macho-femea-368x245-png-e3d3fcc7a2.png",
             "alt": "Curva 45° M/F BSP"
           }
         ],
@@ -2232,7 +2232,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/19-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-19-368x245-png-6178f3a0b6.png",
             "alt": "Curva 90° F BSP"
           }
         ],
@@ -2268,7 +2268,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/20-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-20-368x245-png-fb7159ba6d.png",
             "alt": "Curva 90° M BSP"
           }
         ],
@@ -2304,7 +2304,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/21-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-21-368x245-png-d557bdf9f5.png",
             "alt": "Curva 90° M/F BSP"
           }
         ],
@@ -2340,7 +2340,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/23-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-23-368x245-png-9bc624d93f.png",
             "alt": "Curva Retorno BSP"
           }
         ],
@@ -2376,7 +2376,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/10/Flange-com-Sextavado-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-10-flange-com-sextavado-368x245-png-f3ec80980c.png",
             "alt": "Flange Sextavado BSP"
           }
         ],
@@ -2412,7 +2412,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/15-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-15-368x245-png-41bd4d70ee.png",
             "alt": "Luva Red. M/F BSP"
           }
         ],
@@ -2448,7 +2448,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/Alta-Press%C3%A3o10-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-alta-press-c3-a3o10-368x245-png-787c9b4101.png",
             "alt": "Luva M/F BSP"
           }
         ],
@@ -2484,7 +2484,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/04-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-04-368x245-png-be12e43c5e.png",
             "alt": "Niple Duplo Red. BSP"
           }
         ],
@@ -2520,7 +2520,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/06-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-06-368x245-png-6b05dd3abe.png",
             "alt": "Tê 90° BSP"
           }
         ],
@@ -2556,7 +2556,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/M%C3%A9dia-Press%C3%A3o5-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-m-c3-a9dia-press-c3-a3o5-368x245-png-5145b6cf25.png",
             "alt": "Tê 90° Red. BSP"
           }
         ],
@@ -2592,7 +2592,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/Alta-Press%C3%A3o4-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-alta-press-c3-a3o4-368x245-png-7c458b1e83.png",
             "alt": "União BSP"
           }
         ],
@@ -2628,7 +2628,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/26-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-26-368x245-png-5d9857e772.png",
             "alt": "Cot. 90° M/F BSP"
           }
         ],
@@ -2664,7 +2664,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/16-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-16-368x245-png-b985fbf33e.png",
             "alt": "Luva BSP"
           }
         ],
@@ -2700,7 +2700,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/15-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-15-368x245-png-41bd4d70ee.png",
             "alt": "Luva Red. BSP"
           }
         ],
@@ -2736,7 +2736,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/M%C3%A9dia-Press%C3%A3o4-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-m-c3-a9dia-press-c3-a3o4-368x245-png-23f008e8d6.png",
             "alt": "Tampão BSP"
           }
         ],
@@ -2772,7 +2772,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/13-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-13-368x245-png-4e53f49ae2.png",
             "alt": "Niple Duplo BSP"
           }
         ],
@@ -2808,7 +2808,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/10-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-10-368x245-png-1297d2bd36.png",
             "alt": "Tê 45° BSP"
           }
         ],
@@ -2848,11 +2848,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2026/02/Alvenius-02-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2026-02-alvenius-02-368x245-png-c0f41e95f7.png",
             "alt": "Acoplamento K20"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2026/02/Medidas-k20-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2026-02-medidas-k20-368x245-png-b4350c3e2c.png",
             "alt": "Acoplamento K20"
           }
         ],
@@ -2888,11 +2888,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2026/02/Alvenius-02-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2026-02-alvenius-02-368x245-png-c0f41e95f7.png",
             "alt": "Acoplamento K20"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2026/02/Medidas-k20-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2026-02-medidas-k20-368x245-png-b4350c3e2c.png",
             "alt": "Acoplamento K20"
           }
         ],
@@ -2938,7 +2938,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/C1-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-c1-368x245-png-aa12179461.png",
             "alt": "Cap"
           }
         ],
@@ -3341,7 +3341,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/C9-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-c9-368x245-png-1aaf9dd18e.png",
             "alt": "Curva 45°"
           }
         ],
@@ -3654,7 +3654,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/C10-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-c10-368x245-png-d455fc7841.png",
             "alt": "Curva 90°"
           }
         ],
@@ -3989,7 +3989,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/C7-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-c7-368x245-png-f98e60a80a.png",
             "alt": "Curva 180°"
           }
         ],
@@ -4319,7 +4319,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/10/NIPLE-CONCENTRICO-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-10-niple-concentrico-368x245-png-eac83511b9.png",
             "alt": "Niple Concêntrico"
           }
         ],
@@ -4355,7 +4355,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/10/NIPLE-EXCENTRICO-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-10-niple-excentrico-368x245-png-4c87a89fc0.png",
             "alt": "Niple Excêntrico"
           }
         ],
@@ -4397,7 +4397,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/10/PESTANA-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-10-pestana-368x245-png-a93d8e80a2.png",
             "alt": "Pestana"
           }
         ],
@@ -4456,7 +4456,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/C5-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-c5-368x245-png-2291d56c62.png",
             "alt": "Redução Concêntrica"
           }
         ],
@@ -4492,7 +4492,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/C4-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-c4-368x245-png-9a0bade0ab.png",
             "alt": "Redução Excêntrica"
           }
         ],
@@ -4534,7 +4534,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/10/TE-45-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-10-te-45-368x245-png-1741cce3e3.png",
             "alt": "Tê 45°"
           }
         ],
@@ -4825,7 +4825,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2024/10/TE-45-REDUCAO-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2024-10-te-45-reducao-368x245-png-69cd3810f9.png",
             "alt": "Tê 45° de Redução"
           }
         ],
@@ -4867,7 +4867,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/C3-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-c3-368x245-png-57c2fdf378.png",
             "alt": "Tê 90°"
           }
         ],
@@ -5133,7 +5133,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/08/C2-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-08-c2-368x245-png-aa769eb7e4.png",
             "alt": "Tê 90° de Redução"
           }
         ],
@@ -5179,11 +5179,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Filtro-Y-Flangeado-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-filtro-y-flangeado-368x245-png-2081c75885.png",
             "alt": "Flangeado"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Filtro-Y-Roscado-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-filtro-y-roscado-368x245-png-0d7fe912ca.png",
             "alt": "Rosca"
           }
         ],
@@ -5256,11 +5256,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Filtro-Y-Flangeado-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-filtro-y-flangeado-368x245-png-2081c75885.png",
             "alt": "Flangeado"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Filtro-Y-Roscado-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-filtro-y-roscado-368x245-png-0d7fe912ca.png",
             "alt": "Rosca"
           }
         ],
@@ -5306,11 +5306,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Filtro-Y-Flangeado-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-filtro-y-flangeado-368x245-png-2081c75885.png",
             "alt": "Flangeado"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Filtro-Y-Roscado-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-filtro-y-roscado-368x245-png-0d7fe912ca.png",
             "alt": "Rosca"
           }
         ],
@@ -5343,11 +5343,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Filtro-Y-Flangeado-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-filtro-y-flangeado-368x245-png-2081c75885.png",
             "alt": "Flangeado"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Filtro-Y-Roscado-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-filtro-y-roscado-368x245-png-0d7fe912ca.png",
             "alt": "Rosca"
           }
         ],
@@ -5387,11 +5387,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Filtro-Y-Flangeado-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-filtro-y-flangeado-368x245-png-2081c75885.png",
             "alt": "Flangeado"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Filtro-Y-Roscado-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-filtro-y-roscado-368x245-png-0d7fe912ca.png",
             "alt": "Rosca"
           }
         ],
@@ -5426,7 +5426,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Purgador-de-boia-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-purgador-de-boia-368x245-png-b68a0fb2bd.png",
             "alt": "Tipo Boia"
           }
         ],
@@ -5461,7 +5461,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Purgador-de-boia-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-purgador-de-boia-368x245-png-b68a0fb2bd.png",
             "alt": "Tipo Boia"
           }
         ],
@@ -5506,7 +5506,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Purgador-Termodinamico-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-purgador-termodinamico-368x245-png-2caa50281f.png",
             "alt": "Termodinâmico"
           }
         ],
@@ -5547,7 +5547,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Purgador-Termodinamico-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-purgador-termodinamico-368x245-png-2caa50281f.png",
             "alt": "Termodinâmico"
           }
         ],
@@ -5586,7 +5586,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2025/07/fita-veda-rosca-368x245.jpg",
+            "src": "/catalog-images/wp-content-uploads-2025-07-fita-veda-rosca-368x245-jpg-f466945089.png",
             "alt": "Fita veda rosca"
           }
         ],
@@ -5621,7 +5621,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2025/07/fita-veda-rosca-368x245.jpg",
+            "src": "/catalog-images/wp-content-uploads-2025-07-fita-veda-rosca-368x245-jpg-f466945089.png",
             "alt": "Fita veda rosca"
           }
         ],
@@ -5660,7 +5660,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Junta-veda%C3%A7%C3%A3o-papel%C3%A3o-hidr%C3%A1ulico-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-junta-veda-c3-a7-c3-a3o-papel-c3-a3o-hidr-c3-a1ulico-368x245-png-1dc608f75e.png",
             "alt": "Junta Vedação"
           }
         ],
@@ -5695,7 +5695,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Junta-veda%C3%A7%C3%A3o-papel%C3%A3o-hidr%C3%A1ulico-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-junta-veda-c3-a7-c3-a3o-papel-c3-a3o-hidr-c3-a1ulico-368x245-png-1dc608f75e.png",
             "alt": "Junta Vedação"
           }
         ],
@@ -5735,7 +5735,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Man%C3%B4metros-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-man-c3-b4metros-368x245-png-a248fa617d.png",
             "alt": "Manômetro"
           }
         ],
@@ -5771,7 +5771,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Man%C3%B4metros-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-man-c3-b4metros-368x245-png-a248fa617d.png",
             "alt": "Manômetro"
           }
         ],
@@ -5809,7 +5809,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Term%C3%B4metro-reto-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-term-c3-b4metro-reto-368x245-png-0fcfaeb0e1.png",
             "alt": "Angular"
           }
         ],
@@ -5844,7 +5844,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Term%C3%B4metro-capela-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-term-c3-b4metro-capela-368x245-png-6548244771.png",
             "alt": "Capela"
           }
         ],
@@ -5883,7 +5883,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2021/09/Pressostato.jpg",
+            "src": "/catalog-images/wp-content-uploads-2021-09-pressostato-jpg-7b049c0b9f.png",
             "alt": "Pressostato"
           }
         ],
@@ -5918,7 +5918,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2021/09/Pressostato.jpg",
+            "src": "/catalog-images/wp-content-uploads-2021-09-pressostato-jpg-7b049c0b9f.png",
             "alt": "Pressostato"
           }
         ],
@@ -5958,7 +5958,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Man%C3%B4metros-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-man-c3-b4metros-368x245-png-a248fa617d.png",
             "alt": "Manômetro"
           }
         ],
@@ -5994,7 +5994,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Man%C3%B4metros-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-man-c3-b4metros-368x245-png-a248fa617d.png",
             "alt": "Manômetro"
           }
         ],
@@ -6033,11 +6033,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/GrampoU-2-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-grampou-2-368x245-png-54cbb7a755.png",
             "alt": "Grampo U"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-Grampo-U-235x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-grampo-u-235x245-png-bbdbe4593b.png",
             "alt": "Grampo U"
           }
         ],
@@ -6168,11 +6168,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/GrampoU-2-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-grampou-2-368x245-png-54cbb7a755.png",
             "alt": "Grampo U"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-Grampo-U-235x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-grampo-u-235x245-png-bbdbe4593b.png",
             "alt": "Grampo U"
           }
         ],
@@ -6314,11 +6314,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2021/09/Indicador-Local-de-Pressao-2-368x245.jpg",
+            "src": "/catalog-images/wp-content-uploads-2021-09-indicador-local-de-pressao-2-368x245-jpg-de9c75d34b.png",
             "alt": "Indicador Local de Pressão"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2021/09/Indicador-Local-de-Temperatura-2-368x245.jpg",
+            "src": "/catalog-images/wp-content-uploads-2021-09-indicador-local-de-temperatura-2-368x245-jpg-42e36da6ee.png",
             "alt": "Indicador Local de Temperatura"
           }
         ],
@@ -6356,11 +6356,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2021/09/Indicador-Local-de-Pressao-2-368x245.jpg",
+            "src": "/catalog-images/wp-content-uploads-2021-09-indicador-local-de-pressao-2-368x245-jpg-de9c75d34b.png",
             "alt": "Indicador Local de Pressão"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2021/09/Indicador-Local-de-Temperatura-2-368x245.jpg",
+            "src": "/catalog-images/wp-content-uploads-2021-09-indicador-local-de-temperatura-2-368x245-jpg-42e36da6ee.png",
             "alt": "Indicador Local de Temperatura"
           }
         ],
@@ -6394,11 +6394,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Junta-expans%C3%A3o-flangeada-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-junta-expans-c3-a3o-flangeada-368x245-png-1d2ebf1680.png",
             "alt": "Flangeada"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-JUNTA-EXP-FLANG3.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-junta-exp-flang3-png-522be87eb7.png",
             "alt": "Flangeada"
           }
         ],
@@ -6432,11 +6432,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Junta-expans%C3%A3o-dupla-onda-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-junta-expans-c3-a3o-dupla-onda-368x245-png-fd3117cccb.png",
             "alt": "Dupla Onda"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-JUNTA-EXP-ROSCA.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-junta-exp-rosca-png-a8ac58869d.png",
             "alt": "Dupla Onda"
           }
         ],
@@ -6474,11 +6474,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Visor-de-fluxo-flangeado-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-visor-de-fluxo-flangeado-368x245-png-0d39140d9d.png",
             "alt": "Flangeado"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-VISOR-FLANGEADO-368x209.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-visor-flangeado-368x209-png-e0fd9d8171.png",
             "alt": "Flangeado"
           }
         ],
@@ -6530,11 +6530,11 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Visor-de-fluxo-rosca-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-visor-de-fluxo-rosca-368x245-png-d1f6929502.png",
             "alt": "Rosca"
           },
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Estrutura-VISOR-ROSCA.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-estrutura-visor-rosca-png-1a309d0b86.png",
             "alt": "Rosca"
           }
         ],
@@ -6582,7 +6582,7 @@ export const productTechnicalSpecs = {
         ],
         "images": [
           {
-            "src": "https://casadasvalvulasmg.com.br/wp-content/uploads/2018/07/Visor-de-fluxo-bronze-368x245.png",
+            "src": "/catalog-images/wp-content-uploads-2018-07-visor-de-fluxo-bronze-368x245-png-ec3fbfbb7f.png",
             "alt": "Bronze"
           }
         ],

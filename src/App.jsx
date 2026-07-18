@@ -149,9 +149,8 @@ const guilhotinaGalleryImages = Object.fromEntries(
 
 const media = {
   logo: '/brand/altapress-logo.png',
-  heroSlideOne:
-    'https://images.unsplash.com/photo-1620203853151-496c7228306c?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwzfHx2YWx2ZXN8ZW58MHx8fHwxNzc0NzI3NzEwfDA&ixlib=rb-4.1.0&w=1366&q=70&auto=format',
-  heroSlideTwo: 'https://assets.zyrosite.com/B5g6vpLBQyiLl9pq/sem-nome-2500-x-1000-px-3-6PCHTfsHBWEZasav.png',
+  heroSlideOne: '/home/hero-slide-one.jpg',
+  heroSlideTwo: '/home/hero-slide-two.png',
   support: redebrasValvulasPlimat,
   valves: productValvulas,
   connections: productConexaoTubulares,
