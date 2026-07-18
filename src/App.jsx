@@ -2,7 +2,7 @@
 import SupportChatWidget from './components/SupportChatWidget';
 import { technicalContent } from './data/technicalContent';
 import altaPressMascotSupport from './assets/alta-press-mascot-support.png';
-import altaPressValvulaSeguranca from './assets/alta-press-valvula-seguranca.jpeg';
+import altaPressShowcaseGrid from './assets/alta-press-showcase-grid.png';
 import altaPressShowcaseVideo from './assets/alta-press-showcase-video.mp4';
 import instagramReelDa2l80jyzlo from './assets/instagram-reel-da2l80jyzlo.jpg';
 import redebrasValvulasPlimat from './assets/redebras-valvulas-plimat-cortada.jpg';
@@ -155,8 +155,8 @@ const media = {
   support: redebrasValvulasPlimat,
   valves: productValvulas,
   connections: productConexaoTubulares,
-  showcaseOne: altaPressValvulaSeguranca,
-  showcaseTwo: productValvulaGuilhotinaSerie05n,
+  showcaseOne: altaPressShowcaseGrid,
+  showcaseTwo: instagramReelDa2l80jyzlo,
 };
 
 const navItems = [
@@ -2209,23 +2209,14 @@ function App() {
                 Trabalhamos com fornecedores de confiança e produtos de alta qualidade para garantir segurança, desempenho
                 e confiabilidade em cada operação, construindo relacionamentos duradouros em todo o Brasil.
               </p>
-
-              <div className="quote-box">
-                <strong>AltaPress</strong>
-                <p>Experiência que conecta, qualidade que gera confiança.</p>
-              </div>
-
-              <a className="button button-secondary" href={whatsappBase} target="_blank" rel="noreferrer">
-                Fale conosco
-              </a>
             </div>
 
             <div className="showcase-grid" aria-label="Galeria de imagens da AltaPress">
               <div className="showcase-card showcase-card-large">
-                <img src={media.showcaseOne} alt="Equipe e estrutura da AltaPress" />
+                <img src={media.showcaseOne} alt="Produtos da AltaPress em exposição" />
               </div>
               <div className="showcase-card">
-                <img src={media.showcaseTwo} alt="Produtos e atendimento AltaPress" />
+                <img src={media.showcaseTwo} alt="Apresentação institucional da AltaPress" />
               </div>
               <div className="showcase-card">
                 <video
@@ -2238,6 +2229,17 @@ function App() {
                   aria-label="Vídeo de produtos da AltaPress"
                 />
               </div>
+            </div>
+
+            <div className="company-cta">
+              <div className="quote-box">
+                <strong>AltaPress</strong>
+                <p>Experiência que conecta, qualidade que gera confiança.</p>
+              </div>
+
+              <a className="button button-secondary" href={whatsappBase} target="_blank" rel="noreferrer">
+                Fale conosco
+              </a>
             </div>
           </div>
         </section>
