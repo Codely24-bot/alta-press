@@ -1213,8 +1213,13 @@ function sortProductEntries(entries, sortOrder, getLabel) {
   });
 }
 
-function MobileProductControls({ activeCategorySlug, onNavigate, sortOrder, onSortChange, showSort = true }) {
+function getProductItemDisplayLabel(item) {
+  return typeof item === 'string' ? item : item.displayLabel ?? item.label;
+}
+
+function MobileProductControls({ activeCategorySlug, activeItemSlug, onNavigate, sortOrder, onSortChange, showSort = true }) {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
+  const [expandedCategorySlug, setExpandedCategorySlug] = useState(activeCategorySlug ?? null);
 
   useEffect(() => {
     if (!isFilterOpen) {
@@ -1228,6 +1233,14 @@ function MobileProductControls({ activeCategorySlug, onNavigate, sortOrder, onSo
       document.body.style.overflow = previousOverflow;
     };
   }, [isFilterOpen]);
+
+  useEffect(() => {
+    if (!isFilterOpen) {
+      return;
+    }
+
+    setExpandedCategorySlug(activeCategorySlug ?? null);
+  }, [activeCategorySlug, isFilterOpen]);
 
   const closeFilter = () => setIsFilterOpen(false);
 
@@ -1267,21 +1280,64 @@ function MobileProductControls({ activeCategorySlug, onNavigate, sortOrder, onSo
               {productCategories.map((category) => {
                 const href = `/produtos/${category.slug}`;
                 const isActive = category.slug === activeCategorySlug;
+                const isExpanded = expandedCategorySlug === category.slug;
+                const categoryItems = category.items.map((item) => {
+                  const label = typeof item === 'string' ? item : item.label;
+
+                  return {
+                    label: getProductItemDisplayLabel(item),
+                    slug: slugifyProductLabel(label),
+                  };
+                });
 
                 return (
-                  <a
-                    key={category.slug}
-                    className={isActive ? 'is-active' : ''}
-                    href={href}
-                    onClick={(event) => {
-                      closeFilter();
-                      onNavigate(href)(event);
-                    }}
-                    aria-current={isActive ? 'page' : undefined}
-                  >
-                    {category.title}
-                    <span aria-hidden="true">›</span>
-                  </a>
+                  <div key={category.slug} className={`product-page__filter-category ${isExpanded ? 'is-open' : ''}`.trim()}>
+                    <button
+                      type="button"
+                      className={`product-page__filter-category-trigger ${isActive ? 'is-active' : ''}`.trim()}
+                      onClick={() => setExpandedCategorySlug((currentSlug) => currentSlug === category.slug ? null : category.slug)}
+                      aria-expanded={isExpanded}
+                      aria-controls={`mobile-filter-category-${category.slug}`}
+                    >
+                      <span>{category.title}</span>
+                      <span aria-hidden="true">{isExpanded ? '−' : '›'}</span>
+                    </button>
+
+                    {isExpanded ? (
+                      <div id={`mobile-filter-category-${category.slug}`} className="product-page__filter-category-links">
+                        <a
+                          className={`product-page__filter-category-link ${isActive && !activeItemSlug ? 'is-active' : ''}`.trim()}
+                          href={href}
+                          onClick={(event) => {
+                            closeFilter();
+                            onNavigate(href)(event);
+                          }}
+                          aria-current={isActive && !activeItemSlug ? 'page' : undefined}
+                        >
+                          Ver todos
+                        </a>
+                        {categoryItems.map((item) => {
+                          const itemHref = `/produtos/${category.slug}/${item.slug}`;
+                          const isActiveItem = isActive && item.slug === activeItemSlug;
+
+                          return (
+                            <a
+                              key={`${category.slug}-${item.slug}`}
+                              className={`product-page__filter-category-link ${isActiveItem ? 'is-active' : ''}`.trim()}
+                              href={itemHref}
+                              onClick={(event) => {
+                                closeFilter();
+                                onNavigate(itemHref)(event);
+                              }}
+                              aria-current={isActiveItem ? 'page' : undefined}
+                            >
+                              {item.label}
+                            </a>
+                          );
+                        })}
+                      </div>
+                    ) : null}
+                  </div>
                 );
               })}
             </nav>
@@ -1500,6 +1556,7 @@ function ProductItemPage({ category, productItem, onNavigate }) {
 
           <MobileProductControls
             activeCategorySlug={category.slug}
+            activeItemSlug={itemSlug}
             sortOrder={sortOrder}
             onSortChange={setSortOrder}
             onNavigate={onNavigate}
@@ -1786,6 +1843,7 @@ function ProductSpecPage({ category, productItem, standard, optionSlug, onNaviga
 
           <MobileProductControls
             activeCategorySlug={category.slug}
+            activeItemSlug={itemSlug}
             sortOrder="position"
             onSortChange={() => {}}
             onNavigate={onNavigate}
