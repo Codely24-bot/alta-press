@@ -6625,5 +6625,210 @@ export const productTechnicalSpecs = {
         ]
       }
     }
+  },
+  "solenoides": {
+    "modelo": {
+      "b105": {
+        "itemSlug": "solenoides",
+        "standardSlug": "modelo",
+        "optionSlug": "b105",
+        "title": "B105 - Válvula Solenoide 2 vias",
+        "sourceUrl": "https://aicasacl.com.br/produto-site/105",
+        "note": "*Imagens e informações técnicas fornecidas conforme autorização de uso.",
+        "characteristics": [
+          "Válvula solenoide 2 vias normalmente fechada.",
+          "Operação por ação direta.",
+          "Máxima pressão admissível: 50 bar.",
+          "Máxima viscosidade do fluido: 25 cSt (mm²/s).",
+          "Temperatura ambiente com bobina classe F: -10°C a +55°C.",
+          "Temperatura ambiente com bobina classe H: -10°C a +80°C.",
+          "Posição de montagem indiferente."
+        ],
+        "images": [],
+        "tables": []
+      },
+      "106": {
+        "itemSlug": "solenoides",
+        "standardSlug": "modelo",
+        "optionSlug": "106",
+        "title": "106 - Válvula Solenoide 2 vias",
+        "sourceUrl": "https://aicasacl.com.br/produto-site/106",
+        "note": "*Imagens e informações técnicas fornecidas conforme autorização de uso.",
+        "characteristics": [
+          "Válvula solenoide 2 vias normalmente fechada.",
+          "Operação por ação direta.",
+          "Máxima pressão admissível: 80 bar.",
+          "Máxima viscosidade do fluido: 25 cSt (mm²/s).",
+          "Temperatura ambiente com bobina classe F: -10°C a +55°C.",
+          "Temperatura ambiente com bobina classe H: -10°C a +80°C.",
+          "Posição de montagem indiferente."
+        ],
+        "images": [],
+        "tables": []
+      },
+      "106b": {
+        "itemSlug": "solenoides",
+        "standardSlug": "modelo",
+        "optionSlug": "106b",
+        "title": "106B - Válvula Solenoide 2 vias",
+        "sourceUrl": "https://aicasacl.com.br/produto-site/106b-valvula-2-vias-acao-direta-nf",
+        "note": "*Imagens e informações técnicas fornecidas conforme autorização de uso.",
+        "characteristics": [
+          "Válvula solenoide 2 vias normalmente fechada.",
+          "Operação por ação direta.",
+          "Corpo e tubo guia em latão.",
+          "Núcleo fixo e núcleo móvel em aço inoxidável.",
+          "Vedações em NBR, EPDM, FPM ou PTFE.",
+          "Máxima pressão admissível: 80 bar.",
+          "Máxima viscosidade do fluido: 25 cSt (mm²/s).",
+          "Temperatura ambiente com bobina classe F: -10°C a +55°C.",
+          "Temperatura ambiente com bobina classe H: -10°C a +80°C.",
+          "Posição de montagem indiferente.",
+          "Opcionais: vedações especiais."
+        ],
+        "images": [],
+        "tables": []
+      },
+      "107-diafragma": {
+        "itemSlug": "solenoides",
+        "standardSlug": "modelo",
+        "optionSlug": "107-diafragma",
+        "title": "107 - Válvula Solenoide servo-pilotada",
+        "sourceUrl": "https://aicasacl.com.br/produto-site/1075a2e90b763ee7",
+        "note": "*Imagens e informações técnicas fornecidas conforme autorização de uso.",
+        "characteristics": [
+          "Válvula solenoide 2 vias normalmente fechada.",
+          "Operação servo-pilotada por diafragma.",
+          "Corpo em latão.",
+          "Tubo guia em latão ou inox.",
+          "Núcleo móvel e fixo em aço inox.",
+          "Mola em aço inox.",
+          "Vedações em NBR, FPM ou EPDM.",
+          "Pressão diferencial mínima: 0,15 a 3 bar.",
+          "Máxima pressão admissível: 20 bar.",
+          "Máxima viscosidade do fluido: 25 cSt (mm²/s).",
+          "Temperatura ambiente com bobina classe F: -10°C a +55°C.",
+          "Temperatura ambiente com bobina classe H: -10°C a +80°C.",
+          "Posição de montagem com bobina na vertical."
+        ],
+        "images": [],
+        "tables": []
+      },
+      "107-gas": {
+        "itemSlug": "solenoides",
+        "standardSlug": "modelo",
+        "optionSlug": "107-gas",
+        "title": "107 - Válvula Solenoide para gás",
+        "sourceUrl": "https://aicasacl.com.br/produto-site/valvula-solenoide-gas-tipo-e107gib50",
+        "note": "*Imagens e informações técnicas fornecidas conforme autorização de uso.",
+        "characteristics": [
+          "Válvula solenoide 2 vias normalmente fechada.",
+          "Operação servo-pilotada por diafragma.",
+          "Corpo em latão.",
+          "Tubo guia em latão ou inox.",
+          "Núcleo móvel e fixo em aço inox.",
+          "Mola em aço inox.",
+          "Pressão diferencial mínima: 0,1 bar.",
+          "Máxima pressão admissível: 5 bar.",
+          "Máxima viscosidade do fluido: 25 cSt (mm²/s).",
+          "Temperatura ambiente com bobina classe F: -10°C a +55°C.",
+          "Temperatura ambiente com bobina classe H: -10°C a +80°C.",
+          "Posição de montagem com bobina na vertical."
+        ],
+        "images": [],
+        "tables": []
+      },
+      "b130": {
+        "itemSlug": "solenoides",
+        "standardSlug": "modelo",
+        "optionSlug": "b130",
+        "title": "B130 - Válvula Solenoide 2 vias",
+        "sourceUrl": "https://aicasacl.com.br/valvula-solenoide-2-vias-b130",
+        "note": "*Imagens e informações técnicas fornecidas conforme autorização de uso.",
+        "characteristics": [
+          "Válvula solenoide 2 vias normalmente aberta ou normalmente fechada.",
+          "Aplicável para ar, água, óleo, vapor, gás e vácuo.",
+          "Conexão com rosca NPT ou BSP conforme a tubulação industrial.",
+          "Corpo em inox para fluidos corrosivos e aplicações químicas, alimentícias, hospitalares e sucroalcooleiras.",
+          "Corpo em latão para aplicações industriais comuns.",
+          "Indicada para controle de água de refrigeração, gás natural ou GLP, óleo de refrigeração e lubrificação industrial.",
+          "Bobina e conjunto solenoide fabricados para alta ciclagem de operação.",
+          "Comando elétrico disponível em 110 V, 220 V e 24 V em corrente alternada ou contínua."
+        ],
+        "images": [],
+        "tables": []
+      },
+      "b130a": {
+        "itemSlug": "solenoides",
+        "standardSlug": "modelo",
+        "optionSlug": "b130a",
+        "title": "B130A - Válvula Solenoide 2 vias",
+        "sourceUrl": "https://aicasacl.com.br/produto-site/b130ax",
+        "note": "*Imagens e informações técnicas fornecidas conforme autorização de uso.",
+        "characteristics": [
+          "Válvula solenoide de 2 vias para uso geral.",
+          "Normalmente fechada, com fechamento rápido.",
+          "Indicada para baixa e média pressão, de 0 até 10 bar.",
+          "Diafragma ancorado em NBR.",
+          "Conexões BSP de 3/8” a 1”.",
+          "Projetada para líquidos, gases e óleos de baixa viscosidade.",
+          "Pressão diferencial máxima: 10 bar.",
+          "Viscosidade máxima do fluido: 20 cSt (mm²/s).",
+          "Temperatura ambiente com bobina classe F: -10°C a +55°C.",
+          "Temperatura ambiente com bobina classe H: -10°C a +80°C.",
+          "Aplicações: bombas, equipamentos de lavagem, lavanderias industriais, compressores, sistemas de vácuo, água, ar, gás, líquidos e óleos de baixa viscosidade."
+        ],
+        "images": [],
+        "tables": []
+      },
+      "w124": {
+        "itemSlug": "solenoides",
+        "standardSlug": "modelo",
+        "optionSlug": "w124",
+        "title": "W124 - Válvula Solenoide angular",
+        "sourceUrl": "https://aicasacl.com.br/produto-site/w124x",
+        "note": "*Imagens e informações técnicas fornecidas conforme autorização de uso.",
+        "characteristics": [
+          "Válvula solenoide angular com atuador de plástico.",
+          "Operação pneumática.",
+          "Disponível nas versões normalmente fechada (NF) ou normalmente aberta (NA).",
+          "Vedação em PTFE.",
+          "Função anti-golpe de aríete.",
+          "Conexões BSP de 1/2” a 2”.",
+          "Pressão de controle: 3 a 9 bar.",
+          "Conexão do atuador: 1/8” BSP.",
+          "Pressão diferencial máxima: 15 bar.",
+          "Viscosidade máxima do fluido: 600 cSt.",
+          "Temperatura de trabalho: até 180°C.",
+          "Temperatura ambiente: -10°C a +60°C.",
+          "Aplicações: lavanderias industriais, autoclaves, indústria de pneus e sistemas de água, ar comprimido, gás, óleos e vapor em geral."
+        ],
+        "images": [],
+        "tables": []
+      },
+      "b106": {
+        "itemSlug": "solenoides",
+        "standardSlug": "modelo",
+        "optionSlug": "b106",
+        "title": "B106 - Válvula Solenoide 2 vias",
+        "sourceUrl": "https://aicasacl.com.br/produto-site/b106x",
+        "note": "*Imagens e informações técnicas fornecidas conforme autorização de uso.",
+        "characteristics": [
+          "Válvula solenoide de 2 vias para uso geral.",
+          "Normalmente fechada.",
+          "Operação por ação direta.",
+          "Vedação em NBR.",
+          "Pistão interno.",
+          "Conexões BSP de 1/8” a 1/2”.",
+          "Pressão diferencial máxima: 80 bar.",
+          "Viscosidade máxima do fluido: 25 cSt.",
+          "Temperatura ambiente com bobina classe F: -10°C a +55°C.",
+          "Temperatura ambiente com bobina classe H: -10°C a +80°C.",
+          "Aplicações: compressores, fornos, distribuidores de fluidos, equipamentos de vapor, sistemas de vácuo, água, ar, gás e líquidos de baixa viscosidade."
+        ],
+        "images": [],
+        "tables": []
+      }
+    }
   }
 };

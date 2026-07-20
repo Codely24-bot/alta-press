@@ -123,6 +123,15 @@ import productValvulaGuilhotinaSerie04 from './assets/product-valves-guilhotina/
 import productValvulaGuilhotinaSerie05n from './assets/product-valves-guilhotina/guilhotina-serie-05n.png';
 import productValvulaGuilhotinaSerie07 from './assets/product-valves-guilhotina/guilhotina-serie-07.png';
 import productValvulaGuilhotinaSerie15 from './assets/product-valves-guilhotina/guilhotina-serie-15.png';
+import productValvulaSolenoide106 from './assets/product-valves-solenoides-normalized/solenoide-106.png';
+import productValvulaSolenoide106b from './assets/product-valves-solenoides-normalized/solenoide-106b.png';
+import productValvulaSolenoide107Diafragma from './assets/product-valves-solenoides-normalized/solenoide-107-diafragma.png';
+import productValvulaSolenoide107Gas from './assets/product-valves-solenoides-normalized/solenoide-107-gas.png';
+import productValvulaSolenoideB105 from './assets/product-valves-solenoides-normalized/solenoide-b105.png';
+import productValvulaSolenoideB106 from './assets/product-valves-solenoides-normalized/solenoide-b106.png';
+import productValvulaSolenoideB130 from './assets/product-valves-solenoides-normalized/solenoide-b130.png';
+import productValvulaSolenoideB130a from './assets/product-valves-solenoides-normalized/solenoide-b130a.png';
+import productValvulaSolenoideW124 from './assets/product-valves-solenoides-normalized/solenoide-w124.png';
 import productValvulaOpcaoMangoteCorpoAberto from './assets/product-valves-options/mangote__corpo-aberto.png';
 import productValvulaOpcaoMangoteCorpoFechado from './assets/product-valves-options/mangote__corpo-fechado.png';
 import productValvulaOpcaoRetencaoAerodinamica from './assets/product-valves-options/retencao__aerodinamica.png';
@@ -320,6 +329,25 @@ const productCategories = [
           'Série 04': productValvulaGuilhotinaSerie04,
           'Série 07': productValvulaGuilhotinaSerie07,
           'Série 15': productValvulaGuilhotinaSerie15,
+        },
+      },
+      {
+        label: 'Solenoides',
+        image: productValvulaSolenoideB130a,
+        alt: 'Válvula solenoide da AltaPress.',
+        displayLabel: 'Válvulas Solenoides',
+        details: ['B105', '106', '106B', '107', 'B130', 'W124'],
+        standards: [{ label: 'Modelo', options: ['B105', '106', '106B', '107 Diafragma', '107 Gás', 'B130', 'B130A', 'W124', 'B106'] }],
+        optionImages: {
+          B105: productValvulaSolenoideB105,
+          106: productValvulaSolenoide106,
+          '106B': productValvulaSolenoide106b,
+          '107 Diafragma': productValvulaSolenoide107Diafragma,
+          '107 Gás': productValvulaSolenoide107Gas,
+          B130: productValvulaSolenoideB130,
+          B130A: productValvulaSolenoideB130a,
+          W124: productValvulaSolenoideW124,
+          B106: productValvulaSolenoideB106,
         },
       },
       {
@@ -1172,7 +1200,102 @@ function scrollToSection(sectionId, behavior = 'smooth') {
   });
 }
 
+function sortProductEntries(entries, sortOrder, getLabel) {
+  if (sortOrder === 'position') {
+    return entries;
+  }
+
+  return [...entries].sort((firstItem, secondItem) => {
+    const firstLabel = getLabel(firstItem).localeCompare(getLabel(secondItem), 'pt-BR', { sensitivity: 'base' });
+
+    return sortOrder === 'name-desc' ? firstLabel * -1 : firstLabel;
+  });
+}
+
+function MobileProductControls({ activeCategorySlug, onNavigate, sortOrder, onSortChange, showSort = true }) {
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
+
+  useEffect(() => {
+    if (!isFilterOpen) {
+      return undefined;
+    }
+
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [isFilterOpen]);
+
+  const closeFilter = () => setIsFilterOpen(false);
+
+  return (
+    <div className="product-page__mobile-filter">
+      <div className="product-page__mobile-filter-bar" aria-label="Filtros de produtos">
+        <button type="button" className="product-page__filter-button" onClick={() => setIsFilterOpen(true)}>
+          <span aria-hidden="true">⌯</span>
+          Filtrar
+        </button>
+        {showSort ? (
+          <label className="product-page__sort-select">
+            <span className="sr-only">Ordenar produtos</span>
+            <select value={sortOrder} onChange={(event) => onSortChange(event.target.value)}>
+              <option value="position">Posição</option>
+              <option value="name-asc">Nome A-Z</option>
+              <option value="name-desc">Nome Z-A</option>
+            </select>
+          </label>
+        ) : null}
+        <button type="button" className="product-page__top-button" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} aria-label="Voltar ao topo">
+          ↑
+        </button>
+      </div>
+
+      {isFilterOpen ? (
+        <div className="product-page__filter-sheet" role="dialog" aria-modal="true" aria-label="Filtrar produtos">
+          <div className="product-page__filter-sheet-panel">
+            <header>
+              <strong>Filtrar</strong>
+              <button type="button" onClick={closeFilter} aria-label="Fechar filtros">
+                ×
+              </button>
+            </header>
+            <nav aria-label="Categorias">
+              <p>Categoria</p>
+              {productCategories.map((category) => {
+                const href = `/produtos/${category.slug}`;
+                const isActive = category.slug === activeCategorySlug;
+
+                return (
+                  <a
+                    key={category.slug}
+                    className={isActive ? 'is-active' : ''}
+                    href={href}
+                    onClick={(event) => {
+                      closeFilter();
+                      onNavigate(href)(event);
+                    }}
+                    aria-current={isActive ? 'page' : undefined}
+                  >
+                    {category.title}
+                    <span aria-hidden="true">›</span>
+                  </a>
+                );
+              })}
+            </nav>
+          </div>
+          <button type="button" className="product-page__filter-backdrop" onClick={closeFilter} aria-label="Fechar filtros" />
+        </div>
+      ) : null}
+    </div>
+  );
+}
+
 function ProductOverviewPage({ onNavigate }) {
+  const [sortOrder, setSortOrder] = useState('position');
+  const sortedCategories = sortProductEntries(productCategories, sortOrder, (category) => category.title);
+
   return (
     <section className="product-page section-surface">
       <div className="container">
@@ -1185,9 +1308,11 @@ function ProductOverviewPage({ onNavigate }) {
           </p>
         </div>
 
+        <MobileProductControls sortOrder={sortOrder} onSortChange={setSortOrder} onNavigate={onNavigate} />
+
         <article className="product-page__catalog" aria-label="Categorias de produtos">
           <div className="product-page__grid">
-            {productCategories.map((category) => {
+            {sortedCategories.map((category) => {
               const hasImage = Boolean(category.image);
 
               return (
@@ -1219,6 +1344,13 @@ function ProductOverviewPage({ onNavigate }) {
 }
 
 function ProductCategoryPage({ category, onNavigate }) {
+  const [sortOrder, setSortOrder] = useState('position');
+  const sortedItems = sortProductEntries(category.items, sortOrder, (item) => {
+    const label = typeof item === 'string' ? item : item.displayLabel ?? item.label;
+
+    return label;
+  });
+
   return (
     <section className="product-page section-surface">
       <div className="container">
@@ -1251,9 +1383,16 @@ function ProductCategoryPage({ category, onNavigate }) {
             })}
           </aside>
 
+          <MobileProductControls
+            activeCategorySlug={category.slug}
+            sortOrder={sortOrder}
+            onSortChange={setSortOrder}
+            onNavigate={onNavigate}
+          />
+
           <article className="product-page__catalog" aria-label={`Itens da linha ${category.title}`}>
             <div className="product-page__grid">
-              {category.items.map((item) => {
+              {sortedItems.map((item) => {
                 const label = typeof item === 'string' ? item : item.label;
                 const displayLabel = typeof item === 'string' ? item : item.displayLabel ?? label;
                 const image = typeof item === 'string' ? null : item.image;
@@ -1323,6 +1462,8 @@ function ProductItemPage({ category, productItem, onNavigate }) {
     },
   ];
   const cards = standards.length ? standards : fallbackCards;
+  const [sortOrder, setSortOrder] = useState('position');
+  const sortedCards = sortProductEntries(cards, sortOrder, (card) => card.label);
 
   return (
     <section className="product-page section-surface">
@@ -1356,12 +1497,19 @@ function ProductItemPage({ category, productItem, onNavigate }) {
             })}
           </aside>
 
+          <MobileProductControls
+            activeCategorySlug={category.slug}
+            sortOrder={sortOrder}
+            onSortChange={setSortOrder}
+            onNavigate={onNavigate}
+          />
+
           <article className="product-page__catalog" aria-label={`Opções de ${label}`}>
             <a className="product-page__back-inline" href={`/produtos/${category.slug}`} onClick={onNavigate(`/produtos/${category.slug}`)}>
               Voltar para {category.title}
             </a>
             <div className="product-page__grid">
-              {cards.map((card) => (
+              {sortedCards.map((card) => (
                 <a
                   key={card.label}
                   className="product-page__card product-page__card--detail"
@@ -1407,6 +1555,8 @@ function ProductStandardPage({ category, productItem, standard, onNavigate }) {
   const image = typeof productItem === 'string' ? null : productItem.image;
   const alt = typeof productItem === 'string' ? '' : productItem.alt ?? displayLabel;
   const mediaClassName = typeof productItem === 'string' ? '' : productItem.mediaClassName ?? '';
+  const [sortOrder, setSortOrder] = useState('position');
+  const sortedOptions = sortProductEntries(standard.options, sortOrder, (option) => option);
 
   return (
     <section className="product-page section-surface">
@@ -1439,6 +1589,13 @@ function ProductStandardPage({ category, productItem, standard, onNavigate }) {
             })}
           </aside>
 
+          <MobileProductControls
+            activeCategorySlug={category.slug}
+            sortOrder={sortOrder}
+            onSortChange={setSortOrder}
+            onNavigate={onNavigate}
+          />
+
           <article className="product-page__catalog" aria-label={`Classes de ${displayLabel} ${standard.label}`}>
             <a
               className="product-page__back-inline"
@@ -1448,7 +1605,7 @@ function ProductStandardPage({ category, productItem, standard, onNavigate }) {
               Voltar para {displayLabel}
             </a>
             <div className="product-page__grid">
-              {standard.options.map((option) => (
+              {sortedOptions.map((option) => (
                 (() => {
                   const optionSlug = slugifyProductLabel(option);
                   const specHref = `/produtos/${category.slug}/${itemSlug}/${slugifyProductLabel(standard.label)}/${optionSlug}`;
@@ -1625,6 +1782,13 @@ function ProductSpecPage({ category, productItem, standard, optionSlug, onNaviga
               );
             })}
           </aside>
+
+          <MobileProductControls
+            activeCategorySlug={category.slug}
+            sortOrder="position"
+            onSortChange={() => {}}
+            onNavigate={onNavigate}
+          />
 
           <article className="product-page__spec" aria-label={`Tabela técnica de ${label} ${standard.label}`}>
             <a
