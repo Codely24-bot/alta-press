@@ -336,6 +336,7 @@ const productCategories = [
         image: productValvulaSolenoideB130a,
         alt: 'Válvula solenoide da AltaPress.',
         displayLabel: 'Válvulas Solenoides',
+        mediaClassName: 'product-page__card-media--solenoides',
         details: ['B105', '106', '106B', '107', 'B130', 'W124'],
         standards: [{ label: 'Modelo', options: ['B105', '106', '106B', '107 Diafragma', '107 Gás', 'B130', 'B130A', 'W124', 'B106'] }],
         optionImages: {
