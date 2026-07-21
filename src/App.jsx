@@ -1,6 +1,7 @@
 ﻿import { useEffect, useRef, useState } from 'react';
 import SupportChatWidget from './components/SupportChatWidget';
 import { technicalContent } from './data/technicalContent';
+import { businessProfile } from '../shared/supportKnowledge';
 import altaPressMascotSupport from './assets/alta-press-mascot-support.png';
 import altaPressShowcaseGrid from './assets/alta-press-showcase-grid.png';
 import altaPressShowcaseVideo from './assets/alta-press-showcase-video.mp4';
@@ -836,8 +837,38 @@ const contacts = [
   },
 ];
 
-const whatsappBase =
-  'https://wa.me/5531991878767?text=Ol%C3%A1%20Seja%20bem%20vindo%20a%20ALTA%20PRESS%2C%20como%20posso%20ajudar%3F';
+const whatsappBase = businessProfile.whatsappUrl;
+
+const whatsappPhone = businessProfile.whatsappUrl.match(/wa\.me\/(\d+)/)?.[1] ?? '5531991878767';
+
+function buildProductQuoteHref({ categoryTitle, productLabel, detailLabel, optionLabel }) {
+  const message = [
+    `Olá! Quero solicitar uma cotação com a ${businessProfile.companyName}.`,
+    productLabel ? `Peça: ${productLabel}.` : null,
+    detailLabel ? `Referência: ${detailLabel}.` : null,
+    optionLabel ? `Opção ou classe: ${optionLabel}.` : null,
+    categoryTitle ? `Categoria: ${categoryTitle}.` : null,
+    'Podem me informar valores, disponibilidade e prazo?',
+  ]
+    .filter(Boolean)
+    .join(' ');
+
+  return `https://wa.me/${whatsappPhone}?text=${encodeURIComponent(message)}`;
+}
+
+function ProductQuoteButton({ categoryTitle, productLabel, detailLabel, optionLabel }) {
+  return (
+    <a
+      className="button button-compact product-page__quote-button"
+      href={buildProductQuoteHref({ categoryTitle, productLabel, detailLabel, optionLabel })}
+      target="_blank"
+      rel="noreferrer"
+      aria-label={`Solicitar cotação de ${productLabel} no WhatsApp`}
+    >
+      Cotação no WhatsApp
+    </a>
+  );
+}
 
 const socialLinks = [
   { label: 'Instagram', href: 'https://www.instagram.com/altapress.conexoes/' },
@@ -1567,37 +1598,47 @@ function ProductItemPage({ category, productItem, onNavigate }) {
               Voltar para {category.title}
             </a>
             <div className="product-page__grid">
-              {sortedCards.map((card) => (
-                <a
-                  key={card.label}
-                  className="product-page__card product-page__card--detail"
-                  href={standards.length ? `/produtos/${category.slug}/${slugifyProductLabel(label)}/${slugifyProductLabel(card.label)}` : whatsappBase}
-                  target={standards.length ? undefined : '_blank'}
-                  rel={standards.length ? undefined : 'noreferrer'}
-                  onClick={standards.length ? onNavigate(`/produtos/${category.slug}/${slugifyProductLabel(label)}/${slugifyProductLabel(card.label)}`) : undefined}
-                  aria-label={standards.length ? `Ver classes de ${label} ${card.label}` : `Consultar ${label} ${card.label}`}
-                >
-                  <div
-                    className={`product-page__card-media ${mediaClassName} ${image ? 'product-page__card-media--mouse-zoom' : ''}`.trim()}
-                    onMouseMove={image ? handleProductImageZoomMove : undefined}
-                    onMouseLeave={image ? handleProductImageZoomLeave : undefined}
+              {sortedCards.map((card) => {
+                const detailHref = standards.length
+                  ? `/produtos/${category.slug}/${slugifyProductLabel(label)}/${slugifyProductLabel(card.label)}`
+                  : buildProductQuoteHref({
+                      categoryTitle: category.title,
+                      productLabel: displayLabel,
+                      detailLabel: card.label,
+                    });
+
+                return (
+                  <a
+                    key={card.label}
+                    className="product-page__card product-page__card--detail"
+                    href={detailHref}
+                    target={standards.length ? undefined : '_blank'}
+                    rel={standards.length ? undefined : 'noreferrer'}
+                    onClick={standards.length ? onNavigate(detailHref) : undefined}
+                    aria-label={standards.length ? `Ver classes de ${label} ${card.label}` : `Consultar ${label} ${card.label}`}
                   >
-                    {image ? (
-                      <img src={image} alt={alt} />
-                    ) : (
-                      <span aria-hidden="true">{label.slice(0, 1)}</span>
-                    )}
-                  </div>
-                  <div className="product-page__card-caption">
-                    <strong>{card.label}</strong>
-                    <ul className="product-page__card-list">
-                      {card.options.map((option) => (
-                        <li key={option}>{option}</li>
-                      ))}
-                    </ul>
-                  </div>
-                </a>
-              ))}
+                    <div
+                      className={`product-page__card-media ${mediaClassName} ${image ? 'product-page__card-media--mouse-zoom' : ''}`.trim()}
+                      onMouseMove={image ? handleProductImageZoomMove : undefined}
+                      onMouseLeave={image ? handleProductImageZoomLeave : undefined}
+                    >
+                      {image ? (
+                        <img src={image} alt={alt} />
+                      ) : (
+                        <span aria-hidden="true">{label.slice(0, 1)}</span>
+                      )}
+                    </div>
+                    <div className="product-page__card-caption">
+                      <strong>{card.label}</strong>
+                      <ul className="product-page__card-list">
+                        {card.options.map((option) => (
+                          <li key={option}>{option}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </a>
+                );
+              })}
             </div>
           </article>
         </div>
@@ -1769,6 +1810,7 @@ function ProductSpecGallery({ images }) {
 
 function ProductSpecPage({ category, productItem, standard, optionSlug, onNavigate }) {
   const label = typeof productItem === 'string' ? productItem : productItem.label;
+  const displayLabel = typeof productItem === 'string' ? productItem : productItem.displayLabel ?? label;
   const itemSlug = slugifyProductLabel(label);
   const standardSlug = slugifyProductLabel(standard.label);
   const selectedOption = standard.options.find((option) => slugifyProductLabel(option) === optionSlug);
@@ -1942,8 +1984,21 @@ function ProductSpecPage({ category, productItem, standard, optionSlug, onNaviga
                 })}
               </>
             ) : null}
+
           </article>
         </div>
+
+        {specStatus !== 'loading' ? (
+          <div className="product-page__spec-quote">
+            <p>Precisa desta peça? Envie esta referência para receber a cotação diretamente no WhatsApp.</p>
+            <ProductQuoteButton
+              categoryTitle={category.title}
+              productLabel={displayLabel}
+              detailLabel={standard.label}
+              optionLabel={selectedOption}
+            />
+          </div>
+        ) : null}
       </div>
     </section>
   );
