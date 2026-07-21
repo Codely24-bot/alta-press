@@ -72,7 +72,8 @@ img {
 }
 
 button,
-input {
+input,
+select {
   font: inherit;
 }
 
@@ -3171,10 +3172,10 @@ input {
     font-weight: 800;
   }
 
-  .product-page__filter-button span {
-    font-size: 1.05rem;
-    line-height: 1;
-    transform: rotate(90deg);
+  .product-page__filter-button svg {
+    width: 16px;
+    height: 16px;
+    flex: 0 0 16px;
   }
 
   .product-page__sort-select {
@@ -3185,6 +3186,7 @@ input {
   .product-page__sort-select select {
     appearance: auto;
     padding: 0 12px;
+    font-weight: 800;
   }
 
   .product-page__top-button {
@@ -3265,7 +3267,7 @@ input {
     min-height: 60px;
     margin: 0;
     border-bottom: 1px solid rgba(13, 20, 26, 0.6);
-    color: var(--sky);
+    color: var(--navy-deep);
     font-size: 0.95rem;
     font-weight: 800;
   }
@@ -3297,7 +3299,7 @@ input {
 
   .product-page__filter-category-trigger.is-active,
   .product-page__filter-category-link.is-active {
-    color: var(--sky);
+    color: var(--navy-deep);
     font-weight: 800;
   }
 

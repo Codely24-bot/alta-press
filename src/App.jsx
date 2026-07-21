@@ -1295,7 +1295,15 @@ function MobileProductControls({ activeCategorySlug, activeItemSlug, onNavigate,
           Voltar
         </button>
         <button type="button" className="product-page__filter-button" onClick={() => setIsFilterOpen(true)}>
-          <span aria-hidden="true">⌯</span>
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M4 6h16l-6.2 7.1v4.7l-3.6 2.2v-6.9L4 6Z"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
           Filtrar
         </button>
         {showSort ? (
