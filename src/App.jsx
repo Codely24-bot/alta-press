@@ -1278,6 +1278,22 @@ function MobileProductControls({ activeCategorySlug, activeItemSlug, onNavigate,
   return (
     <div className="product-page__mobile-filter">
       <div className="product-page__mobile-filter-bar" aria-label="Filtros de produtos">
+        <button
+          type="button"
+          className="product-page__top-button"
+          onClick={() => {
+            if (window.history.length > 1) {
+              window.history.back();
+              return;
+            }
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+          aria-label="Voltar"
+        >
+          <span aria-hidden="true">←</span>
+          Voltar
+        </button>
         <button type="button" className="product-page__filter-button" onClick={() => setIsFilterOpen(true)}>
           <span aria-hidden="true">⌯</span>
           Filtrar
@@ -1292,9 +1308,6 @@ function MobileProductControls({ activeCategorySlug, activeItemSlug, onNavigate,
             </select>
           </label>
         ) : null}
-        <button type="button" className="product-page__top-button" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} aria-label="Voltar ao topo">
-          ↑
-        </button>
       </div>
 
       {isFilterOpen ? (
