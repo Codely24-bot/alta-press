@@ -442,9 +442,12 @@ select {
 }
 
 .hero-slide--valves-showcase img {
+  width: 112%;
+  height: 112%;
   object-fit: contain;
   object-position: center;
   background: #0a0d10;
+  transform: translate(-6%, -6%);
 }
 
 .hero-carousel-overlay {
