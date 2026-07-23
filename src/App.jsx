@@ -3,7 +3,6 @@ import SupportChatWidget from './components/SupportChatWidget';
 import { technicalContent } from './data/technicalContent';
 import { businessProfile } from '../shared/supportKnowledge';
 import altaPressMascotSupport from './assets/alta-press-mascot-support.png';
-import altaPressHeroProducts from './assets/alta-press-hero-products.png';
 import altaPressHeroValvesWide from './assets/alta-press-hero-valves-wide.png';
 import altaPressShowcaseGrid from './assets/alta-press-showcase-grid.png';
 import altaPressShowcaseVideo from './assets/alta-press-showcase-video.mp4';
@@ -165,8 +164,7 @@ const media = {
   logo: '/brand/altapress-logo.png',
   heroSlideOne: '/home/hero-slide-one.jpg',
   heroSlideTwo: '/home/hero-slide-two.png',
-  heroSlideThree: altaPressHeroProducts,
-  heroSlideFour: altaPressHeroValvesWide,
+  heroSlideThree: altaPressHeroValvesWide,
   support: redebrasValvulasPlimat,
   valves: productValvulas,
   connections: productConexaoTubulares,
@@ -198,11 +196,6 @@ const heroSlides = [
   },
   {
     image: media.heroSlideThree,
-    alt: 'Logo AltaPress com válvulas, conexões, manômetro e mangueiras industriais.',
-    className: 'hero-slide--wide-brand',
-  },
-  {
-    image: media.heroSlideFour,
     alt: 'AltaPress com válvulas industriais, flanges e conexões em cenário técnico.',
     className: 'hero-slide--valves-showcase',
   },
