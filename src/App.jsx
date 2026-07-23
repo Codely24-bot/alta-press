@@ -204,6 +204,7 @@ const heroSlides = [
   {
     image: media.heroSlideFour,
     alt: 'AltaPress com válvulas industriais, flanges e conexões em cenário técnico.',
+    className: 'hero-slide--valves-showcase',
   },
 ];
 

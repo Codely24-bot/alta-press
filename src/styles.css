@@ -452,6 +452,12 @@ select {
   object-position: center;
 }
 
+.hero-slide--valves-showcase img {
+  object-fit: contain;
+  object-position: center;
+  background: #0a0d10;
+}
+
 .hero-carousel-overlay {
   position: absolute;
   inset: 0;
