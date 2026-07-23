@@ -197,6 +197,7 @@ const heroSlides = [
   {
     image: media.heroSlideThree,
     alt: 'Logo AltaPress com válvulas, conexões, manômetro e mangueiras industriais.',
+    className: 'hero-slide--wide-brand',
   },
 ];
 
@@ -2477,7 +2478,7 @@ function App() {
               {heroSlides.map((slide, index) => (
                 <div
                   key={slide.image}
-                  className={`hero-slide ${activeHeroSlide === index ? 'is-active' : ''}`}
+                  className={`hero-slide ${slide.className ?? ''} ${activeHeroSlide === index ? 'is-active' : ''}`.trim()}
                   aria-hidden={activeHeroSlide !== index}
                 >
                   <img src={slide.image} alt={slide.alt} />
