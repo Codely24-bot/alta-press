@@ -1599,6 +1599,7 @@ function ProductCategoryPage({ category, onNavigate }) {
                         ))}
                       </ul>
                     ) : null}
+                    <ProductQuoteButton categoryTitle={category.title} productLabel={category.productPage?.title ?? category.title} />
                   </div>
                 </div>
 
@@ -1615,10 +1616,6 @@ function ProductCategoryPage({ category, onNavigate }) {
                   ))}
                 </div>
 
-                <div className="product-page__spec-quote">
-                  <p>Precisa desta peça? Envie esta referência para receber a cotação diretamente no WhatsApp.</p>
-                  <ProductQuoteButton categoryTitle={category.title} productLabel={category.productPage?.title ?? category.title} />
-                </div>
               </div>
             ) : null}
 
@@ -2095,6 +2092,12 @@ function ProductSpecPage({ category, productItem, standard, optionSlug, onNaviga
                     ) : (
                       <p>Características técnicas sob consulta.</p>
                     )}
+                    <ProductQuoteButton
+                      categoryTitle={category.title}
+                      productLabel={displayLabel}
+                      detailLabel={standard.label}
+                      optionLabel={selectedOption}
+                    />
                   </div>
                 </div>
 
@@ -2132,18 +2135,6 @@ function ProductSpecPage({ category, productItem, standard, optionSlug, onNaviga
 
           </article>
         </div>
-
-        {specStatus !== 'loading' ? (
-          <div className="product-page__spec-quote">
-            <p>Precisa desta peça? Envie esta referência para receber a cotação diretamente no WhatsApp.</p>
-            <ProductQuoteButton
-              categoryTitle={category.title}
-              productLabel={displayLabel}
-              detailLabel={standard.label}
-              optionLabel={selectedOption}
-            />
-          </div>
-        ) : null}
       </div>
     </section>
   );
