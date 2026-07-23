@@ -3,6 +3,7 @@ import SupportChatWidget from './components/SupportChatWidget';
 import { technicalContent } from './data/technicalContent';
 import { businessProfile } from '../shared/supportKnowledge';
 import altaPressMascotSupport from './assets/alta-press-mascot-support.png';
+import altaPressHeroProducts from './assets/alta-press-hero-products.png';
 import altaPressShowcaseGrid from './assets/alta-press-showcase-grid.png';
 import altaPressShowcaseVideo from './assets/alta-press-showcase-video.mp4';
 import instagramReelDa2l80jyzlo from './assets/instagram-reel-da2l80jyzlo.jpg';
@@ -163,6 +164,7 @@ const media = {
   logo: '/brand/altapress-logo.png',
   heroSlideOne: '/home/hero-slide-one.jpg',
   heroSlideTwo: '/home/hero-slide-two.png',
+  heroSlideThree: altaPressHeroProducts,
   support: redebrasValvulasPlimat,
   valves: productValvulas,
   connections: productConexaoTubulares,
@@ -191,6 +193,10 @@ const heroSlides = [
   {
     image: media.heroSlideTwo,
     alt: 'Banner institucional da AltaPress com conexões e soluções hidráulicas.',
+  },
+  {
+    image: media.heroSlideThree,
+    alt: 'Logo AltaPress com válvulas, conexões, manômetro e mangueiras industriais.',
   },
 ];
 
