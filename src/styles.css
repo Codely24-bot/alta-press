@@ -1516,6 +1516,10 @@ select {
   font-weight: 700;
 }
 
+.product-page__spec-section + .product-page__spec-section {
+  margin-top: 18px;
+}
+
 .technical-page {
   min-height: calc(100vh - var(--header-height));
   padding: 72px 0 96px;

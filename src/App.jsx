@@ -23,6 +23,8 @@ import productConexaoAltaPressao from './assets/product-connections-normalized/a
 import productConexaoColares from './assets/product-connections-normalized/colares.png';
 import productConexaoTubulares from './assets/product-connections-normalized/conexoes-tubulares.png';
 import productConexaoFerroMaleavel from './assets/product-connections-normalized/ferro-maleavel.png';
+import productTuboAcoCarbono from './assets/product-pipes/tubos-aco-carbono-card.webp';
+import productTuboAcoCarbonoUltra from './assets/product-pipes/tubos-aco-carbono-ultra-branded.png';
 import productConexaoBuchaReducao from './assets/product-connections-options/bucha-reducao.png';
 import productConexaoBujao from './assets/product-connections-options/bujao.png';
 import productConexaoCap from './assets/product-connections-options/cap.png';
@@ -634,6 +636,57 @@ const productCategories = [
         },
       },
     ],
+  },
+  {
+    title: 'Tubos',
+    slug: 'tubos',
+    image: productTuboAcoCarbono,
+    alt: 'Tubos de aço carbono.',
+    details: [],
+    directOverview: true,
+    productPage: {
+      title: 'Tubos de Aço Carbono',
+      image: productTuboAcoCarbonoUltra,
+      subtitle: 'Tubos de aço carbono para aplicações industriais, estruturais e transporte de fluidos.',
+      description: [
+        'O tubo de aço carbono é um dos materiais mais versáteis e amplamente utilizados na indústria, conhecido por sua robustez, resistência e aplicabilidade em diferentes setores.',
+        'Fabricado a partir de ligas de aço com baixo teor de carbono, este tubo apresenta propriedades mecânicas excepcionais, tornando-se ideal para projetos que exigem durabilidade e confiabilidade.',
+        'Sua popularidade deve-se à combinação de custo-benefício, flexibilidade de produção e eficiência operacional.',
+        'O tubo de aço também se destaca por sua adaptabilidade a diversas condições de trabalho, sendo indispensável em projetos industriais, de construção civil e infraestrutura.',
+      ],
+      sections: [
+        {
+          title: 'Benefícios',
+          items: [
+            'Alta resistência mecânica para projetos estruturais robustos.',
+            'Maleabilidade que facilita soldagem, corte e conformação.',
+            'Excelente custo-benefício em comparação a materiais como aço inoxidável.',
+            'Disponibilidade em diversos tamanhos e espessuras sob consulta.',
+            'Compatibilidade com revestimentos protetores para aumentar a vida útil.',
+          ],
+        },
+        {
+          title: 'Durabilidade e resistência',
+          items: [
+            'Resistência a impactos, vibrações e altas pressões.',
+            'Desempenho confiável em aplicações industriais exigentes.',
+            'Possibilidade de aplicação de revestimentos para proteção contra corrosão.',
+            'Indicado para transporte de fluidos e estruturas robustas.',
+          ],
+        },
+        {
+          title: 'Aplicações',
+          items: [
+            'Construção civil: estruturas metálicas, andaimes e encanamentos.',
+            'Indústria de óleo e gás: transporte de fluidos e gases sob pressão.',
+            'Setor automobilístico: sistemas de escape e componentes estruturais.',
+            'Indústria em geral: maquinário e equipamentos industriais.',
+            'Agricultura, redes de distribuição de água e instalações de apoio.',
+          ],
+        },
+      ],
+    },
+    items: [],
   },
   {
     title: 'Filtros',
@@ -1248,6 +1301,18 @@ function getProductItemDisplayLabel(item) {
   return typeof item === 'string' ? item : item.displayLabel ?? item.label;
 }
 
+function getProductItemHref(category, item) {
+  const label = typeof item === 'string' ? item : item.label;
+  const itemHref = `/produtos/${category.slug}/${slugifyProductLabel(label)}`;
+  const standards = getVisibleProductStandards(item);
+
+  if (standards.length === 1) {
+    return `${itemHref}/${slugifyProductLabel(standards[0].label)}`;
+  }
+
+  return itemHref;
+}
+
 function MobileProductControls({ activeCategorySlug, activeItemSlug, onNavigate, sortOrder, onSortChange, showSort = true }) {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [expandedCategorySlug, setExpandedCategorySlug] = useState(activeCategorySlug ?? null);
@@ -1339,6 +1404,7 @@ function MobileProductControls({ activeCategorySlug, activeItemSlug, onNavigate,
                   return {
                     label: getProductItemDisplayLabel(item),
                     slug: slugifyProductLabel(label),
+                    href: getProductItemHref(category, item),
                   };
                 });
 
@@ -1369,7 +1435,7 @@ function MobileProductControls({ activeCategorySlug, activeItemSlug, onNavigate,
                           Ver todos
                         </a>
                         {categoryItems.map((item) => {
-                          const itemHref = `/produtos/${category.slug}/${item.slug}`;
+                          const itemHref = item.href;
                           const isActiveItem = isActive && item.slug === activeItemSlug;
 
                           return (
@@ -1454,7 +1520,8 @@ function ProductOverviewPage({ onNavigate }) {
 
 function ProductCategoryPage({ category, onNavigate }) {
   const [sortOrder, setSortOrder] = useState('position');
-  const sortedItems = sortProductEntries(category.items, sortOrder, (item) => {
+  const hasDirectOverview = Boolean(category.directOverview);
+  const sortedItems = sortProductEntries(category.items ?? [], sortOrder, (item) => {
     const label = typeof item === 'string' ? item : item.displayLabel ?? item.label;
 
     return label;
@@ -1500,6 +1567,62 @@ function ProductCategoryPage({ category, onNavigate }) {
           />
 
           <article className="product-page__catalog" aria-label={`Itens da linha ${category.title}`}>
+            {hasDirectOverview ? (
+              <div className="product-page__spec">
+                <h1 className="product-page__spec-title">{category.productPage?.title ?? category.title}</h1>
+
+                <div className="product-page__spec-overview">
+                  <div className="product-page__spec-figure">
+                    <h2>Produto</h2>
+                    <div className="product-page__spec-images">
+                      <div
+                        className="product-page__spec-image-frame"
+                        onMouseMove={handleProductImageZoomMove}
+                        onMouseLeave={handleProductImageZoomLeave}
+                      >
+                        <img src={category.productPage?.image ?? category.image} alt={category.alt ?? category.title} />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="product-page__spec-characteristics">
+                    <h2>Características</h2>
+                    {Array.isArray(category.productPage?.description) ? (
+                      category.productPage.description.map((paragraph) => <p key={paragraph}>{paragraph}</p>)
+                    ) : (
+                      <p>{category.productPage?.description}</p>
+                    )}
+                    {category.details?.length ? (
+                      <ul>
+                        {category.details.map((detail) => (
+                          <li key={detail}>{detail}</li>
+                        ))}
+                      </ul>
+                    ) : null}
+                  </div>
+                </div>
+
+                <div className="product-page__spec-table-wrap">
+                  {(category.productPage?.sections ?? []).map((section) => (
+                    <section className="product-page__spec-characteristics product-page__spec-section" key={section.title}>
+                      <h2>{section.title}</h2>
+                      <ul>
+                        {section.items.map((item) => (
+                          <li key={item}>{item}</li>
+                        ))}
+                      </ul>
+                    </section>
+                  ))}
+                </div>
+
+                <div className="product-page__spec-quote">
+                  <p>Precisa desta peça? Envie esta referência para receber a cotação diretamente no WhatsApp.</p>
+                  <ProductQuoteButton categoryTitle={category.title} productLabel={category.productPage?.title ?? category.title} />
+                </div>
+              </div>
+            ) : null}
+
+            {hasDirectOverview ? null : (
             <div className="product-page__grid">
               {sortedItems.map((item) => {
                 const label = typeof item === 'string' ? item : item.label;
@@ -1508,7 +1631,7 @@ function ProductCategoryPage({ category, onNavigate }) {
                 const alt = typeof item === 'string' ? '' : item.alt ?? displayLabel;
                 const mediaClassName = typeof item === 'string' ? '' : item.mediaClassName ?? '';
                 const details = typeof item === 'string' ? [] : (item.details ?? []).filter((detail) => !isConsultationOnlyOption(detail));
-                const itemHref = `/produtos/${category.slug}/${slugifyProductLabel(label)}`;
+                const itemHref = getProductItemHref(category, item);
 
                 return (
                   <a
@@ -1543,6 +1666,7 @@ function ProductCategoryPage({ category, onNavigate }) {
                 );
               })}
             </div>
+            )}
           </article>
         </div>
 
@@ -2237,6 +2361,8 @@ function App() {
   const isProductsPage = currentPathname === '/produtos';
   const isTechnicalInfoPage = currentPathname === '/informacoes-tecnicas';
   const isProductDetailRoute = Boolean(activeProductRoute?.item);
+  const activeProductStandards = getVisibleProductStandards(activeProductRoute?.item);
+  const activeSingleStandard = activeProductStandards.length === 1 ? activeProductStandards[0] : null;
 
   return (
     <div className={`site-shell${isProductDetailRoute ? ' site-shell--product-detail' : ''}`}>
@@ -2327,6 +2453,13 @@ function App() {
             category={activeProductRoute.category}
             productItem={activeProductRoute.item}
             standard={activeProductRoute.standard}
+            onNavigate={handleProductNavigation}
+          />
+        ) : activeProductRoute?.item && activeSingleStandard ? (
+          <ProductStandardPage
+            category={activeProductRoute.category}
+            productItem={activeProductRoute.item}
+            standard={activeSingleStandard}
             onNavigate={handleProductNavigation}
           />
         ) : activeProductRoute?.item ? (
