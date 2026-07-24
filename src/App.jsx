@@ -5,6 +5,7 @@ import { businessProfile } from '../shared/supportKnowledge';
 import altaPressMascotSupport from './assets/alta-press-mascot-support.png';
 import altaPressHeroValvesWide from './assets/alta-press-hero-valves-wide.png';
 import altaPressShowcaseGrid from './assets/alta-press-showcase-grid.png';
+import altaPressAboutVideo from './assets/alta-press-about-video.mp4';
 import altaPressShowcaseVideo from './assets/alta-press-showcase-video.mp4';
 import instagramReelDa2l80jyzlo from './assets/instagram-reel-da2l80jyzlo.jpg';
 import redebrasValvulasPlimat from './assets/redebras-valvulas-plimat-cortada.jpg';
@@ -267,6 +268,7 @@ const productCategories = [
         image: productValvulaVaporImages.main,
         alt: 'Válvulas para aquecimento e refrigeração da AltaPress.',
         displayLabel: 'Aquecimento e Refrigeração',
+        mediaClassName: 'product-page__card-media--refrigeracao',
         details: ['Refrigeração', 'Vapor e Fluídos Térmicos'],
         directOptionCards: true,
         standards: [{ label: 'Linha', options: ['Refrigeração', 'Vapor e Fluídos Térmicos'] }],
@@ -393,11 +395,11 @@ const productCategories = [
         image: productValvulaMangote,
         alt: 'Válvula mangote da AltaPress.',
         displayLabel: 'Válvulas Mangote',
-        details: ['Corpo aberto', 'Corpo fechado'],
-        standards: [{ label: 'Corpo', options: ['Corpo Aberto', 'Corpo Fechado'] }],
+        details: ['Mangote aberto', 'Mangote fechado'],
+        standards: [{ label: 'Mangote', slug: 'corpo', options: ['Válvula Mangote Aberto', 'Válvula Mangote Fechado'] }],
         optionImages: {
-          'Corpo Aberto': productValvulaOpcaoMangoteCorpoAberto,
-          'Corpo Fechado': productValvulaOpcaoMangoteCorpoFechado,
+          'Válvula Mangote Aberto': productValvulaOpcaoMangoteCorpoAberto,
+          'Válvula Mangote Fechado': productValvulaOpcaoMangoteCorpoFechado,
         },
       },
       {
@@ -1439,7 +1441,7 @@ function getProductRouteFromPath(pathname) {
   const standardSlug = parts[3];
   const standards = getVisibleProductStandards(productItem);
   const standard = standardSlug
-    ? standards.find((item) => slugifyProductLabel(item.label) === standardSlug)
+    ? standards.find((item) => getProductStandardSlug(item) === standardSlug)
     : null;
   const optionSlug = parts[4];
 
@@ -1475,6 +1477,18 @@ function getProductItemDisplayLabel(item) {
   return typeof item === 'string' ? item : item.displayLabel ?? item.label;
 }
 
+function getProductStandardSlug(standard) {
+  return standard.slug ?? slugifyProductLabel(standard.label);
+}
+
+function getProductOptionSlug(itemSlug, standardSlug, option) {
+  if (itemSlug === 'mangote' && standardSlug === 'corpo') {
+    return option === 'Válvula Mangote Aberto' ? 'corpo-aberto' : 'corpo-fechado';
+  }
+
+  return slugifyProductLabel(option);
+}
+
 function getProductItemHref(category, item) {
   const label = typeof item === 'string' ? item : item.label;
   const itemHref = `/produtos/${category.slug}/${slugifyProductLabel(label)}`;
@@ -1485,10 +1499,31 @@ function getProductItemHref(category, item) {
   }
 
   if (standards.length === 1) {
-    return `${itemHref}/${slugifyProductLabel(standards[0].label)}`;
+    return `${itemHref}/${getProductStandardSlug(standards[0])}`;
   }
 
   return itemHref;
+}
+
+function ProductBackButton() {
+  return (
+    <button
+      type="button"
+      className="product-page__top-button"
+      onClick={() => {
+        if (window.history.length > 1) {
+          window.history.back();
+          return;
+        }
+
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }}
+      aria-label="Voltar"
+    >
+      <span aria-hidden="true">←</span>
+      Voltar
+    </button>
+  );
 }
 
 function MobileProductControls({ activeCategorySlug, activeItemSlug, onNavigate, sortOrder, onSortChange, showSort = true }) {
@@ -1521,22 +1556,7 @@ function MobileProductControls({ activeCategorySlug, activeItemSlug, onNavigate,
   return (
     <div className="product-page__mobile-filter">
       <div className="product-page__mobile-filter-bar" aria-label="Filtros de produtos">
-        <button
-          type="button"
-          className="product-page__top-button"
-          onClick={() => {
-            if (window.history.length > 1) {
-              window.history.back();
-              return;
-            }
-
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          }}
-          aria-label="Voltar"
-        >
-          <span aria-hidden="true">←</span>
-          Voltar
-        </button>
+        <ProductBackButton />
         <button type="button" className="product-page__filter-button" onClick={() => setIsFilterOpen(true)}>
           <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
             <path
@@ -1745,6 +1765,9 @@ function ProductCategoryPage({ category, onNavigate }) {
           />
 
           <article className="product-page__catalog" aria-label={`Itens da linha ${category.title}`}>
+            <div className="product-page__desktop-back">
+              <ProductBackButton />
+            </div>
             {hasDirectOverview ? (
               <div className="product-page__spec">
                 <h1 className="product-page__spec-title">{category.productPage?.title ?? category.title}</h1>
@@ -1917,9 +1940,9 @@ function ProductItemPage({ category, productItem, onNavigate }) {
           />
 
           <article className="product-page__catalog" aria-label={`Opções de ${label}`}>
-            <a className="product-page__back-inline" href={`/produtos/${category.slug}`} onClick={onNavigate(`/produtos/${category.slug}`)}>
-              Voltar para {category.title}
-            </a>
+            <div className="product-page__desktop-back">
+              <ProductBackButton />
+            </div>
             <div className="product-page__grid">
               {sortedCards.map((card) => {
                 const cardLabel = typeof card === 'string' ? card : card.label;
@@ -2026,18 +2049,15 @@ function ProductStandardPage({ category, productItem, standard, onNavigate }) {
           />
 
           <article className="product-page__catalog" aria-label={`Classes de ${displayLabel} ${standard.label}`}>
-            <a
-              className="product-page__back-inline"
-              href={`/produtos/${category.slug}/${slugifyProductLabel(label)}`}
-              onClick={onNavigate(`/produtos/${category.slug}/${slugifyProductLabel(label)}`)}
-            >
-              Voltar para {displayLabel}
-            </a>
+            <div className="product-page__desktop-back">
+              <ProductBackButton />
+            </div>
             <div className="product-page__grid">
               {sortedOptions.map((option) => (
                 (() => {
-                  const optionSlug = slugifyProductLabel(option);
-                  const specHref = `/produtos/${category.slug}/${itemSlug}/${slugifyProductLabel(standard.label)}/${optionSlug}`;
+                  const standardSlug = getProductStandardSlug(standard);
+                  const optionSlug = getProductOptionSlug(itemSlug, standardSlug, option);
+                  const specHref = `/produtos/${category.slug}/${itemSlug}/${standardSlug}/${optionSlug}`;
                   const optionImage = getProductOptionImage(productItem, option) ?? image;
                   const optionAlt = optionImage === image ? alt : `${option} da AltaPress.`;
 
@@ -2142,8 +2162,8 @@ function ProductSpecPage({ category, productItem, standard, optionSlug, onNaviga
   const label = typeof productItem === 'string' ? productItem : productItem.label;
   const displayLabel = typeof productItem === 'string' ? productItem : productItem.displayLabel ?? label;
   const itemSlug = slugifyProductLabel(label);
-  const standardSlug = slugifyProductLabel(standard.label);
-  const selectedOption = standard.options.find((option) => slugifyProductLabel(option) === optionSlug);
+  const standardSlug = getProductStandardSlug(standard);
+  const selectedOption = standard.options.find((option) => getProductOptionSlug(itemSlug, standardSlug, option) === optionSlug);
   const productImage = typeof productItem === 'string' ? null : productItem.image;
   const image = (selectedOption ? getProductOptionImage(productItem, selectedOption) : null) ?? productImage;
   const alt = selectedOption ? `${selectedOption} da AltaPress.` : typeof productItem === 'string' ? label : productItem.alt ?? label;
@@ -2222,13 +2242,9 @@ function ProductSpecPage({ category, productItem, standard, optionSlug, onNaviga
           />
 
           <article className="product-page__spec" aria-label={`Tabela técnica de ${label} ${standard.label}`}>
-            <a
-              className="product-page__back-inline"
-              href={`/produtos/${category.slug}/${itemSlug}/${standardSlug}`}
-              onClick={onNavigate(`/produtos/${category.slug}/${itemSlug}/${standardSlug}`)}
-            >
-              Voltar para {standard.label}
-            </a>
+            <div className="product-page__desktop-back">
+              <ProductBackButton />
+            </div>
 
             {specStatus === 'loading' ? (
               <div className="product-page__spec-state">
@@ -2387,6 +2403,7 @@ function App() {
   const [mobileProductMenuOpen, setMobileProductMenuOpen] = useState(false);
   const [currentPathname, setCurrentPathname] = useState(() => normalizePathname(window.location.pathname));
   const headerRef = useRef(null);
+  const mascotVideoRef = useRef(null);
 
   useEffect(() => {
     const syncRoutePosition = (behavior = 'auto') => {
@@ -2525,6 +2542,18 @@ function App() {
 
   const goToHeroSlide = (slideIndex) => {
     setActiveHeroSlide(slideIndex);
+  };
+
+  const toggleMascotVideoSound = () => {
+    const video = mascotVideoRef.current;
+
+    if (!video) {
+      return;
+    }
+
+    video.muted = !video.muted;
+    video.volume = 1;
+    video.play();
   };
 
   const showPreviousHeroSlide = () => {
@@ -2826,7 +2855,18 @@ function App() {
                 <img src={media.showcaseOne} alt="Produtos da AltaPress em exposição" />
               </div>
               <div className="showcase-card">
-                <img src={media.showcaseTwo} alt="Apresentação institucional da AltaPress" />
+                <video
+                  ref={mascotVideoRef}
+                  src={altaPressAboutVideo}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  preload="metadata"
+                  poster={media.showcaseTwo}
+                  onClick={toggleMascotVideoSound}
+                  aria-label="Vídeo institucional da AltaPress"
+                />
               </div>
               <div className="showcase-card">
                 <video
@@ -2835,7 +2875,7 @@ function App() {
                   loop
                   muted
                   playsInline
-                  preload="auto"
+                  preload="metadata"
                   aria-label="Vídeo de produtos da AltaPress"
                 />
               </div>
