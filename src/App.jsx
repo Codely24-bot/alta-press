@@ -91,7 +91,6 @@ import productPurgadorBoia from './assets/product-purgadores-normalized/boia.png
 import productPurgadorTermodinamico from './assets/product-purgadores-normalized/termodinamico.png';
 import productVedacaoFitaPtfe from './assets/product-vedacoes-normalized/fita-ptfe.png';
 import productVedacaoJuntaVedacao from './assets/product-vedacoes-normalized/junta-vedacao.png';
-import productValvulaAquecimentoRefrigeracao from './assets/product-valves-normalized/valvula-aquecimento-refrigeracao.png';
 import productValvulaAngular from './assets/product-valves-normalized/valvula-angular.png';
 import productValvulaBorboleta from './assets/product-valves-normalized/valvula-borboleta.png';
 import productValvulaDiafragma from './assets/product-valves-normalized/valvula-diafragma.png';
@@ -106,7 +105,6 @@ import productValvulaOpcaoAngularBronze from './assets/product-valves-options/an
 import productValvulaOpcaoAngularFerroFundido from './assets/product-valves-options/angular__ferro-fundido.png';
 import productValvulaOpcaoBorboletaLug from './assets/product-valves-options/borboleta__lug.png';
 import productValvulaOpcaoBorboletaWafer from './assets/product-valves-options/borboleta__wafer.png';
-import productValvulaOpcaoDescargaCaldeira from './assets/product-valves-options/descarga-de-caldeira__descarga-de-caldeira.png';
 import productValvulaOpcaoDiafragmaTipoA from './assets/product-valves-options/diafragma__tipo-a.png';
 import productValvulaOpcaoDiafragmaTipoR from './assets/product-valves-options/diafragma__tipo-r-ou-kb.png';
 import productValvulaOpcaoEsferaBipartida from './assets/product-valves-options/esfera__bipartida.png';
@@ -159,6 +157,33 @@ const guilhotinaGalleryImages = Object.fromEntries(
     src,
   ])
 );
+
+const productValvulaVaporImages = {
+  main: '/catalog-images/wp-content-uploads-2022-07-vapor-03-jpg-altapress.png',
+  secondary: '/catalog-images/wp-content-uploads-2022-07-vapor-02-jpg-5e865439cc.png',
+};
+
+const productValvulaRefrigeracaoImages = {
+  main: '/catalog-images/wp-content-uploads-2022-07-refrigeracao-01-symbol3d.png',
+  secondary: '/catalog-images/wp-content-uploads-2022-07-refrigeracao-02-symbol3d.png',
+};
+
+const productValvulaIndustrialDulongImages = {
+  tambor: '/catalog-images/dulong-industrial/valvula-tambor-1910-altapress.png',
+  tamborAluminio: '/catalog-images/dulong-industrial/valvula-tambor-aluminio-1911-altapress.png',
+  globoPedal: '/catalog-images/dulong-industrial/valvula-globo-pedal-1450-altapress.png',
+  pedalAcabamento: '/catalog-images/dulong-industrial/valvula-pedal-acabamento-1451-altapress.png',
+  indicadoraNivel: '/catalog-images/dulong-industrial/valvula-indicadora-nivel-1901-altapress.png',
+  boia: '/catalog-images/dulong-industrial/valvula-boia-2150-altapress.png',
+  bloqueioVolante: '/catalog-images/dulong-industrial/bloqueio-para-volante-2000-altapress.png',
+  travaTambor: '/catalog-images/dulong-industrial/trava-para-tambor-1920-altapress.png',
+  respiroHorizontal: '/catalog-images/dulong-industrial/respiro-tambor-horizontal-1930-altapress.png',
+  respiroVertical: '/catalog-images/dulong-industrial/respiro-tambor-vertical-1940-altapress.png',
+  valvulasComFlange: '/catalog-images/dulong-industrial/valvulas-com-flange-altapress.png',
+  visorFluxo: '/catalog-images/dulong-industrial/visor-de-fluxo-1851-altapress.png',
+  filtroY: '/catalog-images/dulong-industrial/filtro-y-1801-altapress.png',
+  filtroLeve: '/catalog-images/dulong-industrial/filtro-leve-1802-altapress.png',
+};
 
 const media = {
   logo: '/brand/altapress-logo.png',
@@ -238,14 +263,16 @@ const productCategories = [
     image: productValvulas,
     items: [
       {
-        label: 'Descarga de caldeira',
-        image: productValvulaAquecimentoRefrigeracao,
-        alt: 'Válvula para aquecimento e refrigeração da AltaPress.',
+        label: 'Aquecimento e Refrigeração',
+        image: productValvulaVaporImages.main,
+        alt: 'Válvulas para aquecimento e refrigeração da AltaPress.',
         displayLabel: 'Aquecimento e Refrigeração',
-        details: ['Vapor', 'Fluidos térmicos'],
-        standards: [{ label: 'Aplicação', options: ['Descarga de caldeira'] }],
+        details: ['Refrigeração', 'Vapor e Fluídos Térmicos'],
+        directOptionCards: true,
+        standards: [{ label: 'Linha', options: ['Refrigeração', 'Vapor e Fluídos Térmicos'] }],
         optionImages: {
-          'Descarga de caldeira': productValvulaOpcaoDescargaCaldeira,
+          Refrigeração: productValvulaRefrigeracaoImages.main,
+          'Vapor e Fluídos Térmicos': productValvulaVaporImages.main,
         },
       },
       {
@@ -403,6 +430,126 @@ const productCategories = [
           Segurança: productValvulaOpcaoSeguranca,
           Alívio: productValvulaOpcaoSegurancaAlivio,
           'Calibração sob consulta': productValvulaOpcaoSegurancaCalibracao,
+        },
+      },
+      {
+        label: 'Tambor',
+        image: productValvulaIndustrialDulongImages.tambor,
+        alt: 'Válvula tambor industrial da AltaPress.',
+        displayLabel: 'Válvula Tambor',
+        details: ['Linha industrial', 'Bronze', 'Alumínio'],
+        standards: [{ label: 'Modelo', options: ['Bronze', 'Alumínio'] }],
+        optionImages: {
+          Bronze: productValvulaIndustrialDulongImages.tambor,
+          Alumínio: productValvulaIndustrialDulongImages.tamborAluminio,
+        },
+      },
+      {
+        label: 'Válvulas com flange',
+        image: productValvulaIndustrialDulongImages.valvulasComFlange,
+        alt: 'Válvula industrial com flange da AltaPress.',
+        displayLabel: 'Válvulas com Flange',
+        details: ['Linha industrial', 'Aplicação flangeada'],
+        standards: [{ label: 'Modelo', options: ['Aplicação flangeada'] }],
+        optionImages: {
+          'Aplicação flangeada': productValvulaIndustrialDulongImages.valvulasComFlange,
+        },
+      },
+      {
+        label: 'Visor de fluxo',
+        image: productValvulaIndustrialDulongImages.visorFluxo,
+        alt: 'Visor de fluxo industrial da AltaPress.',
+        displayLabel: 'Visor de Fluxo',
+        details: ['Linha industrial', 'Inspeção visual'],
+        standards: [{ label: 'Modelo', options: ['Inspeção visual'] }],
+        optionImages: {
+          'Inspeção visual': productValvulaIndustrialDulongImages.visorFluxo,
+        },
+      },
+      {
+        label: 'Globo de pedal',
+        image: productValvulaIndustrialDulongImages.globoPedal,
+        alt: 'Válvula globo de pedal industrial da AltaPress.',
+        displayLabel: 'Válvula Globo de Pedal',
+        details: ['Linha industrial', 'Pedal', 'Com acabamento'],
+        standards: [{ label: 'Modelo', options: ['Pedal', 'Com acabamento'] }],
+        optionImages: {
+          Pedal: productValvulaIndustrialDulongImages.globoPedal,
+          'Com acabamento': productValvulaIndustrialDulongImages.pedalAcabamento,
+        },
+      },
+      {
+        label: 'Indicadora de nível',
+        image: productValvulaIndustrialDulongImages.indicadoraNivel,
+        alt: 'Válvula indicadora de nível industrial da AltaPress.',
+        displayLabel: 'Válvula Indicadora de Nível',
+        details: ['Linha industrial', 'Indicador de nível'],
+        standards: [{ label: 'Modelo', options: ['Indicador de nível'] }],
+        optionImages: {
+          'Indicador de nível': productValvulaIndustrialDulongImages.indicadoraNivel,
+        },
+      },
+      {
+        label: 'Boia industrial',
+        image: productValvulaIndustrialDulongImages.boia,
+        alt: 'Válvula boia industrial da AltaPress.',
+        displayLabel: 'Válvula Boia',
+        details: ['Linha industrial', 'Controle de nível'],
+        standards: [{ label: 'Modelo', options: ['Controle de nível'] }],
+        optionImages: {
+          'Controle de nível': productValvulaIndustrialDulongImages.boia,
+        },
+      },
+      {
+        label: 'Filtro Y',
+        image: productValvulaIndustrialDulongImages.filtroY,
+        alt: 'Filtro Y industrial da AltaPress.',
+        details: ['Linha industrial', 'Retenção de impurezas'],
+        standards: [{ label: 'Modelo', options: ['Filtro Y'] }],
+        optionImages: {
+          'Filtro Y': productValvulaIndustrialDulongImages.filtroY,
+        },
+      },
+      {
+        label: 'Bloqueio para volante',
+        image: productValvulaIndustrialDulongImages.bloqueioVolante,
+        alt: 'Bloqueio para volante industrial da AltaPress.',
+        details: ['Linha industrial', 'Segurança operacional'],
+        standards: [{ label: 'Modelo', options: ['Bloqueio para volante'] }],
+        optionImages: {
+          'Bloqueio para volante': productValvulaIndustrialDulongImages.bloqueioVolante,
+        },
+      },
+      {
+        label: 'Trava para tambor',
+        image: productValvulaIndustrialDulongImages.travaTambor,
+        alt: 'Trava para tambor industrial da AltaPress.',
+        details: ['Linha industrial', 'Segurança para tambor'],
+        standards: [{ label: 'Modelo', options: ['Trava para tambor'] }],
+        optionImages: {
+          'Trava para tambor': productValvulaIndustrialDulongImages.travaTambor,
+        },
+      },
+      {
+        label: 'Filtro leve',
+        image: productValvulaIndustrialDulongImages.filtroLeve,
+        alt: 'Filtro leve industrial da AltaPress.',
+        displayLabel: 'Filtro Leve',
+        details: ['Linha industrial', 'Filtragem leve'],
+        standards: [{ label: 'Modelo', options: ['Filtro leve'] }],
+        optionImages: {
+          'Filtro leve': productValvulaIndustrialDulongImages.filtroLeve,
+        },
+      },
+      {
+        label: 'Respiro para tambor',
+        image: productValvulaIndustrialDulongImages.respiroHorizontal,
+        alt: 'Respiro para tambor industrial da AltaPress.',
+        details: ['Horizontal', 'Vertical', 'Linha industrial'],
+        standards: [{ label: 'Modelo', options: ['Horizontal', 'Vertical'] }],
+        optionImages: {
+          Horizontal: productValvulaIndustrialDulongImages.respiroHorizontal,
+          Vertical: productValvulaIndustrialDulongImages.respiroVertical,
         },
       },
     ],
@@ -1212,6 +1359,26 @@ function getProductTechnicalSpec(specs, categorySlug, itemSlug, standardSlug, op
     return directSpec;
   }
 
+  if (categorySlug === 'valvulas' && itemSlug === 'aquecimento-e-refrigeracao' && standardSlug === 'linha') {
+    if (optionSlug === 'refrigeracao') {
+      const spec = getTechnicalSpec(specs, 'solenoide', 'aplicacao', 'acionamento-eletrico');
+
+      return spec
+        ? {
+            ...spec,
+            images: [
+              { src: productValvulaRefrigeracaoImages.main, alt: 'Refrigeração' },
+              { src: productValvulaRefrigeracaoImages.secondary, alt: 'Refrigeração' },
+            ],
+          }
+        : null;
+    }
+
+    if (optionSlug === 'vapor-e-fluidos-termicos') {
+      return getTechnicalSpec(specs, 'descarga-de-caldeira', 'aplicacao', 'descarga-de-caldeira');
+    }
+  }
+
   if (categorySlug === 'valvulas' && itemSlug === 'guilhotina' && standardSlug === 'modelo') {
     return guilhotinaSerieSpecs[optionSlug] ?? null;
   }
@@ -1312,6 +1479,10 @@ function getProductItemHref(category, item) {
   const label = typeof item === 'string' ? item : item.label;
   const itemHref = `/produtos/${category.slug}/${slugifyProductLabel(label)}`;
   const standards = getVisibleProductStandards(item);
+
+  if (typeof item !== 'string' && item.directOptionCards) {
+    return itemHref;
+  }
 
   if (standards.length === 1) {
     return `${itemHref}/${slugifyProductLabel(standards[0].label)}`;
@@ -1692,15 +1863,18 @@ function ProductItemPage({ category, productItem, onNavigate }) {
   const alt = typeof productItem === 'string' ? '' : productItem.alt ?? displayLabel;
   const mediaClassName = typeof productItem === 'string' ? '' : productItem.mediaClassName ?? '';
   const standards = getVisibleProductStandards(productItem);
+  const directOptionStandard = typeof productItem === 'string' || !productItem.directOptionCards
+    ? null
+    : standards[0] ?? null;
   const fallbackCards = [
     {
       label: 'Especificação sob consulta',
       options: ['Material', 'Bitola', 'Classe de pressão', 'Aplicação'],
     },
   ];
-  const cards = standards.length ? standards : fallbackCards;
+  const cards = directOptionStandard ? directOptionStandard.options : standards.length ? standards : fallbackCards;
   const [sortOrder, setSortOrder] = useState('position');
-  const sortedCards = sortProductEntries(cards, sortOrder, (card) => card.label);
+  const sortedCards = sortProductEntries(cards, sortOrder, (card) => (typeof card === 'string' ? card : card.label));
 
   return (
     <section className="product-page section-surface">
@@ -1748,42 +1922,49 @@ function ProductItemPage({ category, productItem, onNavigate }) {
             </a>
             <div className="product-page__grid">
               {sortedCards.map((card) => {
-                const detailHref = standards.length
+                const cardLabel = typeof card === 'string' ? card : card.label;
+                const detailHref = directOptionStandard
+                  ? `/produtos/${category.slug}/${slugifyProductLabel(label)}/${slugifyProductLabel(directOptionStandard.label)}/${slugifyProductLabel(cardLabel)}`
+                  : standards.length
                   ? `/produtos/${category.slug}/${slugifyProductLabel(label)}/${slugifyProductLabel(card.label)}`
                   : buildProductQuoteHref({
                       categoryTitle: category.title,
                       productLabel: displayLabel,
-                      detailLabel: card.label,
+                      detailLabel: cardLabel,
                     });
+                const cardImage = directOptionStandard ? getProductOptionImage(productItem, cardLabel) ?? image : image;
+                const cardAlt = directOptionStandard ? `${cardLabel} da AltaPress.` : alt;
 
                 return (
                   <a
-                    key={card.label}
+                    key={cardLabel}
                     className="product-page__card product-page__card--detail"
                     href={detailHref}
-                    target={standards.length ? undefined : '_blank'}
-                    rel={standards.length ? undefined : 'noreferrer'}
-                    onClick={standards.length ? onNavigate(detailHref) : undefined}
-                    aria-label={standards.length ? `Ver classes de ${label} ${card.label}` : `Consultar ${label} ${card.label}`}
+                    target={standards.length || directOptionStandard ? undefined : '_blank'}
+                    rel={standards.length || directOptionStandard ? undefined : 'noreferrer'}
+                    onClick={standards.length || directOptionStandard ? onNavigate(detailHref) : undefined}
+                    aria-label={standards.length || directOptionStandard ? `Ver ${displayLabel} ${cardLabel}` : `Consultar ${label} ${cardLabel}`}
                   >
                     <div
-                      className={`product-page__card-media ${mediaClassName} ${image ? 'product-page__card-media--mouse-zoom' : ''}`.trim()}
-                      onMouseMove={image ? handleProductImageZoomMove : undefined}
-                      onMouseLeave={image ? handleProductImageZoomLeave : undefined}
+                      className={`product-page__card-media ${mediaClassName} ${cardImage ? 'product-page__card-media--mouse-zoom' : ''}`.trim()}
+                      onMouseMove={cardImage ? handleProductImageZoomMove : undefined}
+                      onMouseLeave={cardImage ? handleProductImageZoomLeave : undefined}
                     >
-                      {image ? (
-                        <img src={image} alt={alt} />
+                      {cardImage ? (
+                        <img src={cardImage} alt={cardAlt} />
                       ) : (
                         <span aria-hidden="true">{label.slice(0, 1)}</span>
                       )}
                     </div>
                     <div className="product-page__card-caption">
-                      <strong>{card.label}</strong>
-                      <ul className="product-page__card-list">
-                        {card.options.map((option) => (
-                          <li key={option}>{option}</li>
-                        ))}
-                      </ul>
+                      <strong>{cardLabel}</strong>
+                      {typeof card === 'string' ? null : (
+                        <ul className="product-page__card-list">
+                          {card.options.map((option) => (
+                            <li key={option}>{option}</li>
+                          ))}
+                        </ul>
+                      )}
                     </div>
                   </a>
                 );

@@ -6830,5 +6830,464 @@ export const productTechnicalSpecs = {
         "tables": []
       }
     }
+  },
+  "tambor": {
+    "modelo": {
+      "bronze": {
+        "itemSlug": "tambor",
+        "standardSlug": "modelo",
+        "optionSlug": "bronze",
+        "title": "Válvula Tambor",
+        "sourceUrl": "https://www.dulong.com.br/valvulas-industriais/valvula-tambor",
+        "note": "*Imagens e informações técnicas usadas conforme autorização de uso da linha industrial.",
+        "characteristics": [
+          "Aplicável em tambores para uso em óleos e fluídos viscosos.",
+          "Pressão de trabalho até 0,2 bar.",
+          "Corpo, porta-disco e alavanca de acionamento em bronze.",
+          "Disco de vedação em PTFE.",
+          "Indicada para bloqueio e controle de saída em tambores industriais."
+        ],
+        "images": [
+          {
+            "src": "/catalog-images/dulong-industrial/valvula-tambor-1910-altapress.png",
+            "alt": "Válvula Tambor"
+          }
+        ],
+        "tables": [
+          [
+            ["Item", "Especificação"],
+            ["Produto", "Válvula Tambor"],
+            ["Aplicação", "Óleos e fluídos viscosos em tambores"],
+            ["Pressão", "Até 0,2 bar"],
+            ["Materiais", "Bronze e vedação em PTFE"],
+            ["Fornecimento", "Material, bitola e disponibilidade sob consulta técnica"]
+          ]
+        ]
+      },
+      "aluminio": {
+        "itemSlug": "tambor",
+        "standardSlug": "modelo",
+        "optionSlug": "aluminio",
+        "title": "Válvula de Tambor em Alumínio",
+        "sourceUrl": "https://www.dulong.com.br/valvulas-industriais/valvular-para-tambor-em-aluminio",
+        "note": "*Imagens e informações técnicas usadas conforme autorização de uso da linha industrial.",
+        "characteristics": [
+          "Modelo em alumínio para aplicação em tambores industriais.",
+          "Indicada para operações de transferência e controle de saída de fluidos em tambores.",
+          "Construção leve para manuseio e instalação em sistemas de baixa pressão.",
+          "Fornecimento conforme compatibilidade do fluido e condição de operação."
+        ],
+        "images": [
+          {
+            "src": "/catalog-images/dulong-industrial/valvula-tambor-aluminio-1911-altapress.png",
+            "alt": "Válvula de Tambor em Alumínio"
+          }
+        ],
+        "tables": [
+          [
+            ["Item", "Especificação"],
+            ["Produto", "Válvula de Tambor em Alumínio"],
+            ["Aplicação", "Tambores industriais"],
+            ["Construção", "Alumínio"],
+            ["Fornecimento", "Modelo e compatibilidade sob consulta técnica"]
+          ]
+        ]
+      }
+    }
+  },
+  "valvulas-com-flange": {
+    "modelo": {
+      "aplicacao-flangeada": {
+        "itemSlug": "valvulas-com-flange",
+        "standardSlug": "modelo",
+        "optionSlug": "aplicacao-flangeada",
+        "title": "Válvulas com Flange",
+        "sourceUrl": "https://www.dulong.com.br/valvulas-industriais/valvulas-com-flange",
+        "note": "*Imagens e informações técnicas usadas conforme autorização de uso da linha industrial.",
+        "characteristics": [
+          "Aplicação de flange em válvulas industriais conforme necessidade do projeto.",
+          "Disponível para modelos como globo, gaveta, pedal, retenção, visor, Filtro Y, hidrante e macho.",
+          "Indicada para instalações que exigem montagem flangeada, manutenção facilitada e conexão robusta.",
+          "Dimensões, classe de pressão e padrão de flange sob consulta técnica."
+        ],
+        "images": [
+          {
+            "src": "/catalog-images/dulong-industrial/valvulas-com-flange-altapress.png",
+            "alt": "Válvulas com Flange"
+          }
+        ],
+        "tables": [
+          [
+            ["Item", "Especificação"],
+            ["Produto", "Válvulas com Flange"],
+            ["Aplicação", "Montagem flangeada em válvulas industriais"],
+            ["Modelos aplicáveis", "Globo, gaveta, pedal, retenção, visor, Filtro Y, hidrante e macho"],
+            ["Fornecimento", "Padrão de flange, bitola e classe sob consulta técnica"]
+          ]
+        ]
+      }
+    }
+  },
+  "visor-de-fluxo": {
+    "modelo": {
+      "inspecao-visual": {
+        "itemSlug": "visor-de-fluxo",
+        "standardSlug": "modelo",
+        "optionSlug": "inspecao-visual",
+        "title": "Visor de Fluxo",
+        "sourceUrl": "https://www.dulong.com.br/valvulas-industriais/visor-de-fluxo",
+        "note": "*Imagens e informações técnicas usadas conforme autorização de uso da linha industrial.",
+        "characteristics": [
+          "Equipamento para inspeção visual da passagem de fluido em linhas industriais.",
+          "Auxilia na verificação de fluxo, presença de líquido e condição de operação.",
+          "Aplicável em sistemas de líquidos ou gases conforme compatibilidade do material.",
+          "Conexão, material, vedação e classe de pressão sob consulta técnica."
+        ],
+        "images": [
+          {
+            "src": "/catalog-images/dulong-industrial/visor-de-fluxo-1851-altapress.png",
+            "alt": "Visor de Fluxo"
+          }
+        ],
+        "tables": [
+          [
+            ["Item", "Especificação"],
+            ["Produto", "Visor de Fluxo"],
+            ["Aplicação", "Inspeção visual de fluxo em linhas industriais"],
+            ["Fluido", "Líquidos ou gases conforme compatibilidade"],
+            ["Fornecimento", "Conexão, material e pressão sob consulta técnica"]
+          ]
+        ]
+      }
+    }
+  },
+  "globo-de-pedal": {
+    "modelo": {
+      "pedal": {
+        "itemSlug": "globo-de-pedal",
+        "standardSlug": "modelo",
+        "optionSlug": "pedal",
+        "title": "Válvula Globo de Pedal",
+        "sourceUrl": "https://www.dulong.com.br/valvulas-industriais/valvula-global-de-pedal",
+        "note": "*Imagens e informações técnicas usadas conforme autorização de uso da linha industrial.",
+        "characteristics": [
+          "Classe PN 16 - 125/200.",
+          "Conexão BSP ou NPT sob consulta.",
+          "Condição de trabalho para vapor saturado: 125 PSI, aproximadamente 9 bar.",
+          "Condição de trabalho para água e óleo: 200 PSI, aproximadamente 14 bar.",
+          "Aplicação sem choque, com acionamento por pedal."
+        ],
+        "images": [
+          {
+            "src": "/catalog-images/dulong-industrial/valvula-globo-pedal-1450-altapress.png",
+            "alt": "Válvula Globo de Pedal"
+          }
+        ],
+        "tables": [
+          [
+            ["Item", "Especificação"],
+            ["Produto", "Válvula Globo de Pedal"],
+            ["Classe", "PN 16 - 125/200"],
+            ["Conexão", "BSP ou NPT sob consulta"],
+            ["Vapor saturado", "125 PSI / 9 bar"],
+            ["Água e óleo", "200 PSI / 14 bar"]
+          ]
+        ]
+      },
+      "com-acabamento": {
+        "itemSlug": "globo-de-pedal",
+        "standardSlug": "modelo",
+        "optionSlug": "com-acabamento",
+        "title": "Válvula Pedal com Acabamento",
+        "sourceUrl": "https://www.dulong.com.br/valvulas-industriais/valvula-pedal-com-acabamento",
+        "note": "*Imagens e informações técnicas usadas conforme autorização de uso da linha industrial.",
+        "characteristics": [
+          "Válvula de acionamento por pedal para aplicações industriais.",
+          "Modelo com acabamento para instalações que exigem melhor apresentação externa.",
+          "Aplicável em linhas de água, óleo ou vapor conforme compatibilidade do projeto.",
+          "Conexão, pressão e material sob consulta técnica."
+        ],
+        "images": [
+          {
+            "src": "/catalog-images/dulong-industrial/valvula-pedal-acabamento-1451-altapress.png",
+            "alt": "Válvula Pedal com Acabamento"
+          }
+        ],
+        "tables": [
+          [
+            ["Item", "Especificação"],
+            ["Produto", "Válvula Pedal com Acabamento"],
+            ["Aplicação", "Acionamento por pedal"],
+            ["Fornecimento", "Conexão, pressão e material sob consulta técnica"]
+          ]
+        ]
+      }
+    }
+  },
+  "indicadora-de-nivel": {
+    "modelo": {
+      "indicador-de-nivel": {
+        "itemSlug": "indicadora-de-nivel",
+        "standardSlug": "modelo",
+        "optionSlug": "indicador-de-nivel",
+        "title": "Válvula Indicadora de Nível",
+        "sourceUrl": "https://www.dulong.com.br/valvulas-industriais/valvula-indicadora-de-nivel",
+        "note": "*Imagens e informações técnicas usadas conforme autorização de uso da linha industrial.",
+        "characteristics": [
+          "Classe PN 20 - 150/300.",
+          "Conexão com rosca BSP.",
+          "Vedação tipo agulha.",
+          "Válvula de purga de 1/8 NPT.",
+          "Condição de trabalho para água e óleo: 300 PSI, aproximadamente 20 bar.",
+          "Aplicação sem choque."
+        ],
+        "images": [
+          {
+            "src": "/catalog-images/dulong-industrial/valvula-indicadora-nivel-1901-altapress.png",
+            "alt": "Válvula Indicadora de Nível"
+          }
+        ],
+        "tables": [
+          [
+            ["Item", "Especificação"],
+            ["Produto", "Válvula Indicadora de Nível"],
+            ["Classe", "PN 20 - 150/300"],
+            ["Conexão", "Rosca BSP"],
+            ["Vedação", "Tipo agulha"],
+            ["Purga", "1/8 NPT"],
+            ["Água e óleo", "300 PSI / 20 bar"]
+          ]
+        ]
+      }
+    }
+  },
+  "boia-industrial": {
+    "modelo": {
+      "controle-de-nivel": {
+        "itemSlug": "boia-industrial",
+        "standardSlug": "modelo",
+        "optionSlug": "controle-de-nivel",
+        "title": "Válvula Boia",
+        "sourceUrl": "https://www.dulong.com.br/valvulas-industriais/valvula-boia",
+        "note": "*Imagens e informações técnicas usadas conforme autorização de uso da linha industrial.",
+        "characteristics": [
+          "Utilização em água quente e fria, de 0 a 42 °C.",
+          "Pressão de trabalho de até 1500 kPa.",
+          "Materiais em liga de cobre, incluindo bronze e latão.",
+          "Componentes em aço inoxidável, plásticos de engenharia e elastômeros.",
+          "Aplicada ao controle automático de nível em reservatórios e sistemas industriais."
+        ],
+        "images": [
+          {
+            "src": "/catalog-images/dulong-industrial/valvula-boia-2150-altapress.png",
+            "alt": "Válvula Boia"
+          }
+        ],
+        "tables": [
+          [
+            ["Item", "Especificação"],
+            ["Produto", "Válvula Boia"],
+            ["Temperatura", "0 a 42 °C"],
+            ["Pressão", "Até 1500 kPa"],
+            ["Materiais", "Liga de cobre, aço inoxidável, plásticos de engenharia e elastômeros"]
+          ]
+        ]
+      }
+    }
+  },
+  "filtro-y": {
+    "modelo": {
+      "filtro-y": {
+        "itemSlug": "filtro-y",
+        "standardSlug": "modelo",
+        "optionSlug": "filtro-y",
+        "title": "Filtro Y",
+        "sourceUrl": "https://www.dulong.com.br/valvulas-industriais/filtro-y",
+        "note": "*Imagens e informações técnicas usadas conforme autorização de uso da linha industrial.",
+        "characteristics": [
+          "Filtro industrial em formato Y para retenção de partículas sólidas presentes no fluido.",
+          "Protege válvulas, bombas, medidores e demais equipamentos instalados a jusante.",
+          "Indicado para linhas de água, óleo, vapor, ar comprimido e outros fluidos compatíveis.",
+          "Elemento filtrante, conexão, material e classe de pressão sob consulta técnica."
+        ],
+        "images": [
+          {
+            "src": "/catalog-images/dulong-industrial/filtro-y-1801-altapress.png",
+            "alt": "Filtro Y"
+          }
+        ],
+        "tables": [
+          [
+            ["Item", "Especificação"],
+            ["Produto", "Filtro Y"],
+            ["Aplicação", "Retenção de partículas em linhas industriais"],
+            ["Função", "Proteção de equipamentos e componentes da linha"],
+            ["Fornecimento", "Elemento filtrante, conexão, material e pressão sob consulta técnica"]
+          ]
+        ]
+      }
+    }
+  },
+  "bloqueio-para-volante": {
+    "modelo": {
+      "bloqueio-para-volante": {
+        "itemSlug": "bloqueio-para-volante",
+        "standardSlug": "modelo",
+        "optionSlug": "bloqueio-para-volante",
+        "title": "Bloqueio para Volante",
+        "sourceUrl": "https://www.dulong.com.br/valvulas-industriais/bloqueio-para-volante",
+        "note": "*Imagens e informações técnicas usadas conforme autorização de uso da linha industrial.",
+        "characteristics": [
+          "Bloqueio para volante produzido em alumínio.",
+          "Medidas disponíveis: 82 mm, 106 mm, 134 mm e 170 mm.",
+          "Aplicado em procedimentos de bloqueio operacional e manutenção.",
+          "Não acompanha cadeado e válvula."
+        ],
+        "images": [
+          {
+            "src": "/catalog-images/dulong-industrial/bloqueio-para-volante-2000-altapress.png",
+            "alt": "Bloqueio para Volante"
+          }
+        ],
+        "tables": [
+          [
+            ["Item", "Especificação"],
+            ["Produto", "Bloqueio para Volante"],
+            ["Material", "Alumínio"],
+            ["Medidas", "82 mm, 106 mm, 134 mm e 170 mm"],
+            ["Observação", "Não acompanha cadeado e válvula"]
+          ]
+        ]
+      }
+    }
+  },
+  "trava-para-tambor": {
+    "modelo": {
+      "trava-para-tambor": {
+        "itemSlug": "trava-para-tambor",
+        "standardSlug": "modelo",
+        "optionSlug": "trava-para-tambor",
+        "title": "Trava para Tambor",
+        "sourceUrl": "https://www.dulong.com.br/valvulas-industriais/trava-para-tambor",
+        "note": "*Imagens e informações técnicas usadas conforme autorização de uso da linha industrial.",
+        "characteristics": [
+          "Trava para uso em tambores industriais.",
+          "Indicada para restringir abertura e apoiar rotinas de segurança operacional.",
+          "Aplicável em conjunto com cadeado conforme procedimento interno.",
+          "Não acompanha cadeado."
+        ],
+        "images": [
+          {
+            "src": "/catalog-images/dulong-industrial/trava-para-tambor-1920-altapress.png",
+            "alt": "Trava para Tambor"
+          }
+        ],
+        "tables": [
+          [
+            ["Item", "Especificação"],
+            ["Produto", "Trava para Tambor"],
+            ["Aplicação", "Tambores industriais"],
+            ["Observação", "Não acompanha cadeado"]
+          ]
+        ]
+      }
+    }
+  },
+  "filtro-leve": {
+    "modelo": {
+      "filtro-leve": {
+        "itemSlug": "filtro-leve",
+        "standardSlug": "modelo",
+        "optionSlug": "filtro-leve",
+        "title": "Filtro Leve",
+        "sourceUrl": "https://www.dulong.com.br/valvulas-industriais/filtro-leve",
+        "note": "*Imagens e informações técnicas usadas conforme autorização de uso da linha industrial.",
+        "characteristics": [
+          "Filtro industrial leve para retenção de impurezas em linhas de processo.",
+          "Aplicável em instalações que precisam de filtragem simples e proteção operacional.",
+          "Auxilia na preservação de válvulas, bombas e instrumentos instalados na tubulação.",
+          "Material, conexão, elemento filtrante e condição de trabalho sob consulta técnica."
+        ],
+        "images": [
+          {
+            "src": "/catalog-images/dulong-industrial/filtro-leve-1802-altapress.png",
+            "alt": "Filtro Leve"
+          }
+        ],
+        "tables": [
+          [
+            ["Item", "Especificação"],
+            ["Produto", "Filtro Leve"],
+            ["Aplicação", "Filtragem leve em linhas industriais"],
+            ["Função", "Retenção de impurezas e proteção de componentes"],
+            ["Fornecimento", "Material, conexão e elemento filtrante sob consulta técnica"]
+          ]
+        ]
+      }
+    }
+  },
+  "respiro-para-tambor": {
+    "modelo": {
+      "horizontal": {
+        "itemSlug": "respiro-para-tambor",
+        "standardSlug": "modelo",
+        "optionSlug": "horizontal",
+        "title": "Respiro para Tambor Modelo Horizontal",
+        "sourceUrl": "https://www.dulong.com.br/valvulas-industriais/respiro-para-tambor-modelo-horizontal-1930",
+        "note": "*Imagens e informações técnicas usadas conforme autorização de uso da linha industrial.",
+        "characteristics": [
+          "Respiro para alívio de pressão e vácuo em tambores de líquidos.",
+          "Ajuda a evitar acúmulo de pressão por aquecimento do tambor.",
+          "Apoia o fluxo de líquido durante a retirada do produto.",
+          "Alívio automático de pressão na faixa de 3 a 8 psi, aproximadamente 20 a 55 kPa.",
+          "Modelo horizontal para instalação conforme posição do tambor."
+        ],
+        "images": [
+          {
+            "src": "/catalog-images/dulong-industrial/respiro-tambor-horizontal-1930-altapress.png",
+            "alt": "Respiro para Tambor Horizontal"
+          }
+        ],
+        "tables": [
+          [
+            ["Item", "Especificação"],
+            ["Produto", "Respiro para Tambor Horizontal"],
+            ["Função", "Alívio de pressão e vácuo"],
+            ["Faixa de alívio", "3 a 8 psi / 20 a 55 kPa"],
+            ["Instalação", "Modelo horizontal"]
+          ]
+        ]
+      },
+      "vertical": {
+        "itemSlug": "respiro-para-tambor",
+        "standardSlug": "modelo",
+        "optionSlug": "vertical",
+        "title": "Respiro para Tambor Modelo Vertical",
+        "sourceUrl": "https://www.dulong.com.br/valvulas-industriais/respiro-para-tambor-modelo-vertical",
+        "note": "*Imagens e informações técnicas usadas conforme autorização de uso da linha industrial.",
+        "characteristics": [
+          "Respiro para aliviar pressão e evitar vácuo em tambores de líquidos.",
+          "Ajuda a prevenir falhas no recipiente, colapso e vazamento do tambor.",
+          "Fornece alívio automático de pressão e vácuo.",
+          "Alívio automático de pressão na faixa de 3 a 8 psi, aproximadamente 20 a 55 kPa.",
+          "Inclui tampa com corrente de segurança para evitar deslocamentos ou perdas."
+        ],
+        "images": [
+          {
+            "src": "/catalog-images/dulong-industrial/respiro-tambor-vertical-1940-altapress.png",
+            "alt": "Respiro para Tambor Vertical"
+          }
+        ],
+        "tables": [
+          [
+            ["Item", "Especificação"],
+            ["Produto", "Respiro para Tambor Vertical"],
+            ["Função", "Alívio de pressão e vácuo"],
+            ["Faixa de alívio", "3 a 8 psi / 20 a 55 kPa"],
+            ["Característica", "Tampa com corrente de segurança"]
+          ]
+        ]
+      }
+    }
   }
 };

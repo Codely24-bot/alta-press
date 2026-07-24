@@ -957,7 +957,7 @@ select {
 }
 
 .product-page__card-media--mouse-zoom {
-  cursor: zoom-in;
+  cursor: pointer;
   transition: border-color 180ms ease, box-shadow 180ms ease;
 }
 
@@ -1098,7 +1098,7 @@ select {
   border: 1px solid rgba(26, 38, 51, 0.1);
   border-radius: 22px;
   background: var(--white);
-  cursor: zoom-in;
+  cursor: pointer;
   overflow: hidden;
   transition: border-color 180ms ease, box-shadow 180ms ease;
 }
@@ -1135,7 +1135,7 @@ select {
   border: 1px solid rgba(26, 38, 51, 0.1);
   border-radius: 22px;
   background: transparent;
-  cursor: zoom-in;
+  cursor: pointer;
   overflow: hidden;
   transition: border-color 180ms ease, box-shadow 180ms ease;
 }
