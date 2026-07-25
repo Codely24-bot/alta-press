@@ -2937,10 +2937,10 @@ select {
   .support-dock {
     right: 0;
     bottom: 0;
-    --support-mascot-width: 84px;
+    --support-mascot-width: 96px;
     --support-bubble-gap: 24px;
-    width: 150px;
-    height: 106px;
+    width: 170px;
+    height: 126px;
   }
 
   .support-dock__mascot {
@@ -3838,39 +3838,42 @@ select {
   .support-dock {
     right: 0;
     bottom: 0;
-    --support-mascot-width: 72px;
-    --support-bubble-gap: 24px;
-    width: 132px;
-    height: 92px;
+    --support-mascot-width: 130px;
+    --support-bubble-gap: 14px;
+    width: 194px;
+    height: 232px;
   }
 
   .support-dock__controls {
-    right: 2px;
+    right: 18px;
+    bottom: calc(var(--support-mascot-width) + 40px);
   }
 
   .support-chat__launcher {
     position: absolute;
     right: 0;
     bottom: 0;
-    max-width: 112px;
-    min-height: 44px;
-    padding: 7px 8px;
+    width: 152px;
+    max-width: min(152px, calc(100vw - 112px));
+    min-height: 50px;
+    padding: 8px 12px;
   }
 
   .support-chat {
-    width: 112px;
-    min-height: 44px;
+    width: 152px;
+    max-width: min(152px, calc(100vw - 112px));
+    min-height: 50px;
   }
 
   .support-chat__panel {
     --support-chat-panel-width: 220px;
-    --support-chat-panel-height: 332px;
+    --support-chat-panel-height: 420px;
     bottom: calc(100% + 14px);
   }
 
   .support-chat__launcher-copy {
-    font-size: 0.66rem;
-    line-height: 1.16;
+    font-size: 0.72rem;
+    line-height: 1.2;
   }
 
   .button {
@@ -3909,32 +3912,43 @@ select {
   }
 
   .support-dock {
-    width: min(238px, calc(100vw - 6px));
-    height: 142px;
+    width: min(276px, calc(100vw - 6px));
+    height: 232px;
     right: 0;
     bottom: 8px;
+    --support-bubble-gap: 14px;
   }
 
   .product-page__card-media img,
   .product-page__item-media img {
-    max-width: 72% !important;
-    max-height: 72% !important;
+    width: 88% !important;
+    height: 88% !important;
+    max-width: 88% !important;
+    max-height: 88% !important;
+    object-fit: contain !important;
   }
 
   .product-page__card-media--solenoides img {
+    width: 96% !important;
+    height: 96% !important;
     max-width: 96% !important;
     max-height: 96% !important;
   }
 
   .product-page__card-media--refrigeracao img {
-    max-width: 78% !important;
-    max-height: 70% !important;
+    width: 86% !important;
+    height: 82% !important;
+    max-width: 86% !important;
+    max-height: 82% !important;
   }
 
   .product-page__spec-image-frame img,
   .product-page__animated-gallery-thumbs img {
-    max-width: 38% !important;
-    max-height: 38% !important;
+    width: 48% !important;
+    height: 48% !important;
+    max-width: 48% !important;
+    max-height: 48% !important;
+    object-fit: contain !important;
   }
 
   .product-page__animated-gallery-main {
@@ -3943,8 +3957,11 @@ select {
   }
 
   .product-page__animated-gallery-main img {
-    max-width: 30% !important;
-    max-height: 42% !important;
+    width: 48% !important;
+    height: 62% !important;
+    max-width: 48% !important;
+    max-height: 62% !important;
+    object-fit: contain !important;
   }
 
   .product-page__animated-gallery-thumbs button {
@@ -4137,24 +4154,32 @@ select {
 
   .site-shell--product-detail .product-page__spec-image-frame img,
   .site-shell--product-detail .product-page__animated-gallery-main img {
-    max-width: 60% !important;
-    max-height: 148px !important;
+    width: 76% !important;
+    height: 168px !important;
+    max-width: 76% !important;
+    max-height: 168px !important;
   }
 
   .site-shell--product-detail .product-page__card-media img,
   .site-shell--product-detail .product-page__item-media img {
-    max-width: 72% !important;
-    max-height: 148px !important;
+    width: 86% !important;
+    height: 168px !important;
+    max-width: 86% !important;
+    max-height: 168px !important;
   }
 
   .site-shell--product-detail .product-page__card-media--solenoides img {
+    width: 94% !important;
+    height: 184px !important;
     max-width: 94% !important;
     max-height: 184px !important;
   }
 
   .site-shell--product-detail .product-page__card-media--refrigeracao img {
-    max-width: 78% !important;
-    max-height: 136px !important;
+    width: 86% !important;
+    height: 156px !important;
+    max-width: 86% !important;
+    max-height: 156px !important;
   }
 
   .site-shell--product-detail .product-page__animated-gallery-thumbs button {
