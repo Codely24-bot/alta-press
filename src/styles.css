@@ -2798,6 +2798,60 @@ select {
   }
 }
 
+@media (min-width: 861px) {
+  .hero-copy,
+  .hero-intro-card,
+  .section-heading,
+  .service-card__body,
+  .company-copy,
+  .company-cta,
+  .quote-box,
+  .instagram-section__inner,
+  .instagram-section__heading,
+  .banner-card,
+  .catalog-card,
+  .contact-panel,
+  .form-panel,
+  .location-map-wrap,
+  .site-footer,
+  .footer-grid > div {
+    text-align: center;
+    justify-items: center;
+  }
+
+  .hero-copy,
+  .section-heading,
+  .instagram-section__inner,
+  .showcase-grid {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .hero-actions,
+  .highlight-row,
+  .social-row,
+  .contact-list,
+  .contact-actions,
+  .location-map__actions,
+  .instagram-follow-button {
+    justify-content: center;
+  }
+
+  .banner-card {
+    align-items: center;
+  }
+
+  .banner-card {
+    justify-content: center;
+  }
+
+  .instagram-section__inner,
+  .showcase-grid {
+    justify-self: center;
+  }
+
+}
+
 @media (max-width: 860px) {
   .site-shell {
     padding-top: var(--header-height);
