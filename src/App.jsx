@@ -9,7 +9,7 @@ import altaPressAboutVideo from './assets/alta-press-about-video.mp4';
 import altaPressShowcaseVideo from './assets/alta-press-showcase-video.mp4';
 import instagramReelDa2l80jyzlo from './assets/instagram-reel-da2l80jyzlo.jpg';
 import redebrasValvulasPlimat from './assets/redebras-valvulas-plimat-cortada.jpg';
-import productAcessorios from './assets/product-categories/acessorios.jpg';
+import productAcessorios from './assets/product-categories/acessorios.png';
 import productAcessorioFiltro from './assets/product-accessories-normalized/filtro.png';
 import productAcessorioFiltroBronze from './assets/product-accessories-normalized/filtro-bronze.png';
 import productAcessorioFiltroCestoSimples from './assets/product-accessories-normalized/filtro-cesto-simples.png';
@@ -25,7 +25,7 @@ import productConexaoAltaPressao from './assets/product-connections-normalized/a
 import productConexaoColares from './assets/product-connections-normalized/colares.png';
 import productConexaoTubulares from './assets/product-connections-normalized/conexoes-tubulares.png';
 import productConexaoFerroMaleavel from './assets/product-connections-normalized/ferro-maleavel.png';
-import productTuboAcoCarbono from './assets/product-pipes/tubos-aco-carbono-card.webp';
+import productTuboAcoCarbono from './assets/product-pipes/tubos-aco-carbono-card.png';
 import productTuboAcoCarbonoUltra from './assets/product-pipes/tubos-aco-carbono-ultra-branded.png';
 import productConexaoBuchaReducao from './assets/product-connections-options/bucha-reducao.png';
 import productConexaoBujao from './assets/product-connections-options/bujao.png';
@@ -79,8 +79,8 @@ import productFlangePescoco from './assets/product-flanges-normalized/flange-pes
 import productFlangeRoscado from './assets/product-flanges-normalized/flange-roscado.png';
 import productFlangeSlipOn from './assets/product-flanges-normalized/flange-slip-on.png';
 import productFlangeSolto from './assets/product-flanges-normalized/flange-solto.png';
-import productInstrumentos from './assets/product-categories/instrumentos.jpg';
-import productValvulas from './assets/product-categories/valvulas.jpg';
+import productInstrumentos from './assets/product-categories/instrumentos.png';
+import productValvulas from './assets/product-categories/valvulas.png';
 import productOrificioPescoco from './assets/product-flanges-normalized/orificio-pescoco.png';
 import productOrificioRoscado from './assets/product-flanges-normalized/orificio-roscado.png';
 import productOrificioSlipOn from './assets/product-flanges-normalized/orificio-slip-on.png';
@@ -189,7 +189,6 @@ const productValvulaIndustrialDulongImages = {
 const media = {
   logo: '/brand/altapress-logo.png',
   heroSlideOne: '/home/hero-slide-one.jpg',
-  heroSlideTwo: '/home/hero-slide-two.png',
   heroSlideThree: altaPressHeroValvesWide,
   support: redebrasValvulasPlimat,
   valves: productValvulas,
@@ -215,10 +214,6 @@ const heroSlides = [
   {
     image: media.heroSlideOne,
     alt: 'Maquinario industrial e válvulas de alta pressão.',
-  },
-  {
-    image: media.heroSlideTwo,
-    alt: 'Banner institucional da AltaPress com conexões e soluções hidráulicas.',
   },
   {
     image: media.heroSlideThree,
@@ -1026,13 +1021,18 @@ const sectors = [
 const contacts = [
   {
     label: 'Telefone',
-    value: '(31) 9 7267-1038',
+    value: businessProfile.phone,
     href: 'tel:+5531972671038',
   },
   {
+    label: 'WhatsApp',
+    value: businessProfile.whatsapp,
+    href: businessProfile.whatsappUrl,
+  },
+  {
     label: 'Email',
-    value: 'comercial@altapress.com.br',
-    href: 'mailto:comercial@altapress.com.br',
+    value: businessProfile.email,
+    href: `mailto:${businessProfile.email}`,
   },
   {
     label: 'Endereço',
@@ -1041,7 +1041,7 @@ const contacts = [
   },
   {
     label: 'Horário',
-    value: 'Seg a Sex',
+    value: 'Segunda a quinta 08:00 as 18:00 | Sexta de 08:00 as 17:00',
     href: null,
   },
 ];
@@ -2462,7 +2462,7 @@ function App() {
 
     const slideInterval = window.setInterval(() => {
       setActiveHeroSlide((currentSlide) => (currentSlide + 1) % heroSlides.length);
-    }, 4000);
+    }, 8000);
 
     return () => {
       window.clearInterval(slideInterval);
@@ -2697,28 +2697,32 @@ function App() {
 
               <div className="hero-carousel-overlay" aria-hidden="true" />
 
-              <div className="hero-carousel-controls">
-                <button className="hero-carousel-control" type="button" aria-label="Slide anterior" onClick={showPreviousHeroSlide}>
-                  <CarouselArrowIcon direction="left" />
-                </button>
-                <button className="hero-carousel-control" type="button" aria-label="Próximo slide" onClick={showNextHeroSlide}>
-                  <CarouselArrowIcon direction="right" />
-                </button>
-              </div>
+              {heroSlides.length > 1 && (
+                <>
+                  <div className="hero-carousel-controls">
+                    <button className="hero-carousel-control" type="button" aria-label="Slide anterior" onClick={showPreviousHeroSlide}>
+                      <CarouselArrowIcon direction="left" />
+                    </button>
+                    <button className="hero-carousel-control" type="button" aria-label="Próximo slide" onClick={showNextHeroSlide}>
+                      <CarouselArrowIcon direction="right" />
+                    </button>
+                  </div>
 
-              <div className="hero-carousel-dots" role="tablist" aria-label="Selecionar slide">
-                {heroSlides.map((slide, index) => (
-                  <button
-                    key={slide.image}
-                    className={`hero-carousel-dot ${activeHeroSlide === index ? 'is-active' : ''}`}
-                    type="button"
-                    role="tab"
-                    aria-label={`Ir para o slide ${index + 1}`}
-                    aria-selected={activeHeroSlide === index}
-                    onClick={() => goToHeroSlide(index)}
-                  />
-                ))}
-              </div>
+                  <div className="hero-carousel-dots" role="tablist" aria-label="Selecionar slide">
+                    {heroSlides.map((slide, index) => (
+                      <button
+                        key={slide.image}
+                        className={`hero-carousel-dot ${activeHeroSlide === index ? 'is-active' : ''}`}
+                        type="button"
+                        role="tab"
+                        aria-label={`Ir para o slide ${index + 1}`}
+                        aria-selected={activeHeroSlide === index}
+                        onClick={() => goToHeroSlide(index)}
+                      />
+                    ))}
+                  </div>
+                </>
+              )}
             </div>
 
             <div className="container hero-intro-wrap">
@@ -2891,23 +2895,6 @@ function App() {
                 Fale conosco
               </a>
             </div>
-          </div>
-        </section>
-
-        <section className="section section-light">
-          <div className="container banner-card">
-            <div>
-              <span className="eyebrow eyebrow-dark">Projetos</span>
-              <h2>Produtos duráveis e atendimento excelente.</h2>
-              <p>
-                Fornecemos válvulas e conexões hidráulicas de alta pressão com qualidade, confiança e uma operação
-                pensada para atendimento rápido.
-              </p>
-            </div>
-
-            <a className="button button-primary" href="/contato" onClick={handleInternalNavigation('/contato', 'contato')}>
-              Ir para o contato
-            </a>
           </div>
         </section>
 

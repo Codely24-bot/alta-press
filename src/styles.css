@@ -56,6 +56,42 @@ body {
   overflow-x: hidden;
 }
 
+body :where(
+  div,
+  section,
+  article,
+  aside,
+  main,
+  header,
+  footer,
+  nav,
+  form,
+  fieldset,
+  legend,
+  p,
+  span,
+  strong,
+  small,
+  label,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  li,
+  blockquote,
+  figcaption,
+  button,
+  input,
+  textarea,
+  select,
+  th,
+  td
+) {
+  text-align: center;
+}
+
 #root {
   width: 100%;
   max-width: 100%;
@@ -418,7 +454,7 @@ select {
   position: relative;
   min-height: clamp(300px, 42vw, 520px);
   overflow: hidden;
-  background: #d8e5ec;
+  background: #0a0d10;
 }
 
 .hero-slide {
@@ -445,7 +481,7 @@ select {
 .hero-slide--valves-showcase img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
   background: #0a0d10;
 }
@@ -549,6 +585,9 @@ select {
   background: rgba(255, 255, 255, 0.96);
   border: 1px solid rgba(26, 38, 51, 0.08);
   box-shadow: 0 26px 64px rgba(13, 20, 26, 0.16);
+  display: grid;
+  justify-items: center;
+  text-align: center;
 }
 
 .company-grid,
@@ -582,6 +621,7 @@ select {
 .eyebrow {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   margin-bottom: 18px;
   color: var(--sky);
@@ -632,10 +672,14 @@ select {
   display: grid;
   gap: 24px;
   max-width: 560px;
+  justify-items: center;
+  text-align: center;
 }
 
 .hero-intro-card .hero-copy {
   max-width: 760px;
+  margin: 0 auto;
+  justify-items: center;
 }
 
 .hero-intro-card h1 {
@@ -650,12 +694,14 @@ select {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
+  justify-content: center;
 }
 
 .highlight-row {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+  justify-content: center;
 }
 
 .highlight-pill {
@@ -712,7 +758,9 @@ select {
   display: grid;
   gap: 18px;
   max-width: 820px;
-  margin-bottom: 38px;
+  margin: 0 auto 38px;
+  justify-items: center;
+  text-align: center;
 }
 
 .section-heading p,
@@ -923,8 +971,8 @@ select {
 
 .product-page__card {
   display: grid;
-  grid-template-rows: minmax(168px, 1fr) auto;
-  min-height: 292px;
+  grid-template-rows: minmax(106px, 1fr) auto;
+  min-height: 230px;
   border: 1px solid rgba(26, 38, 51, 0.18);
   background: var(--white);
   color: var(--white);
@@ -943,19 +991,20 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 168px;
-  padding: 18px;
-  background: #ffffff;
+  min-height: 106px;
+  padding: 6px;
+  background: transparent;
   overflow: hidden;
 }
 
 .product-page__card-media img {
-  width: 100%;
-  height: 100%;
-  max-height: 178px;
+  width: auto;
+  height: auto;
+  max-width: 54%;
+  max-height: 96px;
   object-fit: contain;
-  object-position: center 42%;
-  transform: translateY(var(--product-image-shift-y, -8px));
+  object-position: center;
+  transform: none;
 }
 
 .product-page__card-media--mouse-zoom {
@@ -1026,11 +1075,11 @@ select {
 .product-page__card--class {
   align-self: start;
   min-height: 0;
-  grid-template-rows: 152px auto;
+  grid-template-rows: 102px auto;
 }
 
 .product-page__card--class .product-page__card-media {
-  min-height: 152px;
+  min-height: 102px;
 }
 
 .product-page__card--class .product-page__card-caption {
@@ -1132,7 +1181,7 @@ select {
 .product-page__spec-image-frame {
   width: min(100%, 620px);
   height: clamp(300px, 42vw, 520px);
-  padding: 26px;
+  padding: clamp(28px, 4vw, 44px);
   border: 1px solid rgba(26, 38, 51, 0.1);
   border-radius: 22px;
   background: var(--white);
@@ -1151,10 +1200,11 @@ select {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  object-position: center 42%;
+  object-position: center;
   margin: auto;
-  transform: translateY(var(--product-image-shift-y, -10px));
-  transform-origin: var(--zoom-x, 50%) var(--zoom-y, 42%);
+  background: transparent;
+  transform: none;
+  transform-origin: var(--zoom-x, 50%) var(--zoom-y, 50%);
   transition: transform 280ms ease;
 }
 
@@ -1185,12 +1235,13 @@ select {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  object-position: center 42%;
+  object-position: center;
   margin: auto;
   animation: product-gallery-pop 260ms ease both;
+  background: transparent;
   filter: drop-shadow(0 18px 18px rgba(26, 38, 51, 0.14));
-  transform: translateY(var(--product-image-shift-y, -10px));
-  transform-origin: var(--zoom-x, 50%) var(--zoom-y, 42%);
+  transform: none;
+  transform-origin: var(--zoom-x, 50%) var(--zoom-y, 50%);
   transition: transform 280ms ease;
 }
 
@@ -1237,11 +1288,11 @@ select {
 @keyframes product-gallery-pop {
   from {
     opacity: 0;
-    transform: translateY(var(--product-image-shift-y, -10px)) scale(0.975);
+    transform: scale(0.975);
   }
   to {
     opacity: 1;
-    transform: translateY(var(--product-image-shift-y, -10px)) scale(1);
+    transform: scale(1);
   }
 }
 
@@ -2123,6 +2174,8 @@ select {
 .location-map-wrap {
   display: grid;
   gap: 18px;
+  width: min(100%, calc(100vw - 64px));
+  max-width: 1480px;
   margin-top: 28px;
   padding: 34px;
   border: 1px solid var(--border);
@@ -2149,8 +2202,9 @@ select {
 }
 
 .location-map {
+  width: 100%;
   overflow: hidden;
-  min-height: 330px;
+  min-height: clamp(380px, 46vw, 640px);
   border-radius: var(--radius-lg);
   background: var(--surface-strong);
 }
@@ -2158,7 +2212,7 @@ select {
 .location-map iframe {
   display: block;
   width: 100%;
-  height: 330px;
+  height: clamp(380px, 46vw, 640px);
   border: 0;
 }
 
@@ -2166,6 +2220,7 @@ select {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+  justify-content: center;
 }
 
 .location-map__actions .button {
@@ -2204,10 +2259,19 @@ select {
 .contact-item {
   display: grid;
   gap: 4px;
+  justify-items: center;
+  align-content: center;
   min-width: 0;
   padding: 18px 20px;
   border-radius: var(--radius-md);
   background: var(--surface);
+  text-align: center;
+}
+
+.contact-item:last-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: min(100%, 420px);
 }
 
 .contact-item span {
@@ -2222,6 +2286,10 @@ select {
 .contact-item strong {
   color: var(--navy-deep);
   font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  text-align: center;
 }
 
 .social-row a {
@@ -2325,6 +2393,69 @@ select {
   width: min(270px, calc(100vw - 8px));
   height: 152px;
   pointer-events: none;
+}
+
+.site-shell :where(
+  .section-heading,
+  .hero-copy,
+  .service-card__body,
+  .catalog-card,
+  .contact-panel,
+  .form-panel,
+  .instagram-section__heading,
+  .product-page__intro,
+  .product-page__catalog,
+  .product-page__spec,
+  .product-page__spec-figure,
+  .product-page__spec-characteristics,
+  .product-page__spec-table-wrap,
+  .product-page__list-card,
+  .product-page__cta,
+  .product-page__other-categories,
+  .technical-card,
+  .site-footer,
+  .footer-grid > div
+) {
+  text-align: center;
+}
+
+.product-page__intro,
+.product-page__spec,
+.product-page__spec-images,
+.product-page__animated-gallery,
+.product-page__other-categories > div,
+.product-page__desktop-back,
+.footer-logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-page__sidebar a,
+.product-page__card-caption,
+.product-page__card-details,
+.product-page__item,
+.product-page__item-copy,
+.product-page__item-text,
+.product-page__item-details,
+.product-page__cta .button-secondary,
+.footer-links,
+.contact-list,
+.social-row {
+  justify-content: center;
+}
+
+.product-page__sidebar a {
+  padding-right: 34px;
+}
+
+.product-page__sidebar a span {
+  position: absolute;
+  right: 24px;
+}
+
+.product-page__item,
+.product-page__item-copy {
+  text-align: center;
 }
 
 .support-dock__mascot {
@@ -3502,20 +3633,20 @@ select {
   }
 
   .product-page__card {
-    min-height: 264px;
-    grid-template-rows: 168px auto;
+    min-height: 212px;
+    grid-template-rows: 96px auto;
   }
 
   .product-page__card-media {
-    min-height: 168px;
-    padding: 16px;
+    min-height: 96px;
+    padding: 6px;
   }
 
   .product-page__card-media img {
     width: 100%;
     height: 100%;
     max-width: 100%;
-    max-height: 136px;
+    max-height: 88px;
     object-fit: contain;
     object-position: center;
   }
@@ -3534,8 +3665,8 @@ select {
   .product-page__card-media img {
     width: auto;
     height: auto;
-    max-width: 68%;
-    max-height: 68%;
+    max-width: 46%;
+    max-height: 46%;
     margin: auto;
   }
 
@@ -3686,8 +3817,15 @@ select {
   }
 
   .location-map-wrap {
+    width: 100%;
     text-align: center;
     justify-items: center;
+  }
+
+  .location-map,
+  .location-map iframe {
+    min-height: 360px;
+    height: 360px;
   }
 
   .location-map__actions {
@@ -3764,7 +3902,7 @@ select {
 
   .product-page__spec-image-frame:hover img,
   .product-page__spec-image-frame:focus-within img {
-    transform: translateY(var(--product-image-shift-y, -10px)) scale(1.08);
+    transform: scale(1.02);
   }
 
   .product-page__animated-gallery-main:hover {
@@ -3773,7 +3911,7 @@ select {
   }
 
   .product-page__animated-gallery-main:hover img {
-    transform: translateY(var(--product-image-shift-y, -10px)) scale(1.08);
+    transform: scale(1.02);
   }
 }
 
@@ -3951,13 +4089,13 @@ select {
   }
 
   .product-page__card {
-    min-height: 292px;
+    min-height: 218px;
   }
 
   .product-page__card-media,
   .product-page__item-media {
-    min-height: 188px;
-    padding: 18px;
+    min-height: 104px;
+    padding: 6px;
   }
 
   .product-page__spec-image-frame {
@@ -3975,11 +4113,8 @@ select {
 
   .product-page__card-media img,
   .product-page__item-media img {
-    width: 88% !important;
-    height: 88% !important;
-    max-width: 88% !important;
-    max-height: 88% !important;
-    object-fit: contain !important;
+    max-width: 46% !important;
+    max-height: 46% !important;
   }
 
   .product-page__card-media--solenoides img {
@@ -4097,9 +4232,10 @@ select {
     max-width: 66% !important;
     max-height: 178px !important;
     object-fit: contain !important;
-    object-position: center 42% !important;
-    transform: translateY(-8px) !important;
-    transform-origin: center 42% !important;
+    object-position: center !important;
+    background: transparent !important;
+    transform: none !important;
+    transform-origin: center !important;
     margin: auto !important;
     filter: none !important;
   }
@@ -4139,29 +4275,30 @@ select {
     display: grid !important;
     place-items: center !important;
     overflow: hidden !important;
+    background: transparent !important;
   }
 
   .site-shell--product-detail .product-page__card-media img,
   .site-shell--product-detail .product-page__item-media img {
     width: auto !important;
     height: auto !important;
-    max-width: 62% !important;
-    max-height: 128px !important;
+    max-width: 42% !important;
+    max-height: 82px !important;
     object-fit: contain !important;
-    object-position: center 42% !important;
-    transform: translateY(-7px) !important;
-    transform-origin: center 42% !important;
+    object-position: center !important;
+    transform: none !important;
+    transform-origin: center !important;
     margin: auto !important;
   }
 
   .site-shell--product-detail .product-page__card-media--solenoides img {
-    max-width: 92% !important;
-    max-height: 184px !important;
+    max-width: 68% !important;
+    max-height: 118px !important;
   }
 
   .site-shell--product-detail .product-page__card-media--refrigeracao img {
-    max-width: 76% !important;
-    max-height: 142px !important;
+    max-width: 54% !important;
+    max-height: 92px !important;
   }
 
   .site-shell--product-detail .product-page__spec-table-wrap {
@@ -4203,7 +4340,7 @@ select {
   .site-shell--product-detail .product-page__animated-gallery-main img,
   .site-shell--product-detail .product-page__card-media img,
   .site-shell--product-detail .product-page__item-media img {
-    transform: translateY(-7px) !important;
+    transform: none !important;
   }
 
   .site-shell--product-detail .product-page__spec-image-frame img,
@@ -4216,24 +4353,18 @@ select {
 
   .site-shell--product-detail .product-page__card-media img,
   .site-shell--product-detail .product-page__item-media img {
-    width: 86% !important;
-    height: 168px !important;
-    max-width: 86% !important;
-    max-height: 168px !important;
+    max-width: 44% !important;
+    max-height: 88px !important;
   }
 
   .site-shell--product-detail .product-page__card-media--solenoides img {
-    width: 94% !important;
-    height: 184px !important;
-    max-width: 94% !important;
-    max-height: 184px !important;
+    max-width: 70% !important;
+    max-height: 118px !important;
   }
 
   .site-shell--product-detail .product-page__card-media--refrigeracao img {
-    width: 86% !important;
-    height: 156px !important;
-    max-width: 86% !important;
-    max-height: 156px !important;
+    max-width: 54% !important;
+    max-height: 88px !important;
   }
 
   .site-shell--product-detail .product-page__animated-gallery-thumbs button {
