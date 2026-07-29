@@ -3883,6 +3883,33 @@ select {
 
 }
 
+@media (min-width: 1181px) {
+  .product-page__card {
+    grid-template-rows: minmax(158px, 1fr) auto;
+    min-height: 292px;
+  }
+
+  .product-page__card-media {
+    min-height: 158px;
+    padding: 12px;
+  }
+
+  .product-page__card-media img {
+    max-width: 76%;
+    max-height: 148px;
+  }
+
+  .product-page__card-media--solenoides img {
+    max-width: 86%;
+    max-height: 188px;
+  }
+
+  .product-page__card-media--refrigeracao img {
+    max-width: 88%;
+    max-height: 176px;
+  }
+}
+
 @media (min-width: 1181px) and (hover: hover) and (pointer: fine) {
   .product-page__card:hover .product-page__card-media--mouse-zoom img,
   .product-page__card:focus-visible .product-page__card-media--mouse-zoom img {
