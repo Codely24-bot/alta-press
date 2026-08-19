@@ -2344,54 +2344,278 @@ function ProductSpecPage({ category, productItem, standard, optionSlug, onNaviga
   );
 }
 
-function TechnicalInfoPage() {
-  const [activeTabTitle, setActiveTabTitle] = useState(technicalContent[0]?.title ?? '');
-  const activeTab = technicalContent.find((tab) => tab.title === activeTabTitle) ?? technicalContent[0];
+function TechnicalInfoPage({ pathname = '/informacoes-tecnicas' }) {
+  const technicalYellow = '#e21d2f';
+  const whatsappNumber = '5531972671038';
+  const whatsappTechnicalUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent('Olá, preciso de ajuda técnica para selecionar um componente hidráulico de alta pressão.')}`;
+  const [technicalData, setTechnicalData] = useState({ categories: [], pages: [] });
+  const [technicalSearch, setTechnicalSearch] = useState('');
+  const [converterType, setConverterType] = useState('pressao');
+  const [converterValue, setConverterValue] = useState('10000');
+  const [converterFrom, setConverterFrom] = useState('psi');
+  const [converterTo, setConverterTo] = useState('bar');
+  const technicalBase = '/informacoes-tecnicas';
+  const valacoTechnicalCategories = technicalData.categories;
+  const valacoTechnicalPages = technicalData.pages;
+  const pathParts = pathname.replace(technicalBase, '').split('/').filter(Boolean);
+  const activeCategory = valacoTechnicalCategories.find((category) => category.slug === pathParts[0]);
+  const activePage = activeCategory && pathParts[1]
+    ? valacoTechnicalPages.find((page) => page.categorySlug === activeCategory.slug && page.slug === pathParts[1])
+    : null;
+  const categoryPages = activeCategory
+    ? valacoTechnicalPages.filter((page) => page.categorySlug === activeCategory.slug)
+    : [];
+
+  useEffect(() => {
+    let isMounted = true;
+    import('./data/technical/valacoTechnicalData').then((module) => {
+      if (isMounted) {
+        setTechnicalData({
+          categories: module.valacoTechnicalCategories,
+          pages: module.valacoTechnicalPages,
+        });
+      }
+    });
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
+  useEffect(() => {
+    const previousTitle = document.title;
+    const description = document.querySelector('meta[name="description"]');
+    const previousDescription = description?.getAttribute('content') ?? '';
+    const pageTitle = activePage?.title?.split('»').pop()?.trim() || activeCategory?.title || 'Informações Técnicas';
+
+    document.title = `${pageTitle} | AltaPress`;
+    description?.setAttribute(
+      'content',
+      activePage?.description || activeCategory?.description || 'Consulte informações, tabelas, normas, materiais, conversões e referências técnicas para sistemas hidráulicos e industriais AltaPress.'
+    );
+
+    return () => {
+      document.title = previousTitle;
+      description?.setAttribute('content', previousDescription);
+    };
+  }, [activeCategory, activePage]);
+
+  const converters = {
+    temperatura: {
+      label: 'Temperatura',
+      units: {
+        c: { label: '°C', toBase: (value) => value, fromBase: (value) => value },
+        f: { label: '°F', toBase: (value) => (value - 32) * 5 / 9, fromBase: (value) => (value * 9 / 5) + 32 },
+        k: { label: 'K', toBase: (value) => value - 273.15, fromBase: (value) => value + 273.15 },
+      },
+    },
+    comprimento: { label: 'Comprimento', units: { mm: ['mm', 1], cm: ['cm', 10], m: ['m', 1000], pol: ['pol', 25.4], ft: ['ft', 304.8] } },
+    dureza: { label: 'Dureza', units: { hb: ['HB', 1], hrc: ['HRC', 10], hv: ['HV', 1.05] } },
+    vazao: { label: 'Fluxo / Vazão', units: { lmin: ['L/min', 1], m3h: ['m³/h', 16.6666667], gpm: ['GPM', 3.7854118] } },
+    peso: { label: 'Peso / Massa', units: { kg: ['kg', 1], g: ['g', 0.001], lb: ['lb', 0.45359237], ton: ['t', 1000] } },
+    potencia: { label: 'Potência', units: { kw: ['kW', 1], hp: ['hp', 0.745699872], cv: ['cv', 0.73549875], w: ['W', 0.001] } },
+    pressao: { label: 'Pressão', units: { psi: ['PSI', 1], bar: ['BAR', 14.5037738], mpa: ['MPa', 145.037738], kgf: ['kgf/cm²', 14.2233433] } },
+    refrigeracao: { label: 'Refrigeração', units: { tr: ['TR', 1], kcalh: ['kcal/h', 0.000330693], btu: ['BTU/h', 0.0000833333], kw: ['kW', 0.284345] } },
+    area: { label: 'Área', units: { mm2: ['mm²', 1], cm2: ['cm²', 100], m2: ['m²', 1000000], pol2: ['pol²', 645.16] } },
+    volume: { label: 'Volume', units: { ml: ['mL', 1], l: ['L', 1000], m3: ['m³', 1000000], gal: ['gal', 3785.4118] } },
+  };
+
+  const activeConverter = converters[converterType];
+  const converterUnits = activeConverter.units;
+  const converterNumber = Number(String(converterValue).replace(',', '.'));
+  const converterResult = Number.isFinite(converterNumber)
+    ? typeof converterUnits[converterFrom].toBase === 'function'
+      ? converterUnits[converterTo].fromBase(converterUnits[converterFrom].toBase(converterNumber))
+      : (converterNumber * converterUnits[converterFrom][1]) / converterUnits[converterTo][1]
+    : 0;
+
+  const formatTechnicalNumber = (value) =>
+    new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 2 }).format(value);
+
+  const getUnitLabel = (unit) => Array.isArray(unit) ? unit[0] : unit.label;
+  const normalizeSearch = (value) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  const searchTerm = normalizeSearch(technicalSearch.trim());
+  const searchResults = searchTerm
+    ? valacoTechnicalPages.filter((page) =>
+        normalizeSearch(`${page.title} ${page.category} ${page.description} ${page.searchText}`).includes(searchTerm)
+      ).slice(0, 12)
+    : [];
+  const pageTitle = activePage?.title?.split('»').pop()?.trim();
 
   return (
-    <section className="technical-page section-surface" id="informacoes-tecnicas">
-      <div className="container">
-        <div className="technical-page__intro">
-          <span className="eyebrow eyebrow-dark">Informações Técnicas</span>
-          <h1>Biblioteca técnica AltaPress.</h1>
+    <section className="technical-center" id="informacoes-tecnicas" style={{ '--technical-yellow': technicalYellow }}>
+      <div className="technical-center__hero">
+        <img src={altaPressHeroValvesWide} alt="Componentes industriais de alta pressão Alta Press" />
+        <div className="technical-center__hero-overlay" />
+        <div className="container technical-center__hero-content">
+          <span className="eyebrow">Central Técnica Industrial</span>
+          <h1><span>Informações</span><span>Técnicas</span></h1>
           <p>
-            Consulte especificações, tabelas, imagens e orientações técnicas diretamente no site, sem visualizador de PDF
-            e com apresentação própria da AltaPress.
+            Consulte informações, tabelas, normas, materiais, conversões e referências técnicas para sistemas hidráulicos
+            e industriais.
           </p>
-        </div>
-
-        <div className="technical-tabs">
-          <div className="technical-tabs__list" role="tablist" aria-label="Materiais técnicos">
-            {technicalContent.map((tab) => (
-              <button
-                key={tab.title}
-                className={`technical-tabs__button ${activeTab?.title === tab.title ? 'is-active' : ''}`}
-                type="button"
-                role="tab"
-                aria-selected={activeTab?.title === tab.title}
-                onClick={() => setActiveTabTitle(tab.title)}
-              >
-                <span>{tab.group}</span>
-                {tab.title}
-              </button>
-            ))}
-          </div>
-
-          {activeTab && (
-            <article className="technical-tabs__panel" role="tabpanel">
-              <div className="technical-tabs__header">
-                <span className="eyebrow eyebrow-dark">{activeTab.group}</span>
-                <h2>{activeTab.title}</h2>
-                <p>{activeTab.description}</p>
-              </div>
-
-              <div
-                className="technical-tabs__content"
-                dangerouslySetInnerHTML={{ __html: activeTab.html }}
-              />
-            </article>
+          <label className="technical-search">
+            <span className="sr-only">Pesquisar conteúdo técnico</span>
+            <input
+              type="search"
+              value={technicalSearch}
+              placeholder="Busque uma informação técnica..."
+              onChange={(event) => setTechnicalSearch(event.target.value)}
+            />
+          </label>
+          {technicalSearch.trim() && (
+            <div className="technical-search__results" aria-live="polite">
+              {searchResults.length ? searchResults.map((item) => (
+                <a key={`${item.categorySlug}-${item.slug}`} href={`${technicalBase}/${item.categorySlug}/${item.slug}`}>
+                  <strong>{item.title.split('»').pop().trim()}</strong>
+                  <span>{item.category}</span>
+                </a>
+              )) : <span>Nenhum conteúdo encontrado para essa busca.</span>}
+            </div>
           )}
         </div>
+      </div>
+
+      <div className="technical-center__body">
+        {!activeCategory && !activePage ? (
+          <>
+        <section className="technical-section technical-section--dark" aria-labelledby="technical-categories-title">
+          <div className="container">
+            <div className="technical-heading">
+              <span className="eyebrow">Categorias</span>
+              <h2 id="technical-categories-title">NAVEGUE POR CATEGORIAS</h2>
+            </div>
+            <div className="technical-category-grid">
+              {valacoTechnicalCategories.map((category, index) => (
+                <a className="technical-category-card reveal-on-load" href={`${technicalBase}/${category.slug}`} key={category.slug} style={{ '--reveal-delay': `${index * 30}ms` }}>
+                  <span className="technical-icon" aria-hidden="true">{index + 1}</span>
+                  <strong>{category.title}</strong>
+                  <small>{category.description}</small>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="technical-section" id="conversoes" aria-labelledby="technical-tools-title">
+          <div className="container technical-tools-grid">
+            <div className="technical-heading technical-heading--left">
+              <span className="eyebrow eyebrow-dark">Ferramentas Técnicas</span>
+              <h2 id="technical-tools-title">FERRAMENTAS TÉCNICAS</h2>
+              <p>Conversões rápidas para apoiar seleção, compra e manutenção de componentes hidráulicos.</p>
+            </div>
+            <article className="pressure-converter">
+              <h3>Conversor de unidades</h3>
+              <div className="pressure-converter__controls">
+                <label>Tipo<select value={converterType} onChange={(event) => {
+                  const nextType = event.target.value;
+                  const [first, second = first] = Object.keys(converters[nextType].units);
+                  setConverterType(nextType);
+                  setConverterFrom(first);
+                  setConverterTo(second);
+                }}>{Object.entries(converters).map(([key, item]) => <option key={key} value={key}>{item.label}</option>)}</select></label>
+                <label>Valor<input type="number" value={converterValue} onChange={(event) => setConverterValue(event.target.value)} /></label>
+                <label>De<select value={converterFrom} onChange={(event) => setConverterFrom(event.target.value)}>{Object.entries(converterUnits).map(([key, unit]) => <option key={key} value={key}>{getUnitLabel(unit)}</option>)}</select></label>
+                <label>Para<select value={converterTo} onChange={(event) => setConverterTo(event.target.value)}>{Object.entries(converterUnits).map(([key, unit]) => <option key={key} value={key}>{getUnitLabel(unit)}</option>)}</select></label>
+              </div>
+              <output className="pressure-converter__result">
+                {formatTechnicalNumber(converterNumber || 0)} {getUnitLabel(converterUnits[converterFrom])} = {formatTechnicalNumber(converterResult)} {getUnitLabel(converterUnits[converterTo])}
+              </output>
+              <div className="pressure-converter__actions">
+                <button type="button" onClick={() => setConverterValue('')}>Limpar</button>
+                <button type="button" onClick={() => { setConverterFrom(converterTo); setConverterTo(converterFrom); }}>Inverter unidades</button>
+              </div>
+              <small>Conversões calculadas no frontend. Dados técnicos tabulares importados permanecem preservados para revisão.</small>
+            </article>
+          </div>
+        </section>
+
+        <section className="technical-section technical-section--light" id="biblioteca" aria-labelledby="technical-library-title">
+          <div className="container">
+            <div className="technical-heading">
+              <span className="eyebrow eyebrow-dark">Biblioteca técnica</span>
+              <h2 id="technical-library-title">CONTEÚDOS IMPORTADOS</h2>
+              <p>Textos e tabelas HTML salvos localmente no projeto, sem hotlink e sem imagens da fonte.</p>
+            </div>
+            <div className="technical-existing-grid">
+              {valacoTechnicalPages.slice(0, 12).map((item) => (
+                <article className="technical-existing-card" key={`${item.categorySlug}-${item.slug}`}>
+                  <span>{item.category}</span>
+                  <h3>{item.title.split('»').pop().trim()}</h3>
+                  <p>{item.description}</p>
+                  <a href={`${technicalBase}/${item.categorySlug}/${item.slug}`}>Consultar conteúdo</a>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+          </>
+        ) : (
+          <section className="technical-section technical-section--light">
+            <div className="container technical-detail-layout">
+              <aside className="technical-sidebar">
+                <a href={technicalBase}>Central Técnica</a>
+                {valacoTechnicalCategories.map((category) => (
+                  <a key={category.slug} className={category.slug === activeCategory?.slug ? 'is-active' : ''} href={`${technicalBase}/${category.slug}`}>
+                    {category.title}
+                  </a>
+                ))}
+              </aside>
+              <article className="technical-article">
+                <nav className="technical-breadcrumb" aria-label="Breadcrumb">
+                  <a href="/">Home</a><span>Informações Técnicas</span>{activeCategory && <span>{activeCategory.title}</span>}{activePage && <span>{pageTitle}</span>}
+                </nav>
+                {activePage ? (
+                  <>
+                    <span className="eyebrow eyebrow-dark">{activePage.category}</span>
+                    <h2>{pageTitle}</h2>
+                    {activePage.imagePath && (
+                      <figure className="technical-article__visual">
+                        <img src={activePage.imagePath} alt={activePage.imageAlt || `Ilustração técnica 3D sobre ${pageTitle}`} loading="lazy" />
+                      </figure>
+                    )}
+                    <p className="technical-scroll-note">No celular, deslize as tabelas para visualizar mais →</p>
+                    <div className="technical-imported-content" dangerouslySetInnerHTML={{ __html: activePage.html }} />
+                  </>
+                ) : (
+                  <>
+                    <span className="eyebrow eyebrow-dark">Categoria</span>
+                    <h2>{activeCategory.title}</h2>
+                    <p>{activeCategory.description}</p>
+                    <div className="technical-existing-grid">
+                      {categoryPages.map((item) => (
+                        <article className="technical-existing-card" key={item.slug}>
+                          <h3>{item.title.split('»').pop().trim()}</h3>
+                          <p>{item.description}</p>
+                          <a href={`${technicalBase}/${item.categorySlug}/${item.slug}`}>Consultar conteúdo</a>
+                        </article>
+                      ))}
+                    </div>
+                  </>
+                )}
+                <div className="technical-notice">
+                  <h3>Nota técnica</h3>
+                  <p>Os dados apresentados nesta central possuem caráter informativo e de referência. A seleção de componentes deve considerar pressão, temperatura, fluido, material, norma aplicável e demais condições específicas do projeto. Em caso de dúvida, consulte a equipe técnica da AltaPress.</p>
+                  <a className="button button-primary technical-button" href={whatsappTechnicalUrl} target="_blank" rel="noreferrer">Falar com um especialista</a>
+                </div>
+              </article>
+            </div>
+          </section>
+        )}
+
+        <section className="technical-cta" aria-labelledby="technical-cta-title">
+          <div className="container">
+            <h2 id="technical-cta-title">NÃO ENCONTROU A ESPECIFICAÇÃO QUE PRECISA?</h2>
+            <p>Nossa equipe técnica pode ajudar na seleção do componente ideal para sua aplicação.</p>
+            <span>Envie sua aplicação, desenho ou especificação.</span>
+            <div className="technical-cta__actions">
+              <a className="button button-primary technical-button" href={whatsappTechnicalUrl} target="_blank" rel="noreferrer">FALAR COM ESPECIALISTA</a>
+              <a className="button button-secondary technical-button-secondary" href={whatsappTechnicalUrl} target="_blank" rel="noreferrer">SOLICITAR ORÇAMENTO</a>
+              <a className="button button-secondary technical-button-secondary" href="mailto:comercial@altapress.com.br">ENVIAR DESENHO / ESPECIFICAÇÃO</a>
+            </div>
+          </div>
+        </section>
+
       </div>
     </section>
   );
@@ -2567,7 +2791,7 @@ function App() {
   const activeProductRoute = getProductRouteFromPath(currentPathname);
   const activeProductCategory = activeProductRoute?.category ?? null;
   const isProductsPage = currentPathname === '/produtos';
-  const isTechnicalInfoPage = currentPathname === '/informacoes-tecnicas';
+  const isTechnicalInfoPage = currentPathname === '/informacoes-tecnicas' || currentPathname.startsWith('/informacoes-tecnicas/');
   const isProductDetailRoute = Boolean(activeProductRoute?.item);
   const activeProductStandards = getVisibleProductStandards(activeProductRoute?.item);
   const activeSingleStandard = activeProductStandards.length === 1 ? activeProductStandards[0] : null;
@@ -2679,7 +2903,7 @@ function App() {
         ) : activeProductCategory ? (
           <ProductCategoryPage category={activeProductCategory} onNavigate={handleProductNavigation} />
         ) : isTechnicalInfoPage ? (
-          <TechnicalInfoPage />
+          <TechnicalInfoPage pathname={currentPathname} />
         ) : (
           <>
         <section className="hero" id="home" aria-label="Destaques da AltaPress">

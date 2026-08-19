@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Sch 60 a XXS</title>
+  <desc id="desc">Ilustração técnica 3D sobre Sch 60 a XXS</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#08090b"/>
+      <stop offset=".48" stop-color="hsl(21 16% 18%)"/>
+      <stop offset="1" stop-color="#17130b"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f5f7f9"/>
+      <stop offset=".18" stop-color="#9aa3ad"/>
+      <stop offset=".52" stop-color="#343b44"/>
+      <stop offset=".78" stop-color="#c9d1d9"/>
+      <stop offset="1" stop-color="#606974"/>
+    </linearGradient>
+    <linearGradient id="yellow" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff2b6"/>
+      <stop offset=".48" stop-color="#e21d2f"/>
+      <stop offset="1" stop-color="#8c6219"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" x2="1">
+      <stop offset="0" stop-color="#fafafa"/>
+      <stop offset=".55" stop-color="#505962"/>
+      <stop offset="1" stop-color="#f6f8fb"/>
+    </linearGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="28" stdDeviation="22" flood-color="#000" flood-opacity=".42"/>
+    </filter>
+    <pattern id="grid" width="70" height="70" patternUnits="userSpaceOnUse">
+      <path d="M70 0H0V70" fill="none" stroke="#ffffff" stroke-opacity=".07" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1400" height="900" fill="url(#bg)"/>
+  <rect width="1400" height="900" fill="url(#grid)"/>
+  <path d="M78 690 C310 580 470 752 704 642 C940 532 1090 602 1324 498" fill="none" stroke="hsl(144 52% 58%)" stroke-width="2" opacity=".34"/>
+  <g filter="url(#softShadow)">
+    
+      <g transform="translate(675 350)">
+        <ellipse cx="0" cy="135" rx="255" ry="58" fill="rgba(0,0,0,.25)"/>
+        <ellipse cx="0" cy="0" rx="245" ry="108" fill="url(#steel)" stroke="#eef2f6" stroke-width="8"/>
+        <ellipse cx="0" cy="0" rx="138" ry="58" fill="#11161d" stroke="#e21d2f" stroke-width="15"/>
+        <path d="M-216 -40 C-118 -93 114 -94 218 -38" stroke="#fff" stroke-width="10" opacity=".35"/>
+        <path d="M-168 75 H168" stroke="#1e242b" stroke-width="9" opacity=".55"/>
+      </g>
+  </g>
+  <g transform="translate(96 112)">
+    <rect x="0" y="0" width="438" height="8" rx="4" fill="#e21d2f"/>
+    <text x="0" y="72" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">ESPESSURA DE TUBOS E CONEXÕES</text>
+    <text x="0" y="150" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="800">Sch 60 a XXS</text>
+    <text x="0" y="420" fill="#e21d2f" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">ALTA PRESS | CENTRAL TECNICA</text>
+    <text x="0" y="462" fill="#d6dde6" font-family="Arial, Helvetica, sans-serif" font-size="24">Dados tecnicos preservados para consulta</text>
+  </g>
+  <g transform="translate(1040 720)" opacity=".9">
+    <rect x="0" y="0" width="220" height="88" rx="14" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.18)"/>
+    <text x="24" y="36" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">3D TECHNICAL</text>
+    <text x="24" y="64" fill="#e21d2f" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">ORIGINAL ASSET</text>
+  </g>
+</svg>

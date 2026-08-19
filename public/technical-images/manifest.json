@@ -1,0 +1,410 @@
+[
+  {
+    "slug": "informacoes-tecnicas",
+    "categorySlug": "conceitos-definicoes",
+    "title": "Informações Técnicas",
+    "imagePath": "/technical-images/conceitos-definicoes/informacoes-tecnicas.svg"
+  },
+  {
+    "slug": "conversoes-de-medidas",
+    "categorySlug": "conversoes",
+    "title": "Conversões de Medidas",
+    "imagePath": "/technical-images/conversoes/conversoes-de-medidas.svg"
+  },
+  {
+    "slug": "correlacao-da-classe-da-conexao-com-numero-do-schedule-do-tubo",
+    "categorySlug": "conexoes",
+    "title": "Correlação da Classe da Conexão com Número do Schedule do Tubo",
+    "imagePath": "/technical-images/conexoes/correlacao-da-classe-da-conexao-com-numero-do-schedule-do-tubo.svg"
+  },
+  {
+    "slug": "indicacoes-de-materiais-para-conexoes-de-solda",
+    "categorySlug": "conexoes",
+    "title": "Indicações de Materiais para Conexões de Solda",
+    "imagePath": "/technical-images/conexoes/indicacoes-de-materiais-para-conexoes-de-solda.svg"
+  },
+  {
+    "slug": "materiais-permitidos-para-curvas-tub-de-solda-de-topo-e-suas-propriedades",
+    "categorySlug": "conexoes",
+    "title": "Materiais Permitidos para Curvas Tub. de Solda de Topo e suas Propriedades",
+    "imagePath": "/technical-images/conexoes/materiais-permitidos-para-curvas-tub-de-solda-de-topo-e-suas-propriedades.svg"
+  },
+  {
+    "slug": "tolerancias-para-conexoes-de-solda",
+    "categorySlug": "conexoes",
+    "title": "Tolerâncias para Conexões de Solda",
+    "imagePath": "/technical-images/conexoes/tolerancias-para-conexoes-de-solda.svg"
+  },
+  {
+    "slug": "tolerancias-para-curvas-de-aco-para-solda-de-topo",
+    "categorySlug": "conexoes",
+    "title": "Tolerâncias para Curvas de Aço para Solda de Topo",
+    "imagePath": "/technical-images/conexoes/tolerancias-para-curvas-de-aco-para-solda-de-topo.svg"
+  },
+  {
+    "slug": "dicionario-de-termos",
+    "categorySlug": "conceitos-definicoes",
+    "title": "Dicionário de Termos",
+    "imagePath": "/technical-images/conceitos-definicoes/dicionario-de-termos.svg"
+  },
+  {
+    "slug": "bsp",
+    "categorySlug": "tipos-de-rosca",
+    "title": "BSP",
+    "imagePath": "/technical-images/tipos-de-rosca/bsp.svg"
+  },
+  {
+    "slug": "npt",
+    "categorySlug": "tipos-de-rosca",
+    "title": "NPT",
+    "imagePath": "/technical-images/tipos-de-rosca/npt.svg"
+  },
+  {
+    "slug": "sch-5s-a-40",
+    "categorySlug": "espessura-tubos-conexoes",
+    "title": "Sch 5s a 40",
+    "imagePath": "/technical-images/espessura-tubos-conexoes/sch-5s-a-40.svg"
+  },
+  {
+    "slug": "sch-60-a-xxs",
+    "categorySlug": "espessura-tubos-conexoes",
+    "title": "Sch 60 a XXS",
+    "imagePath": "/technical-images/espessura-tubos-conexoes/sch-60-a-xxs.svg"
+  },
+  {
+    "slug": "12-furos",
+    "categorySlug": "flanges",
+    "title": "12 Furos",
+    "imagePath": "/technical-images/flanges/12-furos.svg"
+  },
+  {
+    "slug": "16-furos",
+    "categorySlug": "flanges",
+    "title": "16 Furos",
+    "imagePath": "/technical-images/flanges/16-furos.svg"
+  },
+  {
+    "slug": "20-furos",
+    "categorySlug": "flanges",
+    "title": "20 Furos",
+    "imagePath": "/technical-images/flanges/20-furos.svg"
+  },
+  {
+    "slug": "24-furos",
+    "categorySlug": "flanges",
+    "title": "24 Furos",
+    "imagePath": "/technical-images/flanges/24-furos.svg"
+  },
+  {
+    "slug": "32-furos",
+    "categorySlug": "flanges",
+    "title": "32 Furos",
+    "imagePath": "/technical-images/flanges/32-furos.svg"
+  },
+  {
+    "slug": "4-furos",
+    "categorySlug": "flanges",
+    "title": "4 Furos",
+    "imagePath": "/technical-images/flanges/4-furos.svg"
+  },
+  {
+    "slug": "8-furos",
+    "categorySlug": "flanges",
+    "title": "8 Furos",
+    "imagePath": "/technical-images/flanges/8-furos.svg"
+  },
+  {
+    "slug": "acabamento-da-face-de-juncao",
+    "categorySlug": "flanges",
+    "title": "Acabamento da Face de Junção",
+    "imagePath": "/technical-images/flanges/acabamento-da-face-de-juncao.svg"
+  },
+  {
+    "slug": "procedimentos-para-aperto-de-parafusos",
+    "categorySlug": "flanges",
+    "title": "Procedimentos para Aperto de Parafusos",
+    "imagePath": "/technical-images/flanges/procedimentos-para-aperto-de-parafusos.svg"
+  },
+  {
+    "slug": "pressao-hidrostatica-teste",
+    "categorySlug": "flanges",
+    "title": "Pressão Hidrostática (teste)",
+    "imagePath": "/technical-images/flanges/pressao-hidrostatica-teste.svg"
+  },
+  {
+    "slug": "dimensao-dos-prisioneiros-e-parafusos",
+    "categorySlug": "flanges",
+    "title": "Dimensão dos Prisioneiros e Parafusos",
+    "imagePath": "/technical-images/flanges/dimensao-dos-prisioneiros-e-parafusos.svg"
+  },
+  {
+    "slug": "pressao-e-temperatura-de-servico",
+    "categorySlug": "flanges",
+    "title": "Pressão e Temperatura de Serviço",
+    "imagePath": "/technical-images/flanges/pressao-e-temperatura-de-servico.svg"
+  },
+  {
+    "slug": "tolerancias",
+    "categorySlug": "flanges",
+    "title": "Tolerâncias",
+    "imagePath": "/technical-images/flanges/tolerancias.svg"
+  },
+  {
+    "slug": "informacoes-tecnicas-2",
+    "categorySlug": "conceitos-definicoes",
+    "title": "Informações Técnicas",
+    "imagePath": "/technical-images/conceitos-definicoes/informacoes-tecnicas-2.svg"
+  },
+  {
+    "slug": "recomendacoes-para-utilizacao-das-valvulas-mais-usuais",
+    "categorySlug": "aplicacao-valvulas",
+    "title": "Recomendações para Utilização das Válvulas mais Usuais",
+    "imagePath": "/technical-images/aplicacao-valvulas/recomendacoes-para-utilizacao-das-valvulas-mais-usuais.svg"
+  },
+  {
+    "slug": "conexoes",
+    "categorySlug": "conexoes",
+    "title": "Conexões",
+    "imagePath": "/technical-images/conexoes/conexoes.svg"
+  },
+  {
+    "slug": "tipos-de-rosca",
+    "categorySlug": "tipos-de-rosca",
+    "title": "Tipos de Rosca",
+    "imagePath": "/technical-images/tipos-de-rosca/tipos-de-rosca.svg"
+  },
+  {
+    "slug": "espessura-de-tubos-e-conexoes-tubulares",
+    "categorySlug": "espessura-tubos-conexoes",
+    "title": "Espessura de Tubos e Conexões Tubulares",
+    "imagePath": "/technical-images/espessura-tubos-conexoes/espessura-de-tubos-e-conexoes-tubulares.svg"
+  },
+  {
+    "slug": "expansao-termica-para-tubos-de-aco-carbono",
+    "categorySlug": "expansao-termica",
+    "title": "Expansão Térmica para Tubos de Aço Carbono",
+    "imagePath": "/technical-images/expansao-termica/expansao-termica-para-tubos-de-aco-carbono.svg"
+  },
+  {
+    "slug": "flanges",
+    "categorySlug": "flanges",
+    "title": "Flanges",
+    "imagePath": "/technical-images/flanges/flanges.svg"
+  },
+  {
+    "slug": "galvanizacao",
+    "categorySlug": "galvanizacao",
+    "title": "Galvanização",
+    "imagePath": "/technical-images/galvanizacao/galvanizacao.svg"
+  },
+  {
+    "slug": "materiais",
+    "categorySlug": "materiais",
+    "title": "Materiais",
+    "imagePath": "/technical-images/materiais/materiais.svg"
+  },
+  {
+    "slug": "pressao-de-trabalho-para-conexoes-em-ferro-maleavel-tupy",
+    "categorySlug": "conexoes",
+    "title": "Pressão de Trabalho para Conexões em Ferro Maleável (Tupy)",
+    "imagePath": "/technical-images/conexoes/pressao-de-trabalho-para-conexoes-em-ferro-maleavel-tupy.svg"
+  },
+  {
+    "slug": "faceamento-para-solda-de-topo",
+    "categorySlug": "faceamento-solda-topo",
+    "title": "Faceamento Para Solda de Topo",
+    "imagePath": "/technical-images/faceamento-solda-topo/faceamento-para-solda-de-topo.svg"
+  },
+  {
+    "slug": "composicao-quimica",
+    "categorySlug": "materiais",
+    "title": "Composição Química",
+    "imagePath": "/technical-images/materiais/composicao-quimica.svg"
+  },
+  {
+    "slug": "pressao-e-temperatura-de-servico-para-valvulas",
+    "categorySlug": "materiais",
+    "title": "Pressão e Temperatura de Serviço (para Válvulas)",
+    "imagePath": "/technical-images/materiais/pressao-e-temperatura-de-servico-para-valvulas.svg"
+  },
+  {
+    "slug": "propriedades-dos-diafragmas",
+    "categorySlug": "materiais",
+    "title": "Propriedades dos Diafragmas",
+    "imagePath": "/technical-images/materiais/propriedades-dos-diafragmas.svg"
+  },
+  {
+    "slug": "propriedades-mecanicas",
+    "categorySlug": "materiais",
+    "title": "Propriedades Mecânicas",
+    "imagePath": "/technical-images/materiais/propriedades-mecanicas.svg"
+  },
+  {
+    "slug": "resistencia-a-corrosao",
+    "categorySlug": "materiais",
+    "title": "Resistência à Corrosão",
+    "imagePath": "/technical-images/materiais/resistencia-a-corrosao.svg"
+  },
+  {
+    "slug": "tipos-de-revestimento",
+    "categorySlug": "materiais",
+    "title": "Tipos de Revestimento",
+    "imagePath": "/technical-images/materiais/tipos-de-revestimento.svg"
+  },
+  {
+    "slug": "tipos-de-materiais-de-diafragmas-mangotes-e-outras-vedacoes",
+    "categorySlug": "materiais",
+    "title": "Tipos de Materiais de Diafragmas, Mangotes e outras Vedações",
+    "imagePath": "/technical-images/materiais/tipos-de-materiais-de-diafragmas-mangotes-e-outras-vedacoes.svg"
+  },
+  {
+    "slug": "propriedades-do-vapor-saturado",
+    "categorySlug": "vapor",
+    "title": "Propriedades do Vapor Saturado",
+    "imagePath": "/technical-images/vapor/propriedades-do-vapor-saturado.svg"
+  },
+  {
+    "slug": "propriedades-do-vapor-superaquecido",
+    "categorySlug": "vapor",
+    "title": "Propriedades do Vapor Superaquecido",
+    "imagePath": "/technical-images/vapor/propriedades-do-vapor-superaquecido.svg"
+  },
+  {
+    "slug": "siglas",
+    "categorySlug": "conceitos-definicoes",
+    "title": "Siglas",
+    "imagePath": "/technical-images/conceitos-definicoes/siglas.svg"
+  },
+  {
+    "slug": "temperatura-de-vapor-saturado",
+    "categorySlug": "vapor",
+    "title": "Temperatura de Vapor Saturado",
+    "imagePath": "/technical-images/vapor/temperatura-de-vapor-saturado.svg"
+  },
+  {
+    "slug": "valvulas-globo-tipo-agulha",
+    "categorySlug": "conceitos-definicoes",
+    "title": "Válvulas Globo Tipo Agulha",
+    "imagePath": "/technical-images/conceitos-definicoes/valvulas-globo-tipo-agulha.svg"
+  },
+  {
+    "slug": "valvulas-tipo-diafragma",
+    "categorySlug": "conceitos-definicoes",
+    "title": "Válvulas Tipo Diafragma",
+    "imagePath": "/technical-images/conceitos-definicoes/valvulas-tipo-diafragma.svg"
+  },
+  {
+    "slug": "valvulas-tipo-esfera",
+    "categorySlug": "conceitos-definicoes",
+    "title": "Válvulas Tipo Esfera",
+    "imagePath": "/technical-images/conceitos-definicoes/valvulas-tipo-esfera.svg"
+  },
+  {
+    "slug": "valvulas-tipo-gaveta",
+    "categorySlug": "conceitos-definicoes",
+    "title": "Válvulas Tipo Gaveta",
+    "imagePath": "/technical-images/conceitos-definicoes/valvulas-tipo-gaveta.svg"
+  },
+  {
+    "slug": "valvulas-tipo-globo",
+    "categorySlug": "conceitos-definicoes",
+    "title": "Válvulas Tipo Globo",
+    "imagePath": "/technical-images/conceitos-definicoes/valvulas-tipo-globo.svg"
+  },
+  {
+    "slug": "valvulas-tipo-macho",
+    "categorySlug": "conceitos-definicoes",
+    "title": "Válvulas Tipo Macho",
+    "imagePath": "/technical-images/conceitos-definicoes/valvulas-tipo-macho.svg"
+  },
+  {
+    "slug": "valvulas-tipo-mangote",
+    "categorySlug": "conceitos-definicoes",
+    "title": "Válvulas Tipo Mangote",
+    "imagePath": "/technical-images/conceitos-definicoes/valvulas-tipo-mangote.svg"
+  },
+  {
+    "slug": "valvulas-tipo-retencao",
+    "categorySlug": "conceitos-definicoes",
+    "title": "Válvulas Tipo Retenção",
+    "imagePath": "/technical-images/conceitos-definicoes/valvulas-tipo-retencao.svg"
+  },
+  {
+    "slug": "tipos-de-valvulas",
+    "categorySlug": "conceitos-definicoes",
+    "title": "Tipos de Válvulas",
+    "imagePath": "/technical-images/conceitos-definicoes/tipos-de-valvulas.svg"
+  },
+  {
+    "slug": "unidades-de-comprimento",
+    "categorySlug": "conversoes",
+    "title": "Unidades de Comprimento",
+    "imagePath": "/technical-images/conversoes/unidades-de-comprimento.svg"
+  },
+  {
+    "slug": "unidades-de-dureza",
+    "categorySlug": "conversoes",
+    "title": "Unidades de Dureza",
+    "imagePath": "/technical-images/conversoes/unidades-de-dureza.svg"
+  },
+  {
+    "slug": "unidades-de-fluxo-vazao",
+    "categorySlug": "conversoes",
+    "title": "Unidades de Fluxo (Vazão)",
+    "imagePath": "/technical-images/conversoes/unidades-de-fluxo-vazao.svg"
+  },
+  {
+    "slug": "unidades-de-peso",
+    "categorySlug": "conversoes",
+    "title": "Unidades de Peso",
+    "imagePath": "/technical-images/conversoes/unidades-de-peso.svg"
+  },
+  {
+    "slug": "unidades-de-potencia",
+    "categorySlug": "conversoes",
+    "title": "Unidades de Potência",
+    "imagePath": "/technical-images/conversoes/unidades-de-potencia.svg"
+  },
+  {
+    "slug": "unidades-de-pressao",
+    "categorySlug": "conversoes",
+    "title": "Unidades de Pressão",
+    "imagePath": "/technical-images/conversoes/unidades-de-pressao.svg"
+  },
+  {
+    "slug": "unidades-de-refrigeracao",
+    "categorySlug": "conversoes",
+    "title": "Unidades de Refrigeração",
+    "imagePath": "/technical-images/conversoes/unidades-de-refrigeracao.svg"
+  },
+  {
+    "slug": "unidades-de-superficie-area",
+    "categorySlug": "conversoes",
+    "title": "Unidades de Superfície (Área)",
+    "imagePath": "/technical-images/conversoes/unidades-de-superficie-area.svg"
+  },
+  {
+    "slug": "escalas-de-temperatura",
+    "categorySlug": "conversoes",
+    "title": "Escalas de Temperatura",
+    "imagePath": "/technical-images/conversoes/escalas-de-temperatura.svg"
+  },
+  {
+    "slug": "unidades-de-volume",
+    "categorySlug": "conversoes",
+    "title": "Unidades de Volume",
+    "imagePath": "/technical-images/conversoes/unidades-de-volume.svg"
+  },
+  {
+    "slug": "agua-a-15c",
+    "categorySlug": "tabelas-vazao",
+    "title": "Água a 15C",
+    "imagePath": "/technical-images/tabelas-vazao/agua-a-15c.svg"
+  },
+  {
+    "slug": "ar-comprimido",
+    "categorySlug": "tabelas-vazao",
+    "title": "Ar Comprimido",
+    "imagePath": "/technical-images/tabelas-vazao/ar-comprimido.svg"
+  }
+]

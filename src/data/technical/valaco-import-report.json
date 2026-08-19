@@ -1,0 +1,385 @@
+{
+  "importedAt": "2026-08-18T13:32:42.218Z",
+  "startUrls": [
+    "https://www.valaco.com.br/inf_tecnicas/",
+    "https://www.valaco.com.br/mapa.html"
+  ],
+  "discoveredUrls": 74,
+  "processedPages": 68,
+  "importedTables": 537,
+  "categories": [
+    {
+      "slug": "conceitos-definicoes",
+      "title": "Conceitos e Definições",
+      "pageCount": 13
+    },
+    {
+      "slug": "conexoes",
+      "title": "Conexões",
+      "pageCount": 7
+    },
+    {
+      "slug": "conversoes",
+      "title": "Conversões de Medidas",
+      "pageCount": 11
+    },
+    {
+      "slug": "espessura-tubos-conexoes",
+      "title": "Espessura de Tubos e Conexões",
+      "pageCount": 3
+    },
+    {
+      "slug": "expansao-termica",
+      "title": "Expansão Térmica",
+      "pageCount": 1
+    },
+    {
+      "slug": "faceamento-solda-topo",
+      "title": "Faceamento para Solda de Topo",
+      "pageCount": 1
+    },
+    {
+      "slug": "flanges",
+      "title": "Flanges",
+      "pageCount": 14
+    },
+    {
+      "slug": "formulas-geometricas",
+      "title": "Fórmulas Geométricas",
+      "pageCount": 0
+    },
+    {
+      "slug": "galvanizacao",
+      "title": "Galvanização",
+      "pageCount": 1
+    },
+    {
+      "slug": "vapor",
+      "title": "Informações sobre Vapor",
+      "pageCount": 3
+    },
+    {
+      "slug": "materiais",
+      "title": "Materiais",
+      "pageCount": 8
+    },
+    {
+      "slug": "aplicacao-valvulas",
+      "title": "Aplicação de Válvulas",
+      "pageCount": 1
+    },
+    {
+      "slug": "tabelas-vazao",
+      "title": "Tabelas de Vazão",
+      "pageCount": 2
+    },
+    {
+      "slug": "tipos-de-rosca",
+      "title": "Tipos de Rosca",
+      "pageCount": 3
+    }
+  ],
+  "failures": [
+    {
+      "url": "https://www.valaco.com.br/inf_tecnicas/fl_faceamento.htm",
+      "error": "404 Not Found"
+    }
+  ],
+  "ignored": [
+    {
+      "url": "https://www.valaco.com.br/inf_tecnicas/conceitos.html",
+      "reason": "excluded-review-index-page"
+    },
+    {
+      "url": "https://www.valaco.com.br/inf_tecnicas/it_formulas.html",
+      "reason": "excluded-review-index-page"
+    },
+    {
+      "url": "https://www.valaco.com.br/inf_tecnicas/it_propvapor.html",
+      "reason": "excluded-review-index-page"
+    },
+    {
+      "url": "https://www.valaco.com.br/inf_tecnicas/it_tabvazao.html",
+      "reason": "excluded-review-index-page"
+    },
+    {
+      "url": "https://www.valaco.com.br/inf_tecnicas/mat_especificacoes.html",
+      "reason": "excluded-review-index-page"
+    }
+  ],
+  "needsReview": [],
+  "visualSourceNotImported": [
+    {
+      "title": "Informações Técnicas",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/"
+    },
+    {
+      "title": "Conversões de Medidas",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/conversoes.html"
+    },
+    {
+      "title": "Correlação da Classe da Conexão com Número do Schedule do Tubo",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/cx_correlacao.html"
+    },
+    {
+      "title": "Indicações de Materiais para Conexões de Solda",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/cx_indicacoes.html"
+    },
+    {
+      "title": "Materiais Permitidos para Curvas Tub. de Solda de Topo e suas Propriedades",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/cx_materiais.html"
+    },
+    {
+      "title": "Tolerâncias para Conexões de Solda",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/cx_tolconex.html"
+    },
+    {
+      "title": "Tolerâncias para Curvas de Aço para Solda de Topo",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/cx_tolcurva.html"
+    },
+    {
+      "title": "Dicionário de Termos",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/dicionario.html"
+    },
+    {
+      "title": "BSP",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/enc_bsp.html"
+    },
+    {
+      "title": "NPT",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/enc_npt.html"
+    },
+    {
+      "title": "Sch 5s a 40",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/esp_5sa40.html"
+    },
+    {
+      "title": "Sch 60 a XXS",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/esp_60aXXS.html"
+    },
+    {
+      "title": "12 Furos",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/fl_12furos.html"
+    },
+    {
+      "title": "16 Furos",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/fl_16furos.html"
+    },
+    {
+      "title": "20 Furos",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/fl_20furos.html"
+    },
+    {
+      "title": "24 Furos",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/fl_24furos.html"
+    },
+    {
+      "title": "32 Furos",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/fl_32furos.html"
+    },
+    {
+      "title": "4 Furos",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/fl_4furos.html"
+    },
+    {
+      "title": "8 Furos",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/fl_8furos.html"
+    },
+    {
+      "title": "Acabamento da Face de Junção",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/fl_acabamento.html"
+    },
+    {
+      "title": "Procedimentos para Aperto de Parafusos",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/fl_parafusos.html"
+    },
+    {
+      "title": "Pressão Hidrostática (teste)",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/fl_pressaohidrostatica.html"
+    },
+    {
+      "title": "Dimensão dos Prisioneiros e Parafusos",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/fl_prisioneiros.html"
+    },
+    {
+      "title": "Pressão e Temperatura de Serviço",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/fl_temperatura.html"
+    },
+    {
+      "title": "Tolerâncias",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/fl_tolerancias.html"
+    },
+    {
+      "title": "Informações Técnicas",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/index.html"
+    },
+    {
+      "title": "Recomendações para Utilização das Válvulas mais Usuais",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/it_comparativo.html"
+    },
+    {
+      "title": "Conexões",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/it_conexoes.html"
+    },
+    {
+      "title": "Tipos de Rosca",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/it_encaixe.html"
+    },
+    {
+      "title": "Espessura de Tubos e Conexões Tubulares",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/it_espessura.html"
+    },
+    {
+      "title": "Expansão Térmica para Tubos de Aço Carbono",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/it_expansao.html"
+    },
+    {
+      "title": "Flanges",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/it_flanges.html"
+    },
+    {
+      "title": "Galvanização",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/it_galvanizacao.html"
+    },
+    {
+      "title": "Materiais",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/it_materiais.html"
+    },
+    {
+      "title": "Pressão de Trabalho para Conexões em Ferro Maleável (Tupy)",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/it_pressao_cnx_ferro.html"
+    },
+    {
+      "title": "Faceamento Para Solda de Topo",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/it_solda.html"
+    },
+    {
+      "title": "Composição Química",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/mat_composicao.html"
+    },
+    {
+      "title": "Pressão e Temperatura de Serviço (para Válvulas)",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/mat_pressao.html"
+    },
+    {
+      "title": "Propriedades dos Diafragmas",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/mat_prop_diafragma.html"
+    },
+    {
+      "title": "Propriedades Mecânicas",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/mat_propriedades.html"
+    },
+    {
+      "title": "Resistência à Corrosão",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/mat_resistencia.html"
+    },
+    {
+      "title": "Tipos de Revestimento",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/mat_revestimentos.html"
+    },
+    {
+      "title": "Tipos de Materiais de Diafragmas, Mangotes e outras Vedações",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/mat_vedacoes.html"
+    },
+    {
+      "title": "Propriedades do Vapor Saturado",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/prop_saturado.html"
+    },
+    {
+      "title": "Propriedades do Vapor Superaquecido",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/prop_superaquecido.html"
+    },
+    {
+      "title": "Siglas",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/siglas.html"
+    },
+    {
+      "title": "Temperatura de Vapor Saturado",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/temp_vapor.html"
+    },
+    {
+      "title": "Válvulas Globo Tipo Agulha",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/tipo_agulha.html"
+    },
+    {
+      "title": "Válvulas Tipo Diafragma",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/tipo_diafragma.html"
+    },
+    {
+      "title": "Válvulas Tipo Esfera",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/tipo_esfera.html"
+    },
+    {
+      "title": "Válvulas Tipo Gaveta",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/tipo_gaveta.html"
+    },
+    {
+      "title": "Válvulas Tipo Globo",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/tipo_globo.html"
+    },
+    {
+      "title": "Válvulas Tipo Macho",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/tipo_macho.html"
+    },
+    {
+      "title": "Válvulas Tipo Mangote",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/tipo_mangote.html"
+    },
+    {
+      "title": "Válvulas Tipo Retenção",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/tipo_retencao.html"
+    },
+    {
+      "title": "Tipos de Válvulas",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/tipos_de_valvulas.html"
+    },
+    {
+      "title": "Unidades de Comprimento",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/und_comprimento.html"
+    },
+    {
+      "title": "Unidades de Dureza",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/und_dureza.html"
+    },
+    {
+      "title": "Unidades de Fluxo (Vazão)",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/und_fluxo.html"
+    },
+    {
+      "title": "Unidades de Peso",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/und_peso.html"
+    },
+    {
+      "title": "Unidades de Potência",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/und_potencia.html"
+    },
+    {
+      "title": "Unidades de Pressão",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/und_pressao.html"
+    },
+    {
+      "title": "Unidades de Refrigeração",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/und_refrigeracao.html"
+    },
+    {
+      "title": "Unidades de Superfície (Área)",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/und_superficie.html"
+    },
+    {
+      "title": "Escalas de Temperatura",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/und_temperatura.html"
+    },
+    {
+      "title": "Unidades de Volume",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/und_volume.html"
+    },
+    {
+      "title": "Água a 15C",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/vazaoagua.html"
+    },
+    {
+      "title": "Ar Comprimido",
+      "sourceUrl": "https://www.valaco.com.br/inf_tecnicas/vazaoar.html"
+    }
+  ]
+}
