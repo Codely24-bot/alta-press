@@ -1,4 +1,4 @@
-﻿import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import SupportChatWidget from './components/SupportChatWidget';
 import { technicalContent } from './data/technicalContent';
 import { businessProfile } from '../shared/supportKnowledge';
@@ -1526,6 +1526,212 @@ function ProductBackButton() {
   );
 }
 
+function normalizeProductSearch(value) {
+  return String(value)
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .trim();
+}
+
+function ProductBreadcrumb({ items, onNavigate }) {
+  return (
+    <nav className="product-breadcrumb" aria-label="Trilha de navegação">
+      {items.map((crumb, index) => {
+        const isLast = index === items.length - 1;
+        const isLink = Boolean(crumb.href) && !isLast;
+
+        return (
+          <span
+            key={`${crumb.label}-${index}`}
+            className={isLast ? 'is-current' : ''}
+            aria-current={isLast ? 'page' : undefined}
+          >
+            {isLink ? (
+              <a href={crumb.href} onClick={onNavigate?.(crumb.href)}>
+                {crumb.label}
+              </a>
+            ) : (
+              crumb.label
+            )}
+          </span>
+        );
+      })}
+    </nav>
+  );
+}
+
+function ProductSidebar({ activeCategorySlug, activeItemSlug, activeStandardSlug, onNavigate }) {
+  return (
+    <aside className="product-page__sidebar" aria-label="Navegação de produtos">
+      {productCategories.map((category) => {
+        const isActive = category.slug === activeCategorySlug;
+
+        return (
+          <div key={category.slug} className={`product-sidebar-group ${isActive ? 'is-open' : ''}`.trim()}>
+            <a
+              className={isActive ? 'is-active' : ''}
+              href={`/produtos/${category.slug}`}
+              onClick={onNavigate(`/produtos/${category.slug}`)}
+              aria-current={isActive ? 'page' : undefined}
+            >
+              {category.title}
+              {isActive ? <span aria-hidden="true">›</span> : null}
+            </a>
+
+            {isActive && !category.directOverview ? (
+              <div className="product-sidebar-sub">
+                {(category.items ?? []).map((productItem) => {
+                  const label = typeof productItem === 'string' ? productItem : productItem.label;
+                  const displayLabel = getProductItemDisplayLabel(productItem);
+                  const itemSlug = slugifyProductLabel(label);
+                  const isItemActive = itemSlug === activeItemSlug;
+                  const standards = getVisibleProductStandards(productItem);
+
+                  return (
+                    <div key={label}>
+                      <a
+                        className={`product-sidebar-link--sub ${isItemActive ? 'is-active' : ''}`.trim()}
+                        href={`/produtos/${category.slug}/${itemSlug}`}
+                        onClick={onNavigate(`/produtos/${category.slug}/${itemSlug}`)}
+                        aria-current={isItemActive ? 'location' : undefined}
+                      >
+                        {displayLabel}
+                      </a>
+
+                      {isItemActive && standards.length > 1 ? (
+                        <div className="product-sidebar-standards">
+                          {standards.map((standard) => {
+                            const standardSlug = getProductStandardSlug(standard);
+                            const standardHref = `/produtos/${category.slug}/${itemSlug}/${standardSlug}`;
+                            const isStandardActive = standardSlug === activeStandardSlug;
+
+                            return (
+                              <a
+                                key={standardSlug}
+                                className={`product-sidebar-link--sub product-sidebar-link--nested ${isStandardActive ? 'is-active' : ''}`.trim()}
+                                href={standardHref}
+                                onClick={onNavigate(standardHref)}
+                                aria-current={isStandardActive ? 'location' : undefined}
+                              >
+                                {standard.label}
+                              </a>
+                            );
+                          })}
+                        </div>
+                      ) : null}
+                    </div>
+                  );
+                })}
+              </div>
+            ) : null}
+          </div>
+        );
+      })}
+    </aside>
+  );
+}
+
+function ProductVariantChips({ categorySlug, itemSlug, standard, optionSlug, onNavigate }) {
+  const standardSlug = getProductStandardSlug(standard);
+
+  if (standard.options.length <= 1) {
+    return null;
+  }
+
+  return (
+    <div className="product-spec-variants" aria-label={`${standard.label} disponíveis`}>
+      <span className="product-spec-variants__label">{standard.label}</span>
+      <div className="product-spec-variants__chips">
+        {standard.options.map((option) => {
+          const currentOptionSlug = getProductOptionSlug(itemSlug, standardSlug, option);
+          const chipHref = `/produtos/${categorySlug}/${itemSlug}/${standardSlug}/${currentOptionSlug}`;
+          const isActive = currentOptionSlug === optionSlug;
+
+          return (
+            <a
+              key={option}
+              className={`product-spec-variants__chip ${isActive ? 'is-active' : ''}`.trim()}
+              href={chipHref}
+              onClick={onNavigate(chipHref)}
+              aria-current={isActive ? 'page' : undefined}
+            >
+              {option}
+            </a>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+const PRODUCT_TABLE_SEARCH_MIN_ROWS = 8;
+
+function ProductSpecTable({ header, rows }) {
+  const [query, setQuery] = useState('');
+  const tokens = normalizeProductSearch(query).split(/\s+/).filter(Boolean);
+  const filteredRows = tokens.length
+    ? rows.filter((row) => {
+        const haystack = normalizeProductSearch(row.join(' '));
+        return tokens.every((token) => haystack.includes(token));
+      })
+    : rows;
+  const showSearch = rows.length >= PRODUCT_TABLE_SEARCH_MIN_ROWS;
+  const isFiltering = Boolean(tokens.length);
+
+  return (
+    <div className="product-spec-table">
+      {showSearch ? (
+        <>
+          <label className="product-spec-table__search">
+            <span className="sr-only">Filtrar linhas da tabela</span>
+            <input
+              type="search"
+              value={query}
+              placeholder="Filtrar por medida, peso ou classe..."
+              onChange={(event) => setQuery(event.target.value)}
+            />
+          </label>
+          {isFiltering ? (
+            <p className="product-spec-table__meta" role="status">
+              {filteredRows.length} de {rows.length} linhas
+            </p>
+          ) : null}
+        </>
+      ) : null}
+
+      <div className="product-spec-table__scroll" role="region" aria-label="Tabela técnica" tabIndex={0}>
+        <table className="product-page__spec-table">
+          <thead>
+            <tr>
+              {header.map((cell) => (
+                <th key={cell}>{cell}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {filteredRows.length ? (
+              filteredRows.map((row, rowIndex) => (
+                <tr key={`${row.join('-')}-${rowIndex}`}>
+                  {row.map((cell, cellIndex) => (
+                    <td key={`${cell}-${cellIndex}`}>{cell}</td>
+                  ))}
+                </tr>
+              ))
+            ) : (
+              <tr>
+                <td colSpan={Math.max(header.length, 1)} className="product-spec-table__empty">
+                  Nenhuma linha corresponde ao filtro.
+                </td>
+              </tr>
+            )}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
 function MobileProductControls({ activeCategorySlug, activeItemSlug, onNavigate, sortOrder, onSortChange, showSort = true }) {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [expandedCategorySlug, setExpandedCategorySlug] = useState(activeCategorySlug ?? null);
@@ -1665,6 +1871,232 @@ function MobileProductControls({ activeCategorySlug, activeItemSlug, onNavigate,
   );
 }
 
+function ProductSpecFinder({ fixedCategorySlug = null, onNavigate }) {
+  const [specsData, setSpecsData] = useState(null);
+  const [categorySlug, setCategorySlug] = useState(fixedCategorySlug ?? '');
+  const [itemSlug, setItemSlug] = useState('');
+  const [standardSlug, setStandardSlug] = useState('');
+  const [optionSlug, setOptionSlug] = useState('');
+
+  useEffect(() => {
+    let isMounted = true;
+
+    Promise.all([
+      import('./data/flangeTechnicalSpecs'),
+      import('./data/productTechnicalSpecs'),
+    ])
+      .then(([flangeModule, productModule]) => {
+        if (isMounted) {
+          setSpecsData({
+            flange: flangeModule.flangeTechnicalSpecs,
+            product: productModule.productTechnicalSpecs,
+          });
+        }
+      })
+      .catch(() => {});
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
+  const activeCategory = productCategories.find((category) => category.slug === categorySlug) ?? null;
+  const finderItems = activeCategory && !activeCategory.directOverview ? activeCategory.items ?? [] : [];
+  const activeItem = finderItems.find((item) => slugifyProductLabel(getProductItemDisplayLabel(item)) === itemSlug) ?? null;
+  const displayLabel = activeItem ? getProductItemDisplayLabel(activeItem) : '';
+  const standards = getVisibleProductStandards(activeItem);
+  const effectiveStandardSlug = standardSlug || (standards.length === 1 ? getProductStandardSlug(standards[0]) : '');
+  const activeStandard = standards.find((standard) => getProductStandardSlug(standard) === effectiveStandardSlug) ?? null;
+  const options = activeStandard?.options ?? [];
+  const effectiveOptionSlug = optionSlug || (options.length === 1 ? getProductOptionSlug(itemSlug, effectiveStandardSlug, options[0]) : '');
+  const selectedOption = options.find((option) => getProductOptionSlug(itemSlug, effectiveStandardSlug, option) === effectiveOptionSlug) ?? null;
+  const hasSelection = Boolean(activeCategory && activeItem && activeStandard && effectiveOptionSlug);
+
+  let spec = null;
+
+  if (specsData && hasSelection) {
+    spec =
+      getTechnicalSpec(specsData.flange, itemSlug, effectiveStandardSlug, effectiveOptionSlug) ??
+      getProductTechnicalSpec(specsData.product, activeCategory.slug, itemSlug, effectiveStandardSlug, effectiveOptionSlug);
+  }
+
+  const specHref = hasSelection
+    ? `/produtos/${activeCategory.slug}/${itemSlug}/${effectiveStandardSlug}/${effectiveOptionSlug}`
+    : null;
+  const figureSrc =
+    (selectedOption ? getProductOptionImage(activeItem, selectedOption) : null) ??
+    (activeItem && typeof activeItem !== 'string' ? activeItem.image : null) ??
+    spec?.images?.[0]?.src ??
+    null;
+
+  return (
+    <section className="product-finder" aria-label="Consulta rápida de especificações">
+      <header className="product-finder__header">
+        <span className="eyebrow eyebrow-dark">Consulta rápida</span>
+        <h2>SELETOR DE PEÇAS</h2>
+        <p>Escolha a categoria, a peça e a variação para ver figura, características e tabelas aqui mesmo, sem trocar de página.</p>
+      </header>
+
+      <div className="product-finder__controls">
+        {fixedCategorySlug ? null : (
+          <label className="product-finder__field">
+            <span>Categoria</span>
+            <select
+              value={categorySlug}
+              onChange={(event) => {
+                setCategorySlug(event.target.value);
+                setItemSlug('');
+                setStandardSlug('');
+                setOptionSlug('');
+              }}
+            >
+              <option value="">Selecione...</option>
+              {productCategories.filter((category) => !category.directOverview).map((category) => (
+                <option key={category.slug} value={category.slug}>{category.title}</option>
+              ))}
+            </select>
+          </label>
+        )}
+
+        <label className="product-finder__field">
+          <span>Peça</span>
+          <select
+            value={itemSlug}
+            onChange={(event) => {
+              setItemSlug(event.target.value);
+              setStandardSlug('');
+              setOptionSlug('');
+            }}
+            disabled={!activeCategory}
+          >
+            <option value="">{activeCategory ? 'Selecione...' : 'Escolha uma categoria'}</option>
+            {finderItems.map((item) => {
+              const label = getProductItemDisplayLabel(item);
+
+              return (
+                <option key={slugifyProductLabel(label)} value={slugifyProductLabel(label)}>
+                  {label}
+                </option>
+              );
+            })}
+          </select>
+        </label>
+
+        {standards.length > 1 ? (
+          <label className="product-finder__field">
+            <span>Padrão</span>
+            <select
+              value={effectiveStandardSlug}
+              onChange={(event) => {
+                setStandardSlug(event.target.value);
+                setOptionSlug('');
+              }}
+            >
+              <option value="">Selecione...</option>
+              {standards.map((standard) => (
+                <option key={getProductStandardSlug(standard)} value={getProductStandardSlug(standard)}>
+                  {standard.label}
+                </option>
+              ))}
+            </select>
+          </label>
+        ) : null}
+
+        <label className="product-finder__field">
+          <span>{activeStandard ? activeStandard.label : 'Variação'}</span>
+          <select
+            value={effectiveOptionSlug}
+            onChange={(event) => setOptionSlug(event.target.value)}
+            disabled={!activeStandard}
+          >
+            <option value="">{activeStandard ? 'Selecione...' : 'Escolha uma peça'}</option>
+            {options.map((option) => (
+              <option key={option} value={getProductOptionSlug(itemSlug, effectiveStandardSlug, option)}>
+                {option}
+              </option>
+            ))}
+          </select>
+        </label>
+      </div>
+
+      {spec ? (
+        <FinderResult
+          activeCategory={activeCategory}
+          displayLabel={displayLabel}
+          spec={spec}
+          standard={activeStandard}
+          selectedOption={selectedOption}
+          figureSrc={figureSrc}
+          specHref={specHref}
+          onNavigate={onNavigate}
+        />
+      ) : (
+        <p className="product-finder__hint">
+          {hasSelection && !specsData
+            ? 'Carregando especificações...'
+            : 'Selecione os campos acima para visualizar as especificações técnicas da peça.'}
+        </p>
+      )}
+    </section>
+  );
+}
+
+function FinderResult({ activeCategory, displayLabel, spec, standard, selectedOption, figureSrc, specHref, onNavigate }) {
+  return (
+    <div className="product-finder__result">
+      <div className="product-finder__result-head">
+        <div>
+          <span className="eyebrow eyebrow-dark">{activeCategory.title}</span>
+          <h3>{displayLabel} — {spec.title}</h3>
+        </div>
+        <ProductQuoteButton
+          categoryTitle={activeCategory.title}
+          productLabel={displayLabel}
+          detailLabel={standard.label}
+          optionLabel={selectedOption}
+        />
+      </div>
+
+      <div className="product-finder__result-grid">
+        {figureSrc ? (
+          <figure className="product-finder__figure">
+            <img src={figureSrc} alt={`${displayLabel} ${spec.title}`} loading="lazy" />
+          </figure>
+        ) : null}
+
+        <div className="product-finder__characteristics">
+          <h4>Características</h4>
+          {spec.characteristics?.length ? (
+            <ul>
+              {spec.characteristics.map((line) => (
+                <li key={line}>{line}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>Características técnicas sob consulta.</p>
+          )}
+          {spec.note ? <small className="product-finder__note">{spec.note}</small> : null}
+        </div>
+      </div>
+
+      {spec.tables?.length ? (
+        <div className="product-finder__tables">
+          <h4>Dimensões e peso aproximado</h4>
+          {spec.tables.map((table, tableIndex) => (
+            <ProductSpecTable key={`${spec.title}-${tableIndex}`} header={table[0] ?? []} rows={table.slice(1)} />
+          ))}
+        </div>
+      ) : null}
+
+      {specHref ? (
+        <a className="product-finder__open-link" href={specHref} onClick={onNavigate?.(specHref)}>
+          Abrir página completa desta peça →
+        </a>
+      ) : null}
+    </div>
+  );
+}
+
 function ProductOverviewPage({ onNavigate }) {
   const [sortOrder, setSortOrder] = useState('position');
   const sortedCategories = sortProductEntries(productCategories, sortOrder, (category) => category.title);
@@ -1680,6 +2112,8 @@ function ProductOverviewPage({ onNavigate }) {
             soluções para sistemas hidráulicos e industriais.
           </p>
         </div>
+
+        <ProductSpecFinder onNavigate={onNavigate} />
 
         <MobileProductControls sortOrder={sortOrder} onSortChange={setSortOrder} onNavigate={onNavigate} />
 
@@ -1728,6 +2162,15 @@ function ProductCategoryPage({ category, onNavigate }) {
   return (
     <section className="product-page section-surface">
       <div className="container">
+        <ProductBreadcrumb
+          onNavigate={onNavigate}
+          items={[
+            { label: 'Home', href: '/' },
+            { label: 'Produtos', href: '/produtos' },
+            { label: category.title },
+          ]}
+        />
+
         <div className="product-page__intro">
           <span className="eyebrow eyebrow-dark">Linha de produtos</span>
           <h1>{category.title}</h1>
@@ -1737,25 +2180,12 @@ function ProductCategoryPage({ category, onNavigate }) {
           </p>
         </div>
 
-        <div className="product-page__layout">
-          <aside className="product-page__sidebar" aria-label="Categorias de produtos">
-            {productCategories.map((item) => {
-              const isActive = item.slug === category.slug;
+        {!hasDirectOverview ? (
+          <ProductSpecFinder fixedCategorySlug={category.slug} onNavigate={onNavigate} />
+        ) : null}
 
-              return (
-                <a
-                  key={item.slug}
-                  className={isActive ? 'is-active' : ''}
-                  href={`/produtos/${item.slug}`}
-                  onClick={onNavigate(`/produtos/${item.slug}`)}
-                  aria-current={isActive ? 'page' : undefined}
-                >
-                  {item.title}
-                  {isActive ? <span aria-hidden="true">›</span> : null}
-                </a>
-              );
-            })}
-          </aside>
+        <div className="product-page__layout">
+          <ProductSidebar activeCategorySlug={category.slug} onNavigate={onNavigate} />
 
           <MobileProductControls
             activeCategorySlug={category.slug}
@@ -1765,9 +2195,6 @@ function ProductCategoryPage({ category, onNavigate }) {
           />
 
           <article className="product-page__catalog" aria-label={`Itens da linha ${category.title}`}>
-            <div className="product-page__desktop-back">
-              <ProductBackButton />
-            </div>
             {hasDirectOverview ? (
               <div className="product-page__spec">
                 <h1 className="product-page__spec-title">{category.productPage?.title ?? category.title}</h1>
@@ -1902,6 +2329,16 @@ function ProductItemPage({ category, productItem, onNavigate }) {
   return (
     <section className="product-page section-surface">
       <div className="container">
+        <ProductBreadcrumb
+          onNavigate={onNavigate}
+          items={[
+            { label: 'Home', href: '/' },
+            { label: 'Produtos', href: '/produtos' },
+            { label: category.title, href: `/produtos/${category.slug}` },
+            { label: displayLabel },
+          ]}
+        />
+
         <div className="product-page__intro">
           <span className="eyebrow eyebrow-dark">{category.title}</span>
           <h1>{displayLabel}</h1>
@@ -1912,24 +2349,11 @@ function ProductItemPage({ category, productItem, onNavigate }) {
         </div>
 
         <div className="product-page__layout">
-          <aside className="product-page__sidebar" aria-label="Categorias de produtos">
-            {productCategories.map((item) => {
-              const isActive = item.slug === category.slug;
-
-              return (
-                <a
-                  key={item.slug}
-                  className={isActive ? 'is-active' : ''}
-                  href={`/produtos/${item.slug}`}
-                  onClick={onNavigate(`/produtos/${item.slug}`)}
-                  aria-current={isActive ? 'page' : undefined}
-                >
-                  {item.title}
-                  {isActive ? <span aria-hidden="true">›</span> : null}
-                </a>
-              );
-            })}
-          </aside>
+          <ProductSidebar
+            activeCategorySlug={category.slug}
+            activeItemSlug={itemSlug}
+            onNavigate={onNavigate}
+          />
 
           <MobileProductControls
             activeCategorySlug={category.slug}
@@ -1940,9 +2364,6 @@ function ProductItemPage({ category, productItem, onNavigate }) {
           />
 
           <article className="product-page__catalog" aria-label={`Opções de ${label}`}>
-            <div className="product-page__desktop-back">
-              <ProductBackButton />
-            </div>
             <div className="product-page__grid">
               {sortedCards.map((card) => {
                 const cardLabel = typeof card === 'string' ? card : card.label;
@@ -2013,6 +2434,16 @@ function ProductStandardPage({ category, productItem, standard, onNavigate }) {
   return (
     <section className="product-page section-surface">
       <div className="container">
+        <ProductBreadcrumb
+          onNavigate={onNavigate}
+          items={[
+            { label: 'Home', href: '/' },
+            { label: 'Produtos', href: '/produtos' },
+            { label: category.title, href: `/produtos/${category.slug}` },
+            { label: displayLabel },
+          ]}
+        />
+
         <div className="product-page__intro">
           <span className="eyebrow eyebrow-dark">{displayLabel}</span>
           <h1>{standard.label}</h1>
@@ -2022,24 +2453,11 @@ function ProductStandardPage({ category, productItem, standard, onNavigate }) {
         </div>
 
         <div className="product-page__layout">
-          <aside className="product-page__sidebar" aria-label="Categorias de produtos">
-            {productCategories.map((item) => {
-              const isActive = item.slug === category.slug;
-
-              return (
-                <a
-                  key={item.slug}
-                  className={isActive ? 'is-active' : ''}
-                  href={`/produtos/${item.slug}`}
-                  onClick={onNavigate(`/produtos/${item.slug}`)}
-                  aria-current={isActive ? 'page' : undefined}
-                >
-                  {item.title}
-                  {isActive ? <span aria-hidden="true">›</span> : null}
-                </a>
-              );
-            })}
-          </aside>
+          <ProductSidebar
+            activeCategorySlug={category.slug}
+            activeItemSlug={itemSlug}
+            onNavigate={onNavigate}
+          />
 
           <MobileProductControls
             activeCategorySlug={category.slug}
@@ -2049,9 +2467,6 @@ function ProductStandardPage({ category, productItem, standard, onNavigate }) {
           />
 
           <article className="product-page__catalog" aria-label={`Classes de ${displayLabel} ${standard.label}`}>
-            <div className="product-page__desktop-back">
-              <ProductBackButton />
-            </div>
             <div className="product-page__grid">
               {sortedOptions.map((option) => (
                 (() => {
@@ -2213,25 +2628,25 @@ function ProductSpecPage({ category, productItem, standard, optionSlug, onNaviga
   return (
     <section className="product-page section-surface">
       <div className="container">
-        <div className="product-page__layout">
-          <aside className="product-page__sidebar" aria-label="Categorias de produtos">
-            {productCategories.map((item) => {
-              const isActive = item.slug === category.slug;
+        <ProductBreadcrumb
+          onNavigate={onNavigate}
+          items={[
+            { label: 'Home', href: '/' },
+            { label: 'Produtos', href: '/produtos' },
+            { label: category.title, href: `/produtos/${category.slug}` },
+            { label: displayLabel, href: `/produtos/${category.slug}/${itemSlug}` },
+            { label: standard.label, href: `/produtos/${category.slug}/${itemSlug}/${standardSlug}` },
+            { label: selectedOption ?? spec?.title ?? standard.label },
+          ]}
+        />
 
-              return (
-                <a
-                  key={item.slug}
-                  className={isActive ? 'is-active' : ''}
-                  href={`/produtos/${item.slug}`}
-                  onClick={onNavigate(`/produtos/${item.slug}`)}
-                  aria-current={isActive ? 'page' : undefined}
-                >
-                  {item.title}
-                  {isActive ? <span aria-hidden="true">›</span> : null}
-                </a>
-              );
-            })}
-          </aside>
+        <div className="product-page__layout">
+          <ProductSidebar
+            activeCategorySlug={category.slug}
+            activeItemSlug={itemSlug}
+            activeStandardSlug={standardSlug}
+            onNavigate={onNavigate}
+          />
 
           <MobileProductControls
             activeCategorySlug={category.slug}
@@ -2242,10 +2657,6 @@ function ProductSpecPage({ category, productItem, standard, optionSlug, onNaviga
           />
 
           <article className="product-page__spec" aria-label={`Tabela técnica de ${label} ${standard.label}`}>
-            <div className="product-page__desktop-back">
-              <ProductBackButton />
-            </div>
-
             {specStatus === 'loading' ? (
               <div className="product-page__spec-state">
                 Carregando especificações técnicas...
@@ -2261,6 +2672,14 @@ function ProductSpecPage({ category, productItem, standard, optionSlug, onNaviga
             {spec ? (
               <>
                 <h1 className="product-page__spec-title">{spec.title}</h1>
+
+                <ProductVariantChips
+                  categorySlug={category.slug}
+                  itemSlug={itemSlug}
+                  standard={standard}
+                  optionSlug={optionSlug}
+                  onNavigate={onNavigate}
+                />
 
                 <div className="product-page__spec-overview">
                   <div className="product-page__spec-figure">
@@ -2307,33 +2726,18 @@ function ProductSpecPage({ category, productItem, standard, optionSlug, onNaviga
 
                 <p className="product-page__spec-note">{spec.note}</p>
 
-                {spec.tables.map((table, tableIndex) => {
-                  const [header, ...rows] = table;
-
-                  return (
-                    <div className="product-page__spec-table-wrap" key={`${spec.title}-${tableIndex}`}>
-                      <h2>Dimensões e peso aproximado</h2>
-                      <table className="product-page__spec-table">
-                        <thead>
-                          <tr>
-                            {header.map((cell) => (
-                              <th key={cell}>{cell}</th>
-                            ))}
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {rows.map((row, rowIndex) => (
-                            <tr key={`${row.join('-')}-${rowIndex}`}>
-                              {row.map((cell, cellIndex) => (
-                                <td key={`${cell}-${cellIndex}`}>{cell}</td>
-                              ))}
-                            </tr>
-                          ))}
-                        </tbody>
-                      </table>
-                    </div>
-                  );
-                })}
+                {spec.tables.length ? (
+                  <div className="product-page__spec-table-wrap">
+                    <h2>Dimensões e peso aproximado</h2>
+                    {spec.tables.map((table, tableIndex) => (
+                      <ProductSpecTable
+                        key={`${spec.title}-${tableIndex}`}
+                        header={table[0] ?? []}
+                        rows={table.slice(1)}
+                      />
+                    ))}
+                  </div>
+                ) : null}
               </>
             ) : null}
 
@@ -2344,16 +2748,93 @@ function ProductSpecPage({ category, productItem, standard, optionSlug, onNaviga
   );
 }
 
+function TechnicalContentFinder({ categories, pages, technicalBase }) {
+  const [categorySlug, setCategorySlug] = useState('');
+  const [pageSlug, setPageSlug] = useState('');
+
+  const categoryOptions = categories.filter((category) => pages.some((page) => page.categorySlug === category.slug));
+  const categoryPages = pages.filter((page) => page.categorySlug === categorySlug);
+  const effectivePageSlug = pageSlug || (categoryPages.length === 1 ? categoryPages[0].slug : '');
+  const activePage = categoryPages.find((page) => page.slug === effectivePageSlug) ?? null;
+
+  return (
+    <div className="technical-finder">
+      <div className="technical-finder__controls">
+        <label className="technical-finder__field">
+          <span>Categoria</span>
+          <select
+            value={categorySlug}
+            onChange={(event) => {
+              setCategorySlug(event.target.value);
+              setPageSlug('');
+            }}
+          >
+            <option value="">Selecione...</option>
+            {categoryOptions.map((category) => (
+              <option key={category.slug} value={category.slug}>{category.title}</option>
+            ))}
+          </select>
+        </label>
+
+        <label className="technical-finder__field">
+          <span>Conteúdo</span>
+          <select
+            value={effectivePageSlug}
+            onChange={(event) => setPageSlug(event.target.value)}
+            disabled={!categorySlug}
+          >
+            <option value="">{categorySlug ? 'Selecione...' : 'Escolha uma categoria'}</option>
+            {categoryPages.map((page) => (
+              <option key={page.slug} value={page.slug}>
+                {page.title.split('»').pop().trim()}
+              </option>
+            ))}
+          </select>
+        </label>
+      </div>
+
+      {activePage ? (
+        <div className="technical-finder__result">
+          <div className="technical-finder__result-head">
+            <div>
+              <span className="eyebrow eyebrow-dark">{activePage.category}</span>
+              <h3>{activePage.title.split('»').pop().trim()}</h3>
+            </div>
+            <a
+              className="button button-primary technical-button technical-finder__open"
+              href={`${technicalBase}/${activePage.categorySlug}/${activePage.slug}`}
+            >
+              Página completa →
+            </a>
+          </div>
+
+          {activePage.description ? (
+            <p className="technical-finder__description">{activePage.description}</p>
+          ) : null}
+
+          {activePage.imagePath ? (
+            <figure className="technical-article__visual">
+              <img src={activePage.imagePath} alt={activePage.imageAlt || `Ilustração técnica sobre ${activePage.title}`} loading="lazy" />
+            </figure>
+          ) : null}
+
+          <div className="technical-imported-content" dangerouslySetInnerHTML={{ __html: activePage.html }} />
+        </div>
+      ) : (
+        <p className="technical-finder__hint">
+          Selecione os campos acima para ler o conteúdo técnico aqui mesmo, sem trocar de página.
+        </p>
+      )}
+    </div>
+  );
+}
+
 function TechnicalInfoPage({ pathname = '/informacoes-tecnicas' }) {
   const technicalYellow = '#e21d2f';
   const whatsappNumber = '5531972671038';
   const whatsappTechnicalUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent('Olá, preciso de ajuda técnica para selecionar um componente hidráulico de alta pressão.')}`;
   const [technicalData, setTechnicalData] = useState({ categories: [], pages: [] });
-  const [technicalSearch, setTechnicalSearch] = useState('');
-  const [converterType, setConverterType] = useState('pressao');
-  const [converterValue, setConverterValue] = useState('10000');
-  const [converterFrom, setConverterFrom] = useState('psi');
-  const [converterTo, setConverterTo] = useState('bar');
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const technicalBase = '/informacoes-tecnicas';
   const valacoTechnicalCategories = technicalData.categories;
   const valacoTechnicalPages = technicalData.pages;
@@ -2400,53 +2881,38 @@ function TechnicalInfoPage({ pathname = '/informacoes-tecnicas' }) {
     };
   }, [activeCategory, activePage]);
 
-  const converters = {
-    temperatura: {
-      label: 'Temperatura',
-      units: {
-        c: { label: '°C', toBase: (value) => value, fromBase: (value) => value },
-        f: { label: '°F', toBase: (value) => (value - 32) * 5 / 9, fromBase: (value) => (value * 9 / 5) + 32 },
-        k: { label: 'K', toBase: (value) => value - 273.15, fromBase: (value) => value + 273.15 },
+  useEffect(() => {
+    const section = document.getElementById('informacoes-tecnicas');
+    if (!section || !('IntersectionObserver' in window)) return undefined;
+    const targets = section.querySelectorAll('.technical-reveal');
+    if (!targets.length) return undefined;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
       },
-    },
-    comprimento: { label: 'Comprimento', units: { mm: ['mm', 1], cm: ['cm', 10], m: ['m', 1000], pol: ['pol', 25.4], ft: ['ft', 304.8] } },
-    dureza: { label: 'Dureza', units: { hb: ['HB', 1], hrc: ['HRC', 10], hv: ['HV', 1.05] } },
-    vazao: { label: 'Fluxo / Vazão', units: { lmin: ['L/min', 1], m3h: ['m³/h', 16.6666667], gpm: ['GPM', 3.7854118] } },
-    peso: { label: 'Peso / Massa', units: { kg: ['kg', 1], g: ['g', 0.001], lb: ['lb', 0.45359237], ton: ['t', 1000] } },
-    potencia: { label: 'Potência', units: { kw: ['kW', 1], hp: ['hp', 0.745699872], cv: ['cv', 0.73549875], w: ['W', 0.001] } },
-    pressao: { label: 'Pressão', units: { psi: ['PSI', 1], bar: ['BAR', 14.5037738], mpa: ['MPa', 145.037738], kgf: ['kgf/cm²', 14.2233433] } },
-    refrigeracao: { label: 'Refrigeração', units: { tr: ['TR', 1], kcalh: ['kcal/h', 0.000330693], btu: ['BTU/h', 0.0000833333], kw: ['kW', 0.284345] } },
-    area: { label: 'Área', units: { mm2: ['mm²', 1], cm2: ['cm²', 100], m2: ['m²', 1000000], pol2: ['pol²', 645.16] } },
-    volume: { label: 'Volume', units: { ml: ['mL', 1], l: ['L', 1000], m3: ['m³', 1000000], gal: ['gal', 3785.4118] } },
-  };
+      { rootMargin: '0px 0px -8% 0px', threshold: 0.08 },
+    );
+    targets.forEach((target) => observer.observe(target));
+    return () => observer.disconnect();
+  }, [technicalData, activeCategory, activePage, pathname]);
 
-  const activeConverter = converters[converterType];
-  const converterUnits = activeConverter.units;
-  const converterNumber = Number(String(converterValue).replace(',', '.'));
-  const converterResult = Number.isFinite(converterNumber)
-    ? typeof converterUnits[converterFrom].toBase === 'function'
-      ? converterUnits[converterTo].fromBase(converterUnits[converterFrom].toBase(converterNumber))
-      : (converterNumber * converterUnits[converterFrom][1]) / converterUnits[converterTo][1]
-    : 0;
-
-  const formatTechnicalNumber = (value) =>
-    new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 2 }).format(value);
-
-  const getUnitLabel = (unit) => Array.isArray(unit) ? unit[0] : unit.label;
-  const normalizeSearch = (value) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-  const searchTerm = normalizeSearch(technicalSearch.trim());
-  const searchResults = searchTerm
-    ? valacoTechnicalPages.filter((page) =>
-        normalizeSearch(`${page.title} ${page.category} ${page.description} ${page.searchText}`).includes(searchTerm)
-      ).slice(0, 12)
-    : [];
   const pageTitle = activePage?.title?.split('»').pop()?.trim();
+  const activePageIndex = activePage ? categoryPages.findIndex((page) => page.slug === activePage.slug) : -1;
+  const previousTechnicalPage = activePageIndex > 0 ? categoryPages[activePageIndex - 1] : null;
+  const nextTechnicalPage = activePageIndex >= 0 && activePageIndex < categoryPages.length - 1 ? categoryPages[activePageIndex + 1] : null;
 
   return (
     <section className="technical-center" id="informacoes-tecnicas" style={{ '--technical-yellow': technicalYellow }}>
       <div className="technical-center__hero">
         <img src={altaPressHeroValvesWide} alt="Componentes industriais de alta pressão Alta Press" />
         <div className="technical-center__hero-overlay" />
+        <div className="technical-center__hero-blueprint" aria-hidden="true" />
+        <div className="technical-center__hero-frame" aria-hidden="true"><i /></div>
         <div className="container technical-center__hero-content">
           <span className="eyebrow">Central Técnica Industrial</span>
           <h1><span>Informações</span><span>Técnicas</span></h1>
@@ -2454,23 +2920,17 @@ function TechnicalInfoPage({ pathname = '/informacoes-tecnicas' }) {
             Consulte informações, tabelas, normas, materiais, conversões e referências técnicas para sistemas hidráulicos
             e industriais.
           </p>
-          <label className="technical-search">
-            <span className="sr-only">Pesquisar conteúdo técnico</span>
-            <input
-              type="search"
-              value={technicalSearch}
-              placeholder="Busque uma informação técnica..."
-              onChange={(event) => setTechnicalSearch(event.target.value)}
-            />
-          </label>
-          {technicalSearch.trim() && (
-            <div className="technical-search__results" aria-live="polite">
-              {searchResults.length ? searchResults.map((item) => (
-                <a key={`${item.categorySlug}-${item.slug}`} href={`${technicalBase}/${item.categorySlug}/${item.slug}`}>
-                  <strong>{item.title.split('»').pop().trim()}</strong>
-                  <span>{item.category}</span>
-                </a>
-              )) : <span>Nenhum conteúdo encontrado para essa busca.</span>}
+          {(valacoTechnicalCategories.length > 0 || valacoTechnicalPages.length > 0) && (
+            <div className="technical-hero-stats">
+              <div>
+                <strong>{valacoTechnicalCategories.length}</strong>
+                <span>categorias</span>
+              </div>
+              <i aria-hidden="true" />
+              <div>
+                <strong>{valacoTechnicalPages.length}</strong>
+                <span>referências técnicas</span>
+              </div>
             </div>
           )}
         </div>
@@ -2479,91 +2939,65 @@ function TechnicalInfoPage({ pathname = '/informacoes-tecnicas' }) {
       <div className="technical-center__body">
         {!activeCategory && !activePage ? (
           <>
-        <section className="technical-section technical-section--dark" aria-labelledby="technical-categories-title">
+        <section className="technical-section" id="consulta-rapida" aria-labelledby="technical-finder-title">
           <div className="container">
-            <div className="technical-heading">
-              <span className="eyebrow">Categorias</span>
-              <h2 id="technical-categories-title">NAVEGUE POR CATEGORIAS</h2>
+            <div className="technical-heading technical-reveal">
+              <span className="eyebrow eyebrow-dark">Consulta rápida</span>
+              <h2 id="technical-finder-title">SELETOR DE CONTEÚDO TÉCNICO</h2>
+              <p>Escolha a categoria e o conteúdo para ler aqui mesmo — com tabelas, figuras e link para a página completa.</p>
             </div>
-            <div className="technical-category-grid">
-              {valacoTechnicalCategories.map((category, index) => (
-                <a className="technical-category-card reveal-on-load" href={`${technicalBase}/${category.slug}`} key={category.slug} style={{ '--reveal-delay': `${index * 30}ms` }}>
-                  <span className="technical-icon" aria-hidden="true">{index + 1}</span>
-                  <strong>{category.title}</strong>
-                  <small>{category.description}</small>
-                </a>
-              ))}
-            </div>
+            <TechnicalContentFinder
+              categories={valacoTechnicalCategories}
+              pages={valacoTechnicalPages}
+              technicalBase={technicalBase}
+            />
           </div>
         </section>
 
-        <section className="technical-section" id="conversoes" aria-labelledby="technical-tools-title">
-          <div className="container technical-tools-grid">
-            <div className="technical-heading technical-heading--left">
-              <span className="eyebrow eyebrow-dark">Ferramentas Técnicas</span>
-              <h2 id="technical-tools-title">FERRAMENTAS TÉCNICAS</h2>
-              <p>Conversões rápidas para apoiar seleção, compra e manutenção de componentes hidráulicos.</p>
-            </div>
-            <article className="pressure-converter">
-              <h3>Conversor de unidades</h3>
-              <div className="pressure-converter__controls">
-                <label>Tipo<select value={converterType} onChange={(event) => {
-                  const nextType = event.target.value;
-                  const [first, second = first] = Object.keys(converters[nextType].units);
-                  setConverterType(nextType);
-                  setConverterFrom(first);
-                  setConverterTo(second);
-                }}>{Object.entries(converters).map(([key, item]) => <option key={key} value={key}>{item.label}</option>)}</select></label>
-                <label>Valor<input type="number" value={converterValue} onChange={(event) => setConverterValue(event.target.value)} /></label>
-                <label>De<select value={converterFrom} onChange={(event) => setConverterFrom(event.target.value)}>{Object.entries(converterUnits).map(([key, unit]) => <option key={key} value={key}>{getUnitLabel(unit)}</option>)}</select></label>
-                <label>Para<select value={converterTo} onChange={(event) => setConverterTo(event.target.value)}>{Object.entries(converterUnits).map(([key, unit]) => <option key={key} value={key}>{getUnitLabel(unit)}</option>)}</select></label>
-              </div>
-              <output className="pressure-converter__result">
-                {formatTechnicalNumber(converterNumber || 0)} {getUnitLabel(converterUnits[converterFrom])} = {formatTechnicalNumber(converterResult)} {getUnitLabel(converterUnits[converterTo])}
-              </output>
-              <div className="pressure-converter__actions">
-                <button type="button" onClick={() => setConverterValue('')}>Limpar</button>
-                <button type="button" onClick={() => { setConverterFrom(converterTo); setConverterTo(converterFrom); }}>Inverter unidades</button>
-              </div>
-              <small>Conversões calculadas no frontend. Dados técnicos tabulares importados permanecem preservados para revisão.</small>
-            </article>
-          </div>
-        </section>
-
-        <section className="technical-section technical-section--light" id="biblioteca" aria-labelledby="technical-library-title">
-          <div className="container">
-            <div className="technical-heading">
-              <span className="eyebrow eyebrow-dark">Biblioteca técnica</span>
-              <h2 id="technical-library-title">CONTEÚDOS IMPORTADOS</h2>
-              <p>Textos e tabelas HTML salvos localmente no projeto, sem hotlink e sem imagens da fonte.</p>
-            </div>
-            <div className="technical-existing-grid">
-              {valacoTechnicalPages.slice(0, 12).map((item) => (
-                <article className="technical-existing-card" key={`${item.categorySlug}-${item.slug}`}>
-                  <span>{item.category}</span>
-                  <h3>{item.title.split('»').pop().trim()}</h3>
-                  <p>{item.description}</p>
-                  <a href={`${technicalBase}/${item.categorySlug}/${item.slug}`}>Consultar conteúdo</a>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
           </>
         ) : (
           <section className="technical-section technical-section--light">
             <div className="container technical-detail-layout">
-              <aside className="technical-sidebar">
+              <button
+                type="button"
+                className="technical-nav-toggle"
+                aria-expanded={mobileNavOpen}
+                onClick={() => setMobileNavOpen((open) => !open)}
+              >
+                <span>Navegação{activeCategory ? ` · ${activeCategory.title}` : ''}</span>
+                <i aria-hidden="true">{mobileNavOpen ? '▴' : '▾'}</i>
+              </button>
+              <aside className={`technical-sidebar${mobileNavOpen ? ' is-expanded' : ''}`.trimEnd()}>
                 <a href={technicalBase}>Central Técnica</a>
-                {valacoTechnicalCategories.map((category) => (
-                  <a key={category.slug} className={category.slug === activeCategory?.slug ? 'is-active' : ''} href={`${technicalBase}/${category.slug}`}>
-                    {category.title}
-                  </a>
-                ))}
+                {valacoTechnicalCategories.map((category) => {
+                  const isCategoryActive = category.slug === activeCategory?.slug;
+                  const categoryContents = valacoTechnicalPages.filter((page) => page.categorySlug === category.slug);
+
+                  return (
+                    <div key={category.slug} className="technical-sidebar-group">
+                      <a className={isCategoryActive ? 'is-active' : undefined} href={`${technicalBase}/${category.slug}`}>
+                        {category.title}
+                      </a>
+                      {isCategoryActive && categoryContents.length ? (
+                        <div className="technical-sidebar-contents">
+                          {categoryContents.map((page) => (
+                            <a
+                              key={page.slug}
+                              className={activePage && page.slug === activePage.slug ? 'is-current' : undefined}
+                              href={`${technicalBase}/${category.slug}/${page.slug}`}
+                            >
+                              {page.title.split('»').pop().trim()}
+                            </a>
+                          ))}
+                        </div>
+                      ) : null}
+                    </div>
+                  );
+                })}
               </aside>
-              <article className="technical-article">
+              <article className="technical-article technical-reveal">
                 <nav className="technical-breadcrumb" aria-label="Breadcrumb">
-                  <a href="/">Home</a><span>Informações Técnicas</span>{activeCategory && <span>{activeCategory.title}</span>}{activePage && <span>{pageTitle}</span>}
+                  <a href="/">Home</a><a href={technicalBase}>Informações Técnicas</a>{activeCategory ? (activePage ? <a href={`${technicalBase}/${activeCategory.slug}`}>{activeCategory.title}</a> : <span>{activeCategory.title}</span>) : null}{activePage && <span>{pageTitle}</span>}
                 </nav>
                 {activePage ? (
                   <>
@@ -2576,6 +3010,28 @@ function TechnicalInfoPage({ pathname = '/informacoes-tecnicas' }) {
                     )}
                     <p className="technical-scroll-note">No celular, deslize as tabelas para visualizar mais →</p>
                     <div className="technical-imported-content" dangerouslySetInnerHTML={{ __html: activePage.html }} />
+                    {previousTechnicalPage || nextTechnicalPage ? (
+                      <nav className="technical-pager" aria-label="Conteúdos da mesma categoria">
+                        {previousTechnicalPage ? (
+                          <a
+                            className="technical-pager__link technical-pager__link--prev"
+                            href={`${technicalBase}/${previousTechnicalPage.categorySlug}/${previousTechnicalPage.slug}`}
+                          >
+                            <small>← Anterior</small>
+                            <strong>{previousTechnicalPage.title.split('»').pop().trim()}</strong>
+                          </a>
+                        ) : <span aria-hidden="true" />}
+                        {nextTechnicalPage ? (
+                          <a
+                            className="technical-pager__link technical-pager__link--next"
+                            href={`${technicalBase}/${nextTechnicalPage.categorySlug}/${nextTechnicalPage.slug}`}
+                          >
+                            <small>Próximo →</small>
+                            <strong>{nextTechnicalPage.title.split('»').pop().trim()}</strong>
+                          </a>
+                        ) : null}
+                      </nav>
+                    ) : null}
                   </>
                 ) : (
                   <>
@@ -2583,8 +3039,12 @@ function TechnicalInfoPage({ pathname = '/informacoes-tecnicas' }) {
                     <h2>{activeCategory.title}</h2>
                     <p>{activeCategory.description}</p>
                     <div className="technical-existing-grid">
-                      {categoryPages.map((item) => (
-                        <article className="technical-existing-card" key={item.slug}>
+                      {categoryPages.map((item, index) => (
+                        <article
+                          className="technical-existing-card technical-reveal"
+                          key={item.slug}
+                          style={{ '--reveal-delay': `${Math.min(index * 50, 300)}ms` }}
+                        >
                           <h3>{item.title.split('»').pop().trim()}</h3>
                           <p>{item.description}</p>
                           <a href={`${technicalBase}/${item.categorySlug}/${item.slug}`}>Consultar conteúdo</a>
@@ -2604,7 +3064,7 @@ function TechnicalInfoPage({ pathname = '/informacoes-tecnicas' }) {
         )}
 
         <section className="technical-cta" aria-labelledby="technical-cta-title">
-          <div className="container">
+          <div className="container technical-reveal">
             <h2 id="technical-cta-title">NÃO ENCONTROU A ESPECIFICAÇÃO QUE PRECISA?</h2>
             <p>Nossa equipe técnica pode ajudar na seleção do componente ideal para sua aplicação.</p>
             <span>Envie sua aplicação, desenho ou especificação.</span>
