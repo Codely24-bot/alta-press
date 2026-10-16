@@ -189,6 +189,7 @@ const media = {
   logo: '/brand/altapress-logo.png',
   heroSlideOne: '/home/hero-slide-one.jpg',
   heroSlideThree: altaPressHeroValvesWide,
+  heroSlideOutubroRosa: '/home/hero-slide-outubro-rosa.jpeg',
   support: redebrasValvulasPlimat,
   valves: productValvulas,
   connections: productConexaoTubulares,
@@ -217,6 +218,11 @@ const heroSlides = [
     image: media.heroSlideThree,
     alt: 'AltaPress com válvulas industriais, flanges e conexões em cenário técnico.',
     className: 'hero-slide--valves-showcase',
+  },
+  {
+    image: media.heroSlideOutubroRosa,
+    alt: 'AltaPress apoia o Outubro Rosa, campanha de conscientização sobre o câncer de mama.',
+    className: 'hero-slide--outubro-rosa',
   },
 ];
 
