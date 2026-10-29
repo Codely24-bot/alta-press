@@ -201,6 +201,7 @@ const navItems = [
   { label: 'Home', href: '/', sectionId: 'home' },
   { label: 'Produtos', href: '/produtos', sectionId: 'produtos' },
   { label: 'Quem Somos', href: '/quem-somos', sectionId: 'quem-somos' },
+  { label: 'Atuação Nacional', href: '/atuacao-nacional', sectionId: 'atuacao-nacional' },
   { label: 'Contato', href: '/contato', sectionId: 'contato' },
 ];
 
@@ -1022,6 +1023,51 @@ const sectors = [
   'Óleo & gás',
 ];
 
+const nationalCoverageCities = [
+  { id: 'ac', state: 'Acre', label: 'Rio Branco', x: 96.1, y: 249.6 },
+  { id: 'al', state: 'Alagoas', label: 'Maceió', x: 598.3, y: 244.5 },
+  { id: 'ap', state: 'Amapá', label: 'Macapá', x: 358.3, y: 85.6 },
+  { id: 'am', state: 'Amazonas', label: 'Manaus', x: 218.2, y: 137.3 },
+  { id: 'ba', state: 'Bahia', label: 'Salvador', x: 555.0, y: 298.8, hub: true },
+  { id: 'ce', state: 'Ceará', label: 'Fortaleza', x: 554.4, y: 147.1 },
+  { id: 'df', state: 'Distrito Federal', label: 'Brasília', x: 408.2, y: 344.9 },
+  { id: 'es', state: 'Espírito Santo', label: 'Vitória', x: 526.7, y: 419.0 },
+  { id: 'go', state: 'Goiás', label: 'Goiânia', x: 386.6, y: 359.5 },
+  { id: 'ma', state: 'Maranhão', label: 'São Luís', x: 464.2, y: 127.7 },
+  { id: 'mt', state: 'Mato Grosso', label: 'Cuiabá', x: 279.6, y: 341.8 },
+  { id: 'ms', state: 'Mato Grosso do Sul', label: 'Campo Grande', x: 302.8, y: 421.5 },
+  { id: 'mg', state: 'Minas Gerais', label: 'Belo Horizonte', x: 470.0, y: 412.4, hub: true },
+  { id: 'pa', state: 'Pará', label: 'Belém', x: 398.7, y: 110.1 },
+  { id: 'pb', state: 'Paraíba', label: 'João Pessoa', x: 612.2, y: 202.8 },
+  { id: 'pr', state: 'Paraná', label: 'Curitiba', x: 386.4, y: 502.7 },
+  { id: 'pe', state: 'Pernambuco', label: 'Recife', x: 611.7, y: 218.0 },
+  { id: 'pi', state: 'Piauí', label: 'Teresina', x: 487.7, y: 169.6 },
+  { id: 'rj', state: 'Rio de Janeiro', label: 'Rio de Janeiro', x: 481.9, y: 461.4, hub: true },
+  { id: 'rn', state: 'Rio Grande do Norte', label: 'Natal', x: 606.5, y: 181.1 },
+  { id: 'rs', state: 'Rio Grande do Sul', label: 'Porto Alegre', x: 356.0, y: 578.2 },
+  { id: 'ro', state: 'Rondônia', label: 'Porto Velho', x: 157.5, y: 229.7 },
+  { id: 'rr', state: 'Roraima', label: 'Boa Vista', x: 208.0, y: 40.0 },
+  { id: 'sc', state: 'Santa Catarina', label: 'Florianópolis', x: 397.8, y: 538.2 },
+  { id: 'sp', state: 'São Paulo', label: 'São Paulo', x: 427.7, y: 472.0, hub: true },
+  { id: 'se', state: 'Sergipe', label: 'Aracaju', x: 577.4, y: 265.5 },
+  { id: 'to', state: 'Tocantins', label: 'Palmas', x: 401.1, y: 253.0 },
+];
+
+const nationalCoverageHub = nationalCoverageCities.find((city) => city.id === 'mg');
+
+const nationalCoverageRoutes = nationalCoverageCities
+  .filter((city) => city.id !== 'mg')
+  .map((city) => {
+    const midX = (nationalCoverageHub.x + city.x) / 2;
+    const midY =
+      (nationalCoverageHub.y + city.y) / 2 - Math.abs(city.x - nationalCoverageHub.x) * 0.18 - 12;
+
+    return {
+      id: city.id,
+      d: `M ${nationalCoverageHub.x} ${nationalCoverageHub.y} Q ${midX.toFixed(1)} ${midY.toFixed(1)} ${city.x} ${city.y}`,
+    };
+  });
+
 const contacts = [
   {
     label: 'Telefone',
@@ -1566,13 +1612,22 @@ function ProductBreadcrumb({ items, onNavigate }) {
 }
 
 function ProductSidebar({ activeCategorySlug, activeItemSlug, activeStandardSlug, onNavigate }) {
+  const [hoveredCategorySlug, setHoveredCategorySlug] = useState(null);
+
   return (
     <aside className="product-page__sidebar" aria-label="Navegação de produtos">
       {productCategories.map((category) => {
         const isActive = category.slug === activeCategorySlug;
+        const isHovered = hoveredCategorySlug === category.slug;
+        const shouldShowSubItems = (isActive || isHovered) && !category.directOverview;
 
         return (
-          <div key={category.slug} className={`product-sidebar-group ${isActive ? 'is-open' : ''}`.trim()}>
+          <div
+            key={category.slug}
+            className={`product-sidebar-group ${isActive || isHovered ? 'is-open' : ''}`.trim()}
+            onMouseEnter={() => setHoveredCategorySlug(category.slug)}
+            onMouseLeave={() => setHoveredCategorySlug(null)}
+          >
             <a
               className={isActive ? 'is-active' : ''}
               href={`/produtos/${category.slug}`}
@@ -1580,10 +1635,10 @@ function ProductSidebar({ activeCategorySlug, activeItemSlug, activeStandardSlug
               aria-current={isActive ? 'page' : undefined}
             >
               {category.title}
-              {isActive ? <span aria-hidden="true">›</span> : null}
+              {(isActive || isHovered) ? <span aria-hidden="true">›</span> : null}
             </a>
 
-            {isActive && !category.directOverview ? (
+            {shouldShowSubItems ? (
               <div className="product-sidebar-sub">
                 {(category.items ?? []).map((productItem) => {
                   const label = typeof productItem === 'string' ? productItem : productItem.label;
@@ -2731,30 +2786,32 @@ function App() {
 
           <div className={`nav-panel ${mobileMenuOpen ? 'is-open' : ''}`}>
             <nav id="primary-navigation" className="main-nav" aria-label="Navegação principal">
-              {navItems.map((item) =>
-                item.sectionId === 'produtos' ? (
-                  <div key={item.label} className={`nav-product-menu ${mobileProductMenuOpen ? 'is-mobile-open' : ''}`}>
-                    <a
-                      href={item.href}
-                      aria-expanded={mobileProductMenuOpen}
-                      onClick={handleProductsMenuNavigation}
-                    >
+              {navItems
+                .filter((item) => item.sectionId !== 'atuacao-nacional')
+                .map((item) =>
+                  item.sectionId === 'produtos' ? (
+                    <div key={item.label} className={`nav-product-menu ${mobileProductMenuOpen ? 'is-mobile-open' : ''}`}>
+                      <a
+                        href={item.href}
+                        aria-expanded={mobileProductMenuOpen}
+                        onClick={handleProductsMenuNavigation}
+                      >
+                        {item.label}
+                      </a>
+                      <div className="nav-product-menu__dropdown" aria-label="Categorias de produtos">
+                        {productCategories.map((category) => (
+                          <a key={category.title} href={`/produtos/${category.slug}`} onClick={handleProductNavigation(`/produtos/${category.slug}`)}>
+                            {category.title}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
+                    <a key={item.label} href={item.href} onClick={handleInternalNavigation(item.href, item.sectionId)}>
                       {item.label}
                     </a>
-                    <div className="nav-product-menu__dropdown" aria-label="Categorias de produtos">
-                      {productCategories.map((category) => (
-                        <a key={category.title} href={`/produtos/${category.slug}`} onClick={handleProductNavigation(`/produtos/${category.slug}`)}>
-                          {category.title}
-                        </a>
-                      ))}
-                    </div>
-                  </div>
-                ) : (
-                  <a key={item.label} href={item.href} onClick={handleInternalNavigation(item.href, item.sectionId)}>
-                    {item.label}
-                  </a>
-                ),
-              )}
+                  ),
+                )}
             </nav>
 
             <div className="header-socials" aria-label="Redes sociais">
@@ -2948,6 +3005,92 @@ function App() {
                   ))}
                 </div>
               </article>
+            </div>
+          </div>
+        </section>
+
+        <section className="section section-surface" id="atuacao-nacional">
+          <div className="container national-coverage">
+            <div className="national-coverage__header">
+              <span className="eyebrow eyebrow-dark">Cobertura Nacional</span>
+              <h2>Atuação Nacional</h2>
+              <p>
+                Atendimento em todo o território nacional. Atuamos em todos os estados brasileiros e no Distrito
+                Federal, levando válvulas, conexões e soluções hidráulicas de alta pressão para projetos industriais.
+              </p>
+            </div>
+
+            <div className="national-coverage__grid">
+              <div className="national-coverage__map">
+                <div
+                  className="national-coverage__map-stage"
+                  onPointerMove={(event) => {
+                    const rect = event.currentTarget.getBoundingClientRect();
+                    const x = (event.clientX - rect.left) / rect.width - 0.5;
+                    const y = (event.clientY - rect.top) / rect.height - 0.5;
+                    event.currentTarget.style.setProperty('--map-tilt-z', `${-7 + x * 10}deg`);
+                    event.currentTarget.style.setProperty('--map-tilt-x', `${26 - y * 10}deg`);
+                  }}
+                  onPointerLeave={(event) => {
+                    event.currentTarget.style.removeProperty('--map-tilt-z');
+                    event.currentTarget.style.removeProperty('--map-tilt-x');
+                  }}
+                >
+                  <div className="national-coverage__map-tilt">
+                    <img
+                      className="national-coverage__map-image"
+                      src="/maps/brazil-states.svg"
+                      alt="Mapa do Brasil com cobertura em todo o território nacional pela AltaPress"
+                    />
+
+                    <svg className="national-coverage__routes" viewBox="0 0 613 639" aria-hidden="true">
+                      {nationalCoverageRoutes.map((route) => (
+                        <path key={route.id} className="national-coverage__route" d={route.d} />
+                      ))}
+                    </svg>
+
+                    {nationalCoverageCities.map((city) => (
+                      <span
+                        key={city.id}
+                        className="national-coverage__pin"
+                        style={{
+                          left: `${(city.x / 613) * 100}%`,
+                          top: `${(city.y / 639) * 100}%`,
+                        }}
+                      >
+                        <span className="national-coverage__pin-core" aria-hidden="true" />
+                      </span>
+                    ))}
+
+                    <span className="national-coverage__scan" aria-hidden="true" />
+                  </div>
+                </div>
+              </div>
+
+              <div className="national-coverage__list">
+                <div className="national-coverage__stats">
+                  <div>
+                    <strong>100%</strong>
+                    <span>do território nacional</span>
+                  </div>
+                  <div>
+                    <strong>27</strong>
+                    <span>estados atendidos</span>
+                  </div>
+                  <div>
+                    <strong>5</strong>
+                    <span>regiões cobertas</span>
+                  </div>
+                  <div>
+                    <strong>+10</strong>
+                    <span>anos de experiência</span>
+                  </div>
+                </div>
+                <div className="national-coverage__note">
+                  <strong>Atendimento em todo o território nacional, em todos os estados e no Distrito Federal.</strong>
+                  <p>Solicite sua cotação pelo WhatsApp e fale com nossa equipe em qualquer região do país.</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
