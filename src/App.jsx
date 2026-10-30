@@ -2582,6 +2582,7 @@ function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileProductMenuOpen, setMobileProductMenuOpen] = useState(false);
   const [currentPathname, setCurrentPathname] = useState(() => normalizePathname(window.location.pathname));
+  const [hoveredCapital, setHoveredCapital] = useState(null);
   const headerRef = useRef(null);
   const mascotVideoRef = useRef(null);
 
@@ -3025,13 +3026,34 @@ function App() {
                 <div
                   className="national-coverage__map-stage"
                   onPointerMove={(event) => {
-                    const rect = event.currentTarget.getBoundingClientRect();
-                    const x = (event.clientX - rect.left) / rect.width - 0.5;
-                    const y = (event.clientY - rect.top) / rect.height - 0.5;
-                    event.currentTarget.style.setProperty('--map-tilt-z', `${-7 + x * 10}deg`);
-                    event.currentTarget.style.setProperty('--map-tilt-x', `${26 - y * 10}deg`);
+                    const stage = event.currentTarget;
+                    const pins = stage.querySelectorAll('.national-coverage__pin');
+                    const pointerX = event.clientX;
+                    const pointerY = event.clientY;
+                    let closestId = null;
+                    let closestDistance = 16;
+
+                    pins.forEach((pin) => {
+                      const rect = pin.getBoundingClientRect();
+                      const distance = Math.hypot(pointerX - rect.left, pointerY - rect.top);
+                      if (distance < closestDistance) {
+                        closestDistance = distance;
+                        closestId = pin.dataset.capital ?? null;
+                      }
+                    });
+
+                    setHoveredCapital((current) => (current === closestId ? current : closestId));
+
+                    if (closestId) return;
+
+                    const rect = stage.getBoundingClientRect();
+                    const x = (pointerX - rect.left) / rect.width - 0.5;
+                    const y = (pointerY - rect.top) / rect.height - 0.5;
+                    stage.style.setProperty('--map-tilt-z', `${-7 + x * 10}deg`);
+                    stage.style.setProperty('--map-tilt-x', `${26 - y * 10}deg`);
                   }}
                   onPointerLeave={(event) => {
+                    setHoveredCapital(null);
                     event.currentTarget.style.removeProperty('--map-tilt-z');
                     event.currentTarget.style.removeProperty('--map-tilt-x');
                   }}
@@ -3052,13 +3074,15 @@ function App() {
                     {nationalCoverageCities.map((city) => (
                       <span
                         key={city.id}
-                        className="national-coverage__pin"
+                        data-capital={city.id}
+                        className={`national-coverage__pin ${city.x > 520 ? 'is-edge' : ''} ${hoveredCapital === city.id ? 'is-active' : ''}`.trim()}
                         style={{
                           left: `${(city.x / 613) * 100}%`,
                           top: `${(city.y / 639) * 100}%`,
                         }}
                       >
                         <span className="national-coverage__pin-core" aria-hidden="true" />
+                        <span className="national-coverage__pin-label">{city.label}</span>
                       </span>
                     ))}
 
