@@ -201,7 +201,6 @@ const navItems = [
   { label: 'Home', href: '/', sectionId: 'home' },
   { label: 'Produtos', href: '/produtos', sectionId: 'produtos' },
   { label: 'Quem Somos', href: '/quem-somos', sectionId: 'quem-somos' },
-  { label: 'Atuação Nacional', href: '/atuacao-nacional', sectionId: 'atuacao-nacional' },
   { label: 'Contato', href: '/contato', sectionId: 'contato' },
 ];
 
